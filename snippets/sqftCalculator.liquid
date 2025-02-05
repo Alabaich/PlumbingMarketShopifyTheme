@@ -1,0 +1,179 @@
+
+
+<script>
+    let Calculator = () => {
+        const priceElement = document.getElementById('priceReal');
+    let sqftinbox = Number(document.querySelector('.sqft').innerHTML)
+    let finalBoxes = document.querySelector('.howmanyboxes')
+    let finalPrice = document.querySelector('.totalPrice')
+    const sqftInput = document.querySelector('.filledSqFT');
+
+    let quantityInput = document.getElementById('quantityInput');
+
+    
+
+
+    const wasteCheckbox = document.getElementById('addPercentageCheckbox')
+
+const innerHTML = priceElement.innerHTML;
+
+const priceText = innerHTML.replace(/<span[^>]*>[^<]*<\/span>/, '');
+
+const cleanedPriceText = priceText.replace(/[^0-9.]/g, '');
+
+const priceNumber = parseFloat(cleanedPriceText);
+
+sqftInput.addEventListener('input', function(event) {
+    let howManyBoxes = Math.ceil(event.target.value / sqftinbox) ; 
+
+    let howMuchItCost = priceNumber * howManyBoxes ;
+
+    finalPrice.innerHTML = howMuchItCost.toFixed(2)
+
+    finalBoxes.innerHTML = howManyBoxes
+    console.log(howManyBoxes);
+
+    quantityInput.value = howManyBoxes
+
+    finalBoxes.innerHTML = howManyBoxes
+
+});
+
+
+quantityInput.addEventListener('input', function(event) {
+  console.log(quantityInput.value)
+  console.log("the value changed")
+  let howManyBoxes = quantityInput.value
+    sqftInput.value = event.target.value * sqftinbox
+
+    let howMuchItCost = priceNumber * howManyBoxes ;
+
+    finalPrice.innerHTML = howMuchItCost.toFixed(2)
+
+    finalBoxes.innerHTML = howManyBoxes
+    console.log(howManyBoxes);
+});
+
+function updateCalculations(inputValue) {
+    if (wasteCheckbox.checked) {
+        inputValue *= 1.1; 
+    }
+
+    let howManyBoxes = Math.ceil(inputValue / sqftinbox);
+
+    let howMuchItCost = priceNumber * howManyBoxes;
+
+    let formattedCost = howMuchItCost.toFixed(2);
+
+    finalPrice.innerHTML = `$${formattedCost}`;
+    finalBoxes.innerHTML = howManyBoxes;
+
+    quantityInput.value = howManyBoxes
+
+    console.log(howMuchItCost);
+}
+
+wasteCheckbox.addEventListener('change', function() {
+    let inputValue = parseFloat(sqftInput.value);
+    updateCalculations(inputValue);
+});
+
+
+
+    }
+ 
+    setTimeout(function() {
+        Calculator();
+}, 800); // Delay in milliseconds
+
+</script>
+
+
+
+
+{% comment %} <div class="percentageContainer">
+  <input type="checkbox" id="addPercentageCheckbox">
+  <label for="addPercentageCheckbox">Add 10% for waste and reserve</label>
+</div>
+<div class="inOneRow">
+  Total Price: $
+  <span id="howMuchYouNeed"></span>
+</div> {% endcomment %}
+{% comment %} <script>
+  let inputValue = document.getElementById("calculatorInput");
+  let youNeed = document.getElementById("howMuchYouNeed");
+  let inputYouNeed = document.querySelector(".quantity__input");
+  let variantPrice = document.querySelector('.money').value
+  let priceWas = {{product.price}}
+  / 100;
+    let sqftBoxes;
+    let addPercentageCheckbox = document.getElementById("addPercentageCheckbox");
+
+    inputValue.addEventListener("input", () => {
+      let n = inputValue.valueAsNumber;
+      if (addPercentageCheckbox.checked) {
+        n *= 1.1; // Multiply inputValue by 1.1 if checkbox is checked
+      }
+      let m = n /{{ product.metafields.custom.sq_ft_per_box }};
+  let ni = parseInt(m.toFixed(0));
+
+  if (ni < m) {
+    sqftBoxes = ni + 1;
+  } else {
+    sqftBoxes = ni;
+  };
+
+
+  inputYouNeed.value = sqftBoxes;
+
+  let price = sqftBoxes * priceWas;
+
+  if (isNaN(price)) {
+    youNeed.style.display = "none";
+  } else {
+    youNeed.style.display = "block";
+    youNeed.innerHTML = price.toFixed(2);
+  }
+}
+);
+
+inputYouNeed.addEventListener("change", () => {
+  let boxes = inputYouNeed.valueAsNumber;
+  let calculatedValue = boxes * {{ product.metafields.custom.sq_ft_per_box }};
+  inputValue.value = calculatedValue;
+
+  let price = boxes * priceWas;
+
+  if (isNaN(price)) {
+    youNeed.style.display = "none";
+  } else {
+    youNeed.style.display = "block";
+    youNeed.innerHTML = price.toFixed(2);
+  }
+}); 
+
+
+
+addPercentageCheckbox.addEventListener("change", () => {
+  inputValue.dispatchEvent(new Event("input")); // Trigger the input event to recalculate everything
+});
+
+
+let ftPerBox = document.querySelector(".variant_shipping_info").innerHTML;
+let ftPerBoxNumber = ftPerBox.valueAsNumber;
+let pricePerBox = priceWas
+let pricePerBoxNumber = pricePerBox.valueAsNumber;
+let pricePerFt = priceWas / ftPerBox;
+let costPerFtInBox = document.querySelector(".costPerFtInBox")
+
+let putThePricePerFT = () => {
+  costPerFtInBox.innerHTML = pricePerFt.toFixed(2);
+}
+putThePricePerFT();
+
+
+let sqFtInBoxSpec = document.querySelector(".sqFtInBoxSpec")
+sqFtInBoxSpec.innerHTML = ftPerBox;
+let sqFtInBox = document.querySelector(".costPerFtInBox")
+sqFtInBox.innerHTML = pricePerFt.toFixed(2);
+</script>{% endcomment %}

@@ -1,0 +1,441 @@
+{%- comment -%}
+  Simplified header component with full-width mega menu functionality:
+  - Logo (with fallback to shop name)
+  - Top-level menu from the specified navigation menu
+    - If a menu item has child links, a full-width dropdown is displayed on hover.
+  - Basic icons for account, search, and cart
+{%- endcomment -%}
+
+<style>
+/* Container for header (fixed at top) */
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+/* Fixed header styling */
+header.headerWebsiteNew {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background: #fff;
+}
+@media screen and (min-width: 900px) {
+  header.headerWebsiteNew {
+    padding: 0 25px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  header.headerWebsiteNew {
+    padding: 0 150px;
+  }
+}
+.logo a img {
+  max-width: {{ section.settings.logo_max_width }}px;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.main-nav li {
+  margin-right: 20px;
+  padding: 25px 5px;
+}
+.main-nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Mega Menu styles (unchanged from previous) */
+.menu-item.has-dropdown .dropdown {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+  width: 100vw;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 50px;
+  margin: 0;
+  padding: 25px 150px;
+}
+.menu-item.has-dropdown:hover .dropdown,
+.menu-item.has-dropdown:focus-within .dropdown,
+.menu-item.has-dropdown .dropdown:hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+span.has-dropdown-link {
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  background: #2C2D2C;
+  color: #fff;
+  text-decoration: none;
+}
+.menu-item.has-dropdown a.has-dropdown-link:hover {
+  background: #1f1f1f;
+}
+
+.menu-item .catalog{
+    padding: 0px 10px;
+    background: #2c2d2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+.dropdown li {
+  margin: 0 12.5px;
+  padding: 5px 0;
+}
+.dropdown li a {
+  color: #333;
+  text-decoration: none;
+}
+.dropdown-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.main-nav ul.more-than-five {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.dropdown-sub li {
+  margin: 0;
+}
+.parentChild {
+  display: block;
+  color: #2C2D2C;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100%;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #2C2D2C;
+}
+
+.menu-item{
+    text-transform: uppercase;
+}
+.parentChildLi {
+  width: auto;
+}
+
+.menu-item-low{
+    text-transform: none;
+}
+
+/* Icons styling */
+.icons a {
+  margin-left: 15px;
+  text-decoration: none;
+}
+.icons svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* Spacer for header height */
+.headerHeight {
+  height: 60px;
+}
+
+/* Search Container: hidden by default */
+.search-container {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: right 0.3s ease;
+  z-index: 110; /* Above header icons */
+  padding: 25px 150px;
+}
+
+.search-container form{
+    width: 100%;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+/* When the container has .search-active, move it into view */
+.header-container.search-active .search-container {
+  right: 0;
+}
+
+/* Hide main navigation when search is active */
+.header-container.search-active .main-nav {
+  display: none;
+}
+
+/* Optionally style the search form to fill the header width */
+.search-container .search-form {
+  width: 100%;
+  max-width: 100%;
+}
+
+.cartIconHeader{
+    position: relative;
+}
+
+/* (Additional styles for search suggestions can be added here) */
+.Header__CartCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    color: #fff;
+    background-color: #2C2D2C;
+    height: 14px;
+    width: 14px;
+    font-size: 12px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    right: -5px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .dropdown-sub {
+  display: none;
+}
+
+/* When the parent <li> is expanded, show its nested submenu */
+.parentChildLi.expanded .dropdown-sub {
+  display: block;
+}
+
+/* (Optional) You can add a transition if you like */
+.dropdown-sub {
+  transition: all 0.3s ease;
+}
+}
+
+</style>
+
+{%- comment -%}
+  Header with search toggle functionality:
+  - Normal header shows logo, navigation, and icons.
+  - When the search icon is clicked, a full-width search input appears and the navigation is hidden.
+{%- endcomment -%}
+
+{%- assign main_menu = linklists[section.settings.navigation_menu] -%}
+{%- assign mega_menu_item = false -%}
+{%- for link in main_menu.links -%}
+  {%- if link.links != blank and mega_menu_item == false -%}
+    {%- assign mega_menu_item = link -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<!-- Spacer to prevent page content from being hidden behind the fixed header -->
+<div class="headerHeight"></div>
+
+<div class="header-container" id="header-container">
+  <header id="section-{{ section.id }}" role="banner" class="headerWebsiteNew">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="{{ routes.root_url }}">
+        {%- if section.settings.logo != blank -%}
+          {% assign logo_size = section.settings.logo_max_width | append: "x" %}
+          <img src="{{ section.settings.logo | img_url: logo_size }}"
+               alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+        {%- else -%}
+          <span>{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+    </div>
+
+    <!-- Normal Navigation (hidden when search is active) -->
+    <nav class="main-nav" aria-label="Main Navigation">
+      <ul>
+        {%- for link in main_menu.links -%}
+          <li class="menu-item{% if link.links != blank %} has-dropdown{% endif %}">
+        {%- if link.links != blank -%}<span data=""{%- else -%}<a href="{{ link.url }}"{%- endif -%}{%- if link.links != blank -%} class="catalog"{%- endif -%} >
+              {{ link.title }}
+              {%- if link.links != blank -%}
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                  <path d="M11.5193 0.699754L12.5 1.6814L7.15505 7.0282C7.06941 7.11439 6.96756 7.18279 6.85538 7.22947C6.7432 7.27614 6.62289 7.30017 6.50139 7.30017C6.37988 7.30017 6.25958 7.27614 6.1474 7.22947C6.03521 7.18279 5.93337 7.11439 5.84773 7.0282L0.5 1.6814L1.48072 0.700679L6.5 5.71903L11.5193 0.699754Z" fill="white"/>
+                </svg>
+              {%- endif -%}
+            {%- if link.links != blank -%}</span>{%- else -%}</a>{%- endif -%}
+            {%- if mega_menu_item and link.title == mega_menu_item.title and link.links != blank -%}
+              <ul class="dropdown">
+                {%- for child in link.links -%}
+                  <li class="parentChildLi menu-item-high">
+                    <a href="{{ child.url }}" class="parentChild">{{ child.title }}</a>
+                    {%- if child.links != blank -%}
+                      <ul class="dropdown-sub menu-item-low{% if child.links.size > 5 %} more-than-five{% endif %}">
+                        {%- for subchild in child.links -%}
+                          <li>
+                            <a href="{{ subchild.url }}">{{ subchild.title }}</a>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+
+    <!-- Search Container (hidden by default) -->
+    <div class="search-container">
+      <form action="{{ routes.search_url }}" method="get" id="search" class="search-form" style="max-width: 100%;">
+        <fieldset style="width: 100%;">
+          <legend>{{ 'search.title' | t }}</legend>
+          <p style="width: 100%;">
+            <label for="search_main">{{ 'search.title' | t }}</label>
+            <input type="search" id="search_main" name="q" placeholder="{{ 'search.search_form.placeholder' | t }}" autocomplete="off" required style="width: 100%;">
+            <button type="submit" class="override">{{ 'search.search_form.submit' | t }}</button>
+          </p>
+          <div id="livesearch">
+            <div class="cols">
+              <p>{{ 'search.results' | t }}</p>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- Icons -->
+    <div class="icons">
+      <!-- Search Icon (click to toggle search) -->
+      <a href="javascript:void(0)" id="toggle-search" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+          <path d="M10.3641 3.5C9.38991 3.48866 8.42313 3.67074 7.51979 4.03569C6.61646 4.40065 5.79452 4.94124 5.1016 5.62613C4.40868 6.31102 3.85856 7.1266 3.4831 8.02562C3.10764 8.92465 2.91431 9.88924 2.91431 10.8635C2.91431 11.8378 3.10764 12.8024 3.4831 13.7014C3.85856 14.6004 4.40868 15.416 5.1016 16.1009C5.79452 16.7858 6.61646 17.3264 7.51979 17.6913C8.42313 18.0563 9.38991 18.2384 10.3641 18.227C12.3022 18.2044 14.1532 17.4187 15.5157 16.0402C16.8782 14.6617 17.6423 12.8017 17.6423 10.8635C17.6423 8.92532 16.8782 7.06528 15.5157 5.68681C14.1532 4.30834 12.3022 3.5226 10.3641 3.5Z"
+                stroke="#2C2D2C" stroke-opacity="0.86" stroke-miterlimit="10"/>
+          <path d="M15.8569 16.358L20.9999 21.501" stroke="#2C2D2C" stroke-opacity="0.86" stroke-miterlimit="10" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <!-- Account Icon -->
+      <a href="{% if customer %}/account{% else %}/account/login{% endif %}" aria-label="Account">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+          <path d="M16.125 9.25C15.941 11.728 14.062 13.75 12 13.75C9.93798 13.75 8.05598 11.729 7.87498 9.25C7.68798 6.672 9.51498 4.75 12 4.75C14.484 4.75 16.313 6.719 16.125 9.25Z"
+                stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3.01709 21.247C3.78309 17 7.92209 14.75 12.0001 14.75C16.0781 14.75 20.2171 17 20.9841 21.247"
+                stroke="#2C2D2C" stroke-miterlimit="10"/>
+        </svg>
+      </a>
+      <!-- Cart Icon -->
+      <a href="/cart" aria-label="Cart" class="cartIconHeader">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+          <path d="M16 7.5C16 6.43913 15.5786 5.42172 14.8284 4.67157C14.0783 3.92143 13.0609 3.5 12 3.5C10.9391 3.5 9.92172 3.92143 9.17157 4.67157C8.42143 5.42172 8 6.43913 8 7.5M2 10.5H22L18 21.5H6L2 10.5Z"
+                stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        {%- if cart.item_count > 0 -%}
+          <span class="Header__CartCount">{{ cart.item_count }}</span>
+        {%- endif -%}
+      </a>
+
+
+    </div>
+  </header>
+</div>
+
+<script>
+  // Get references to the elements
+  var headerContainer = document.getElementById('header-container');
+  var toggleSearch = document.getElementById('toggle-search');
+  var searchInput = document.getElementById('search_main');
+
+  // When the search icon is clicked, toggle the search-active class
+  toggleSearch.addEventListener('click', function(e) {
+    e.preventDefault();
+    headerContainer.classList.toggle('search-active');
+    if (headerContainer.classList.contains('search-active')) {
+      // Focus the search input after a short delay (to ensure visibility)
+      setTimeout(function() {
+        searchInput.focus();
+      }, 100);
+    }
+  });
+
+  // Optional: Click outside to close the search
+  document.addEventListener('click', function(e) {
+    if (!headerContainer.contains(e.target)) {
+      headerContainer.classList.remove('search-active');
+    }
+  });
+</script>
+
+<script>
+  document.querySelectorAll('.parentChild').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      // Find the parent <li> of this link
+      var parentLi = this.parentElement;
+      // If this parent has a nested submenu, toggle its expanded state
+      if (parentLi.querySelector('.dropdown-sub')) {
+        e.preventDefault(); // Prevent the link from navigating
+        parentLi.classList.toggle('expanded');
+      }
+    });
+  });
+</script>
+
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image",
+      "info": "Recommended: 200 x 60px png"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 50,
+      "max": 350,
+      "step": 5,
+      "unit": "px",
+      "label": "Logo image width",
+      "default": 140
+    },
+    {
+      "type": "link_list",
+      "id": "navigation_menu",
+      "label": "Menu",
+      "default": "main-menu"
+    }
+  ]
+}
+{% endschema %}

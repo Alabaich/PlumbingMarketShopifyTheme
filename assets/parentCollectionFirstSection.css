@@ -1,0 +1,174 @@
+.collectionTitleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding:25px 25px 0 25px;
+}
+
+.collectionTitleContainer h2{
+    text-align: right;
+}
+
+.firstSectionContainer{
+    padding: 0 0 25px 0;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.firstSectionContainer button:after, .firstSectionContainer button:before{
+    display: none !important;
+}
+
+.bigSlider{
+    width: 72%;
+}
+
+.firstSectionContainer .splide__arrow--prev {
+    left: 0;
+}
+
+.firstSectionContainer .splide__arrow--next {
+    right: 0;
+}
+
+.bigSlider .splide, .bigSlider .splide__track, .bigSlider .sliderInner{
+    height: 100%;
+}
+
+.bigSlider .splide__track, .bigSlider .splide__list, .bigSlider .splide__slide, .bigSlider .sliderItem, .bigSlider .sliderInner, .bigSlider .realOne{
+    max-height: 100%;
+    height: 100%;
+}
+
+.bigSlider .slideImg img{
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.bigSlider .slideImg{
+    height: 100%;
+}
+
+.bigSlider .splide__arrow{
+    opacity: 0.35;
+    height: 4em;
+    width: 4em;
+}
+
+.bigSlider .splide__arrow:hover{
+    opacity: 1;
+}
+
+.bigSlider .splide__arrow{
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.bigSlider .splide__arrow svg,
+.bigSlider .splide__arrow path{
+    color: #fff;
+    fill: #fff;
+}
+
+.splide__pagination__page.is-active {
+    background: #2c2d2c;
+}
+
+.smallButtons{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 25px;
+    flex-direction: column;
+    width: 28%;
+}
+
+.smallButton{
+    max-height: 50%;
+    width: 100%;
+}
+
+.bigSlider, .smallButton{
+    background: var(--white);
+    overflow: hidden;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+
+    height: 100%;
+    transition: all linear 300ms;
+}
+
+.bigSlider:hover, .smallButton:hover{
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.50);
+}
+
+body .firstSectionContainer .smallButton img{
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (min-width: 1600px) {
+
+    .firstSectionContainer{
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .firstSectionContainer{
+        flex-direction: column;
+    }
+
+    .bigSlider{
+        width: 100%;
+    }
+
+    .smallButtons{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .smallButton{
+        max-height: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .firstSectionContainer{
+        height: 45vh;
+        padding: 15px 0;
+    }
+
+    .smallButtons, .firstSectionContainer{
+        gap: 15px;
+    }
+
+    .firstSectionContainer .bigSlider{
+        min-height: 220px;
+    }
+
+    .firstSectionContainer{
+        height: auto;
+    }
+}
+
+.splide__pagination{
+    gap: 25px;
+}
+
+@media screen and (max-width: 1920px) and (min-height: 1500px) {
+    .firstSectionContainer{
+        max-height: 25vh;
+        
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-height: 1200px) {
+    .firstSectionContainer{
+        max-height: 600px;
+    }
+}

@@ -1,0 +1,588 @@
+<style>
+    /* Basic Reset */
+
+    /* Modal Styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; 
+      z-index: 1000; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px); /* Apply blur to the background */
+      -webkit-backdrop-filter: blur(10px); /* Safari support */ /* Black with opacity */
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+    }
+
+    .modal canvas{
+        background: grey;
+        margin: 10px 0;
+    }
+
+    .mpdal h2{
+        margin: 0;
+    }
+    
+    .modal-content {
+      background-color: transparent;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 500px;
+      position: relative;
+      text-align: center;
+    }
+    
+    /* Close Button */
+    .close {
+      color: #fff;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #a5a5a5;
+    }
+    
+    /* Heading */
+    .modal-content h2 {
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    
+    /* Roulette Canvas */
+    #rouletteCanvas {
+      margin: 10px 0;
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #333;
+      border-radius: 50%;
+    }
+    
+    /* Spin Button */
+    #spinBtn {
+      padding: 12px 25px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    #spinBtn:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+    
+    #spinBtn:hover:not(:disabled) {
+      background-color: #0056b3;
+    }
+    
+    /* Pointer */
+    #pointer {
+      position: absolute;
+      right: -15px;
+      top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        bottom: auto;
+      width: 0; 
+      height: 0; 
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 30px solid #ff0000;
+      z-index: 1001;
+
+    }
+    
+    /* Result Section */
+    #result {
+        margin: 0;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #result p {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    #discountCode {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      background-color: #f9f9f9;
+    }
+    
+    #copyBtn {
+      padding: 8px 20px;
+      font-size: 16px;
+      background-color: #17a2b8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    #copyBtn:hover {
+      background-color: #138496;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      .modal-content {
+        padding: 20px;
+      }
+      
+      #discountCode {
+        width: 100%;
+      }
+
+      .close{
+        top: -25px;
+      }
+      
+      #pointer {
+        right: -10px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 25px solid #ff0000;
+      }
+    }
+
+    .rouletteContainer{
+        position: relative;
+    }
+  </style>
+
+<style>
+
+    #rouletteModal{
+        margin-top: 70px;
+    }
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.modal-show {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-hide {
+  opacity: 0;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  text-align: center;
+  transform: translateY(-50px);
+  transition: transform 0.5s ease;
+}
+
+.modal-show .modal-content {
+  transform: translateY(0);
+}
+
+.modal-hide .modal-content {
+  transform: translateY(-50px);
+}
+
+@media screen and (max-width: 1400px) {
+  .modal-content{
+    max-width: 350px;
+  }
+  #rouletteModal h2{
+    font-size: 18px !important; 
+    margin-top: 0 !important;
+  }
+}
+
+  </style>
+
+
+<div id="rouletteModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Spin the Wheel and Get Your Discount!</h2>
+    <div class="rouletteContainer">
+      <div id="pointer"></div>
+      <!-- Roulette Canvas -->
+      <canvas id="rouletteCanvas" width="500" height="500"></canvas>
+    </div>
+    <!-- Spin Button -->
+     <div style="width: 100%; display: flex; justify-content: center">
+        <button id="spinBtn">Play</button>
+     </div>
+
+
+
+    <!-- Result Section -->
+    <div id="result">
+      <p style="color: #fff;">Your Discount Code:</p>
+      <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+        <input type="text" id="discountCode" readonly>
+        <button id="copyBtn">Copy</button>
+      </div>
+      <p style="color: #fff; font-size: 12px;">The Discount Code Available Only For Products With Black Friday Badge*</p>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // Get Elements
+  const modal = document.getElementById("rouletteModal");
+  const closeModalSpan = document.getElementsByClassName("close")[0];
+  const spinBtn = document.getElementById("spinBtn");
+  const resultDiv = document.getElementById("result");
+  const discountCodeInput = document.getElementById("discountCode");
+  const copyBtn = document.getElementById("copyBtn");
+  const canvas = document.getElementById("rouletteCanvas");
+  const ctx = canvas.getContext("2d");
+
+  // Roulette Segments with Weights
+  const segments = [
+    {
+      text: "{{ section.settings.segment_text_1 }}",
+      color: "#2c2d2c",
+      code: "{{ section.settings.discount_code_1 }}",
+      weight: 40 // 5% Discount (40% chance)
+    },
+    {
+      text: "{{ section.settings.segment_text_2 }}",
+      color: "#ffffff",
+      code: "{{ section.settings.discount_code_2 }}",
+      weight: 15 // 10% Discount (15% chance)
+    },
+    {
+      text: "{{ section.settings.segment_text_3 }}",
+      color: "#2c2d2c",
+      code: "{{ section.settings.discount_code_3 }}",
+      weight: 5 // 15% Discount (5% chance)
+    },
+    {
+      text: "{{ section.settings.segment_text_4 }}",
+      color: "#ffffff",
+      code: "{{ section.settings.discount_code_4 }}",
+      weight: 40 // 50 CAD Discount (40% chance)
+    }
+  ];
+
+  const totalWeight = segments.reduce((sum, segment) => sum + segment.weight, 0);
+
+  let currentAngle = 0;
+  let isSpinning = false;
+  let spinAnimationFrame = null;
+  let angularVelocity = 0;
+  let angularAcceleration = 0;
+
+  // Initialize Canvas Size for Responsiveness
+  function resizeCanvas() {
+    const size = Math.min(window.innerWidth, window.innerHeight) * 0.8;
+    canvas.width = size;
+    canvas.height = size;
+    drawRoulette();
+  }
+
+  window.addEventListener('resize', resizeCanvas);
+
+  // Helper Function to Determine Text Color Based on Background
+  function getTextColor(bgColor) {
+    const spinR = parseInt(bgColor.slice(1, 3), 16);
+    const spinG = parseInt(bgColor.slice(3, 5), 16);
+    const spinB = parseInt(bgColor.slice(5, 7), 16);
+    const luminance = (0.299 * spinR + 0.587 * spinG + 0.114 * spinB) / 255;
+    return luminance > 0.5 ? '#2c2d2c' : '#ffffff';
+  }
+
+  // Function to Get Dynamic Font Size Based on Screen Width
+  function getDynamicFontSize() {
+    const breakpoint = 768;
+    return window.innerWidth > breakpoint ? "1.8rem" : "1rem";
+  }
+
+  // Draw Roulette Wheel with Weighted Segments
+  function drawRoulette() {
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const outerRadius = canvas.width / 2 - 10;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    let startAngle = currentAngle % 360;
+
+    for (let i = 0; i < segments.length; i++) {
+      const segment = segments[i];
+      const segmentAngle = (segment.weight / totalWeight) * 360;
+      const endAngle = startAngle + segmentAngle;
+
+      // Draw segment
+      ctx.beginPath();
+      ctx.moveTo(centerX, centerY);
+      ctx.arc(
+        centerX,
+        centerY,
+        outerRadius,
+        (startAngle * Math.PI) / 180,
+        (endAngle * Math.PI) / 180,
+        false
+      );
+      ctx.closePath();
+      ctx.fillStyle = segment.color;
+      ctx.fill();
+      ctx.strokeStyle = "#fff";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      // Draw text
+      ctx.save();
+      ctx.translate(centerX, centerY);
+      ctx.rotate(((startAngle + endAngle) / 2) * (Math.PI / 180));
+      ctx.textAlign = "right";
+      ctx.textBaseline = "middle";
+      ctx.fillStyle = getTextColor(segment.color);
+      ctx.font = getDynamicFontSize() + " Arial";
+      ctx.fillText(segment.text, outerRadius - 10, 10);
+      ctx.restore();
+
+      startAngle = endAngle;
+    }
+  }
+
+  // Draw the initial roulette
+  resizeCanvas();
+
+  // Check if modal has been shown in this session
+  if (!sessionStorage.getItem('modalShown')) {
+    setTimeout(() => {
+      openModal();
+      sessionStorage.setItem('modalShown', 'true');
+    }, 5000);
+  }
+
+  // Function to Open Modal
+  function openModal() {
+    modal.style.display = "flex";
+    modal.classList.add('modal-show');
+    resultDiv.style.display = "none";
+    discountCodeInput.value = "";
+    currentAngle = 0;
+    isSpinning = false;
+    cancelAnimationFrame(spinAnimationFrame);
+    angularVelocity = 0;
+    angularAcceleration = 0;
+    drawRoulette();
+  }
+
+  // Close Modal
+  closeModalSpan.onclick = function() {
+    closeModal();
+  }
+
+  function closeModal() {
+    modal.classList.add('modal-hide');
+    setTimeout(() => {
+      modal.style.display = "none";
+      modal.classList.remove('modal-hide');
+      modal.classList.remove('modal-show');
+    }, 500);
+  }
+
+  // Event Listener to Close Modal When Clicking Outside .modal-content
+  modal.addEventListener('click', function(event) {
+    // Check if the click is outside the .modal-content
+    if (!event.target.closest('.modal-content')) {
+      closeModal();
+    }
+  });
+
+  // Spin Button Event
+  spinBtn.addEventListener('click', () => {
+    if (!isSpinning) {
+      spin();
+    }
+  });
+
+  // Spin Function with Smooth Deceleration
+  function spin() {
+    isSpinning = true;
+    spinBtn.disabled = true;
+    spinBtn.style.display = "none";
+    resultDiv.style.display = "none";
+    angularVelocity = Math.random() * 500 + 700;
+    angularAcceleration = -angularVelocity / (Math.random() * 3 + 4);
+    let lastTime = null;
+    spinBtn.style.display = "none"
+
+    spinAnimationFrame = requestAnimationFrame(function animateSpin(time) {
+      if (!lastTime) {
+        lastTime = time;
+        spinAnimationFrame = requestAnimationFrame(animateSpin);
+        return;
+      }
+      const deltaTime = (time - lastTime) / 1000;
+      lastTime = time;
+      angularVelocity += angularAcceleration * deltaTime;
+      if (angularVelocity <= 0) {
+        angularVelocity = 0;
+        isSpinning = false;
+        cancelAnimationFrame(spinAnimationFrame);
+        determineWinner();
+        return;
+      }
+      currentAngle += angularVelocity * deltaTime;
+      currentAngle %= 360;
+      drawRoulette();
+      spinAnimationFrame = requestAnimationFrame(animateSpin);
+    });
+  }
+
+  // Determine the winning segment
+  function determineWinner() {
+    // Calculate the angle where the pointer is pointing (0 degrees)
+    const normalizedAngle = (360 - (currentAngle % 360)) % 360;
+    let accumulatedAngle = 0;
+    let selectedSegment = null;
+
+    for (let i = 0; i < segments.length; i++) {
+      const segment = segments[i];
+      const segmentAngle = (segment.weight / totalWeight) * 360;
+      accumulatedAngle += segmentAngle;
+      if (normalizedAngle <= accumulatedAngle) {
+        selectedSegment = segment;
+        break;
+      }
+    }
+
+    // Display the associated discount code
+    const discountCode = selectedSegment.code || "DISCOUNT";
+    discountCodeInput.value = discountCode;
+    resultDiv.style.display = "flex";
+
+    // Re-enable spin button after a short delay
+    setTimeout(() => {
+      spinBtn.disabled = false;
+      spinBtn.style.display = "none";
+    }, 1000);
+  }
+
+  // Copy to Clipboard
+  copyBtn.addEventListener('click', () => {
+    discountCodeInput.select();
+    discountCodeInput.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    copyBtn.textContent = "Copied!";
+    setTimeout(() => {
+      copyBtn.textContent = "Copy";
+    }, 2000);
+  });
+</script>
+
+
+
+
+
+
+  
+  {% schema %}
+    {
+      "name": "Discount Pop Up",
+      "class": "shopify-section-breadcrumbs",
+      "settings": [
+        {
+          "type": "text",
+          "id": "segment_text_1",
+          "label": "Segment Text 1",
+          "default": "5% Discount"
+        },
+        {
+          "type": "text",
+          "id": "discount_code_1",
+          "label": "Discount Code 1",
+          "default": "DISC5"
+        },
+        {
+          "type": "text",
+          "id": "segment_text_2",
+          "label": "Segment Text 2",
+          "default": "10% Discount"
+        },
+        {
+          "type": "text",
+          "id": "discount_code_2",
+          "label": "Discount Code 2",
+          "default": "DISC10"
+        },
+        {
+          "type": "text",
+          "id": "segment_text_3",
+          "label": "Segment Text 3",
+          "default": "15% Discount"
+        },
+        {
+          "type": "text",
+          "id": "discount_code_3",
+          "label": "Discount Code 3",
+          "default": "DISC15"
+        },
+        {
+          "type": "text",
+          "id": "segment_text_4",
+          "label": "Segment Text 4",
+          "default": "50 CAD Discount"
+        },
+        {
+          "type": "text",
+          "id": "discount_code_4",
+          "label": "Discount Code 4",
+          "default": "DISC50"
+        }
+      ],
+      "presets": [
+    {
+      "name": "Discount Pop Up"
+    }
+    ] 
+    }
+
+    {% endschema %}
+    

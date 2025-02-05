@@ -1,0 +1,143 @@
+<style>
+
+    .callChatContainerOutter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        padding: 100px ;
+    }
+
+.callChatContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+.callChatContainer .actionButton{
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.callChatContainer .actionButton:hover{
+    text-decoration: underline;
+}
+
+.callChatContainer .callButton{
+    background-color: #ec4040;
+    color: #fff;
+    font-weight: 400;
+
+}
+
+.callChatContainer .callButton:hover{
+    color: #fff;
+
+}
+
+.callChatContainer .chatButton{
+    background-color: #fff;
+    color: #ec4040;
+    border: 1px solid #ec4040;
+    cursor: pointer;
+}
+  </style>
+
+
+<div class="callChatContainerOutter">
+    <h3>Have any question? We ready to help</h3>
+    <div class="callChatContainer">
+        <a href="tel:+12892362378" class="actionButton callButton">Call Us</a>
+        <span onclick="openChatwayWidget()" class="actionButton chatButton">Chat Us</span>
+    </div>
+
+</div>
+
+
+<script>
+   function openChatwayWidget() {
+    const chatwayContainer = document.querySelector(".chatway--container.has-loaded");
+    if (chatwayContainer) {
+      chatwayContainer.classList.add("widget--open");
+    } else {
+      console.error("Chatway container not found.");
+    }
+  }
+</script>
+
+
+
+
+
+
+  
+  {% schema %}
+    {
+      "name": "Call Chat Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "segment_text_1",
+          "label": "Segment Text 1",
+          "default": "5% Discount"
+        },
+        {
+          "type": "text",
+          "id": "discount_code_1",
+          "label": "Discount Code 1",
+          "default": "DISC5"
+        },
+        {
+          "type": "text",
+          "id": "segment_text_2",
+          "label": "Segment Text 2",
+          "default": "10% Discount"
+        },
+        {
+          "type": "text",
+          "id": "discount_code_2",
+          "label": "Discount Code 2",
+          "default": "DISC10"
+        },
+        {
+          "type": "text",
+          "id": "segment_text_3",
+          "label": "Segment Text 3",
+          "default": "15% Discount"
+        },
+        {
+          "type": "text",
+          "id": "discount_code_3",
+          "label": "Discount Code 3",
+          "default": "DISC15"
+        },
+        {
+          "type": "text",
+          "id": "segment_text_4",
+          "label": "Segment Text 4",
+          "default": "50 CAD Discount"
+        },
+        {
+          "type": "text",
+          "id": "discount_code_4",
+          "label": "Discount Code 4",
+          "default": "DISC50"
+        }
+      ],
+      "presets": [
+    {
+      "name": "Call Chat Button"
+    }
+    ] 
+    }
+
+    {% endschema %}
+    

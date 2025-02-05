@@ -1,0 +1,45 @@
+<!-- map-embed.liquid -->
+
+<div class="map-embed">
+  {% if section.settings.google_map_link != blank %}
+    <iframe 
+      src="{{ section.settings.google_map_link }}" 
+      width="100%" 
+      height="350" 
+      frameborder="0" 
+      style="border:0;" 
+      allowfullscreen="" 
+      aria-hidden="false" 
+      tabindex="0">
+    </iframe>
+  {% else %}
+    <p>Please add a Google Map link in the section settings.</p>
+  {% endif %}
+</div>
+
+<style>
+.map-embed iframe {
+    width: 100%;
+    height: 350px;
+  padding: 50px 0;
+}
+</style>
+
+
+{% schema %}
+{
+  "name": "Google Map Embed",
+  "settings": [
+    {
+      "type": "url",
+      "id": "google_map_link",
+      "label": "Google Maps Embed Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Google Map"
+    }
+  ]
+}
+{% endschema %}

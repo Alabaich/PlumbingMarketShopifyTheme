@@ -1,0 +1,202 @@
+<style>
+  .free-samples-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .free-samples-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .free-samples-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .free-samples-form input,
+  .free-samples-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px; /* Adjusted to make space for error messages */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .free-samples-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007acc;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .free-samples-form button:hover {
+    background-color: #005f99;
+  }
+
+  .success-message,
+  .error-message {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  .success-message {
+    color: #28a745;
+  }
+
+  .error-message {
+    color: #dc3545;
+  }
+
+  .error-message-field {
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+</style>
+
+
+<div class="free-samples-form">
+    <h1>{{ section.settings.title }}</h1>
+
+    {% form 'contact', id: 'free-samples-form', class: 'contact-form' %}
+        {% if form.posted_successfully? %}
+            <div class="success-message">Thank you! We will be in touch with you ASAP.</div>
+        {% else %}
+            {% if form.errors %}
+                <div class="error-message">
+                    {% for field in form.errors %}
+                        {{ field | capitalize }} {{ form.errors[field] }}<br>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            <div>
+                <label for="contact_name">Name:</label>
+                <input type="text" id="contact_name" name="contact[Name]" value="{{ form.contact.Name }}" required>
+                <div class="error-message-field" id="contact_name_error"></div>
+            </div>
+
+            <div>
+                <label for="contact_email">Email:</label>
+                <input type="email" id="contact_email" name="contact[email]" value="{{ form.contact.email }}" required>
+                <div class="error-message-field" id="contact_email_error"></div>
+            </div>
+
+            <div>
+                <label for="contact_phone">Phone:</label>
+                <input type="tel" id="contact_phone" name="contact[phone]" value="{{ form.contact.phone }}">
+                <div class="error-message-field" id="contact_phone_error"></div>
+            </div>
+
+            <div>
+                <label for="contact_message">Message:</label>
+                <textarea id="contact_message" name="contact[body]" required>{{ form.contact.body }}</textarea>
+                <div class="error-message-field" id="contact_message_error"></div>
+            </div>
+
+            <button type="submit">Send Request</button>
+        {% endif %}
+    {% endform %}
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("free-samples-form");
+
+        // Get the query parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productName = urlParams.get("product");
+
+        // Pre-fill the message if the product parameter exists
+        if (productName) {
+            const messageField = document.getElementById("contact_message");
+            messageField.value = `I am interested in getting a sample for ${productName}!`;
+        }
+
+        // Add form validation
+        form.addEventListener("submit", function(event) {
+            // Clear previous error messages
+            const errorMessages = document.querySelectorAll('.error-message-field');
+            errorMessages.forEach(function(el) {
+                el.textContent = '';
+            });
+
+            let isValid = true;
+
+            // Validate Name
+            const nameField = document.getElementById("contact_name");
+            const nameError = document.getElementById("contact_name_error");
+            if (nameField.value.trim() === '') {
+                nameError.textContent = "Please enter your name.";
+                isValid = false;
+            }
+
+            // Validate Email
+            const emailField = document.getElementById("contact_email");
+            const emailValue = emailField.value.trim();
+            const emailError = document.getElementById("contact_email_error");
+            if (emailValue === '') {
+                emailError.textContent = "Please enter your email.";
+                isValid = false;
+            } else {
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(emailValue)) {
+                    emailError.textContent = "Please enter a valid email address.";
+                    isValid = false;
+                }
+            }
+
+            // Validate Message
+            const messageField = document.getElementById("contact_message");
+            const messageError = document.getElementById("contact_message_error");
+            if (messageField.value.trim() === '') {
+                messageError.textContent = "Please enter a message.";
+                isValid = false;
+            }
+
+            // If the form is not valid, prevent submission
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    });
+</script>
+
+
+{% schema %}
+  {
+    "name": "Free Samples Form",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Form Title",
+        "default": "Request a Free Sample"
+      }, {
+        "type": "textarea",
+        "id": "default_message",
+        "label": "Default Message",
+        "default": "I am interested in getting a free sample."
+      }
+    ],
+    "presets": [
+      {
+        "name": "Free Samples Form"
+      }
+    ]
+  }
+{% endschema %}

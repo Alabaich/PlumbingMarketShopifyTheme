@@ -1,0 +1,200 @@
+<style>
+
+.popup-wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease, background-color 0.5s ease;
+}
+
+.popup-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-container {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.popup-wrapper.active .popup-container {
+  transform: scale(1);
+}
+
+ .popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+ .popup-container header h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+ .popup-subtitle {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555;
+}
+ button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ button:hover {
+  background-color: #0056b3;
+}
+
+.popup-wrapper{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+    display: none;
+}
+
+.popup-wrapper form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.popup-wrapper form label{
+    display: none;
+}
+
+.popup-wrapper form input{
+    width:300px;
+    max-width: 100%;
+}
+
+.closeButton{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    font-size: 24px;
+}
+
+.closeButton span{
+    cursor: pointer;
+}
+
+.popup-wrapper form button{
+    margin: 0;
+}
+</style>
+
+    <div class=" popup-wrapper" data-popup-delay="3000">
+        
+        <div class="popup-overlay"></div>
+        <div class="popup-container">
+            <div class="closeButton">
+                <span onclick="closePopUp();">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                    <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
+                    </svg>
+                </span>
+
+            </div>
+          <header>
+            <h2>{{ section.settings.popup_title }}</h2>
+          </header>
+          <p class="popup-subtitle">{{ section.settings.popup_subtitle }}</p>
+          {%- form 'customer'
+            , id: 'newsletter-popup-form' -%}
+            <p>
+              <label for="contact[email]">Email Address</label>
+              <input
+                type="email"
+                name="contact[email]"
+                id="contact-email"
+                placeholder="Enter your email"
+                required>
+            </p>
+            <p>
+              <button type="submit">Subscribe</button>
+            </p>
+          {%- endform -%}
+        </div>
+      </div>
+
+
+
+
+<script>
+
+const popupWrapper = document.querySelector('.popup-wrapper');
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Check if the popup has already been shown this session
+  const isPopupShown = sessionStorage.getItem('isPopupShown');
+
+  if (!isPopupShown) {
+    // Show popup after 3 seconds if not already shown
+    setTimeout(() => {
+      popupWrapper.classList.add('active');
+      sessionStorage.setItem('isPopupShown', 'true'); // Mark as shown
+    }, 5000);
+  }
+});
+
+let closePopUp = () => {
+  popupWrapper.classList.remove('active');
+}
+</script>
+
+
+{% schema %}
+  {
+    "name": "Newsletter Popup",
+    "settings": [
+      {
+        "type": "text",
+        "id": "popup_title",
+        "label": "Popup Title",
+        "default": "Subscribe to our Newsletter"
+      },
+      {
+        "type": "textarea",
+        "id": "popup_subtitle",
+        "label": "Popup Subtitle",
+        "default": "Get the latest updates and exclusive offers straight to your inbox."
+      }
+    ],
+    "presets": [
+      {
+        "name": "Newsletter Popup",
+        "category": "Popups"
+      }
+    ]
+  }
+{% endschema %}
