@@ -125,7 +125,8 @@ span.has-dropdown-link {
 .main-nav ul.more-than-five {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 5px;
+  grid-column-gap: 025px;
 }
 .dropdown-sub li {
   margin: 0;
@@ -155,10 +156,13 @@ span.has-dropdown-link {
 }
 
 /* Icons styling */
-.icons a {
-  margin-left: 15px;
-  text-decoration: none;
+
+.header-container .icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
+
 .icons svg {
   width: 24px;
   height: 24px;
@@ -230,7 +234,7 @@ span.has-dropdown-link {
 
 
 @media screen and (max-width: 600px) {
-    .dropdown-sub {
+    .dropdown-sub, .main-nav {
   display: none;
 }
 
@@ -243,7 +247,106 @@ span.has-dropdown-link {
 .dropdown-sub {
   transition: all 0.3s ease;
 }
+
+#root .search-active #search {
+  top: 0;
+    }
+
+    .search-container{
+      padding: 0;
+    }
 }
+
+
+@media screen and (max-width: 600px) {
+ /* Burger Icon (using spans for lines) */
+ .burger-menu {
+  margin-top: 7px;
+  margin-left: 7px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .burger-menu span {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #2C2D2C;
+    transition: all 0.3s ease;
+  }
+  .burger-menu span:nth-child(1) { top: 4px; }
+  .burger-menu span:nth-child(2) { top: 11px; }
+  .burger-menu span:nth-child(3) { bottom: 4px; }
+  .burger-menu.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .burger-menu.active span:nth-child(2) { opacity: 0; }
+  .burger-menu.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+  
+
+
+.mobile-menu {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: #fff;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    padding: 20px 15px;
+  }
+  .mobile-menu.active { left: 0; }
+
+  /* Mobile Menu Items */
+  .mobile-menu__item {
+    position: relative;
+    border-bottom: 1px solid #eee;
+  }
+  .mobile-menu__link {
+    display: block;
+    padding: 15px 0;
+    color: #2C2D2C;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  /* Toggle for accordion submenu (using span) */
+  .mobile-menu__toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .mobile-menu__toggle svg {
+    transition: transform 0.3s ease;
+  }
+  .mobile-menu__toggle.active svg {
+    transform: rotate(180deg);
+  }
+
+  /* Submenu Items */
+  .mobile-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 15px;
+  }
+  .mobile-submenu.active {
+    max-height: 1000px;
+  }
+
+ .header-container  .logo{
+  max-width: 200px;
+  }
+
+  .header-container .accountIconHeader{
+    display: none;
+  }
+
+
+  }
 
 </style>
 
@@ -266,6 +369,8 @@ span.has-dropdown-link {
 
 <div class="header-container" id="header-container">
   <header id="section-{{ section.id }}" role="banner" class="headerWebsiteNew">
+
+
     <!-- Logo -->
     <div class="logo">
       <a href="{{ routes.root_url }}">
@@ -345,7 +450,7 @@ span.has-dropdown-link {
         </svg>
       </a>
       <!-- Account Icon -->
-      <a href="{% if customer %}/account{% else %}/account/login{% endif %}" aria-label="Account">
+      <a href="{% if customer %}/account{% else %}/account/login{% endif %}" aria-label="Account" class="accountIconHeader">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
           <path d="M16.125 9.25C15.941 11.728 14.062 13.75 12 13.75C9.93798 13.75 8.05598 11.729 7.87498 9.25C7.68798 6.672 9.51498 4.75 12 4.75C14.484 4.75 16.313 6.719 16.125 9.25Z"
                 stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
@@ -364,10 +469,64 @@ span.has-dropdown-link {
         {%- endif -%}
       </a>
 
-
+      <span class="burger-menu" role="button" tabindex="0" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
     </div>
   </header>
+
+  <nav class="mobile-menu" aria-label="Mobile Navigation">
+    {%- assign main_menu = linklists[section.settings.navigation_menu] -%}
+    <ul>
+      {%- for link in main_menu.links -%}
+        <li class="mobile-menu__item">
+          <div class="mobile-menu__link-wrapper">
+            <a href="{{ link.url }}" class="mobile-menu__link">{{ link.title }}</a>
+            {%- if link.links != blank -%}
+              <span class="mobile-menu__toggle" role="button" tabindex="0" aria-label="Toggle submenu">
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                  <path d="M1 1L5 5L9 1" stroke="#2C2D2C" stroke-linecap="round"/>
+                </svg>
+              </span>
+            {%- endif -%}
+          </div>
+          {%- if link.links != blank -%}
+            <ul class="mobile-submenu">
+              {%- for child_link in link.links -%}
+                <li class="mobile-menu__item">
+                  <div class="mobile-menu__link-wrapper">
+                    <a href="{{ child_link.url }}" class="mobile-menu__link">{{ child_link.title }}</a>
+                    {%- if child_link.links != blank -%}
+                      <span class="mobile-menu__toggle" role="button" tabindex="0" aria-label="Toggle submenu">
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                          <path d="M1 1L5 5L9 1" stroke="#2C2D2C" stroke-linecap="round"/>
+                        </svg>
+                      </span>
+                    {%- endif -%}
+                  </div>
+                  {%- if child_link.links != blank -%}
+                    <ul class="mobile-submenu">
+                      {%- for grandchild_link in child_link.links -%}
+                        <li class="mobile-menu__item">
+                          <a href="{{ grandchild_link.url }}" class="mobile-menu__link">{{ grandchild_link.title }}</a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+  
 </div>
+
+
 
 <script>
   // Get references to the elements
@@ -393,9 +552,8 @@ span.has-dropdown-link {
       headerContainer.classList.remove('search-active');
     }
   });
-</script>
 
-<script>
+  
   document.querySelectorAll('.parentChild').forEach(function(link) {
     link.addEventListener('click', function(e) {
       // Find the parent <li> of this link
@@ -407,6 +565,80 @@ span.has-dropdown-link {
       }
     });
   });
+
+
+  
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+  /* --- Burger Menu Toggle --- */
+  const burgerMenu = document.querySelector('.burger-menu');
+  const mobileMenu  = document.querySelector('.mobile-menu');
+  
+  burgerMenu.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
+  burgerMenu.addEventListener('keydown', function(e) {
+    if(e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      this.click();
+    }
+  });
+  
+  /* --- Accordion Functionality for Submenus --- */
+  document.querySelectorAll('.mobile-menu__toggle').forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const parentItem = this.closest('.mobile-menu__item');
+      const submenu = parentItem.querySelector('.mobile-submenu');
+      const isOpen = submenu.classList.contains('active');
+      
+      if (isOpen) {
+        submenu.classList.remove('active');
+        this.classList.remove('active');
+      } else {
+        submenu.classList.add('active');
+        this.classList.add('active');
+      }
+    });
+    toggle.addEventListener('keydown', function(e) {
+      if(e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        this.click();
+      }
+    });
+  });
+  
+
+  // Close search when clicking outside the header container
+  document.addEventListener('click', function(e) {
+    if (!headerContainer.contains(e.target)) {
+      headerContainer.classList.remove('search-active');
+    }
+  });
+  
+  // Close search on ESC key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      burgerMenu.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      headerContainer.classList.remove('search-active');
+    }
+  });
+  
+  /* --- Existing parent functionality for dropdown toggling --- */
+  document.querySelectorAll('.parentChild').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var parentLi = this.parentElement;
+      if (parentLi.querySelector('.dropdown-sub')) {
+        e.preventDefault();
+        parentLi.classList.toggle('expanded');
+      }
+    });
+  });
+});
+
 </script>
 
 
