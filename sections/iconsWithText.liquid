@@ -1,0 +1,158 @@
+{%- comment -%}
+  Feature Blocks Section
+  - Displays up to 4 blocks
+  - Each block contains an icon, title, and subtitle
+{%- endcomment -%}
+
+<style>
+  .feature-blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 30px 0;
+  }
+  
+  .feature-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+  }
+
+  .feature-blocks .feature-block .feature-block__icon img {
+
+
+    height: 40px !important;
+    max-width: 60px !important;
+    object-fit: contain;
+  }
+
+  .feature-block__content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feature-block__title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #2c2d2c;
+  }
+  
+  .feature-block__subtitle {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .feature-blocks .divider {
+    height: 40px;
+    width: 1px;
+    background: #ccc;
+  }
+
+  @media (max-width: 768px) {
+    .feature-blocks {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    .feature-block {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .feature-blocks .divider {
+      display: none;
+    }
+  }
+</style>
+
+<div class="feature-blocks">
+  {%- for block in section.blocks -%}
+    <div class="feature-block">
+      <div class="feature-block__icon">
+        {%- if block.settings.icon != blank -%}
+          <img src="{{ block.settings.icon | img_url: '40x40' }}" alt="{{ block.settings.title }}">
+        {%- endif -%}
+      </div>
+      <div class="feature-block__content">
+        <div class="feature-block__title">{{ block.settings.title }}</div>
+        <div class="feature-block__subtitle">{{ block.settings.subtitle }}</div>
+      </div>
+    </div>
+    {%- unless forloop.last -%}
+      <div class="divider"></div>
+    {%- endunless -%}
+  {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "Feature Blocks",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Block",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "Feature subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature Blocks",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Free Delivery",
+            "subtitle": "Across GTA"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Easy Returns",
+            "subtitle": "30 Days Conditional"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Friendly Support",
+            "subtitle": "Ready To Help"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "title": "Sign Up for 5% Off",
+            "subtitle": "On Your First Order"
+          }
+        }
+      ]
+    }
+    
+  ]
+  
+}
+{% endschema %}

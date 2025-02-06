@@ -1,0 +1,157 @@
+{% comment %}
+  @prettify-ignore
+{% endcomment %}
+
+<style>
+    .firstSectionContainer .splide__pagination {
+        display: none;
+    }
+
+    .fullWidthSliderContainer{
+
+        max-height: 50vh;
+        height: 600px;
+    }
+
+    
+
+
+    .fullWidthSliderContainer .sliderContainer,
+    .fullWidthSliderContainer .sliderContainer,
+    .fullWidthSliderContainer .sliderContainer section.splide,
+    .fullWidthSliderContainer .sliderContainer .splide__track{
+        max-height: 100%;
+        height: 600px;
+        width: 100%;
+    }
+
+    .splide__slide,
+    .splide__slide .sliderItem,
+    .splide__slide .sliderItem .sliderInner,
+    .splide__slide .sliderItem .sliderInner .slideImg,
+    .splide__slide .sliderItem .sliderInner .slideImg img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .splide__slide .sliderItem .sliderInner .slideImg img{
+        height: 100% !important;
+    }
+    .splide__slide .sliderItem .sliderInner .slideImg{
+        display: block;
+    }
+
+    .fullWidthSliderContainer .sliderContainer section.splide .splide__arrow{
+        background: rgba(0, 0, 0, 0.1) !important;
+    height: 30px !important;
+    width: 30px !important;
+    min-height: 25px;
+    min-width: 25px;
+    padding: 5px;
+    }
+
+    .fullWidthSliderContainer .sliderContainer section.splide .splide__arrow svg{
+        fill: #fff;
+    }
+
+    .fullWidthSliderContainer .sliderContainer section.splide .splide__arrow::before,
+    .fullWidthSliderContainer .sliderContainer section.splide .splide__arrow::after {
+   content: none !important;
+}
+
+.fullWidthSliderContainer .sliderContainer section.splide .splide__pagination{
+    display: none;
+}
+</style>
+
+<div class="fullWidthSliderContainer">
+  <div class="sliderContainer">
+    <section
+      class="splide"
+      aria-label="..."
+      id="{{section.id}}">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for block in section.blocks %}
+            <li class="splide__slide realOne">
+              <div class="sliderItem">
+                <div class="sliderInner">
+                  <a href="{{ block.settings.button_link }}" class="slideImg">
+                    <img
+                      src="{{ block.settings.image | img_url: '300x300' }}" 
+                      srcset="
+                        {{ block.settings.image | img_url: '300x300' }} 700w,
+                        {{ block.settings.image | img_url: '700x700' }} 1000w,
+                        {{ block.settings.image | img_url: '1300x1300' }} 1600w"
+                        alt="{{ block.settings.image.alt }}"
+                        {% if block.settings.first == false %}
+                        loading="lazy"
+                        {% endif %}
+
+                    />
+                  </a>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>
+{% comment %} <h2 style="text-align: center; width: 100%; padding: 0 25px;">Renoz - Everything for your renovation</h2> {% endcomment %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    new Splide('#{{section.id}}', {
+      type: 'loop',
+      perPage: 1,
+      autoplay: true,
+
+      speed: 1000
+    }).mount();
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Full Width Slider",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+
+    ],
+    "blocks": [
+      {
+        "type": "page",
+        "name": "Custom page slide",
+        "settings": [
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Just add link"
+          }, {
+            "label": "Choose image to show in slider",
+            "id": "image",
+            "type": "image_picker"
+          }, {
+            "type": "checkbox",
+            "id": "first",
+            "label": "Is it first slide?",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Full Width Slider",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
