@@ -1,0 +1,263 @@
+.bestSellers {
+    position: relative;
+    width: 100%;
+    padding: 50px 25px;
+    background: linear-gradient(270deg, #2C2D2C 0%, rgba(44, 45, 44, 0.80) 100%);
+    overflow: visible;
+    flex-direction: column;
+    gap: 50px;
+    height: 700px;
+}
+
+
+
+.bestSellers,
+.bestSellersInnerContainer,
+.bestSellersTitlesInner,
+.bestSellersTitles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestSellers * {
+    margin: 0;
+}
+
+.bestSellers h1,
+.bestSellers p,
+.bestSellers h2,
+.bestSellers h6 {
+    color: var(--white);
+}
+
+.bestSellers h1 {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.bestSellers h6 {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bestSellers h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.bestSellers .bodyMedium {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bestSellers .buttonBestSellers {
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--White, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.bestSellersTitles {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bestSellersInnerContainer {
+    width: 100%;
+    gap: 50px;
+}
+
+.bestSellersTitlesInner {
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bestSellersContainer {
+    max-width: 70%;
+}
+
+.bestSellers .splide__pagination {
+    display: none;
+}
+
+.bestSellers .splide__arrow {
+    padding: 10px;
+    background: rgba(44, 45, 44, 0.50);
+    height: 4em;
+    width: 4em;
+}
+
+
+
+.bestSellers section.splide .splide__arrow::before,
+.bestSellers section.splide .splide__arrow::after {
+    content: none !important;
+}
+
+.bestSellers section.splide .splide__arrow {
+    background: rgba(0, 0, 0, 0.1) !important;
+    height: 30px !important;
+    width: 30px !important;
+    min-height: 25px;
+    min-width: 25px;
+    padding: 5px;
+    margin: 0;
+}
+
+.bestSellers section.splide .splide__arrow svg {
+    fill: #fff;
+}
+
+
+
+
+.bestSellers .splide__arrow svg {
+    fill: #fff;
+    height: 4em;
+    width: 4em;
+}
+
+.priceAndRating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bestSellerCard,
+.slideBestSeller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 320px;
+    height: 100%;
+    text-decoration: none !important;
+}
+
+.bestSellerCard .imageContainer {
+    background: rgba( 80, 80, 80, 10);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestSellersTitlesInner .button {
+    border: 1px solid var(--white);
+    color: var(--white);
+    transition: all linear 250ms;
+}
+
+.bestSellersTitlesInner .button:hover {
+    background: var(--white);
+    color: var(--blackRegular);
+}
+
+.bestSellerCard .imageContainer img {
+    border-radius: 5px;
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: all linear 250ms;
+}
+
+.bestSellerCard:hover .imageContainer img{
+    transform: scale(1.05);
+}
+
+.bestSellerCard .bodyLarge{
+    color: var(--White, #FFF);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.bestSellerCard .informationContainer {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.priceAndRating {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bestSellerCard .theActualPrice{
+    color: var(--White, #FFF);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.bestSellerCard .price span {
+    color: var(--white);
+}
+
+.thePriceContainerForProductContainer{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.bestSellers .bestSellerCard .thePriceContainerForProductContainer .thePreviousPrice,
+.bestSellers .bestSellerCard .thePriceContainerForProductContainer .theActualPrice {
+    color: var(--white);
+}
+
+.bestSellerCard .informationContainer .thePreviousPrice {
+    text-decoration: line-through;
+}
+
+@media screen and (min-width: 1600px) {
+    .bestSellers {
+        padding: 50px 25px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .bestSellers {
+        padding: 30px 15px;
+    }
+
+    .bestSellersTitlesInner {
+        display: none;
+    }
+
+    .bestSellersContainer,
+    .bestSellersContainer {
+        width: 100%;
+        max-width: 100%;
+    }
+}

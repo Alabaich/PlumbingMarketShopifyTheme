@@ -1,0 +1,138 @@
+{%- comment -%}
+  Popular Categories Section
+  - Displays up to 12 category items
+  - Each item contains an image, title, and link
+{%- endcomment -%}
+
+<style>
+  .popular-categories {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .popular-categories__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c2d2c;
+  }
+
+  .popular-categories__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .popular-category {
+    width: 100%;
+    text-align: center;
+  }
+
+  .popular-category a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .popular-category a img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.popular-category a:hover img {
+    transform: scale(1.1);
+  }
+
+  .popular-category__title {
+    font-size: 14px;
+    color: #2c2d2c;
+    margin-top: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .popular-categories__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+  }
+</style>
+
+<div class="popular-categories">
+  <div class="popular-categories__title">Popular Categories:</div>
+  <div class="popular-categories__grid">
+    {%- for block in section.blocks -%}
+      <div class="popular-category">
+        <a href="{{ block.settings.link }}">
+          <img src="{{ block.settings.image | img_url: '300x300' }}" alt="{{ block.settings.title }}">
+          <div class="popular-category__title">{{ block.settings.title }}</div>
+        </a>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Popular Categories",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category Item",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Category Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Category Title",
+          "default": "Category Name"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Category Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Popular Categories",
+      "blocks": [
+        {
+          "type": "category",
+          "settings": {
+            "title": "Vanities",
+            "link": "#"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "Bathroom Faucets",
+            "link": "#"
+          }
+        },
+        {
+          "type": "category",
+          "settings": {
+            "title": "Toilets",
+            "link": "#"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

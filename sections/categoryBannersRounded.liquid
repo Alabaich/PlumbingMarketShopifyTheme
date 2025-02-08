@@ -1,0 +1,115 @@
+{%- comment -%}
+  Category Banner Section
+  - Displays up to 3 category banners
+  - Each banner contains an image and text below it
+{%- endcomment -%}
+
+<style>
+  .category-banners {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .category-banner {
+    width: 100%;
+    text-decoration: none;
+  }
+  
+  .category-banner img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 49 / 20;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .category-banner:hover img {
+    transform: scale(1.03);
+  }
+
+  .category-banner__text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2c2d2c;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .category-banners {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+</style>
+
+<div class="category-banners">
+  {%- for block in section.blocks -%}
+    <a href="{{ block.settings.link }}" class="category-banner">
+      <img src="{{ block.settings.image | img_url: '600x400' }}" alt="{{ block.settings.title }}">
+      <div class="category-banner__text">{{ block.settings.text }}</div>
+    </a>
+  {%- endfor -%}
+</div>
+{% schema %}
+    {
+      "name": "Category Banners",
+      "settings": [],
+      "blocks": [
+        {
+          "type": "category",
+          "name": "Category Banner",
+          "limit": 3,
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "text",
+              "label": "Text Under Image",
+              "default": "*Full Collection of Products"
+            },
+            {
+              "type": "url",
+              "id": "link",
+              "label": "Link"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Category Banners",
+          "blocks": [
+            {
+              "type": "category",
+              "settings": {
+                "text": "*Full Collection of Bathroom Supplies",
+                "link": "#"
+              }
+            },
+            {
+              "type": "category",
+              "settings": {
+                "text": "*Full Collection of Kitchen Supplies",
+                "link": "#"
+              }
+            },
+            {
+              "type": "category",
+              "settings": {
+                "text": "*Selected Products With Amazing Discounts For You Save",
+                "link": "#"
+              }
+            }
+          ]
+        }
+      ]
+    }
+    {% endschema %}

@@ -81,7 +81,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			<main id="content">
 				{{ content_for_layout }}
-				{%- sections 'footer-group' -%}
+				
+				{% if settings.footer_version == 'footer-two' %}
+					{% section 'footer-two' %}
+				  {% else %}
+				  	{%- sections 'footer-group' -%}
+				  {% endif %}
 			</main>
 			{%- liquid
 				if template.name == 'product'

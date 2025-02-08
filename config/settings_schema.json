@@ -24,10 +24,25 @@
             "label": "Header Two"
           }
         ],
-        "default": "header_one"
+        "default": "header"
       }
     ]
   },  
+  {
+    "name": "Footer Settings",
+    "settings": [
+      {
+        "type": "select",
+        "id": "footer_version",
+        "label": "Footer Version",
+        "options": [
+          { "value": "default", "label": "Default Footer" },
+          { "value": "footer-two", "label": "Footer Two" }
+        ],
+        "default": "default"
+      }
+    ]
+  },
   {
     "name": "t:settings_schema.accessibility.name",
     "settings": [

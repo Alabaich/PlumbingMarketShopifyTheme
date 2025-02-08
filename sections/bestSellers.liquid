@@ -1,0 +1,225 @@
+{{ 'bestSellers.css' | asset_url | stylesheet_tag }}
+
+{{ 'component-rating.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .theActualPrice {
+    font-size: 1.5em;
+  }
+
+  .bestSellers .costPerFtInBox {
+    font-size: 1.6rem;
+  }
+
+  .bestSellers .price--on-sale .sqFtCurrent,
+  .bestSellers .price-item--last .money,
+  .bestSellers .price-item--sale .sqFtInBoxSpec {
+    color: white;
+  }
+</style>
+
+<div class="bestSellers">
+
+        <div class="bestSellersTitles">
+            <h1>{{ section.settings.tileOne }}</h1>
+            <h6>{{ section.settings.textOne }}</h6>
+          </div>
+          <div class="bestSellersInnerContainer">
+            <div class="bestSellersTitlesInner">
+                <h2>{{ section.settings.titleSmall }}</h2>
+                <p class="bodyMedium">{{ section.settings.textTwo }}</p>
+                <a href="{{ section.settings.linkOnButton }}" class="buttonBestSellers bodySmallLight">
+                  {{- section.settings.textOnButton -}}
+                </a>
+              </div>
+            <div class="bestSellersContainer">
+              <section
+                class="splide"
+                aria-label="..."
+                id="{{section.id}}"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    {% for product in section.settings.bestCollection.products limit: 10 %}
+                      <li class="bestSellerCard splide__slide realOne {% if product.variants.first.metafields.custom.sq_ft_for_flooring %}cardsqft{% endif %}">
+                        <a href="{{ product.url }}" class="slideBestSeller">
+                          <div class="imageContainer">
+                            <img
+                              src="{{ product.featured_media | image_url: width: 400 }}"
+                              alt="{{ product.featured_media.alt | escape }}"
+                              class="lazyload"
+                              loading="lazy"
+                              height="300px"
+                              width="300px"
+                            >
+                          </div>
+                          <div class="informationContainer">
+                            <p class="bodyLarge">{{ product.title | truncatewords: 6 }}</p>
+                            <p class="labelLight">{{ product.vendor }}</p>
+                            <div class="priceAndRating">
+                              {% if product.variants.first.metafields.custom.sq_ft_for_flooring %}
+                                <div class="thePriceContainerForProductContainer">
+                                  <span class="sqftcus" style="display:none;">
+                                    {{- product.variants.first.metafields.custom.sq_ft_for_flooring -}}
+                                  </span>
+                                  {% render 'price-flooring-variants', product: product, price_class: '' %}
+                                </div>
+                              {% elsif product.compare_at_price > product.price and product.available %}
+                                <div class="thePriceContainerForProductContainer">
+                                  <p class="theActualPrice bodyMedium">
+                                    {{ product.price | money }}
+                                  </p>
+                                  <p class="thePreviousPrice labelMedium">
+                                    {{ product.compare_at_price | money }}
+                                  </p>
+                                </div>
+                              {% else %}
+                                <div class="thePriceContainerForProductContainer">
+                                  <p class="theActualPrice bodyMedium">
+                                    {{ product.price | money }}
+                                  </p>
+                                </div>
+                              {% endif %}
+                              <div class="rating">
+                                {% liquid
+                                  assign rating_decimal = 0
+                                  assign decimal = product.metafields.reviews.rating.value.rating | modulo: 1
+                                  if decimal >= 0.3 and decimal <= 0.7
+                                    assign rating_decimal = 0.5
+                                  elsif decimal > 0.7
+                                    assign rating_decimal = 1
+                                  endif
+                                %}
+                                <div
+                                  class="rating"
+                                  role="img"
+                                  aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}"
+                                >
+                                  <span
+                                    aria-hidden="true"
+                                    class="rating-star"
+                                    style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }}; color: yellow"
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </section>
+            </div>
+        
+          </div>
+
+
+</div>
+
+<script>
+  function newPricePer() {
+    let listOfCards = document.querySelectorAll('.cardsqft');
+
+    listOfCards.forEach(function (arrayItem) {
+      let sqFtOld = arrayItem.querySelector('.sqFtPrevious');
+      // Current SqFt in Box
+      let sqFtCurrent = arrayItem.querySelector('.sqftcus').innerHTML;
+      // Current variant price
+      let price = arrayItem.querySelector('.priceNumberHiddenCard').innerHTML / 100;
+      let priceOld = arrayItem.querySelector('.pricePreviousHidden').innerHTML / 100;
+      // Price per SqFt
+      let pricePerSqFtNotFixed = price / sqFtCurrent;
+      let pricePerSqFtOldNotFixed = priceOld / sqFtCurrent;
+
+      let toHideWithoutSale = arrayItem.querySelector('.costPerFtInBoxOld');
+      if (pricePerSqFtOldNotFixed == 0) {
+        toHideWithoutSale.style.display = 'none';
+      }
+
+      let pricePerSqFt = pricePerSqFtNotFixed.toFixed(2);
+      let pricePerSqFtOld = pricePerSqFtOldNotFixed.toFixed(2);
+
+      sqFtCurrent.innerHTML = '$' + pricePerSqFt;
+      sqFtOld.innerHTML = '$' + pricePerSqFtOld;
+      let sqFtInBox = arrayItem.querySelector('.sqFtCurrent');
+      sqFtInBox.innerHTML = pricePerSqFt;
+      let sqFtInBoxSpec = arrayItem.querySelector('.sqFtInBoxSpec');
+      sqFtInBoxSpec.innerHTML = sqFtCurrent;
+    });
+  }
+  newPricePer();
+
+  document.addEventListener('DOMContentLoaded', function () {
+    newPricePer();
+  });
+
+  let newPriceWhenLoaded = () => {
+    document.addEventListener('DOMContentLoaded', function () {
+      newPricePer();
+    });
+  };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#{{section.id}}', {
+      autoWidth: true,
+      focus: 0,
+      omitEnd: true,
+      gap: 30,
+    }).mount();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Best Sellers",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "tileOne",
+      "label": "Add big title for the section"
+    },
+    {
+      "type": "text",
+      "id": "textOne",
+      "label": "Add text on the top for the section"
+    },
+    {
+      "type": "text",
+      "id": "titleSmall",
+      "label": "Add title on the left for the section"
+    },
+    {
+      "type": "text",
+      "id": "textTwo",
+      "label": "Add text on the left for the section"
+    },
+    {
+      "type": "text",
+      "id": "textOnButton",
+      "label": "Add text on Button"
+    },
+    {
+      "type": "url",
+      "id": "linkOnButton",
+      "label": "Add link for Button"
+    },
+    {
+      "type": "collection",
+      "id": "bestCollection",
+      "label": "Collection for slider"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Best Sellers",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

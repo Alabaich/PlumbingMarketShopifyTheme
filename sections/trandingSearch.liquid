@@ -1,0 +1,145 @@
+{%- comment -%}
+  Trending Search Section
+  - Displays up to 12 trending search items
+  - Each item contains a link, text, and an optional fire emoji (🔥)
+{%- endcomment -%}
+
+<style>
+  .trending-search {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .trending-search__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c2d2c;
+  }
+
+  .trending-search__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .trending-search__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FBFAF8;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c2d2c;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    white-space: nowrap;
+  }
+
+  .trending-search__item:hover {
+    background: #f2f2f2;
+  }
+
+  @media (max-width: 1024px) {
+    .trending-search__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .trending-search__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .trending-search__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+</style>
+
+<div class="trending-search">
+  <div class="trending-search__title">Trending Search:</div>
+  <div class="trending-search__grid">
+    {%- for block in section.blocks -%}
+      <a href="{{ block.settings.link }}" class="trending-search__item">
+        {%- if block.settings.show_fire -%}🔥 {% endif %}{{ block.settings.text }}
+      </a>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Trending Search",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "search_item",
+      "name": "Search Item",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Search Term",
+          "default": "Trending Item"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Search Link"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_fire",
+          "label": "Show Fire Emoji (🔥)",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trending Search",
+      "blocks": [
+        {
+          "type": "search_item",
+          "settings": {
+            "text": "Bathtub",
+            "link": "#",
+            "show_fire": true
+          }
+        },
+        {
+          "type": "search_item",
+          "settings": {
+            "text": "Toilets",
+            "link": "#",
+            "show_fire": true
+          }
+        },
+        {
+          "type": "search_item",
+          "settings": {
+            "text": "Faucet",
+            "link": "#"
+          }
+        },
+        {
+          "type": "search_item",
+          "settings": {
+            "text": "Mirrors",
+            "link": "#"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

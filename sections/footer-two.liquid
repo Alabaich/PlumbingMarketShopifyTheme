@@ -1,0 +1,422 @@
+<style>
+  .footer-two {
+    color: #2C2D2C;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-two a {}
+
+.footer-two .newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #FBFAF8;
+  border-radius: 10px;
+}
+
+.footer-two h2 {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer-two .left p {
+  color: #747474;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.footer-two .newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer-two .newsletter input {
+  border-radius: 10px;
+  border: 1px solid #747474;
+  background: #FFF;
+  width: 300px;
+}
+
+.footer-two .newsletter form button::before,
+.footer-two .newsletter form button::after {
+  content: none !important;
+}
+
+.footer-two .newsletter small {
+  color: #747474;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.footer-two .newsletter small a {
+  color: #747474;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+}
+
+
+.footer-two .newsletter button {
+  border-radius: 10px;
+  background: #2C2D2C !important;
+  margin: 0 !important;
+}
+
+.footer-two .footer-bottom {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-two .footer-left {
+  max-width: 400px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.footer-two .footer-right {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.footer-two .footer-left .top,
+.footer-two .footer-left .bott {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.footer-two .footer-left .bott a {
+  color: #2c2d2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-two .footer-bottom p {
+  margin: 0;
+}
+
+
+.footer-two .footer-bottom .footerSubtitle {
+  color: #747474;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.footer-two .footer-bottom .footerDescription {
+  color: #2C2D2C;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.footer-two .footer-menus {
+  display: flex;
+  gap: 75px;
+
+}
+
+.footer-two .menu-block {
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.footer-two .menu-block ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 5px;
+  flex-direction: column;
+}
+.footer-two .menu-block ul li a {
+  color: #2C2D2C;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration-line: none;
+}
+
+.footer-two .menu-block h3 {
+  color: #2C2D2C;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.footer-two .followUs {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-two .menu-block ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-meta {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-two .footer-meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-two .footer-meta ul {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+list-style: none;
+}
+
+.footer-two .footer-meta ul a {
+color: #2C2D2C;
+}
+
+</style>
+
+
+<footer class="footer-two">
+  <div class="footer-top">
+    <div class="newsletter">
+      <div class="left">
+        <h2>Join 2,000+ Subscribers</h2>
+        <p>And Get 5% Discount On Your First Order</p>
+      </div>
+      <div class="right">
+        <form>
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <small>We Care About Your Data In Our
+          <a href="/policies/privacy-policy">Privacy Policy</a>
+        </small>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-left">
+      <div class="top">
+        <div class="logo">
+          <a href="{{ routes.root_url }}">
+            {%- if section.settings.logo != blank -%}
+              {% assign logo_size = section.settings.logo_max_width | append: "x" %}
+              <img src="{{ section.settings.logo | img_url: logo_size }}" alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+            {%- else -%}
+              <span>{{ shop.name }}</span>
+            {%- endif -%}
+          </a>
+        </div>
+        <p class="footerSubtitle">Your Trusted Partner In Plumbing Solutions</p>
+        <p class="footerDescription">At PlumbingMarket.Ca, We’re Revolutionizing The Way Canadians Access Plumbing Products And Services.</p>
+      </div>
+      <div class="bott">
+        <a href="tel:+12892362378">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none">
+            <path
+              d="M19.506 7.96C18.7925 10.7425 17.3445 13.2821 15.3133 15.3133C13.2821 17.3445 10.7425 18.7925 7.96 19.506C5.819 20.051 4 18.21 4 16V15C4 14.448 4.449 14.005 4.998 13.95C5.9084 13.8595 6.80207 13.6445 7.654 13.311L9.174 14.831C11.6489 13.6446 13.6446 11.6489 14.831 9.174L13.311 7.654C13.6448 6.80211 13.8602 5.90844 13.951 4.998C14.005 4.448 14.448 4 15 4H16C18.21 4 20.051 5.819 19.506 7.96Z"
+              stroke="#2C2D2C"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          +1-289-236-2378</a>
+
+        <a href="mailto:sales@plumbingmarket.ca">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none">
+            <path d="M5 5H18C18.7956 5 19.5587 5.31607 20.1213 5.87868C20.6839 6.44129 21 7.20435 21 8V17C21 17.7956 20.6839 18.5587 20.1213 19.1213C19.5587 19.6839 18.7956 20 18 20H5C4.20435 20 3.44129 19.6839 2.87868 19.1213C2.31607 18.5587 2 17.7956 2 17V8C2 7.20435 2.31607 6.44129 2.87868 5.87868C3.44129 5.31607 4.20435 5 5 5ZM5 6C4.5 6 4.06 6.17 3.72 6.47L11.5 11.5L19.28 6.47C18.94 6.17 18.5 6 18 6H5ZM11.5 12.71L3.13 7.28C3.05 7.5 3 7.75 3 8V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V8C20 7.75 19.95 7.5 19.87 7.28L11.5 12.71Z" fill="#2C2D2C" />
+          </svg>
+          sales@plumbingmarket.ca</a>
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.7585 5.7675C8.31402 5.20777 8.97477 4.76344 9.70271 4.4601C10.4306 4.15675 11.2114 4.00039 12 4C13.59 4 15.116 4.635 16.2415 5.7675C17.3685 6.9032 18.0006 8.43851 18 10.0385C18 12.8015 16.468 15.3025 14.872 17.149C14.1995 17.9234 13.4703 18.6467 12.6905 19.313C12.465 19.5063 12.2348 19.6941 12 19.876C11.7653 19.6939 11.5351 19.5062 11.3095 19.313C10.5297 18.6467 9.80055 17.9234 9.128 17.149C7.532 15.3025 6 12.8015 6 10.0385C6 8.436 6.633 6.9 7.7585 5.7675ZM11.712 20.9085L12 20.5L12.288 20.9085C12.2037 20.9679 12.1031 20.9998 12 20.9998C11.8969 20.9998 11.7963 20.9679 11.712 20.9085ZM11.712 20.9085L12 20.5L12.288 20.9085L12.29 20.9075L12.295 20.904L12.31 20.8925L12.369 20.85C12.4197 20.813 12.4913 20.759 12.584 20.688C12.768 20.547 13.029 20.3395 13.3405 20.073C14.1582 19.3741 14.9228 18.6153 15.628 17.803C17.282 15.89 19 13.16 19 10.038C19 8.173 18.263 6.383 16.951 5.063C16.3026 4.40965 15.5313 3.89102 14.6816 3.53696C13.8319 3.1829 12.9205 3.00041 12 3C11.0795 3.00035 10.1682 3.18276 9.31849 3.53673C8.46879 3.8907 7.69749 4.40924 7.049 5.0625C5.73585 6.38561 4.99928 8.17437 5 10.0385C5 13.16 6.718 15.89 8.372 17.803C9.07718 18.6153 9.84179 19.3741 10.6595 20.073C10.9715 20.3395 11.232 20.547 11.416 20.688C11.5063 20.7575 11.5974 20.8259 11.6895 20.893L11.7055 20.904L11.71 20.9075L11.712 20.9085ZM10 10C10 9.46957 10.2107 8.96086 10.5858 8.58579C10.9609 8.21071 11.4696 8 12 8C12.5304 8 13.0391 8.21071 13.4142 8.58579C13.7893 8.96086 14 9.46957 14 10C14 10.5304 13.7893 11.0391 13.4142 11.4142C13.0391 11.7893 12.5304 12 12 12C11.4696 12 10.9609 11.7893 10.5858 11.4142C10.2107 11.0391 10 10.5304 10 10ZM12 7C11.2044 7 10.4413 7.31607 9.87868 7.87868C9.31607 8.44129 9 9.20435 9 10C9 10.7956 9.31607 11.5587 9.87868 12.1213C10.4413 12.6839 11.2044 13 12 13C12.7957 13 13.5587 12.6839 14.1213 12.1213C14.6839 11.5587 15 10.7956 15 10C15 9.20435 14.6839 8.44129 14.1213 7.87868C13.5587 7.31607 12.7957 7 12 7Z"
+              fill="#2C2D2C" />
+          </svg>
+          131 Whitmore Rd, Unit 11, Vaughan, ON L4L 6E3
+        </a>
+      </div>
+
+
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-menus">
+        {% for block in section.blocks %}
+          <div class="menu-block">
+            <h3>{{ block.settings.menu.title }}</h3>
+            <ul>
+              {% for link in block.settings.menu.links %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="followUs">
+        <p>Follow Us:</p>
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none">
+            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.101 3.9 21 5 21H12V14H10V11.525H12V9.475C12 7.311 13.212 5.791 15.766 5.791L17.569 5.793V8.398H16.372C15.378 8.398 15 9.144 15 9.836V11.526H17.568L17 14H15V21H19C20.1 21 21 20.101 21 19V5C21 3.9 20.1 3 19 3Z" fill="black" />
+          </svg>
+        </a>
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none">
+            <path d="M5.57143 3C4.15313 3 3 4.15313 3 5.57143V18.4286C3 19.8469 4.15313 21 5.57143 21H18.4286C19.8469 21 21 19.8469 21 18.4286V5.57143C21 4.15313 19.8469 3 18.4286 3H5.57143ZM17.5085 6.375L13.3379 11.1402L18.2437 17.625H14.4027L11.3973 13.6915L7.95402 17.625H6.04554L10.5054 12.5263L5.80045 6.375H9.73795L12.458 9.97098L15.6 6.375H17.5085ZM15.9897 16.4839L9.16339 7.4558H8.02634L14.929 16.4839H15.9857H15.9897Z" fill="black" />
+          </svg>
+        </a>
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none">
+            <path d="M16 3C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21H8C6.67392 21 5.40215 20.4732 4.46447 19.5355C3.52678 18.5979 3 17.3261 3 16V8C3 6.67392 3.52678 5.40215 4.46447 4.46447C5.40215 3.52678 6.67392 3 8 3H16ZM12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8ZM12 10C12.5304 10 13.0391 10.2107 13.4142 10.5858C13.7893 10.9609 14 11.4696 14 12C14 12.5304 13.7893 13.0391 13.4142 13.4142C13.0391 13.7893 12.5304 14 12 14C11.4696 14 10.9609 13.7893 10.5858 13.4142C10.2107 13.0391 10 12.5304 10 12C10 11.4696 10.2107 10.9609 10.5858 10.5858C10.9609 10.2107 11.4696 10 12 10ZM16.5 6.5C16.2348 6.5 15.9804 6.60536 15.7929 6.79289C15.6054 6.98043 15.5 7.23478 15.5 7.5C15.5 7.76522 15.6054 8.01957 15.7929 8.20711C15.9804 8.39464 16.2348 8.5 16.5 8.5C16.7652 8.5 17.0196 8.39464 17.2071 8.20711C17.3946 8.01957 17.5 7.76522 17.5 7.5C17.5 7.23478 17.3946 6.98043 17.2071 6.79289C17.0196 6.60536 16.7652 6.5 16.5 6.5Z" fill="black" />
+          </svg>
+        </a>
+      </div>
+      <div class="payment-icons">
+        {% for type in shop.enabled_payment_types %}
+          <img src="{{ type | payment_type_img_url }}" alt="{{ type | replace: '_', ' ' | capitalize }} payment method">
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-meta">
+    <p>© 2025 Plumbing Market. All Rights Reserved. Designed By Enjoyable.Design</p>
+    <ul>
+      <li><a href="/policies/return-policy">Return Policy</a></li>
+      <li><a href="/policies/shipping-policy">Shipping Policy</a></li>
+      <li><a href="/policies/terms-of-service">Terms Of Service</a></li>
+      <li><a href="/policies/privacy-policy">Privacy Policy</a></li>
+    </ul>
+    <form method="post" action="{{ routes.root_url }}">
+        <select name="country" class="currency-selector" onchange="this.form.submit()">
+          {% for country in localization.available_countries %}
+            <option value="{{ country.iso_code }}" {% if country.iso_code == localization.country.iso_code %}selected{% endif %}>
+              {{ country.iso_code }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+            </option>
+          {% endfor %}
+        </select>
+      </form>
+  </div>
+</footer>
+
+
+{% schema %}
+  {
+    "name": "Footer Two",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image",
+        "info": "Recommended: 200 x 60px png"
+      }, {
+        "type": "range",
+        "id": "logo_max_width",
+        "min": 50,
+        "max": 350,
+        "step": 5,
+        "unit": "px",
+        "label": "Logo image width",
+        "default": 140
+      }
+    ],
+    "blocks": [
+      {
+        "type": "menu",
+        "name": "Menu Block",
+        "settings": [
+          {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Select a menu"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Footer Two",
+        "category": "Footer",
+        "blocks": [
+          {
+            "type": "menu"
+          }, {
+            "type": "menu"
+          }, {
+            "type": "menu"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

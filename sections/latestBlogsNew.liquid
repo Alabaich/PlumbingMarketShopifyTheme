@@ -1,0 +1,180 @@
+{%- comment -%}
+  Latest Blog Posts Section (Dynamic)
+  - Automatically fetches the latest 3 blog posts
+  - Gradient inside a div for proper layering
+  - Author/date in bottom-left, blog name in bottom-right
+  - Expands only the background using `background-size` & `background-position`
+{%- endcomment -%}
+
+<style>
+  .latest-blogs {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .latest-blogs__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c2d2c;
+    text-align: center;
+  }
+
+  .latest-blogs__grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .blog-post {
+    width: 100%;
+    text-align: left;
+    position: relative;
+  }
+
+  .blog-post a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  /* Wrapper with background image */
+  .blog-post__image {
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-size: 100%;
+    background-position: center;
+    transition: background-size 0.3s ease-in-out, background-position 0.3s ease-in-out;
+  }
+
+  /* Hover effect: Increases background size */
+  .blog-post:hover .blog-post__image {
+    background-size: 110%;
+    background-position: center;
+  }
+
+  /* Gradient & Text Container */
+  .blog-post__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(237, 235, 236, 0.00) 23%, #EDEBEC 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 15px;
+    font-size: 12px;
+    color: #2c2d2c;
+    font-weight: bold;
+  }
+
+  /* Author & Date (Bottom-Left) */
+  .blog-post__meta {
+    align-self: flex-end;
+  }
+
+  /* Blog Name (Bottom-Right) */
+  .blog-post__info {
+    font-weight: 300;
+    align-self: flex-end;
+  }
+
+  .blog-post__content {
+    margin-top: 10px;
+  }
+
+  .blog-post__title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #2c2d2c;
+  }
+
+  /* Read Post Button */
+  .blog-post__read-more {
+    font-size: 14px;
+    color: #2c2d2c;
+    margin-top: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .blog-post__read-more svg {
+    width: 21px;
+    height: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    .latest-blogs__grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+
+<div class="latest-blogs">
+  <div class="latest-blogs__title">Featured From Blog:</div>
+  <div class="latest-blogs__grid">
+    {%- for article in blogs[section.settings.blog].articles limit: 3 -%}
+      <div class="blog-post">
+        <a href="{{ article.url }}">
+          <div class="blog-post__image"
+               style="background-image: url('{{ article.image | img_url: '600x400' }}');">
+            <div class="blog-post__overlay">
+              <div class="blog-post__meta">
+                <strong style="font-size: 14px;">{{ article.author }}</strong>
+                <div style="font-weight: 300;">
+                  {{ article.published_at | date: "%B %d, %Y" }}
+                </div>
+              </div>
+              <div class="blog-post__info">{{ blogs[section.settings.blog].title }}</div>
+            </div>
+          </div>
+          <div class="blog-post__content">
+            <div class="blog-post__title">{{ article.title }}</div>
+            <div class="blog-post__read-more">
+              Read Post
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="20"
+                viewBox="0 0 21 20"
+                fill="none">
+                <path
+                  d="M15.0473 5.28602H7.97618M15.0473 5.28602V12.3571M15.0473 5.28602L8.86007 11.4732M5.61916 14.7141L7.0923 13.241"
+                  stroke="#2C2D2C"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Latest Blog Posts New",
+    "settings": [
+      {
+        "type": "blog",
+        "id": "blog",
+        "label": "Select Blog"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Latest Blog Posts New",
+        "settings": {
+          "blog": "news"
+        }
+      }
+    ]
+  }
+{% endschema %}

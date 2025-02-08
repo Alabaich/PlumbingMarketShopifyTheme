@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     width: 100%;
     padding: 30px 0;
@@ -36,13 +37,15 @@
   
   .feature-block__title {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     color: #2c2d2c;
+    line-height: 22px;
   }
   
   .feature-block__subtitle {
     font-size: 14px;
     color: #666;
+    line-height: 20px;
   }
 
   .feature-blocks .divider {
@@ -53,18 +56,35 @@
 
   @media (max-width: 768px) {
     .feature-blocks {
-      flex-direction: column;
+        padding: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
       gap: 15px;
       text-align: center;
+
     }
-    .feature-block {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+    .feature-block__title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .feature-block__subtitle {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
     .feature-blocks .divider {
       display: none;
     }
+
+    .feature-blocks .feature-block .feature-block__icon img {
+
+
+height: 20px !important;
+max-width: 30px !important;
+object-fit: contain;
+}
+
   }
 </style>
 
