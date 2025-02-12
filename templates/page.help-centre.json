@@ -1,0 +1,134 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "help_centre_QHVT8H": {
+      "type": "helpCentre",
+      "blocks": {
+        "help_block_kCCpGP": {
+          "type": "help_block",
+          "settings": {
+            "link": "https://www.plumbingmarket.ca/pages/contact-us-1",
+            "icon": "shopify://shop_images/Vector.png",
+            "title": "Shopping Assistance",
+            "text": "Get Help With Purchasing Items You’ll Love"
+          }
+        },
+        "help_block_TEjMJ6": {
+          "type": "help_block",
+          "settings": {
+            "link": "https://www.plumbingmarket.ca/policies/refund-policy",
+            "icon": "shopify://shop_images/ReturnsIcon_ac251d36-fc7b-4079-9bb8-5fc5eedec0f4.png",
+            "title": "Return or Replace Items",
+            "text": "Report a Problem or start/modify a Return"
+          }
+        },
+        "help_block_weRzrJ": {
+          "type": "help_block",
+          "settings": {
+            "link": "https://www.plumbingmarket.ca/policies/refund-policy",
+            "icon": "shopify://shop_images/warrantyIcon.webp",
+            "title": "Warranty",
+            "text": "Get Help With Warranty on your purchased Items"
+          }
+        },
+        "help_block_cqdnc3": {
+          "type": "help_block",
+          "settings": {
+            "link": "https://www.plumbingmarket.ca/pages/contact-us-1",
+            "icon": "shopify://shop_images/deliveryIcon.webp",
+            "title": "Order Tracking",
+            "text": "Get Help With Order Tracking, and ETD"
+          }
+        },
+        "help_block_cDtbtd": {
+          "type": "help_block",
+          "settings": {
+            "link": "https://www.plumbingmarket.ca/pages/contact-us-1",
+            "icon": "shopify://shop_images/orderUpdate.webp",
+            "title": "Order Update",
+            "text": "Get Help With Existing Order, cancel or Add Items"
+          }
+        },
+        "help_block_L9R6tF": {
+          "type": "help_block",
+          "settings": {
+            "link": "https://www.plumbingmarket.ca/pages/contact-us-1",
+            "icon": "shopify://shop_images/tech.webp",
+            "title": "Find Contractor",
+            "text": "Let us help you find plumber in your area"
+          }
+        },
+        "help_block_Ftgxjw": {
+          "type": "help_block",
+          "settings": {
+            "link": "https://www.plumbingmarket.ca/pages/contact-us-1",
+            "icon": "shopify://shop_images/other.webp",
+            "title": "Other",
+            "text": "We happy to answer any your questions"
+          }
+        }
+      },
+      "block_order": [
+        "help_block_kCCpGP",
+        "help_block_TEjMJ6",
+        "help_block_weRzrJ",
+        "help_block_cqdnc3",
+        "help_block_cDtbtd",
+        "help_block_L9R6tF",
+        "help_block_Ftgxjw"
+      ],
+      "settings": {
+        "bg_image": "shopify://shop_images/contactIllustration.webp",
+        "logo": "shopify://shop_images/iconPlumbingMarket.png",
+        "title": "How Can We Help You?"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "help_centre_QHVT8H"
+  ]
+}
