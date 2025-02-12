@@ -2377,30 +2377,30 @@ window.addEventListener("search", function(evt) {
 				e.preventDefault();
 			});
 		});
-		Array.from(header_id.querySelectorAll('[aria-controls="search"]')).forEach(function (el) {
-			"use strict";
-			el.setAttribute('href', '#' + search_id.getAttribute('id'));
-			el.addEventListener('click', function (e) {
-				compactSearch();
-				e.preventDefault();
-			});
-			if (!isMobile) {
-				el.addEventListener('mouseover', function () {
-					new_css('css-search', window.filepaths['async_search_css']);
-				});
-			}
-		});
-		Array.from(header_id.querySelectorAll('[aria-controls="cart"]')).forEach(function (el) {
-			"use strict";
-			if (!isMobile) {
-				el.addEventListener('mouseover', function () {
-					html_tag.classList.add('cart-hover');
-				});
-				el.addEventListener('mouseout', function () {
-					html_tag.classList.remove('cart-hover');
-				});
-			}
-		});
+		// Array.from(header_id.querySelectorAll('[aria-controls="search"]')).forEach(function (el) {
+		// 	"use strict";
+		// 	el.setAttribute('href', '#' + search_id.getAttribute('id'));
+		// 	el.addEventListener('click', function (e) {
+		// 		compactSearch();
+		// 		e.preventDefault();
+		// 	});
+		// 	if (!isMobile) {
+		// 		el.addEventListener('mouseover', function () {
+		// 			new_css('css-search', window.filepaths['async_search_css']);
+		// 		});
+		// 	}
+		// });
+		// Array.from(header_id.querySelectorAll('[aria-controls="cart"]')).forEach(function (el) {
+		// 	"use strict";
+		// 	if (!isMobile) {
+		// 		el.addEventListener('mouseover', function () {
+		// 			html_tag.classList.add('cart-hover');
+		// 		});
+		// 		el.addEventListener('mouseout', function () {
+		// 			html_tag.classList.remove('cart-hover');
+		// 		});
+		// 	}
+		// });
 
 		// Hide #search when clicked outside;
 		enquire.register('screen and (min-width: 761px)', function () {

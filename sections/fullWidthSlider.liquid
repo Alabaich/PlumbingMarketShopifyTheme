@@ -8,7 +8,7 @@
     }
 
     .fullWidthSliderContainer{
-        aspect-ratio: 162/54;
+        aspect-ratio: 162/60;
         max-height: 50vh;
         width: 100%;
     }
@@ -78,7 +78,7 @@
             <li class="splide__slide realOne">
               <div class="sliderItem">
                 <div class="sliderInner">
-                  <a href="{{ block.settings.button_link }}" class="slideImg">
+                  <a href="{{ block.settings.button_link }}" class="slideImg" aria-label="Read more about the sale">
                     <img
                       src="{{ block.settings.image | img_url: '300x300' }}" 
                       srcset="

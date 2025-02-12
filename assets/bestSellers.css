@@ -182,6 +182,8 @@
     max-width: 100%;
     border-radius: 10px;
     transition: all linear 250ms;
+  height: 300px !important;
+  object-fit: cover;
 }
 
 .bestSellerCard:hover .imageContainer img{
