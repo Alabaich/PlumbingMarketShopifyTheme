@@ -1,0 +1,251 @@
+{% comment %}
+  Contact Form Section (Pure CSS)
+  - Includes: Contact details + Form
+  - Customizable via Schema
+{% endcomment %}
+
+<style>
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 30px;
+  }
+
+  .contact-info h3 {
+    color: #007aff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .contact-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .contact-info p {
+    color: #555;
+    margin-top: 10px;
+  }
+
+  .contact-details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-details a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #2c2d2c;
+    font-size: 16px;
+  }
+
+  .contact-details a:hover {
+    color: #2c2d2c;
+  }
+
+  .contact-details div img {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .contact-form-container {
+    flex: 1;
+    min-width: 300px;
+    background: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-form-container input,
+  .contact-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .contact-form-container button {
+    width: 100%;
+    padding: 12px;
+    background: #007aff !important;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .contact-form-container button:hover {
+    background: #005bb5;
+  }
+
+  .flexGap10{
+    display: flex;
+gap: 10px;
+justify-content: start;
+align-items: center;
+}
+
+.contact-section .contact-form-container button::before,
+.contact-section .contact-form-container button::after {
+content: none !important;
+}
+</style>
+
+<section class="contact-section">
+  <!-- Contact Info -->
+  <div class="contact-info">
+    <h3>{{ section.settings.heading_label }}</h3>
+    <h2>{{ section.settings.title }}</h2>
+    <p>{{ section.settings.description }}</p>
+
+    <div class="contact-details">
+      <a href="tel:{{ section.settings.phone }}" class="flexGap10">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M19.506 7.96C18.7925 10.7425 17.3445 13.2821 15.3133 15.3133C13.2821 17.3445 10.7425 18.7925 7.96 19.506C5.819 20.051 4 18.21 4 16V15C4 14.448 4.449 14.005 4.998 13.95C5.9084 13.8595 6.80207 13.6445 7.654 13.311L9.174 14.831C11.6489 13.6446 13.6446 11.6489 14.831 9.174L13.311 7.654C13.6448 6.80211 13.8602 5.90844 13.951 4.998C14.005 4.448 14.448 4 15 4H16C18.21 4 20.051 5.819 19.506 7.96Z" stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>{{ section.settings.phone }}</span>
+    </a>
+      <a href="mailto:{{ section.settings.email }}" class="flexGap10">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M5 5H18C18.7956 5 19.5587 5.31607 20.1213 5.87868C20.6839 6.44129 21 7.20435 21 8V17C21 17.7956 20.6839 18.5587 20.1213 19.1213C19.5587 19.6839 18.7956 20 18 20H5C4.20435 20 3.44129 19.6839 2.87868 19.1213C2.31607 18.5587 2 17.7956 2 17V8C2 7.20435 2.31607 6.44129 2.87868 5.87868C3.44129 5.31607 4.20435 5 5 5ZM5 6C4.5 6 4.06 6.17 3.72 6.47L11.5 11.5L19.28 6.47C18.94 6.17 18.5 6 18 6H5ZM11.5 12.71L3.13 7.28C3.05 7.5 3 7.75 3 8V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V8C20 7.75 19.95 7.5 19.87 7.28L11.5 12.71Z" fill="#2C2D2C"/>
+        </svg>
+        <span>{{ section.settings.email }}</span>
+    </a>
+      <div class="flexGap10">
+        <a href="https://www.facebook.com/people/Plumbing-Market/100095076010796/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.101 3.9 21 5 21H12V14H10V11.525H12V9.475C12 7.311 13.212 5.791 15.766 5.791L17.569 5.793V8.398H16.372C15.378 8.398 15 9.144 15 9.836V11.526H17.568L17 14H15V21H19C20.1 21 21 20.101 21 19V5C21 3.9 20.1 3 19 3Z" fill="black"/>
+          </svg>
+        </a>
+        <a href="https://x.com/plumbingmarket" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M5.57143 3C4.15313 3 3 4.15313 3 5.57143V18.4286C3 19.8469 4.15313 21 5.57143 21H18.4286C19.8469 21 21 19.8469 21 18.4286V5.57143C21 4.15313 19.8469 3 18.4286 3H5.57143ZM17.5085 6.375L13.3379 11.1402L18.2437 17.625H14.4027L11.3973 13.6915L7.95402 17.625H6.04554L10.5054 12.5263L5.80045 6.375H9.73795L12.458 9.97098L15.6 6.375H17.5085ZM15.9897 16.4839L9.16339 7.4558H8.02634L14.929 16.4839H15.9857H15.9897Z" fill="black"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/plumbingmarket/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M16 3C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21H8C6.67392 21 5.40215 20.4732 4.46447 19.5355C3.52678 18.5979 3 17.3261 3 16V8C3 6.67392 3.52678 5.40215 4.46447 4.46447C5.40215 3.52678 6.67392 3 8 3H16ZM12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8ZM12 10C12.5304 10 13.0391 10.2107 13.4142 10.5858C13.7893 10.9609 14 11.4696 14 12C14 12.5304 13.7893 13.0391 13.4142 13.4142C13.0391 13.7893 12.5304 14 12 14C11.4696 14 10.9609 13.7893 10.5858 13.4142C10.2107 13.0391 10 12.5304 10 12C10 11.4696 10.2107 10.9609 10.5858 10.5858C10.9609 10.2107 11.4696 10 12 10ZM16.5 6.5C16.2348 6.5 15.9804 6.60536 15.7929 6.79289C15.6054 6.98043 15.5 7.23478 15.5 7.5C15.5 7.76522 15.6054 8.01957 15.7929 8.20711C15.9804 8.39464 16.2348 8.5 16.5 8.5C16.7652 8.5 17.0196 8.39464 17.2071 8.20711C17.3946 8.01957 17.5 7.76522 17.5 7.5C17.5 7.23478 17.3946 6.98043 17.2071 6.79289C17.0196 6.60536 16.7652 6.5 16.5 6.5Z" fill="black"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-form-container">
+    <form method="post" action="/contact" id="contact-form">
+        <div id="form-status"></div>
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
+      <button type="submit">{{ section.settings.button_text }}</button>
+    </form>
+  </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contact-form");
+      const statusDiv = document.getElementById("form-status");
+    
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        
+        const formData = new FormData(form);
+    
+        fetch("/contact", {
+          method: "POST",
+          body: formData
+        })
+        .then(response => {
+          if (response.ok) {
+            statusDiv.innerHTML = "<p style='color: green;'>Message sent successfully!</p>";
+            form.reset();
+          } else {
+            statusDiv.innerHTML = "<p style='color: red;'>Error sending message. Try again.</p>";
+          }
+        })
+        .catch(() => {
+          statusDiv.innerHTML = "<p style='color: red;'>Network error. Try again later.</p>";
+        });
+      });
+    });
+    </script>
+    
+
+{% schema %}
+{
+  "name": "Contact Form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_label",
+      "label": "Heading Label",
+      "default": "Contact Me"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "How can I help you?"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Fill in the form or drop an email 🎁"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "Phone Number",
+      "default": "+1 012 345 678"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Email Address",
+      "default": "ereng@webflow.com"
+    },
+    {
+      "type": "text",
+      "id": "social",
+      "label": "Social Media Handle",
+      "default": "webflow"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Submit"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Form"
+    }
+  ]
+}
+{% endschema %}
