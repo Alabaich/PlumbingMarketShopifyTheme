@@ -160,14 +160,23 @@ content: none !important;
 
   <!-- Contact Form -->
   <div class="contact-form-container">
-    <form method="post" action="/contact" id="contact-form">
-        <div id="form-status"></div>
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="text" name="subject" placeholder="Subject">
-      <textarea name="message" placeholder="Message" rows="4" required></textarea>
-      <button type="submit">{{ section.settings.button_text }}</button>
-    </form>
+{% form 'contact', id: 'contact-form' %}
+    <div id="form-status"></div>
+
+    <input type="text" name="contact[name]" placeholder="Name" value="{{ form.name }}" required>
+    <input type="email" name="contact[email]" placeholder="Email" value="{{ form.email }}" required>
+    <input type="text" name="contact[subject]" placeholder="Subject" value="{{ form.subject }}">
+    <textarea name="contact[body]" placeholder="Message" rows="4" required>{{ form.body }}</textarea>
+
+    <button type="submit">{{ section.settings.button_text }}</button>
+
+    {%- if form.errors -%}
+      <p class="error-message">Error: {{ form.errors | default: "Something went wrong, please try again." }}</p>
+    {%- elsif form.posted_successfully? -%}
+      <p class="success-message">Message sent successfully! We will get back to you soon.</p>
+    {%- endif -%}
+{% endform %}
+
   </div>
 </section>
 

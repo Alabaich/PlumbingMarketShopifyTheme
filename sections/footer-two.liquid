@@ -329,25 +329,26 @@ color: #2C2D2C;
 
 <footer class="footer-two">
   <div class="footer-top">
-    <div class="newsletter">
-      <div class="left">
-        <h2>Join 2,000+ Subscribers</h2>
-        <p>And Get 5% Discount On Your First Order</p>
-      </div>
-      <div class="right">
-        <form>
-          <input
-            type="email"
-            placeholder="Enter Your Email"
-            required>
-          <button type="submit">Subscribe</button>
-        </form>
-        <small>We Care About Your Data In Our
-          <a href="/policies/privacy-policy">Privacy Policy</a>
-        </small>
-      </div>
+<div class="newsletter">
+  <div class="left">
+    <h2>Join 2,000+ Subscribers</h2>
+    <p>And Get 5% Discount On Your First Order</p>
+  </div>
+  <div class="right">
+    {%- form 'customer', id: 'newsletter-form' -%}
+      <input
+        type="email"
+        name="contact[email]"
+        placeholder="Enter Your Email"
+        required>
+      <button type="submit">Subscribe</button>
+    {%- endform -%}
 
-    </div>
+    <small>We Care About Your Data In Our
+      <a href="/policies/privacy-policy">Privacy Policy</a>
+    </small>
+  </div>
+</div>
   </div>
 
   <div class="footer-bottom">
