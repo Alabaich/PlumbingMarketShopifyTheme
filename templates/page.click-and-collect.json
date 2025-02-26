@@ -1,1 +1,194 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","disabled":true,"settings":{"hide_mobile":false}},"section_slideshow_qmhKFL":{"type":"section-slideshow","blocks":{"slide_NzBWxr":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/warehouse-worker-scanning-in-a-case-of-products.jpg","layout":"background","overlay_opacity":50,"color_palette":"black","button_color_palette":"accent","text_position":"text-center","title_size":"h1","title":"Click And Collect","text":"<p>Need plumbing supplies now? Our Click and Collect service is designed to make your life easier. Simply browse our extensive range of products online, place your order, and we’ll either deliver it to you within hours or have it ready for pickup at your convenience<\/p>","link_text":"View products","link_url":"shopify:\/\/collections\/click-and-collect-1","show_link":false,"title_size_mobile":"mobile-size-18"}}},"block_order":["slide_NzBWxr"],"settings":{"height":"m","width":"wide","autoplay":false,"autoplay_seconds":3,"enable_controls":false,"height_mobile":"m","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_A8EfyX":{"type":"section-rich-text","blocks":{"title_YzGjxq":{"type":"title","settings":{"title_size":"h1","title":"One Day Delivery"}},"content_RmK7kt":{"type":"content","settings":{"page":"","text":"<p>Get high-quality plumbing supplies delivered to your door within 24 hours. Don’t let a lack of supplies slow you down—order now and enjoy our fast, efficient one-day delivery service.<\/p>"}},"button_XMpdqV":{"type":"button","settings":{"link_text":"View products","link_url":"shopify:\/\/collections\/click-and-collect-1","button_color_palette":"accent"}}},"block_order":["title_YzGjxq","content_RmK7kt","button_XMpdqV"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_Chnp6T":{"type":"section-rich-text","blocks":{"title_WNWnKG":{"type":"title","settings":{"title_size":"h1","title":"Fast, Convenient, and Ready When You Are"}},"content_qcPPAX":{"type":"content","settings":{"page":"","text":"<p>Discover our most popular items, available for fast pickup or one-day delivery. Shop our featured products today and enjoy the speed and convenience you deserve.<\/p>"}},"button_EmY4FY":{"type":"button","settings":{"link_text":"View products","link_url":"shopify:\/\/collections\/click-and-collect-1","button_color_palette":"accent"}}},"block_order":["title_WNWnKG","content_qcPPAX","button_EmY4FY"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":50,"spacing_mobile":30}},"main-page":{"type":"main-page","blocks":{"title":{"type":"title","disabled":true,"settings":{"title_size":"h1"}},"content":{"type":"content","settings":{}}},"block_order":["title","content"],"settings":{"max_width":980,"content_alignment":"start","text_alignment":"start","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_zRrtxy":{"type":"section-rich-text","blocks":{"content_8XFjYx":{"type":"content","settings":{"page":"","text":"<p>We work tirelessly to ensure your convenience, but to avoid any misunderstandings on a specific day, please <a href=\"tel:289-236-2378\" title=\"tel:289-236-2378\"><strong>Text or Call Us at 289-236-2378 (Phones Are Live 10am - 6pm)<\/strong><\/a> for clarification. Alternatively, feel free to review our <a href=\"https:\/\/www.plumbingmarket.ca\/policies\/shipping-policy\" title=\"https:\/\/www.plumbingmarket.ca\/policies\/shipping-policy\"><strong>Shipping Policy<\/strong><\/a> if you have any remaining questions.<\/p>"}}},"block_order":["content_8XFjYx"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":50,"spacing_mobile":30}}},"order":["breadcrumbs","section_slideshow_qmhKFL","section_rich_text_A8EfyX","section_rich_text_Chnp6T","main-page","section_rich_text_zRrtxy"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "section_slideshow_qmhKFL": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_NzBWxr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/warehouse-worker-scanning-in-a-case-of-products.jpg",
+            "layout": "background",
+            "overlay_opacity": 50,
+            "color_palette": "black",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "Click And Collect",
+            "text": "<p>Need plumbing supplies now? Our Click and Collect service is designed to make your life easier. Simply browse our extensive range of products online, place your order, and we’ll either deliver it to you within hours or have it ready for pickup at your convenience</p>",
+            "link_text": "View products",
+            "link_url": "shopify://collections/click-and-collect-1",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "slide_NzBWxr"
+      ],
+      "settings": {
+        "height": "m",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_A8EfyX": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_YzGjxq": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title": "One Day Delivery"
+          }
+        },
+        "content_RmK7kt": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Get high-quality plumbing supplies delivered to your door within 24 hours. Don’t let a lack of supplies slow you down—order now and enjoy our fast, efficient one-day delivery service.</p>"
+          }
+        },
+        "button_XMpdqV": {
+          "type": "button",
+          "settings": {
+            "link_text": "View products",
+            "link_url": "shopify://collections/click-and-collect-1",
+            "button_color_palette": "accent"
+          }
+        }
+      },
+      "block_order": [
+        "title_YzGjxq",
+        "content_RmK7kt",
+        "button_XMpdqV"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_Chnp6T": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_WNWnKG": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title": "Fast, Convenient, and Ready When You Are"
+          }
+        },
+        "content_qcPPAX": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Discover our most popular items, available for fast pickup or one-day delivery. Shop our featured products today and enjoy the speed and convenience you deserve.</p>"
+          }
+        },
+        "button_EmY4FY": {
+          "type": "button",
+          "settings": {
+            "link_text": "View products",
+            "link_url": "shopify://collections/click-and-collect-1",
+            "button_color_palette": "accent"
+          }
+        }
+      },
+      "block_order": [
+        "title_WNWnKG",
+        "content_qcPPAX",
+        "button_EmY4FY"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_zRrtxy": {
+      "type": "section-rich-text",
+      "blocks": {
+        "content_8XFjYx": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>We work tirelessly to ensure your convenience, but to avoid any misunderstandings on a specific day, please <a href=\"tel:289-236-2378\" title=\"tel:289-236-2378\"><strong>Text or Call Us at 289-236-2378 (Phones Are Live 10am - 6pm)</strong></a> for clarification. Alternatively, feel free to review our <a href=\"https://www.plumbingmarket.ca/policies/shipping-policy\" title=\"https://www.plumbingmarket.ca/policies/shipping-policy\"><strong>Shipping Policy</strong></a> if you have any remaining questions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_8XFjYx"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_slideshow_qmhKFL",
+    "section_rich_text_A8EfyX",
+    "section_rich_text_Chnp6T",
+    "main-page",
+    "section_rich_text_zRrtxy"
+  ]
+}

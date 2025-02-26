@@ -1,1 +1,200 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","disabled":true,"settings":{"hide_mobile":false}},"section_image_hotspots_NAzBqz":{"type":"section-image-hotspots","blocks":{"hotspot_NreG3f":{"type":"hotspot","disabled":true,"settings":{"product":"","text_position":"text-start","title":"Image hotspot","text":"<p>Highlight a new collection and share details about products related to this image<\/p>","position_left":70,"position_top":20,"position_left_mobile":70,"position_top_mobile":20}},"hotspot_wjqjDB":{"type":"hotspot","disabled":true,"settings":{"product":"","text_position":"text-start","title":"Image hotspot","text":"<p>Highlight a new collection and share details about products related to this image<\/p>","position_left":30,"position_top":50,"position_left_mobile":30,"position_top_mobile":50}},"hotspot_VeGUKk":{"type":"hotspot","disabled":true,"settings":{"product":"","text_position":"text-start","title":"Image hotspot","text":"<p>Highlight a new collection and share details about products related to this image<\/p>","position_left":50,"position_top":70,"position_left_mobile":50,"position_top_mobile":70}}},"block_order":["hotspot_NreG3f","hotspot_wjqjDB","hotspot_VeGUKk"],"settings":{"image":"shopify:\/\/shop_images\/Pick-up-and-delivery-services-image.jpg","overlay_opacity":0,"color_palette":"black","button_color_palette":"accent","hotspot_height":33,"hotspot_color_palette":"white","hotspot_hover_color_palette":"black","layout":"right","height":"m","width":"wide","enable_custom_height":false,"custom_height":300,"text_position":"text-center","title_size":"h1","title":"Free Local GTA Delivery","text":"<p>Shop our latest collection with <strong>Free Local Delivery in the GTA<\/strong>. Explore top products and enjoy fast, hassle-free service right to your doorstep!<\/p>","link_text":"View Products","link_url":"https:\/\/www.plumbingmarket.ca\/collections\/free-delivery-toto","show_link":false,"height_mobile":"m","title_size_mobile":"mobile-size-18","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_iieQrg":{"type":"section-rich-text","blocks":{"title_TATbJt":{"type":"title","settings":{"title_size":"h1","title":"Trusted for Free Delivery in the GTA. Discover top-quality products with quick, reliable shipping."}},"content_9DKmJG":{"type":"content","settings":{"page":"","text":"<p>Enjoy fast and <strong>free local delivery across the Greater Toronto Area (GTA)<\/strong>! We're committed to getting your orders to your doorstep quickly and efficiently. Simply shop your favorite products and benefit from our <strong>hassle-free delivery service<\/strong> at no extra cost. Whether you're in downtown Toronto, North York, Scarborough, or any surrounding areas, our dedicated team ensures a smooth and timely delivery experience.<\/p>"}},"button_HN79KE":{"type":"button","settings":{"link_text":"View Products","link_url":"\/","button_color_palette":"accent"}}},"block_order":["title_TATbJt","content_9DKmJG","button_HN79KE"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_3jPLUD":{"type":"section-rich-text","blocks":{"content_pDRTj3":{"type":"content","settings":{"page":"","text":"<p>We work tirelessly to ensure your convenience, but to avoid any misunderstandings on a specific day, please <a href=\"tel:289-236-2378\" title=\"tel:289-236-2378\"><strong>Text or Call Us at 289-236-2378 (Phones Are Live 10am - 6pm)<\/strong><\/a> for clarification. Alternatively, feel free to review our <a href=\"https:\/\/www.plumbingmarket.ca\/policies\/shipping-policy\" title=\"https:\/\/www.plumbingmarket.ca\/policies\/shipping-policy\"><strong>Shipping Policy<\/strong><\/a> if you have any remaining questions.<\/p>"}}},"block_order":["content_pDRTj3"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":50,"spacing_mobile":30}},"main-page":{"type":"main-page","blocks":{"title":{"type":"title","settings":{"title_size":"h1"}},"content":{"type":"content","settings":{}}},"block_order":["title","content"],"settings":{"max_width":980,"content_alignment":"start","text_alignment":"start","spacing_desktop":50,"spacing_mobile":30}},"i_frame_map_LcQqqY":{"type":"iFrameMap","settings":{"google_map_link":"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d387508.38281427225!2d-79.75368822378019!3d43.75938697568924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2a1d7471156d%3A0x4ecad8e272e4c2a2!2sGreater%20Toronto%20Area%2C%20ON!5e0!3m2!1sen!2sca!4v1731351257167!5m2!1sen!2sca"}}},"order":["breadcrumbs","section_image_hotspots_NAzBqz","section_rich_text_iieQrg","section_rich_text_3jPLUD","main-page","i_frame_map_LcQqqY"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "section_image_hotspots_NAzBqz": {
+      "type": "section-image-hotspots",
+      "blocks": {
+        "hotspot_NreG3f": {
+          "type": "hotspot",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "text_position": "text-start",
+            "title": "Image hotspot",
+            "text": "<p>Highlight a new collection and share details about products related to this image</p>",
+            "position_left": 70,
+            "position_top": 20,
+            "position_left_mobile": 70,
+            "position_top_mobile": 20
+          }
+        },
+        "hotspot_wjqjDB": {
+          "type": "hotspot",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "text_position": "text-start",
+            "title": "Image hotspot",
+            "text": "<p>Highlight a new collection and share details about products related to this image</p>",
+            "position_left": 30,
+            "position_top": 50,
+            "position_left_mobile": 30,
+            "position_top_mobile": 50
+          }
+        },
+        "hotspot_VeGUKk": {
+          "type": "hotspot",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "text_position": "text-start",
+            "title": "Image hotspot",
+            "text": "<p>Highlight a new collection and share details about products related to this image</p>",
+            "position_left": 50,
+            "position_top": 70,
+            "position_left_mobile": 50,
+            "position_top_mobile": 70
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_NreG3f",
+        "hotspot_wjqjDB",
+        "hotspot_VeGUKk"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Pick-up-and-delivery-services-image.jpg",
+        "overlay_opacity": 0,
+        "color_palette": "black",
+        "button_color_palette": "accent",
+        "hotspot_height": 33,
+        "hotspot_color_palette": "white",
+        "hotspot_hover_color_palette": "black",
+        "layout": "right",
+        "height": "m",
+        "width": "wide",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "text_position": "text-center",
+        "title_size": "h1",
+        "title": "Free Local GTA Delivery",
+        "text": "<p>Shop our latest collection with <strong>Free Local Delivery in the GTA</strong>. Explore top products and enjoy fast, hassle-free service right to your doorstep!</p>",
+        "link_text": "View Products",
+        "link_url": "https://www.plumbingmarket.ca/collections/free-delivery-toto",
+        "show_link": false,
+        "height_mobile": "m",
+        "title_size_mobile": "mobile-size-18",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_iieQrg": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_TATbJt": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title": "Trusted for Free Delivery in the GTA. Discover top-quality products with quick, reliable shipping."
+          }
+        },
+        "content_9DKmJG": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Enjoy fast and <strong>free local delivery across the Greater Toronto Area (GTA)</strong>! We're committed to getting your orders to your doorstep quickly and efficiently. Simply shop your favorite products and benefit from our <strong>hassle-free delivery service</strong> at no extra cost. Whether you're in downtown Toronto, North York, Scarborough, or any surrounding areas, our dedicated team ensures a smooth and timely delivery experience.</p>"
+          }
+        },
+        "button_HN79KE": {
+          "type": "button",
+          "settings": {
+            "link_text": "View Products",
+            "link_url": "/",
+            "button_color_palette": "accent"
+          }
+        }
+      },
+      "block_order": [
+        "title_TATbJt",
+        "content_9DKmJG",
+        "button_HN79KE"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_3jPLUD": {
+      "type": "section-rich-text",
+      "blocks": {
+        "content_pDRTj3": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>We work tirelessly to ensure your convenience, but to avoid any misunderstandings on a specific day, please <a href=\"tel:289-236-2378\" title=\"tel:289-236-2378\"><strong>Text or Call Us at 289-236-2378 (Phones Are Live 10am - 6pm)</strong></a> for clarification. Alternatively, feel free to review our <a href=\"https://www.plumbingmarket.ca/policies/shipping-policy\" title=\"https://www.plumbingmarket.ca/policies/shipping-policy\"><strong>Shipping Policy</strong></a> if you have any remaining questions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_pDRTj3"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "i_frame_map_LcQqqY": {
+      "type": "iFrameMap",
+      "settings": {
+        "google_map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387508.38281427225!2d-79.75368822378019!3d43.75938697568924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2a1d7471156d%3A0x4ecad8e272e4c2a2!2sGreater%20Toronto%20Area%2C%20ON!5e0!3m2!1sen!2sca!4v1731351257167!5m2!1sen!2sca"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_image_hotspots_NAzBqz",
+    "section_rich_text_iieQrg",
+    "section_rich_text_3jPLUD",
+    "main-page",
+    "i_frame_map_LcQqqY"
+  ]
+}

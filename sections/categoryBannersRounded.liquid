@@ -49,7 +49,30 @@
 <div class="category-banners">
   {%- for block in section.blocks -%}
     <a href="{{ block.settings.link }}" class="category-banner">
-      <img src="{{ block.settings.image | img_url: '600x400' }}" alt="{{ block.settings.title }}">
+<!-- <img 
+  src="{{ block.settings.image | img_url: '600x400' }}" 
+  srcset="{{ block.settings.image | img_url: '300x150' }} 300w, 
+          {{ block.settings.image | img_url: '600x400' }} 600w" 
+  sizes="(max-width: 1000px) 300w, 600w"
+  alt="{{ block.settings.title }}" 
+  width="100%" 
+  height="auto"
+  loading="lazy"> -->
+      <img 
+  src="{{ block.settings.image | image_url: width: 400 }}" 
+  srcset="
+    {{ block.settings.image | image_url: width: 300 }} 300w,
+    {{ block.settings.image | image_url: width: 400 }} 600w
+  "
+  sizes="(max-width: 600px) 300px, 600px"
+  alt="{{ block.settings.title }}" 
+  width="100%" 
+  height="auto"
+>
+
+
+
+
       <div class="category-banner__text">{{ block.settings.text }}</div>
     </a>
   {%- endfor -%}

@@ -1,1 +1,141 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","disabled":true,"settings":{"hide_mobile":false}},"main-page":{"type":"main-page","blocks":{"title":{"type":"title","settings":{"title_size":"h1"}},"content":{"type":"content","settings":{}}},"block_order":["title","content"],"disabled":true,"settings":{"max_width":980,"content_alignment":"start","text_alignment":"start","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_Km8fNw":{"type":"section-rich-text","blocks":{"title_9yddce":{"type":"title","settings":{"title_size":"h1","title":"Returns Policy"}},"content_7U74HR":{"type":"content","settings":{"page":"","text":"<p>In this section we will explore our Damages, Returns and Warranty Processes.<\/p>"}}},"block_order":["title_9yddce","content_7U74HR"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":0,"spacing_mobile":0}},"section_rich_text_yDDtPd":{"type":"section-rich-text","blocks":{"content_iVt4xV":{"type":"content","settings":{"page":"","text":"<p>Warranty At Plumbing Market, we understand that the need for a warranty is paramount in the world of plumbing. <strong>All warranty claims are handled directly with the manufacturer <\/strong><\/p><p>When you choose products from Plumbing Market, you're not just buying a product but you're securing a warranty from the manufacturers that provides peace of mind and proves our dedication to quality. <\/p><p>If you would like to submit a warranty claim please fill out the form below to get started. Please leave your name, order number, email, phone number, a description of the issue and attach at least 5 photos of the damaged or defective product and we will send it off to the manufacturer and they will contact you to proceed further with the claim. <\/p>"}}},"block_order":["content_iVt4xV"],"disabled":true,"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":0,"spacing_mobile":0}},"1733315594152f8d1b":{"type":"apps","blocks":{"s_contact_form_builder_block_app_W6VrrV":{"type":"shopify:\/\/apps\/s-contact-form-builder\/blocks\/block-app\/cceef8dd-a4f1-4344-962d-06bf0022ec0d","settings":{"ify_contactform_short_code":"<div class=\"storeify-formbuilder-view\" id=\"storeify-formbuilder-view-18717\"><\/div>"}}},"block_order":["s_contact_form_builder_block_app_W6VrrV"],"settings":{}},"1720880261dc316d1a":{"type":"apps","blocks":{"s_contact_form_builder_block_app_gb7Uij":{"type":"shopify:\/\/apps\/s-contact-form-builder\/blocks\/block-app\/cceef8dd-a4f1-4344-962d-06bf0022ec0d","disabled":true,"settings":{"ify_contactform_short_code":"<div class=\"storeify-formbuilder-view\" id=\"storeify-formbuilder-view-17824\"><\/div>"}}},"block_order":["s_contact_form_builder_block_app_gb7Uij"],"settings":{}}},"order":["breadcrumbs","main-page","section_rich_text_Km8fNw","section_rich_text_yDDtPd","1733315594152f8d1b","1720880261dc316d1a"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_Km8fNw": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_9yddce": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title": "Returns Policy"
+          }
+        },
+        "content_7U74HR": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>In this section we will explore our Damages, Returns and Warranty Processes.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_9yddce",
+        "content_7U74HR"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "section_rich_text_yDDtPd": {
+      "type": "section-rich-text",
+      "blocks": {
+        "content_iVt4xV": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Warranty At Plumbing Market, we understand that the need for a warranty is paramount in the world of plumbing. <strong>All warranty claims are handled directly with the manufacturer </strong></p><p>When you choose products from Plumbing Market, you're not just buying a product but you're securing a warranty from the manufacturers that provides peace of mind and proves our dedication to quality. </p><p>If you would like to submit a warranty claim please fill out the form below to get started. Please leave your name, order number, email, phone number, a description of the issue and attach at least 5 photos of the damaged or defective product and we will send it off to the manufacturer and they will contact you to proceed further with the claim. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_iVt4xV"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    },
+    "1733315594152f8d1b": {
+      "type": "apps",
+      "blocks": {
+        "s_contact_form_builder_block_app_W6VrrV": {
+          "type": "shopify://apps/s-contact-form-builder/blocks/block-app/cceef8dd-a4f1-4344-962d-06bf0022ec0d",
+          "settings": {
+            "ify_contactform_short_code": "<div class=\"storeify-formbuilder-view\" id=\"storeify-formbuilder-view-18717\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "s_contact_form_builder_block_app_W6VrrV"
+      ],
+      "settings": {}
+    },
+    "1720880261dc316d1a": {
+      "type": "apps",
+      "blocks": {
+        "s_contact_form_builder_block_app_gb7Uij": {
+          "type": "shopify://apps/s-contact-form-builder/blocks/block-app/cceef8dd-a4f1-4344-962d-06bf0022ec0d",
+          "disabled": true,
+          "settings": {
+            "ify_contactform_short_code": "<div class=\"storeify-formbuilder-view\" id=\"storeify-formbuilder-view-17824\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "s_contact_form_builder_block_app_gb7Uij"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_rich_text_Km8fNw",
+    "section_rich_text_yDDtPd",
+    "1733315594152f8d1b",
+    "1720880261dc316d1a"
+  ]
+}

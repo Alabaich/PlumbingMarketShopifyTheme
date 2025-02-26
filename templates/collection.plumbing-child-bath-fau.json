@@ -1,1 +1,266 @@
-{"sections":{"section_image_hotspots_dwcdaE":{"type":"section-image-hotspots","blocks":{"hotspot_EjXqRw":{"type":"hotspot","settings":{"product":"american-standard-boulevard-1-28-gpf-elongated-toilet-with-seat","text_position":"text-start","title":"","text":"","position_left":80,"position_top":70,"position_left_mobile":70,"position_top_mobile":20}},"hotspot_fBh6Qc":{"type":"hotspot","settings":{"product":"cleo-timelyss-three-holes-widespread-bathroom-faucet-f13127","text_position":"text-end","title":"","text":"","position_left":10,"position_top":60,"position_left_mobile":30,"position_top_mobile":50}},"hotspot_bUmFCU":{"type":"hotspot","settings":{"product":"murano-34x60-freestanding-tub-mur3460f1","text_position":"text-start","title":"","text":"","position_left":50,"position_top":70,"position_left_mobile":50,"position_top_mobile":70}}},"block_order":["hotspot_EjXqRw","hotspot_fBh6Qc","hotspot_bUmFCU"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/word-image.webp","overlay_opacity":0,"color_palette":"black","button_color_palette":"accent","hotspot_height":33,"hotspot_color_palette":"white","hotspot_hover_color_palette":"black","layout":"right","height":"m","width":"wide","enable_custom_height":false,"custom_height":300,"text_position":"text-center","title_size":"h1","title":"Plumbing Collection","text":"<p>Upgrade your home with our premium plumbing essentials. From stylish faucets to luxurious bathtubs, we offer the best prices and services. Benefit from free GTA delivery and same-day click and collect on select items.<\/p>","link_text":"","link_url":"shopify:\/\/collections\/all","show_link":false,"height_mobile":"m","title_size_mobile":"mobile-size-18","spacing_desktop":50,"spacing_mobile":30}},"section_logo_list_UCJM94":{"type":"section-logo-list","blocks":{"logo_xDqAF7":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/widespread_faucets.webp","image_svg":"","link":"shopify:\/\/collections\/widespread-bathroom-faucets"}},"logo_MJdXD8":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/single_handle.webp","image_svg":"","link":"shopify:\/\/collections\/single-handle-bathroom-faucets"}},"logo_tEJyQU":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/wall_mounted_faucets.webp","image_svg":"","link":"shopify:\/\/collections\/wall-mount-bathroom-faucets"}},"logo_DAV8Mf":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/tall_vessel_faucets.webp","image_svg":"","link":"shopify:\/\/collections\/vessel-faucets"}},"logo_qrf6FE":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/centerset_faucets.webp","image_svg":"","link":"shopify:\/\/collections\/centerset-bathroom-faucets"}}},"block_order":["logo_xDqAF7","logo_MJdXD8","logo_tEJyQU","logo_DAV8Mf","logo_qrf6FE"],"settings":{"number_of_items":8,"text_alignment":"start","title_size":"h1","title":"","link_text":"Button","link_url":"","button_color_palette":"accent","show_link":false,"spacing_desktop":50,"spacing_mobile":30}},"breadcrumbs":{"type":"breadcrumbs","settings":{"hide_mobile":false}},"main-collection":{"type":"main-collection","blocks":{"title":{"type":"title","settings":{"text_alignment":"left","title":""}},"sorting":{"type":"sorting","settings":{}},"product_grid":{"type":"product_grid","settings":{}},"423fb7f6-2c97-4420-8211-d45378349d2a":{"type":"description","settings":{"text_alignment":"left","enable_read_more":false,"text":""}}},"block_order":["title","sorting","product_grid","423fb7f6-2c97-4420-8211-d45378349d2a"],"settings":{"pagination_qty":12,"pagination_type":"pages","show_amount_of_products_in_collection":true,"productview_type":"grid","products_per_row":3,"show_collection_image":true,"enable_filters":true,"enable_menu":true,"enable_collections":true,"filters_menu_alignment":"left","filter_menu":"","collections_menu":[],"filter_sticky":false,"filters_show_more_limit":7,"image_swatches_size":"xs","image_swatches_fill_images":true,"image_swatches_show_in_circle":true,"enable_quick_buy_desktop":true,"enable_quick_buy_mobile":true,"enable_quick_buy_drawer":false,"enable_quick_buy_qty_selector":true,"enable_color_picker":false,"enable_quick_buy_compact":false,"products_per_row_mobile":"2","filter_mobile_sticky":false}},"section_blog_posts_xh76b6":{"type":"section-blog-posts","settings":{"blog":"house-of-rohl","number_of_items":3,"text_alignment":"start","title_size":"h2","title":"Blog posts","link_text":"Button","link_url":"","button_color_palette":"accent","show_link":false,"show_image":true,"show_date":true,"show_author":true,"show_excerpt":false,"button_color_palette_post":"accent","show_link_post":true,"spacing_desktop":50,"spacing_mobile":30}},"section_recently_viewed_products_cDhA6d":{"type":"section-recently-viewed-products","settings":{"number_of_items":5,"text_alignment":"start","title_size":"h2","title":"Recently viewed products","enable_quick_buy_desktop":true,"enable_quick_buy_drawer":false,"enable_quick_buy_mobile":true,"enable_quick_buy_qty_selector":true,"enable_color_picker":false,"enable_quick_buy_compact":false,"spacing_desktop":50,"spacing_mobile":30}}},"order":["section_image_hotspots_dwcdaE","section_logo_list_UCJM94","breadcrumbs","main-collection","section_blog_posts_xh76b6","section_recently_viewed_products_cDhA6d"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_image_hotspots_dwcdaE": {
+      "type": "section-image-hotspots",
+      "blocks": {
+        "hotspot_EjXqRw": {
+          "type": "hotspot",
+          "settings": {
+            "product": "american-standard-boulevard-1-28-gpf-elongated-toilet-with-seat",
+            "text_position": "text-start",
+            "title": "",
+            "text": "",
+            "position_left": 80,
+            "position_top": 70,
+            "position_left_mobile": 70,
+            "position_top_mobile": 20
+          }
+        },
+        "hotspot_fBh6Qc": {
+          "type": "hotspot",
+          "settings": {
+            "product": "cleo-timelyss-three-holes-widespread-bathroom-faucet-f13127",
+            "text_position": "text-end",
+            "title": "",
+            "text": "",
+            "position_left": 10,
+            "position_top": 60,
+            "position_left_mobile": 30,
+            "position_top_mobile": 50
+          }
+        },
+        "hotspot_bUmFCU": {
+          "type": "hotspot",
+          "settings": {
+            "product": "murano-34x60-freestanding-tub-mur3460f1",
+            "text_position": "text-start",
+            "title": "",
+            "text": "",
+            "position_left": 50,
+            "position_top": 70,
+            "position_left_mobile": 50,
+            "position_top_mobile": 70
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_EjXqRw",
+        "hotspot_fBh6Qc",
+        "hotspot_bUmFCU"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/word-image.webp",
+        "overlay_opacity": 0,
+        "color_palette": "black",
+        "button_color_palette": "accent",
+        "hotspot_height": 33,
+        "hotspot_color_palette": "white",
+        "hotspot_hover_color_palette": "black",
+        "layout": "right",
+        "height": "m",
+        "width": "wide",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "text_position": "text-center",
+        "title_size": "h1",
+        "title": "Plumbing Collection",
+        "text": "<p>Upgrade your home with our premium plumbing essentials. From stylish faucets to luxurious bathtubs, we offer the best prices and services. Benefit from free GTA delivery and same-day click and collect on select items.</p>",
+        "link_text": "",
+        "link_url": "shopify://collections/all",
+        "show_link": false,
+        "height_mobile": "m",
+        "title_size_mobile": "mobile-size-18",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_logo_list_UCJM94": {
+      "type": "section-logo-list",
+      "blocks": {
+        "logo_xDqAF7": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/widespread_faucets.webp",
+            "image_svg": "",
+            "link": "shopify://collections/widespread-bathroom-faucets"
+          }
+        },
+        "logo_MJdXD8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/single_handle.webp",
+            "image_svg": "",
+            "link": "shopify://collections/single-handle-bathroom-faucets"
+          }
+        },
+        "logo_tEJyQU": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/wall_mounted_faucets.webp",
+            "image_svg": "",
+            "link": "shopify://collections/wall-mount-bathroom-faucets"
+          }
+        },
+        "logo_DAV8Mf": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/tall_vessel_faucets.webp",
+            "image_svg": "",
+            "link": "shopify://collections/vessel-faucets"
+          }
+        },
+        "logo_qrf6FE": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/centerset_faucets.webp",
+            "image_svg": "",
+            "link": "shopify://collections/centerset-bathroom-faucets"
+          }
+        }
+      },
+      "block_order": [
+        "logo_xDqAF7",
+        "logo_MJdXD8",
+        "logo_tEJyQU",
+        "logo_DAV8Mf",
+        "logo_qrf6FE"
+      ],
+      "settings": {
+        "number_of_items": 8,
+        "text_alignment": "start",
+        "title_size": "h1",
+        "title": "",
+        "link_text": "Button",
+        "link_url": "",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_alignment": "left",
+            "title": ""
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "settings": {}
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {}
+        },
+        "423fb7f6-2c97-4420-8211-d45378349d2a": {
+          "type": "description",
+          "settings": {
+            "text_alignment": "left",
+            "enable_read_more": false,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "sorting",
+        "product_grid",
+        "423fb7f6-2c97-4420-8211-d45378349d2a"
+      ],
+      "settings": {
+        "pagination_qty": 12,
+        "pagination_type": "pages",
+        "show_amount_of_products_in_collection": true,
+        "productview_type": "grid",
+        "products_per_row": 3,
+        "show_collection_image": true,
+        "enable_filters": true,
+        "enable_menu": true,
+        "enable_collections": true,
+        "filters_menu_alignment": "left",
+        "filter_menu": "",
+        "collections_menu": [],
+        "filter_sticky": false,
+        "filters_show_more_limit": 7,
+        "image_swatches_size": "xs",
+        "image_swatches_fill_images": true,
+        "image_swatches_show_in_circle": true,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "products_per_row_mobile": "2",
+        "filter_mobile_sticky": false
+      }
+    },
+    "section_blog_posts_xh76b6": {
+      "type": "section-blog-posts",
+      "settings": {
+        "blog": "house-of-rohl",
+        "number_of_items": 3,
+        "text_alignment": "start",
+        "title_size": "h2",
+        "title": "Blog posts",
+        "link_text": "Button",
+        "link_url": "",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "button_color_palette_post": "accent",
+        "show_link_post": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_recently_viewed_products_cDhA6d": {
+      "type": "section-recently-viewed-products",
+      "settings": {
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h2",
+        "title": "Recently viewed products",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "section_image_hotspots_dwcdaE",
+    "section_logo_list_UCJM94",
+    "breadcrumbs",
+    "main-collection",
+    "section_blog_posts_xh76b6",
+    "section_recently_viewed_products_cDhA6d"
+  ]
+}

@@ -1,1 +1,518 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","settings":{"hide_mobile":false}},"main-article":{"type":"main-article","blocks":{"title":{"type":"title","settings":{"show_banner":true,"overlay_opacity":25,"color_palette":"dark","show_date":true,"show_author":true,"show_article_reading_time":true}},"featured_image":{"type":"featured_image","disabled":true,"settings":{}},"excerpt":{"type":"excerpt","settings":{}},"content":{"type":"content","settings":{}},"tags":{"type":"tags","settings":{}},"comments":{"type":"comments","settings":{}},"db5d637d-f346-4923-afc2-d959a7a5a8a6":{"type":"spacer","settings":{"height":20}},"cae634eb-3596-48c8-9d94-628d20d4d95b":{"type":"share_buttons","settings":{"share_whatsapp":true,"share_facebook":true,"share_twitter":true,"share_pinterest":true,"share_messenger":true,"share_email":true}}},"block_order":["title","featured_image","excerpt","content","tags","comments","db5d637d-f346-4923-afc2-d959a7a5a8a6","cae634eb-3596-48c8-9d94-628d20d4d95b"],"disabled":true,"settings":{"big_fontsize":true,"compact":true}},"section_gallery_qxYMLX":{"type":"section-gallery","blocks":{"image_9xfAyN":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Free_Shipping_Riobel.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"","link_url":"shopify:\/\/collections\/riobel","show_link":false,"image_mobile":"shopify:\/\/shop_images\/free_shipping_riobel_mobile.png","title_size_mobile":"mobile-size-18"}}},"block_order":["image_9xfAyN"],"settings":{"items_layout":"playful-grid","items_width":2,"height":"size-m","width":"boxed","space_between":16,"image_zoom":true,"image_move":false,"show_content_on_hover":false,"content_on_hover_color_palette":"dark","layout_mobile":"rows","mobile_height":"size-s","spacing_desktop":50,"spacing_mobile":30}},"section_gallery_g39MNH":{"type":"section-gallery","blocks":{"image_Gqt4XA":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/1080x1080_shower_faucets_1_6f4a05cd-5010-47b2-9081-ffb36dc174bf.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"","link_url":"shopify:\/\/collections\/riobel-shower-faucets","show_link":false,"title_size_mobile":"mobile-size-18"}},"image_pVFCD8":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/tub_fillers_1b75ff7e-5c38-4aed-9c2c-a72d9f8f0439.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"","link_url":"shopify:\/\/collections\/riobel-tub-faucets-and-fillers","show_link":false,"title_size_mobile":"mobile-size-18"}},"image_wGhURH":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/bathroom_faucets_0e13a334-3f00-42d4-968f-d24d977b7f61.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"","link_url":"shopify:\/\/collections\/riobel-bathroom-faucets","show_link":false,"title_size_mobile":"mobile-size-18"}},"image_rTh8WD":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Kitchen_Faucets_54eae8ea-621e-48a0-a645-e71d6d025829.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"","link_url":"shopify:\/\/collections\/riobel-kitchen-faucets","show_link":false,"title_size_mobile":"mobile-size-18"}}},"block_order":["image_Gqt4XA","image_pVFCD8","image_wGhURH","image_rTh8WD"],"settings":{"items_layout":"static-grid","items_width":4,"height":"size-s","width":"boxed","space_between":16,"image_zoom":true,"image_move":false,"show_content_on_hover":false,"content_on_hover_color_palette":"dark","layout_mobile":"compact","mobile_height":"size-s","spacing_desktop":0,"spacing_mobile":30}},"section_rich_text_XXWDX8":{"type":"section-rich-text","blocks":{"content_cXYMLD":{"type":"content","settings":{"page":"","text":"<h2>Riobel's Limited Lifetime Warranty <\/h2><p>Customers Can Shop With Confidence That No Matter How Long Ago They Purchased a Product From Riobel . Our Customers Are Backed With Their Limited Lifetime Warranty.<\/p><h2>Choose Riobel For Your Bathroom or Kitchen Today!<\/h2><p>At Plumbing Market We Carry Most of Riobel in Stock at Our Warehouses Located Across Canada and the U.S.A to Ensure Quick and Reliable Shipping<\/p>"}}},"block_order":["content_cXYMLD"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":0,"spacing_mobile":30}},"section_featured_products_yGmXXM":{"type":"section-featured-products","settings":{"products":["riobel-arca-2745-3-way-coaxial-system-thermostatic-shower-kit","riobel-arca-single-handle-bathroom-faucet-brushed-gold-aal01bg","riobel-arca-widespread-bathroom-faucet-black-aard08bk","riobel-azure-pull-down-kitchen-faucet-with-c-spout-black-az201bk","riobel-ciclo-8-inch-lavatory-widespread-bathroom-faucet-black"],"layout":"slider","number_of_items":5,"text_alignment":"center","title_size":"size-50","title":"Riobel","text":"<p>Luxury Designed to Be Lived With, Free Shipping Across Canada<\/p>","link_text":"Shop All Riobel Products","link_url":"shopify:\/\/collections\/riobel","button_color_palette":"accent","show_link":false,"enable_quick_buy_desktop":true,"enable_quick_buy_mobile":true,"enable_quick_buy_drawer":false,"enable_quick_buy_qty_selector":true,"enable_color_picker":true,"enable_quick_buy_compact":false,"mobile_layout":"slider","spacing_desktop":50,"spacing_mobile":30}},"section_image_with_products_FCmALN":{"type":"section-image-with-products","settings":{"image":"shopify:\/\/shop_images\/Riobel_Kitchen_Faucets_banner_with_products_1.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","layout":"image-left","products":["riobel-lateral-pull-down-kitchen-faucet-with-u-spout","riobel-lateral-pot-filler-transitional-style","riobel-lateral-two-handle-pull-down-kitchen-faucet-with-c-spout"],"text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"","link_url":"shopify:\/\/collections\/riobel-kitchen-faucets","show_link":false,"enable_quick_buy_desktop":true,"enable_quick_buy_mobile":true,"enable_quick_buy_drawer":false,"enable_quick_buy_qty_selector":true,"enable_color_picker":false,"enable_quick_buy_compact":false,"width_mobile":"boxed","mobile_height":"size-s","title_size_mobile":"mobile-size-18","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_xztCq8":{"type":"section-rich-text","blocks":{"title_TVnMFr":{"type":"title","settings":{"title_size":"h2","title":"Riobel Luxury Designed to be Lived With"}},"content_jLcrMj":{"type":"content","settings":{"page":"","text":"<h2>At Plumbing Market We Offer Our Customers a Wide Range of Riobel Products All With Free Shipping Across Canada<\/h2><p>Originating in Quebec, Riobel combines European panache with North American flair. Design and engineering work hand in hand, and come together brilliantly through innovation and ingenuity. Geometric angles and rounded arcs make up award-winning collections that will be as true tomorrow as they are today. This is luxury designed to be lived with.<\/p><p>Riobel faucets and fixtures are designed and engineered in Canada and combine advanced technologies with brilliant style, form, and function.<\/p><p>The definition of lateral is on the side, and that distinctive feature separates the Lateral Collection from all the rest. Offsetting the lever and placing it on the edge transforms proportion and perspective. This subtle difference is contrasted and complemented by other design elements. The rounded arc of the spout forms a direct line with the lever while a higher base shifts scale and space. Symmetry and asymmetry, line and curve come together in the Lateral Collection to create a fresh, warmly minimalist balance.<\/p>"}}},"block_order":["title_TVnMFr","content_jLcrMj"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":0,"spacing_mobile":30}},"section_rich_text_nVgHHP":{"type":"section-rich-text","blocks":{"title_XgzhLA":{"type":"title","settings":{"title_size":"h2","title":"More For Your Home"}},"content_Vw4pbR":{"type":"content","settings":{"page":"","text":"<p>At Plumbing Market We Carry A Wide Range Of Products For Your Home<\/p>"}}},"block_order":["title_XgzhLA","content_Vw4pbR"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":0,"spacing_mobile":30}},"section_promo_gallery_PY3YXx":{"type":"section-promo-gallery","blocks":{"image_UeaJ7p":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Bathroom_Vanities_20cc7d1e-7f6c-4318-8b5c-e8f202de01ac.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"View All","link_url":"shopify:\/\/collections\/bathroom-vanities","show_link":false,"title_size_mobile":"mobile-size-18"}},"image_BKqieb":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Toilets_all_4c1cc619-2719-4e49-b2aa-ade327d29297.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"View All","link_url":"shopify:\/\/collections\/toilets","show_link":false,"title_size_mobile":"mobile-size-18"}},"image_Jy9jfm":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Bathtubs_4fa42f0a-c9bb-4c73-b553-83943eff2c20.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"View All","link_url":"shopify:\/\/collections\/bathtubs","show_link":false,"title_size_mobile":"mobile-size-18"}}},"block_order":["image_UeaJ7p","image_BKqieb","image_Jy9jfm"],"settings":{"items_width":3,"width":"boxed","space_between":16,"image_zoom":true,"layout_mobile":"rows","spacing_desktop":50,"spacing_mobile":30}},"blogs_row":{"type":"section-blog-posts","settings":{"blog":"designing-your-kitchen","number_of_items":3,"text_alignment":"center","title_size":"h2","title":"More Blog posts","link_text":"View all","link_url":"","button_color_palette":"accent","show_link":false,"show_image":true,"show_date":true,"show_author":true,"show_excerpt":false,"button_color_palette_post":"accent","show_link_post":true,"spacing_desktop":50,"spacing_mobile":30}},"section_blog_posts_AApnK4":{"type":"section-blog-posts","settings":{"blog":"designing-your-bathroom","number_of_items":3,"text_alignment":"start","title_size":"h2","title":"","link_text":"Button","link_url":"","button_color_palette":"accent","show_link":false,"show_image":true,"show_date":true,"show_author":true,"show_excerpt":false,"button_color_palette_post":"accent","show_link_post":true,"spacing_desktop":50,"spacing_mobile":30}},"section_recently_viewed_products_xaw4am":{"type":"section-recently-viewed-products","settings":{"number_of_items":5,"text_alignment":"start","title_size":"h2","title":"Recently viewed products","enable_quick_buy_desktop":true,"enable_quick_buy_drawer":false,"enable_quick_buy_mobile":true,"enable_quick_buy_qty_selector":true,"enable_color_picker":false,"enable_quick_buy_compact":false,"spacing_desktop":0,"spacing_mobile":30}}},"order":["breadcrumbs","main-article","section_gallery_qxYMLX","section_gallery_g39MNH","section_rich_text_XXWDX8","section_featured_products_yGmXXM","section_image_with_products_FCmALN","section_rich_text_xztCq8","section_rich_text_nVgHHP","section_promo_gallery_PY3YXx","blogs_row","section_blog_posts_AApnK4","section_recently_viewed_products_xaw4am"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-article": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_banner": true,
+            "overlay_opacity": 25,
+            "color_palette": "dark",
+            "show_date": true,
+            "show_author": true,
+            "show_article_reading_time": true
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "disabled": true,
+          "settings": {}
+        },
+        "excerpt": {
+          "type": "excerpt",
+          "settings": {}
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        },
+        "tags": {
+          "type": "tags",
+          "settings": {}
+        },
+        "comments": {
+          "type": "comments",
+          "settings": {}
+        },
+        "db5d637d-f346-4923-afc2-d959a7a5a8a6": {
+          "type": "spacer",
+          "settings": {
+            "height": 20
+          }
+        },
+        "cae634eb-3596-48c8-9d94-628d20d4d95b": {
+          "type": "share_buttons",
+          "settings": {
+            "share_whatsapp": true,
+            "share_facebook": true,
+            "share_twitter": true,
+            "share_pinterest": true,
+            "share_messenger": true,
+            "share_email": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "featured_image",
+        "excerpt",
+        "content",
+        "tags",
+        "comments",
+        "db5d637d-f346-4923-afc2-d959a7a5a8a6",
+        "cae634eb-3596-48c8-9d94-628d20d4d95b"
+      ],
+      "disabled": true,
+      "settings": {
+        "big_fontsize": true,
+        "compact": true
+      }
+    },
+    "section_gallery_qxYMLX": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_9xfAyN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Free_Shipping_Riobel.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify://collections/riobel",
+            "show_link": false,
+            "image_mobile": "shopify://shop_images/free_shipping_riobel_mobile.png",
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "image_9xfAyN"
+      ],
+      "settings": {
+        "items_layout": "playful-grid",
+        "items_width": 2,
+        "height": "size-m",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "content_on_hover_color_palette": "dark",
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_gallery_g39MNH": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_Gqt4XA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1080x1080_shower_faucets_1_6f4a05cd-5010-47b2-9081-ffb36dc174bf.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify://collections/riobel-shower-faucets",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "image_pVFCD8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tub_fillers_1b75ff7e-5c38-4aed-9c2c-a72d9f8f0439.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify://collections/riobel-tub-faucets-and-fillers",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "image_wGhURH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bathroom_faucets_0e13a334-3f00-42d4-968f-d24d977b7f61.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify://collections/riobel-bathroom-faucets",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "image_rTh8WD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Kitchen_Faucets_54eae8ea-621e-48a0-a645-e71d6d025829.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify://collections/riobel-kitchen-faucets",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "image_Gqt4XA",
+        "image_pVFCD8",
+        "image_wGhURH",
+        "image_rTh8WD"
+      ],
+      "settings": {
+        "items_layout": "static-grid",
+        "items_width": 4,
+        "height": "size-s",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "content_on_hover_color_palette": "dark",
+        "layout_mobile": "compact",
+        "mobile_height": "size-s",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_XXWDX8": {
+      "type": "section-rich-text",
+      "blocks": {
+        "content_cXYMLD": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<h2>Riobel's Limited Lifetime Warranty </h2><p>Customers Can Shop With Confidence That No Matter How Long Ago They Purchased a Product From Riobel . Our Customers Are Backed With Their Limited Lifetime Warranty.</p><h2>Choose Riobel For Your Bathroom or Kitchen Today!</h2><p>At Plumbing Market We Carry Most of Riobel in Stock at Our Warehouses Located Across Canada and the U.S.A to Ensure Quick and Reliable Shipping</p>"
+          }
+        }
+      },
+      "block_order": [
+        "content_cXYMLD"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30
+      }
+    },
+    "section_featured_products_yGmXXM": {
+      "type": "section-featured-products",
+      "settings": {
+        "products": [
+          "riobel-arca-2745-3-way-coaxial-system-thermostatic-shower-kit",
+          "riobel-arca-single-handle-bathroom-faucet-brushed-gold-aal01bg",
+          "riobel-arca-widespread-bathroom-faucet-black-aard08bk",
+          "riobel-azure-pull-down-kitchen-faucet-with-c-spout-black-az201bk",
+          "riobel-ciclo-8-inch-lavatory-widespread-bathroom-faucet-black"
+        ],
+        "layout": "slider",
+        "number_of_items": 5,
+        "text_alignment": "center",
+        "title_size": "size-50",
+        "title": "Riobel",
+        "text": "<p>Luxury Designed to Be Lived With, Free Shipping Across Canada</p>",
+        "link_text": "Shop All Riobel Products",
+        "link_url": "shopify://collections/riobel",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": true,
+        "enable_quick_buy_compact": false,
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_image_with_products_FCmALN": {
+      "type": "section-image-with-products",
+      "settings": {
+        "image": "shopify://shop_images/Riobel_Kitchen_Faucets_banner_with_products_1.png",
+        "overlay_opacity": 0,
+        "color_palette": "white",
+        "button_color_palette": "accent",
+        "layout": "image-left",
+        "products": [
+          "riobel-lateral-pull-down-kitchen-faucet-with-u-spout",
+          "riobel-lateral-pot-filler-transitional-style",
+          "riobel-lateral-two-handle-pull-down-kitchen-faucet-with-c-spout"
+        ],
+        "text_position": "text-center",
+        "title_size": "h2",
+        "title": "",
+        "text": "",
+        "link_text": "",
+        "link_url": "shopify://collections/riobel-kitchen-faucets",
+        "show_link": false,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "width_mobile": "boxed",
+        "mobile_height": "size-s",
+        "title_size_mobile": "mobile-size-18",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_xztCq8": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_TVnMFr": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "title": "Riobel Luxury Designed to be Lived With"
+          }
+        },
+        "content_jLcrMj": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<h2>At Plumbing Market We Offer Our Customers a Wide Range of Riobel Products All With Free Shipping Across Canada</h2><p>Originating in Quebec, Riobel combines European panache with North American flair. Design and engineering work hand in hand, and come together brilliantly through innovation and ingenuity. Geometric angles and rounded arcs make up award-winning collections that will be as true tomorrow as they are today. This is luxury designed to be lived with.</p><p>Riobel faucets and fixtures are designed and engineered in Canada and combine advanced technologies with brilliant style, form, and function.</p><p>The definition of lateral is on the side, and that distinctive feature separates the Lateral Collection from all the rest. Offsetting the lever and placing it on the edge transforms proportion and perspective. This subtle difference is contrasted and complemented by other design elements. The rounded arc of the spout forms a direct line with the lever while a higher base shifts scale and space. Symmetry and asymmetry, line and curve come together in the Lateral Collection to create a fresh, warmly minimalist balance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_TVnMFr",
+        "content_jLcrMj"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_nVgHHP": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_XgzhLA": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "title": "More For Your Home"
+          }
+        },
+        "content_Vw4pbR": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>At Plumbing Market We Carry A Wide Range Of Products For Your Home</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_XgzhLA",
+        "content_Vw4pbR"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30
+      }
+    },
+    "section_promo_gallery_PY3YXx": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "image_UeaJ7p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Bathroom_Vanities_20cc7d1e-7f6c-4318-8b5c-e8f202de01ac.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "View All",
+            "link_url": "shopify://collections/bathroom-vanities",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "image_BKqieb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Toilets_all_4c1cc619-2719-4e49-b2aa-ade327d29297.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "View All",
+            "link_url": "shopify://collections/toilets",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "image_Jy9jfm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Bathtubs_4fa42f0a-c9bb-4c73-b553-83943eff2c20.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "View All",
+            "link_url": "shopify://collections/bathtubs",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "image_UeaJ7p",
+        "image_BKqieb",
+        "image_Jy9jfm"
+      ],
+      "settings": {
+        "items_width": 3,
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "layout_mobile": "rows",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "blogs_row": {
+      "type": "section-blog-posts",
+      "settings": {
+        "blog": "designing-your-kitchen",
+        "number_of_items": 3,
+        "text_alignment": "center",
+        "title_size": "h2",
+        "title": "More Blog posts",
+        "link_text": "View all",
+        "link_url": "",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "button_color_palette_post": "accent",
+        "show_link_post": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_blog_posts_AApnK4": {
+      "type": "section-blog-posts",
+      "settings": {
+        "blog": "designing-your-bathroom",
+        "number_of_items": 3,
+        "text_alignment": "start",
+        "title_size": "h2",
+        "title": "",
+        "link_text": "Button",
+        "link_url": "",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "button_color_palette_post": "accent",
+        "show_link_post": true,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_recently_viewed_products_xaw4am": {
+      "type": "section-recently-viewed-products",
+      "settings": {
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h2",
+        "title": "Recently viewed products",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "spacing_desktop": 0,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-article",
+    "section_gallery_qxYMLX",
+    "section_gallery_g39MNH",
+    "section_rich_text_XXWDX8",
+    "section_featured_products_yGmXXM",
+    "section_image_with_products_FCmALN",
+    "section_rich_text_xztCq8",
+    "section_rich_text_nVgHHP",
+    "section_promo_gallery_PY3YXx",
+    "blogs_row",
+    "section_blog_posts_AApnK4",
+    "section_recently_viewed_products_xaw4am"
+  ]
+}

@@ -1,1 +1,394 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","settings":{"hide_mobile":false}},"section_slideshow_em9Rx8":{"type":"section-slideshow","blocks":{"slide_3gn4ir":{"type":"slide","settings":{"layout":"background","overlay_opacity":0,"color_palette":"light_gradient","button_color_palette":"accent","text_position":"text-center","title_size":"h1","title":"Image banner","text":"<p>Highlight a new collection and share details about products related to this image<\/p>","link_text":"Button","link_url":"shopify:\/\/collections\/all","show_link":false,"title_size_mobile":"mobile-size-18"}}},"block_order":["slide_3gn4ir"],"settings":{"height":"m","width":"wide","autoplay":false,"autoplay_seconds":3,"enable_controls":false,"height_mobile":"m","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_MJjBd3":{"type":"section-rich-text","blocks":{"title_xUBtJL":{"type":"title","settings":{"title_size":"h1","title":"Tell something about your brand"}},"content_PW9HpC":{"type":"content","settings":{"page":"","text":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"}},"button_9t8G9P":{"type":"button","settings":{"link_text":"Button","link_url":"\/","button_color_palette":"accent"}}},"block_order":["title_xUBtJL","content_PW9HpC","button_9t8G9P"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":50,"spacing_mobile":30}},"main-page":{"type":"main-page","blocks":{"title":{"type":"title","settings":{"title_size":"h1"}},"content":{"type":"content","settings":{}}},"block_order":["title","content"],"disabled":true,"settings":{"max_width":980,"content_alignment":"start","text_alignment":"start","spacing_desktop":50,"spacing_mobile":30}},"section_image_with_products_rMY6fr":{"type":"section-image-with-products","settings":{"overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","layout":"image-left","products":["cleo-one-piece-toilet-dual-flush-4-6l-12-rough-uf-seat-cover"],"text_position":"text-center","title_size":"h1","title":"Image banner with products","text":"<p>Give customers details about the banner image(s) or content and add related products<\/p>","link_text":"Button","link_url":"","show_link":false,"enable_quick_buy_desktop":true,"enable_quick_buy_mobile":true,"enable_quick_buy_drawer":false,"enable_quick_buy_qty_selector":true,"enable_color_picker":false,"enable_quick_buy_compact":false,"width_mobile":"boxed","mobile_height":"size-s","title_size_mobile":"mobile-size-18","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_inFQxN":{"type":"section-rich-text","blocks":{"title_jzx4dL":{"type":"title","settings":{"title_size":"h1","title":"Tell something about your brand"}},"content_7fjfmE":{"type":"content","settings":{"page":"","text":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"}},"button_6JjwCE":{"type":"button","settings":{"link_text":"Button","link_url":"\/","button_color_palette":"accent"}}},"block_order":["title_jzx4dL","content_7fjfmE","button_6JjwCE"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":50,"spacing_mobile":30}},"section_image_with_text_Htih6g":{"type":"section-image-with-text","blocks":{"title_7N7NpQ":{"type":"title","settings":{"title":"Image with text","title_size":"h1"}},"text_8f7dAB":{"type":"text","settings":{"text":"<p>Pair text with an image and tell your customers something about this product, collection, blogpost or a promotion.<\/p>"}},"usp_hmFG6P":{"type":"usp","settings":{"usp":"<p>Tell a unique detail about this image<\/p>"}},"usp_npMzay":{"type":"usp","settings":{"usp":"<p>Tell a unique detail about this image<\/p>"}},"usp_XfFb6D":{"type":"usp","settings":{"usp":"<p>Tell a unique detail about this image<\/p>"}},"buttons_3cHkzX":{"type":"buttons","settings":{"link_text_1":"Button","link_url_1":"\/","button_color_palette_1":"accent","link_text_2":"","link_url_2":"","button_color_palette_2":"light","show_link":false}}},"block_order":["title_7N7NpQ","text_8f7dAB","usp_hmFG6P","usp_npMzay","usp_XfFb6D","buttons_3cHkzX"],"settings":{"overlay_opacity":0,"color_palette":"white","layout":"image-left","text_position":"text-start","spacing_desktop":50,"spacing_mobile":30}},"section_image_with_text_8baDNm":{"type":"section-image-with-text","blocks":{"title_waKfrL":{"type":"title","settings":{"title":"Image with text","title_size":"h1"}},"text_BW4aHV":{"type":"text","settings":{"text":"<p>Pair text with an image and tell your customers something about this product, collection, blogpost or a promotion.<\/p>"}},"usp_77adDV":{"type":"usp","settings":{"usp":"<p>Tell a unique detail about this image<\/p>"}},"usp_dAnXKX":{"type":"usp","settings":{"usp":"<p>Tell a unique detail about this image<\/p>"}},"usp_FkXdxP":{"type":"usp","settings":{"usp":"<p>Tell a unique detail about this image<\/p>"}},"buttons_BB8qih":{"type":"buttons","settings":{"link_text_1":"Button","link_url_1":"\/","button_color_palette_1":"accent","link_text_2":"","link_url_2":"","button_color_palette_2":"light","show_link":false}}},"block_order":["title_waKfrL","text_BW4aHV","usp_77adDV","usp_dAnXKX","usp_FkXdxP","buttons_BB8qih"],"settings":{"overlay_opacity":0,"color_palette":"white","layout":"image-right","text_position":"text-start","spacing_desktop":50,"spacing_mobile":30}},"section_image_with_text_wyiri4":{"type":"section-image-with-text","blocks":{"title_YNL3jf":{"type":"title","settings":{"title":"Image with text","title_size":"h1"}},"text_3BtKQx":{"type":"text","settings":{"text":"<p>Pair text with an image and tell your customers something about this product, collection, blogpost or a promotion.<\/p>"}},"usp_HCRyJr":{"type":"usp","settings":{"usp":"<p>Tell a unique detail about this image<\/p>"}},"usp_NP6j3U":{"type":"usp","settings":{"usp":"<p>Tell a unique detail about this image<\/p>"}},"usp_XY8FTq":{"type":"usp","settings":{"usp":"<p>Tell a unique detail about this image<\/p>"}},"buttons_kTe9M4":{"type":"buttons","settings":{"link_text_1":"Button","link_url_1":"\/","button_color_palette_1":"accent","link_text_2":"","link_url_2":"","button_color_palette_2":"light","show_link":false}}},"block_order":["title_YNL3jf","text_3BtKQx","usp_HCRyJr","usp_NP6j3U","usp_XY8FTq","buttons_kTe9M4"],"settings":{"overlay_opacity":0,"color_palette":"white","layout":"image-left","text_position":"text-start","spacing_desktop":50,"spacing_mobile":30}}},"order":["breadcrumbs","section_slideshow_em9Rx8","section_rich_text_MJjBd3","main-page","section_image_with_products_rMY6fr","section_rich_text_inFQxN","section_image_with_text_Htih6g","section_image_with_text_8baDNm","section_image_with_text_wyiri4"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "section_slideshow_em9Rx8": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_3gn4ir": {
+          "type": "slide",
+          "settings": {
+            "layout": "background",
+            "overlay_opacity": 0,
+            "color_palette": "light_gradient",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "Image banner",
+            "text": "<p>Highlight a new collection and share details about products related to this image</p>",
+            "link_text": "Button",
+            "link_url": "shopify://collections/all",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "slide_3gn4ir"
+      ],
+      "settings": {
+        "height": "m",
+        "width": "wide",
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_MJjBd3": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_xUBtJL": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title": "Tell something about your brand"
+          }
+        },
+        "content_PW9HpC": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_9t8G9P": {
+          "type": "button",
+          "settings": {
+            "link_text": "Button",
+            "link_url": "/",
+            "button_color_palette": "accent"
+          }
+        }
+      },
+      "block_order": [
+        "title_xUBtJL",
+        "content_PW9HpC",
+        "button_9t8G9P"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_image_with_products_rMY6fr": {
+      "type": "section-image-with-products",
+      "settings": {
+        "overlay_opacity": 0,
+        "color_palette": "white",
+        "button_color_palette": "accent",
+        "layout": "image-left",
+        "products": [
+          "cleo-one-piece-toilet-dual-flush-4-6l-12-rough-uf-seat-cover"
+        ],
+        "text_position": "text-center",
+        "title_size": "h1",
+        "title": "Image banner with products",
+        "text": "<p>Give customers details about the banner image(s) or content and add related products</p>",
+        "link_text": "Button",
+        "link_url": "",
+        "show_link": false,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "width_mobile": "boxed",
+        "mobile_height": "size-s",
+        "title_size_mobile": "mobile-size-18",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_inFQxN": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_jzx4dL": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title": "Tell something about your brand"
+          }
+        },
+        "content_7fjfmE": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_6JjwCE": {
+          "type": "button",
+          "settings": {
+            "link_text": "Button",
+            "link_url": "/",
+            "button_color_palette": "accent"
+          }
+        }
+      },
+      "block_order": [
+        "title_jzx4dL",
+        "content_7fjfmE",
+        "button_6JjwCE"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_image_with_text_Htih6g": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "title_7N7NpQ": {
+          "type": "title",
+          "settings": {
+            "title": "Image with text",
+            "title_size": "h1"
+          }
+        },
+        "text_8f7dAB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image and tell your customers something about this product, collection, blogpost or a promotion.</p>"
+          }
+        },
+        "usp_hmFG6P": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this image</p>"
+          }
+        },
+        "usp_npMzay": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this image</p>"
+          }
+        },
+        "usp_XfFb6D": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this image</p>"
+          }
+        },
+        "buttons_3cHkzX": {
+          "type": "buttons",
+          "settings": {
+            "link_text_1": "Button",
+            "link_url_1": "/",
+            "button_color_palette_1": "accent",
+            "link_text_2": "",
+            "link_url_2": "",
+            "button_color_palette_2": "light",
+            "show_link": false
+          }
+        }
+      },
+      "block_order": [
+        "title_7N7NpQ",
+        "text_8f7dAB",
+        "usp_hmFG6P",
+        "usp_npMzay",
+        "usp_XfFb6D",
+        "buttons_3cHkzX"
+      ],
+      "settings": {
+        "overlay_opacity": 0,
+        "color_palette": "white",
+        "layout": "image-left",
+        "text_position": "text-start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_image_with_text_8baDNm": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "title_waKfrL": {
+          "type": "title",
+          "settings": {
+            "title": "Image with text",
+            "title_size": "h1"
+          }
+        },
+        "text_BW4aHV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image and tell your customers something about this product, collection, blogpost or a promotion.</p>"
+          }
+        },
+        "usp_77adDV": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this image</p>"
+          }
+        },
+        "usp_dAnXKX": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this image</p>"
+          }
+        },
+        "usp_FkXdxP": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this image</p>"
+          }
+        },
+        "buttons_BB8qih": {
+          "type": "buttons",
+          "settings": {
+            "link_text_1": "Button",
+            "link_url_1": "/",
+            "button_color_palette_1": "accent",
+            "link_text_2": "",
+            "link_url_2": "",
+            "button_color_palette_2": "light",
+            "show_link": false
+          }
+        }
+      },
+      "block_order": [
+        "title_waKfrL",
+        "text_BW4aHV",
+        "usp_77adDV",
+        "usp_dAnXKX",
+        "usp_FkXdxP",
+        "buttons_BB8qih"
+      ],
+      "settings": {
+        "overlay_opacity": 0,
+        "color_palette": "white",
+        "layout": "image-right",
+        "text_position": "text-start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_image_with_text_wyiri4": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "title_YNL3jf": {
+          "type": "title",
+          "settings": {
+            "title": "Image with text",
+            "title_size": "h1"
+          }
+        },
+        "text_3BtKQx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image and tell your customers something about this product, collection, blogpost or a promotion.</p>"
+          }
+        },
+        "usp_HCRyJr": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this image</p>"
+          }
+        },
+        "usp_NP6j3U": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this image</p>"
+          }
+        },
+        "usp_XY8FTq": {
+          "type": "usp",
+          "settings": {
+            "usp": "<p>Tell a unique detail about this image</p>"
+          }
+        },
+        "buttons_kTe9M4": {
+          "type": "buttons",
+          "settings": {
+            "link_text_1": "Button",
+            "link_url_1": "/",
+            "button_color_palette_1": "accent",
+            "link_text_2": "",
+            "link_url_2": "",
+            "button_color_palette_2": "light",
+            "show_link": false
+          }
+        }
+      },
+      "block_order": [
+        "title_YNL3jf",
+        "text_3BtKQx",
+        "usp_HCRyJr",
+        "usp_NP6j3U",
+        "usp_XY8FTq",
+        "buttons_kTe9M4"
+      ],
+      "settings": {
+        "overlay_opacity": 0,
+        "color_palette": "white",
+        "layout": "image-left",
+        "text_position": "text-start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_slideshow_em9Rx8",
+    "section_rich_text_MJjBd3",
+    "main-page",
+    "section_image_with_products_rMY6fr",
+    "section_rich_text_inFQxN",
+    "section_image_with_text_Htih6g",
+    "section_image_with_text_8baDNm",
+    "section_image_with_text_wyiri4"
+  ]
+}

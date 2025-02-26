@@ -1,1 +1,267 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","settings":{"hide_mobile":false}},"main-page":{"type":"main-page","blocks":{"title":{"type":"title","settings":{"title_size":"h2"}},"content":{"type":"content","settings":{}}},"block_order":["title","content"],"disabled":true,"settings":{"max_width":980,"content_alignment":"start","text_alignment":"start","spacing_desktop":50,"spacing_mobile":30}},"section_gallery_ydeArP":{"type":"section-gallery","blocks":{"image_3rQtnC":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/American_Standard_Brand_Page.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"","link_url":"shopify:\/\/collections\/american-standard","show_link":false,"image_mobile":"shopify:\/\/shop_images\/Mobile_Toto_World_Renowned_1.png","title_size_mobile":"mobile-size-18"}}},"block_order":["image_3rQtnC"],"settings":{"items_layout":"playful-grid","items_width":2,"height":"size-m","width":"boxed","space_between":16,"image_zoom":true,"image_move":false,"show_content_on_hover":false,"content_on_hover_color_palette":"dark","layout_mobile":"rows","mobile_height":"size-s","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_4QGWHi":{"type":"section-rich-text","blocks":{"title_QgEwfK":{"type":"title","settings":{"title_size":"h2","title":"American Standard Toilets Taking Care of Business for Over 150 Years"}},"content_P6G93X":{"type":"content","settings":{"page":"","text":"<h2>Looking for the greatest thing since indoor plumbing? You’ve come to the right place. <\/h2><p>American Standard’s collection of toilets are recognized for everything from powerful flushing and water efficiency to simple installation and easy to clean features. Discover the quality, craftsmanship, and high-performance that has made American Standard the number one choice in homes for over 150 years.<\/p><h2>The Power of Flush<\/h2><p>We know that life can be busy and stressful, so here at American Standard, we want to take at least one worry off your plate: clogged toilets. The high-performance flushing technology found in American Standard’s toilets, such as Cadet, Champion, and VorMax to name a few, deliver worry-free plumbing, comfort, safety, and cleanliness you can depend on.<\/p><h2>The Cadet: Reigning Supreme for over 80 Years<\/h2><p>When it comes to flushing, American Standard’s Cadet toilets are an unmatched force. The large, 2-1\/8” wide trapway and 3” Flush Valve delivers superior flushing capacity, moving water faster and stronger than standard toilets. The larger the toilet's trapway, the less chance of clogging. Paired with advanced cleaning features, the Cadet provides a durable and reliable flush every single time.<\/p>"}},"button_GmUXbR":{"type":"button","settings":{"link_text":"Shop American Standard","link_url":"shopify:\/\/collections\/american-standard","button_color_palette":"accent"}}},"block_order":["title_QgEwfK","content_P6G93X","button_GmUXbR"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":50,"spacing_mobile":30}},"section_gallery_DhrLeF":{"type":"section-gallery","blocks":{"image_hitqrL":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/American_Standard_Toilets_1.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"","link_url":"shopify:\/\/collections\/american-standard","show_link":false,"title_size_mobile":"mobile-size-18"}},"image_AWDmjV":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/American_Standard_Faucets.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"","link_url":"shopify:\/\/collections\/american-standard-faucets","show_link":false,"title_size_mobile":"mobile-size-18"}},"image_JpemET":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/American_Standard_sinks.png","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h2","title":"","text":"","link_text":"","link_url":"shopify:\/\/collections\/american-standard-sinks","show_link":false,"title_size_mobile":"mobile-size-18"}}},"block_order":["image_hitqrL","image_AWDmjV","image_JpemET"],"settings":{"items_layout":"static-grid","items_width":3,"height":"size-s","width":"boxed","space_between":16,"image_zoom":true,"image_move":false,"show_content_on_hover":false,"content_on_hover_color_palette":"dark","layout_mobile":"rows","mobile_height":"size-s","spacing_desktop":50,"spacing_mobile":30}},"section_featured_products_pgPCTg":{"type":"section-featured-products","settings":{"products":["american-standard-boulevard-1-6-gpf-elongated-toilet-with-seat","american-standard-boulevard-1-28-gpf-elongated-toilet-with-seat","american-standard-cadet-pro-1-28-gpf-elongated-toilet-less-seat","american-standard-cadet-pro-1-28-lined-elongated-toilet-less-seat","american-standard-cadet-pro-1-28-lined-round-front-toilet-less-seat","american-standard-cadet-pro-1-28-round-front-toilet-less-seat","american-standard-cadet-pro-1-28-lined-elongated-toilet-less-seat-1","american-standard-cadet-pro-1-28-lined-round-front-toilet-less-seat-1","american-standard-cadet-pro-1-6-gpf-lined-round-front-toilet-less-seat","american-standard-cadet-pro-1-6-gpf-lined-round-front-toilet-less-seat-1","american-standard-cadet-pro-1-6-gpf-lined-round-front-toilet-less-seat-2","american-standard-cadet-touchless-elongated-toilet-less-seat"],"layout":"slider","number_of_items":5,"text_alignment":"start","title_size":"h2","title":"American Standard","text":"<p>LIFE. LOVE. HOME.<\/p>","link_text":"View All","link_url":"shopify:\/\/collections\/american-standard","button_color_palette":"accent","show_link":false,"enable_quick_buy_desktop":true,"enable_quick_buy_mobile":true,"enable_quick_buy_drawer":false,"enable_quick_buy_qty_selector":true,"enable_color_picker":false,"enable_quick_buy_compact":false,"mobile_layout":"slider","spacing_desktop":50,"spacing_mobile":30}},"section_recently_viewed_products_RKyqrH":{"type":"section-recently-viewed-products","settings":{"number_of_items":5,"text_alignment":"start","title_size":"h2","title":"Recently viewed products","enable_quick_buy_desktop":true,"enable_quick_buy_drawer":false,"enable_quick_buy_mobile":true,"enable_quick_buy_qty_selector":true,"enable_color_picker":false,"enable_quick_buy_compact":false,"spacing_desktop":50,"spacing_mobile":30}}},"order":["breadcrumbs","main-page","section_gallery_ydeArP","section_rich_text_4QGWHi","section_gallery_DhrLeF","section_featured_products_pgPCTg","section_recently_viewed_products_RKyqrH"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_gallery_ydeArP": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_3rQtnC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/American_Standard_Brand_Page.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify://collections/american-standard",
+            "show_link": false,
+            "image_mobile": "shopify://shop_images/Mobile_Toto_World_Renowned_1.png",
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "image_3rQtnC"
+      ],
+      "settings": {
+        "items_layout": "playful-grid",
+        "items_width": 2,
+        "height": "size-m",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "content_on_hover_color_palette": "dark",
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_4QGWHi": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_QgEwfK": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "title": "American Standard Toilets Taking Care of Business for Over 150 Years"
+          }
+        },
+        "content_P6G93X": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<h2>Looking for the greatest thing since indoor plumbing? You’ve come to the right place. </h2><p>American Standard’s collection of toilets are recognized for everything from powerful flushing and water efficiency to simple installation and easy to clean features. Discover the quality, craftsmanship, and high-performance that has made American Standard the number one choice in homes for over 150 years.</p><h2>The Power of Flush</h2><p>We know that life can be busy and stressful, so here at American Standard, we want to take at least one worry off your plate: clogged toilets. The high-performance flushing technology found in American Standard’s toilets, such as Cadet, Champion, and VorMax to name a few, deliver worry-free plumbing, comfort, safety, and cleanliness you can depend on.</p><h2>The Cadet: Reigning Supreme for over 80 Years</h2><p>When it comes to flushing, American Standard’s Cadet toilets are an unmatched force. The large, 2-1/8” wide trapway and 3” Flush Valve delivers superior flushing capacity, moving water faster and stronger than standard toilets. The larger the toilet's trapway, the less chance of clogging. Paired with advanced cleaning features, the Cadet provides a durable and reliable flush every single time.</p>"
+          }
+        },
+        "button_GmUXbR": {
+          "type": "button",
+          "settings": {
+            "link_text": "Shop American Standard",
+            "link_url": "shopify://collections/american-standard",
+            "button_color_palette": "accent"
+          }
+        }
+      },
+      "block_order": [
+        "title_QgEwfK",
+        "content_P6G93X",
+        "button_GmUXbR"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_gallery_DhrLeF": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_hitqrL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/American_Standard_Toilets_1.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify://collections/american-standard",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "image_AWDmjV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/American_Standard_Faucets.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify://collections/american-standard-faucets",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        },
+        "image_JpemET": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/American_Standard_sinks.png",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h2",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "shopify://collections/american-standard-sinks",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "image_hitqrL",
+        "image_AWDmjV",
+        "image_JpemET"
+      ],
+      "settings": {
+        "items_layout": "static-grid",
+        "items_width": 3,
+        "height": "size-s",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "content_on_hover_color_palette": "dark",
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_featured_products_pgPCTg": {
+      "type": "section-featured-products",
+      "settings": {
+        "products": [
+          "american-standard-boulevard-1-6-gpf-elongated-toilet-with-seat",
+          "american-standard-boulevard-1-28-gpf-elongated-toilet-with-seat",
+          "american-standard-cadet-pro-1-28-gpf-elongated-toilet-less-seat",
+          "american-standard-cadet-pro-1-28-lined-elongated-toilet-less-seat",
+          "american-standard-cadet-pro-1-28-lined-round-front-toilet-less-seat",
+          "american-standard-cadet-pro-1-28-round-front-toilet-less-seat",
+          "american-standard-cadet-pro-1-28-lined-elongated-toilet-less-seat-1",
+          "american-standard-cadet-pro-1-28-lined-round-front-toilet-less-seat-1",
+          "american-standard-cadet-pro-1-6-gpf-lined-round-front-toilet-less-seat",
+          "american-standard-cadet-pro-1-6-gpf-lined-round-front-toilet-less-seat-1",
+          "american-standard-cadet-pro-1-6-gpf-lined-round-front-toilet-less-seat-2",
+          "american-standard-cadet-touchless-elongated-toilet-less-seat"
+        ],
+        "layout": "slider",
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h2",
+        "title": "American Standard",
+        "text": "<p>LIFE. LOVE. HOME.</p>",
+        "link_text": "View All",
+        "link_url": "shopify://collections/american-standard",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_recently_viewed_products_RKyqrH": {
+      "type": "section-recently-viewed-products",
+      "settings": {
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h2",
+        "title": "Recently viewed products",
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_gallery_ydeArP",
+    "section_rich_text_4QGWHi",
+    "section_gallery_DhrLeF",
+    "section_featured_products_pgPCTg",
+    "section_recently_viewed_products_RKyqrH"
+  ]
+}

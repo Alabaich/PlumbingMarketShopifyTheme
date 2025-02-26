@@ -1,1 +1,287 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","settings":{"hide_mobile":false}},"section_gallery_qWjmkk":{"type":"section-gallery","blocks":{"image_McbMgx":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/flooring-banner.webp","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h1","title":"","text":"","link_text":"","link_url":"","show_link":false,"title_size_mobile":"mobile-size-18"}}},"block_order":["image_McbMgx"],"settings":{"items_layout":"playful-grid","items_width":2,"height":"size-s","width":"boxed","space_between":16,"image_zoom":true,"image_move":false,"show_content_on_hover":false,"content_on_hover_color_palette":"dark","layout_mobile":"rows","mobile_height":"size-s","spacing_desktop":50,"spacing_mobile":30}},"section_rich_text_bwN9gg":{"type":"section-rich-text","blocks":{"title_fJmPC7":{"type":"title","settings":{"title_size":"h1","title":"MSI Surfaces"}},"content_PQkprK":{"type":"content","settings":{"page":"","text":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"}},"button_AKqjzx":{"type":"button","settings":{"link_text":"Button","link_url":"\/","button_color_palette":"accent"}}},"block_order":["title_fJmPC7","content_PQkprK","button_AKqjzx"],"settings":{"color_palette":"white","text_alignment":"center","height":"size-s","width":"wide","spacing_desktop":50,"spacing_mobile":30}},"section_collection_list_VUXmVm":{"type":"section-collection-list","settings":{"collections":[],"image_ratio":"square","fill_images":true,"layout":"slider","number_of_items":5,"text_alignment":"start","title_size":"h2","title":"","link_text":"","link_url":"shopify:\/\/collections","button_color_palette":"accent","show_link":false,"collection_title_size":"p","mobile_layout":"slider","spacing_desktop":50,"spacing_mobile":30}},"section_gallery_ARJNCJ":{"type":"section-gallery","blocks":{"image_XNzyne":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/exotika-porcelain-hero.webp","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h1","title":"","text":"","link_text":"Button","link_url":"","show_link":false,"title_size_mobile":"mobile-size-18"}}},"block_order":["image_XNzyne"],"settings":{"items_layout":"playful-grid","items_width":2,"height":"size-s","width":"boxed","space_between":16,"image_zoom":true,"image_move":false,"show_content_on_hover":false,"content_on_hover_color_palette":"dark","layout_mobile":"rows","mobile_height":"size-s","spacing_desktop":50,"spacing_mobile":30}},"section_featured_collection_HV4K9h":{"type":"section-featured-collection","settings":{"collection":"","layout":"slider","limit":5,"number_of_items":5,"text_alignment":"start","title_size":"h2","title":"","text":"","link_text":"View all","button_color_palette":"accent","show_link":false,"enable_quick_buy_desktop":true,"enable_quick_buy_mobile":true,"enable_quick_buy_drawer":false,"enable_quick_buy_qty_selector":true,"enable_color_picker":false,"enable_quick_buy_compact":false,"mobile_layout":"slider","spacing_desktop":50,"spacing_mobile":30}},"section_gallery_w7Gjtr":{"type":"section-gallery","blocks":{"image_zYjVkQ":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/bianco-dolomite-regency-polished-d.webp","overlay_opacity":0,"color_palette":"white","button_color_palette":"accent","text_position":"text-center","title_size":"h1","title":"","text":"","link_text":"Button","link_url":"","show_link":false,"title_size_mobile":"mobile-size-18"}}},"block_order":["image_zYjVkQ"],"settings":{"items_layout":"playful-grid","items_width":2,"height":"size-s","width":"boxed","space_between":16,"image_zoom":true,"image_move":false,"show_content_on_hover":false,"content_on_hover_color_palette":"dark","layout_mobile":"rows","mobile_height":"size-s","spacing_desktop":50,"spacing_mobile":30}},"section_featured_products_xQdwVd":{"type":"section-featured-products","settings":{"products":[],"layout":"slider","number_of_items":5,"text_alignment":"start","title_size":"h2","title":"Featured products","text":"<p>Share information and details about these products<\/p>","link_text":"Button","link_url":"\/","button_color_palette":"accent","show_link":false,"enable_quick_buy_desktop":true,"enable_quick_buy_mobile":true,"enable_quick_buy_drawer":false,"enable_quick_buy_qty_selector":true,"enable_color_picker":false,"enable_quick_buy_compact":false,"mobile_layout":"slider","spacing_desktop":50,"spacing_mobile":30}},"main-page":{"type":"main-page","blocks":{"title":{"type":"title","settings":{"title_size":"h1"}},"content":{"type":"content","settings":{}}},"block_order":["title","content"],"settings":{"max_width":980,"content_alignment":"start","text_alignment":"start","spacing_desktop":50,"spacing_mobile":30}}},"order":["breadcrumbs","section_gallery_qWjmkk","section_rich_text_bwN9gg","section_collection_list_VUXmVm","section_gallery_ARJNCJ","section_featured_collection_HV4K9h","section_gallery_w7Gjtr","section_featured_products_xQdwVd","main-page"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "section_gallery_qWjmkk": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_McbMgx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/flooring-banner.webp",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "image_McbMgx"
+      ],
+      "settings": {
+        "items_layout": "playful-grid",
+        "items_width": 2,
+        "height": "size-s",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "content_on_hover_color_palette": "dark",
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_rich_text_bwN9gg": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_fJmPC7": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title": "MSI Surfaces"
+          }
+        },
+        "content_PQkprK": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_AKqjzx": {
+          "type": "button",
+          "settings": {
+            "link_text": "Button",
+            "link_url": "/",
+            "button_color_palette": "accent"
+          }
+        }
+      },
+      "block_order": [
+        "title_fJmPC7",
+        "content_PQkprK",
+        "button_AKqjzx"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_collection_list_VUXmVm": {
+      "type": "section-collection-list",
+      "settings": {
+        "collections": [],
+        "image_ratio": "square",
+        "fill_images": true,
+        "layout": "slider",
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h2",
+        "title": "",
+        "link_text": "",
+        "link_url": "shopify://collections",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "collection_title_size": "p",
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_gallery_ARJNCJ": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_XNzyne": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/exotika-porcelain-hero.webp",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "",
+            "text": "",
+            "link_text": "Button",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "image_XNzyne"
+      ],
+      "settings": {
+        "items_layout": "playful-grid",
+        "items_width": 2,
+        "height": "size-s",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "content_on_hover_color_palette": "dark",
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_featured_collection_HV4K9h": {
+      "type": "section-featured-collection",
+      "settings": {
+        "collection": "",
+        "layout": "slider",
+        "limit": 5,
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h2",
+        "title": "",
+        "text": "",
+        "link_text": "View all",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_gallery_w7Gjtr": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_zYjVkQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bianco-dolomite-regency-polished-d.webp",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "",
+            "text": "",
+            "link_text": "Button",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "image_zYjVkQ"
+      ],
+      "settings": {
+        "items_layout": "playful-grid",
+        "items_width": 2,
+        "height": "size-s",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "content_on_hover_color_palette": "dark",
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_featured_products_xQdwVd": {
+      "type": "section-featured-products",
+      "settings": {
+        "products": [],
+        "layout": "slider",
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "title_size": "h2",
+        "title": "Featured products",
+        "text": "<p>Share information and details about these products</p>",
+        "link_text": "Button",
+        "link_url": "/",
+        "button_color_palette": "accent",
+        "show_link": false,
+        "enable_quick_buy_desktop": true,
+        "enable_quick_buy_mobile": true,
+        "enable_quick_buy_drawer": false,
+        "enable_quick_buy_qty_selector": true,
+        "enable_color_picker": false,
+        "enable_quick_buy_compact": false,
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_gallery_qWjmkk",
+    "section_rich_text_bwN9gg",
+    "section_collection_list_VUXmVm",
+    "section_gallery_ARJNCJ",
+    "section_featured_collection_HV4K9h",
+    "section_gallery_w7Gjtr",
+    "section_featured_products_xQdwVd",
+    "main-page"
+  ]
+}
