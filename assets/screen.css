@@ -4083,6 +4083,8 @@ label .text-end i, .label .text-end i { margin-left: 22px; }
 #header-inner #nav-outer { position: absolute; left: var(--l0ra); right: var(--lar0); top: 0; margin: 0; border-width: 0; }
 #root .l4pr.static > li:not(:first-child), .link-btn.desktop-only, #root figure .l4hs > li > a.desktop-only { display: none; }
 }
+
+
 @media only screen and (min-width: 761px) { /* 760+ */
 #logo .mobile-only { display: none; }
 #nav-user > ul > li > a.mobile-only { display: none !important; }
@@ -4093,7 +4095,12 @@ label .text-end i, .label .text-end i { margin-left: 22px; }
 h1.cols > .small, h2.cols > .small, h3.cols > .small, h4.cols > .small, h5.cols > .small, h6.cols > .small { margin-bottom: 0; }
 
 .shopify-section-breadcrumbs { margin-left: min(calc(var(--rpn) + var(--rpp)), calc(0px - 50vw + var(--glw) * 0.5 + var(--scrollbar_width) * 0.5 + var(--rpp))); margin-right: min(calc(var(--rpn) + var(--rpp)), calc(0px - 50vw + var(--glw) * 0.5 + var(--scrollbar_width) * 0.5 + var(--rpp))); }
-	.shopify-section-breadcrumbs .n6br { width: 100%; max-width: var(--ghw); margin-left: auto; margin-right: auto; }
+    .shopify-section-breadcrumbs .n6br {
+        width: 100%;
+        max-width: var(--ghw);
+        margin-left: auto;
+        margin-right: auto;
+    }
 	.shopify-section-breadcrumbs + * { margin-top: 0; }
 /*.l4ca {}*/
 	.l4ca footer p, .l4ca .price { margin-bottom: 16px; }
@@ -4134,6 +4141,12 @@ h1.cols > .small, h2.cols > .small, h3.cols > .small, h4.cols > .small, h5.cols 
 
 /*.t1sr-mobile #search.compact.compact-mobile { display: block; }*/
 #root .l4cl li.link ~ li, .l4pr.no-thumbs-desktop .swiper-pagination-bullets, .link-btn.mobile-only, #root .m6fr figure .mobile-only/*, .t1sr-mobile .search-compact-cont, .search-compact-active.t1sr-mobile #search p > a.search-back*/, .media-flexible-mobile { display: none; }
+}
+
+@media only screen and (min-width: 1600px) {
+	.shopify-section-breadcrumbs .n6br { width: 100%; padding: 0 13%;max-width: 100%;
+        margin-left: 0;
+        margin-right: 0; }
 }
 @media only screen and (min-width: 761px) and (max-width: 1000px) { /* 760-1000 */
 :root {

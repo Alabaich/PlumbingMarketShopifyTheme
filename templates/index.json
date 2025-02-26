@@ -243,6 +243,137 @@
       ],
       "settings": {}
     },
+    "top_brands_m7MGFx": {
+      "type": "topBrands",
+      "blocks": {
+        "brand_8nixbh": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/RUBI.png",
+            "link": "shopify://collections/rubi",
+            "seo_text": "Rubi Plumbing Supplies - Canada - Toronto"
+          }
+        },
+        "brand_RWenaA": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/MSI.png",
+            "link": "shopify://collections/msi-surfaces",
+            "seo_text": "MSI Surfaces - Canada - Toronto - Flooring - Tiles, buy tiles toronto"
+          }
+        },
+        "brand_kYUknE": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/MOEN.png",
+            "link": "shopify://collections/moen",
+            "seo_text": "Buy Moen - Bathtubs - Canada - Toronto, bathroom supplies"
+          }
+        },
+        "brand_MAxkKX": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/MAAX.png",
+            "link": "shopify://collections/maax-canada",
+            "seo_text": "Buy Maax - bathroom supplies - bathtubs - Canada - Vaughan"
+          }
+        },
+        "brand_kMf3qi": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/RIOBEL.png",
+            "link": "shopify://collections/riobel",
+            "seo_text": "Buy Riobel - Canada -  Toronto - Faucets, Shower kits - bathroom supplies - Free Delivery"
+          }
+        },
+        "brand_JKeXEd": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/KOHLER.png",
+            "link": "shopify://collections/kohler",
+            "seo_text": "Buy Kohler Toronto, Canada, Free Delivery - Bathroom supplies"
+          }
+        },
+        "brand_9dDWPP": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/TOTO_ee001e3e-42fc-49a2-b7ed-19650b03507e.png",
+            "link": "shopify://collections/toto-toilets-and-faucets",
+            "seo_text": "Toto toilets and faucets - bathroom supplies - free delivery - Toronto, Vaughan, Mississauga - Canada"
+          }
+        },
+        "brand_xDFJC9": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/KUBEBATH_5d534201-f04b-43b1-8b41-3e17fb872364.png",
+            "link": "shopify://collections/kube-bath",
+            "seo_text": "Brand SEO textKube Bath - Vanities, bathroom vanities, free Delivery, buy bathroom Vanities Vaughan"
+          }
+        },
+        "brand_jdif8L": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/FRANKE_06f71495-6603-4d79-8f07-4912e6fd3732.png",
+            "link": "shopify://collections/franke",
+            "seo_text": "Buy Franke Plumbing Supplies Toronto Vaughan Canada"
+          }
+        },
+        "brand_UwnWJa": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/GROHE.png",
+            "link": "shopify://collections/grohe",
+            "seo_text": "Buy Grohe Canada, Toronto, Plumbing Supplies - Free Delivery"
+          }
+        },
+        "brand_3tTcKD": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/DELTA.png",
+            "link": "shopify://collections/delta-faucet",
+            "seo_text": "Delta Plumbing Supplies - buy Canada, Toronto, Brampton - Free Delivery GTA"
+          }
+        },
+        "brand_nYCrRB": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/American_Standard.png",
+            "link": "shopify://collections/american-standard",
+            "seo_text": "American Standard - buy Toilets online - Canada, Toronto, Vaughan, Mississauga. American Standard Toilets buy"
+          }
+        }
+      },
+      "block_order": [
+        "brand_8nixbh",
+        "brand_RWenaA",
+        "brand_kYUknE",
+        "brand_MAxkKX",
+        "brand_kMf3qi",
+        "brand_JKeXEd",
+        "brand_9dDWPP",
+        "brand_xDFJC9",
+        "brand_jdif8L",
+        "brand_UwnWJa",
+        "brand_3tTcKD",
+        "brand_nYCrRB"
+      ],
+      "settings": {
+        "title": "Our Top Brands",
+        "subtitle": "Browse our most popular brands"
+      }
+    },
+    "best_sellers_KtTex7": {
+      "type": "bestSellers",
+      "settings": {
+        "tileOne": "Best Sellers",
+        "textOne": "Uncover the Plumbing Market Superstars: Get to Know the Top 10 Customer Favorites Revealed!",
+        "titleSmall": "Best Selling Products",
+        "textTwo": "Check out our best selling products and enjoy up to 50% off.",
+        "textOnButton": "Go To Best Sellers",
+        "linkOnButton": "shopify://collections/best-sellers",
+        "bestCollection": "best-sellers"
+      }
+    },
     "tranding_search_tXgmRB": {
       "type": "trandingSearch",
       "blocks": {
@@ -359,18 +490,6 @@
       ],
       "settings": {}
     },
-    "best_sellers_KtTex7": {
-      "type": "bestSellers",
-      "settings": {
-        "tileOne": "Best Sellers",
-        "textOne": "Uncover the Plumbing Market Superstars: Get to Know the Top 10 Customer Favorites Revealed!",
-        "titleSmall": "Best Selling Products",
-        "textTwo": "Check out our best selling products and enjoy up to 50% off.",
-        "textOnButton": "Go To Best Sellers",
-        "linkOnButton": "shopify://collections/best-sellers",
-        "bestCollection": "best-sellers"
-      }
-    },
     "latest_blogs_new_wUNGWJ": {
       "type": "latestBlogsNew",
       "settings": {
@@ -384,8 +503,9 @@
     "icons_with_text_Mxckh8",
     "category_banners_rounded_EBx6mV",
     "popular_categories_JbMyXK",
-    "tranding_search_tXgmRB",
+    "top_brands_m7MGFx",
     "best_sellers_KtTex7",
+    "tranding_search_tXgmRB",
     "latest_blogs_new_wUNGWJ"
   ]
 }
