@@ -76,6 +76,13 @@ header.headerWebsiteNew {
   margin: 0;
   padding: 25px 150px;
 }
+
+.menu-item.has-dropdown .dropdown.full-width{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+}
+
 .menu-item.has-dropdown:hover .dropdown,
 .menu-item.has-dropdown:focus-within .dropdown,
 .menu-item.has-dropdown .dropdown:hover {
@@ -112,6 +119,11 @@ span.has-dropdown-link {
   margin: 0 12.5px;
   padding: 5px 0;
 }
+
+.dropdown.full-width li {
+  margin: 0;
+  padding: 0;
+}
 .dropdown li a {
   color: #333;
   text-decoration: none;
@@ -142,6 +154,12 @@ span.has-dropdown-link {
   padding-bottom: 8px;
   margin-bottom: 8px;
   border-bottom: 1px solid #2C2D2C;
+}
+
+.dropdown.full-width .parentChild {
+border-bottom: none;
+font-size: 16px;
+font-weight: 400;
 }
 
 .menu-item{
@@ -439,7 +457,7 @@ span.has-dropdown-link {
         {%- if section.settings.logo != blank -%}
           {% assign logo_size = section.settings.logo_max_width | append: "x" %}
           <img src="{{ section.settings.logo | img_url: logo_size }}"
-               alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+               alt="{{ section.settings.logo.alt | default: shop.name | escape }}" width="200px" height="60px"> 
         {%- else -%}
           <span>{{ shop.name }}</span>
         {%- endif -%}
@@ -451,16 +469,14 @@ span.has-dropdown-link {
       <ul>
         {%- for link in main_menu.links -%}
           <li class="menu-item{% if link.links != blank %} has-dropdown{% endif %}">
-        {%- if link.links != blank -%}<span data=""{%- else -%}<a href="{{ link.url }}"{%- endif -%}{%- if link.links != blank -%} class="catalog"{%- endif -%} >
-              {{ link.title }}
-              {%- if link.links != blank -%}
+            {%- if link.links != blank -%}
+              <span class="catalog">
+                {{ link.title }}
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
                   <path d="M11.5193 0.699754L12.5 1.6814L7.15505 7.0282C7.06941 7.11439 6.96756 7.18279 6.85538 7.22947C6.7432 7.27614 6.62289 7.30017 6.50139 7.30017C6.37988 7.30017 6.25958 7.27614 6.1474 7.22947C6.03521 7.18279 5.93337 7.11439 5.84773 7.0282L0.5 1.6814L1.48072 0.700679L6.5 5.71903L11.5193 0.699754Z" fill="white"/>
                 </svg>
-              {%- endif -%}
-            {%- if link.links != blank -%}</span>{%- else -%}</a>{%- endif -%}
-            {%- if mega_menu_item and link.title == mega_menu_item.title and link.links != blank -%}
-              <ul class="dropdown">
+              </span>
+              <ul class="dropdown {% if link.links.size > 12 %} full-width{% endif %}" >
                 {%- for child in link.links -%}
                   <li class="parentChildLi menu-item-high">
                     <a href="{{ child.url }}" class="parentChild">{{ child.title }}</a>
@@ -476,9 +492,12 @@ span.has-dropdown-link {
                   </li>
                 {%- endfor -%}
               </ul>
+            {%- else -%}
+              <a href="{{ link.url }}">{{ link.title }}</a>
             {%- endif -%}
           </li>
         {%- endfor -%}
+        
       </ul>
     </nav>
 
