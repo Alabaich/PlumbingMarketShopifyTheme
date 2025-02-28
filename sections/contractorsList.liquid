@@ -1,0 +1,172 @@
+{%- comment -%}
+  Contractors List Section
+  - Loads contractors from Firestore, up to a limit (e.g. 500).
+  - Performs a client-side, case-insensitive substring search on "name" and "location".
+  - Calculates average rating from a "ratings" array.
+  - Displays filtered results.
+{%- endcomment -%}
+
+<style>
+    /* Controls styling */
+    #contractors-controls {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #contractors-controls input {
+      padding: 8px;
+      margin: 0 5px;
+      font-size: 14px;
+    }
+    /* Contractors list styling */
+    #contractors-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .contractor-item {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .contractor-item h3 {
+      margin: 0 0 10px;
+    }
+    .contractor-item p {
+      margin: 5px 0;
+    }
+    .contractor-item a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .contractor-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  
+  <div id="contractors-controls">
+    <input type="text" id="contractor-search" placeholder="Search by name or location...">
+    <button id="search-button">Search</button>
+  </div>
+  
+  <div id="contractors-list">
+    <p>Loading contractors...</p>
+  </div>
+  
+  <!-- Include Firebase SDK (modular v9) as ES module -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getFirestore, collection, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
+  
+    // Firebase configuration
+    const firebaseConfig = { 
+      apiKey: "AIzaSyCa4NKlrWF5bcDvFoBTgte3fapVfVh4GMQ",
+      authDomain: "plumbingmarket-68e8b.firebaseapp.com",
+      projectId: "plumbingmarket-68e8b",
+      storageBucket: "plumbingmarket-68e8b.firebasestorage.app",
+      messagingSenderId: "99062718040",
+      appId: "1:99062718040:web:3630736e55023aa1b4f42d",
+      measurementId: "G-9C5CVV662G"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+  
+    // DOM elements
+    const searchInput = document.getElementById("contractor-search");
+    const searchButton = document.getElementById("search-button");
+    const contractorsListDiv = document.getElementById("contractors-list");
+  
+    let allContractors = []; // We'll store all fetched contractors here
+  
+    // Compute average rating from an array of numbers
+    function computeAverageRating(ratingsArray) {
+      if (!ratingsArray || ratingsArray.length === 0) return "No ratings";
+      const total = ratingsArray.reduce((sum, rating) => sum + rating, 0);
+      return (total / ratingsArray.length).toFixed(1);
+    }
+  
+    // Display the (filtered) list of contractors
+    function displayContractors(contractors) {
+      if (contractors.length === 0) {
+        contractorsListDiv.innerHTML = "<p>No contractors found.</p>";
+        return;
+      }
+      contractorsListDiv.innerHTML = "";
+      contractors.forEach((contractor) => {
+        const avgRating = computeAverageRating(contractor.ratings);
+        const itemDiv = document.createElement("div");
+        itemDiv.className = "contractor-item";
+        itemDiv.innerHTML = `
+          <h3>${contractor.name}</h3>
+          <p>Location: ${contractor.location || "N/A"}</p>
+          <p>Phone: ${contractor.phone || "N/A"}</p>
+          <p>Rating: ${avgRating}</p>
+          <!-- If docId is stored, you can link to the detail page. We'll store it as contractor.docId below -->
+          <a href="/pages/contractor-details?cid=${contractor.docId}">View Details</a>
+        `;
+        contractorsListDiv.appendChild(itemDiv);
+      });
+    }
+  
+    // Fetch contractors once, store in allContractors
+    async function fetchAllContractors() {
+      try {
+        contractorsListDiv.innerHTML = "Loading contractors...";
+        const contractorsRef = collection(db, "contractors");
+        // For example, fetch up to 500 contractors (adjust as needed)
+        const q = query(contractorsRef, orderBy("name"), limit(500));
+        const snapshot = await getDocs(q);
+  
+        allContractors = [];
+        snapshot.forEach(doc => {
+          const data = doc.data();
+          data.docId = doc.id; // Keep track of the Firestore doc ID
+          allContractors.push(data);
+        });
+        displayContractors(allContractors);
+      } catch (error) {
+        console.error("Error fetching contractors: ", error);
+        contractorsListDiv.innerHTML = "<p>Error loading contractors.</p>";
+      }
+    }
+  
+    // Filter function: partial substring search on name or location
+    function filterContractors() {
+      const term = searchInput.value.trim().toLowerCase();
+      if (!term) {
+        // If no search term, show all
+        displayContractors(allContractors);
+        return;
+      }
+      // Filter by partial match in name or location
+      const filtered = allContractors.filter((contractor) => {
+        const nameLower = (contractor.name || "").toLowerCase();
+        const locationLower = (contractor.location || "").toLowerCase();
+        return nameLower.includes(term) || locationLower.includes(term);
+      });
+      displayContractors(filtered);
+    }
+  
+    // Initial fetch
+    fetchAllContractors();
+  
+    // Search button event
+    searchButton.addEventListener("click", filterContractors);
+  
+    // Optional: filter as user types (uncomment if desired)
+    // searchInput.addEventListener("input", filterContractors);
+  </script>
+  
+  {% schema %}
+  {
+    "name": "Contractors List Section",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Contractors List"
+      }
+    ]
+  }
+  {% endschema %}
+  

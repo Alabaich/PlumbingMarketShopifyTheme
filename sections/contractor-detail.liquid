@@ -1,0 +1,250 @@
+{%- comment -%}
+  Contractor Detail Extended Section
+  - Reads a contractor ID from the URL (e.g. ?cid=...)
+  - Fetches that contractor’s data from Firestore (including name, location, phone, ratings, image, description, recommended, comments)
+  - Displays contractor details along with a recommended badge (if applicable)
+  - Displays comments and provides a form to submit a new comment.
+{%- endcomment -%}
+
+<style>
+    /* Basic styling for the contractor detail page */
+    #contractor-detail {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    #contractor-detail h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    #contractor-info, #contractor-description, #contractor-rating, #contractor-recommended {
+      margin-bottom: 20px;
+    }
+    #contractor-image {
+      max-width: 200px;
+      margin: 10px auto;
+      display: block;
+    }
+    #contractor-recommended {
+      background: #f39c12;
+      color: #fff;
+      padding: 5px 10px;
+      display: inline-block;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    /* Comments section styling */
+    #contractor-comments {
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .comment-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+    .comment-item p {
+      margin: 5px 0;
+    }
+    /* Comment form styling */
+    #comment-form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    #comment-form input, #comment-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    #comment-form button {
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    #comment-error {
+      color: red;
+      margin-top: 10px;
+    }
+</style>
+
+<div id="contractor-detail">
+  <h1 id="contractor-name">Loading contractor...</h1>
+  <img id="contractor-image" src="" alt="Contractor Image" style="display:none;" width="100px" height="100px">
+  <div id="contractor-info"></div>
+  <div id="contractor-description"></div>
+  <div id="contractor-recommended" style="display:none;">Recommended by Plumbing Market</div>
+  <div id="contractor-rating"></div>
+  <hr>
+  <h2>Comments</h2>
+  <div id="contractor-comments">
+    <p>Loading comments...</p>
+  </div>
+  <h3>Leave a Comment</h3>
+  <form id="comment-form">
+    <input type="text" id="comment-name" placeholder="Your name" required>
+    <textarea id="comment-text" placeholder="Your comment" required></textarea>
+    <button type="submit">Submit Comment</button>
+  </form>
+  <div id="comment-error"></div>
+</div>
+
+<!-- Include Firebase SDK (modular v9) -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  import { getFirestore, doc, getDoc, updateDoc, arrayUnion } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
+  
+  // Firebase configuration using your real credentials
+  const firebaseConfig = {
+    apiKey: "AIzaSyCa4NKlrWF5bcDvFoBTgte3fapVfVh4GMQ",
+    authDomain: "plumbingmarket-68e8b.firebaseapp.com",
+    projectId: "plumbingmarket-68e8b",
+    storageBucket: "plumbingmarket-68e8b.firebasestorage.app",
+    messagingSenderId: "99062718040",
+    appId: "1:99062718040:web:3630736e55023aa1b4f42d",
+    measurementId: "G-9C5CVV662G"
+  };
+  
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  
+  // Helper to get URL query parameter
+  function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+  
+  // Get contractor ID from ?cid=...
+  const contractorId = getQueryParam('cid');
+  
+  // DOM Elements
+  const nameEl = document.getElementById('contractor-name');
+  const infoEl = document.getElementById('contractor-info');
+  const descriptionEl = document.getElementById('contractor-description');
+  const recommendedEl = document.getElementById('contractor-recommended');
+  const imageEl = document.getElementById('contractor-image');
+  const ratingEl = document.getElementById('contractor-rating');
+  const commentsEl = document.getElementById('contractor-comments');
+  const commentForm = document.getElementById('comment-form');
+  const commentNameInput = document.getElementById('comment-name');
+  const commentTextInput = document.getElementById('comment-text');
+  const commentErrorEl = document.getElementById('comment-error');
+  
+  // Calculate average rating
+  function computeAverageRating(ratings) {
+    if (!ratings || ratings.length === 0) return "No ratings";
+    const sum = ratings.reduce((acc, val) => acc + val, 0);
+    return (sum / ratings.length).toFixed(1);
+  }
+  
+  async function loadContractor() {
+    if (!contractorId) {
+      document.getElementById('contractor-detail').innerHTML = '<p class="no-contractor">No contractor specified.</p>';
+      return;
+    }
+    try {
+      const docRef = doc(db, "contractors", contractorId);
+      const snapshot = await getDoc(docRef);
+      if (snapshot.exists()) {
+        const data = snapshot.data();
+        // Display basic info
+        nameEl.textContent = data.name || "Unnamed Contractor";
+        infoEl.innerHTML = `
+          <p>Location: ${data.location || "N/A"}</p>
+          <p>Phone: ${data.phone || "N/A"}</p>
+        `;
+        // Show image if available
+        if (data.image) {
+          imageEl.src = data.image;
+          imageEl.style.display = "block";
+        }
+        // Show description if available
+        if (data.description) {
+          descriptionEl.innerHTML = `<p>${data.description}</p>`;
+        }
+        // Show recommended badge if true
+        if (data.recommended === true) {
+          recommendedEl.style.display = "inline-block";
+        } else {
+          recommendedEl.style.display = "none";
+        }
+        // Display rating
+        const avgRating = computeAverageRating(data.ratings);
+        ratingEl.textContent = `Rating: ${avgRating}`;
+  
+        // Display comments if any
+        if (data.comments && data.comments.length > 0) {
+          commentsEl.innerHTML = "";
+          // Sort comments by timestamp (newest first)
+          const sortedComments = data.comments.sort((a, b) => {
+            return (b.timestamp || 0) - (a.timestamp || 0);
+          });
+          sortedComments.forEach(comment => {
+            const commentDate = comment.timestamp ? new Date(comment.timestamp).toLocaleString() : "";
+            const commentDiv = document.createElement("div");
+            commentDiv.className = "comment-item";
+            commentDiv.innerHTML = `
+              <p><strong>${comment.customerName}</strong> <em>${commentDate}</em></p>
+              <p>${comment.text}</p>
+            `;
+            commentsEl.appendChild(commentDiv);
+          });
+        } else {
+          commentsEl.innerHTML = "<p>No comments yet.</p>";
+        }
+      } else {
+        document.getElementById('contractor-detail').innerHTML = '<p class="no-contractor">Contractor not found.</p>';
+      }
+    } catch (error) {
+      console.error("Error loading contractor:", error);
+      document.getElementById('contractor-detail').innerHTML = '<p class="no-contractor">Error loading contractor details.</p>';
+    }
+  }
+  
+  loadContractor();
+  
+  // Handle comment submission
+  commentForm.addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const customerName = commentNameInput.value.trim();
+    const commentText = commentTextInput.value.trim();
+    if (!customerName || !commentText) {
+      commentErrorEl.textContent = "Please fill in both fields.";
+      return;
+    }
+    // Prepare new comment object using client-side timestamp
+    const newComment = {
+      customerName: customerName,
+      text: commentText,
+      timestamp: new Date().getTime()  // Using client timestamp
+    };
+    try {
+      const docRef = doc(db, "contractors", contractorId);
+      // Use updateDoc with arrayUnion to add the new comment
+      await updateDoc(docRef, {
+        comments: arrayUnion(newComment)
+      });
+      // Clear form and error message
+      commentForm.reset();
+      commentErrorEl.textContent = "";
+      // Reload contractor data to display the new comment
+      loadContractor();
+    } catch (error) {
+      console.error("Error adding comment:", error);
+      commentErrorEl.textContent = "Error submitting comment. Please try again later.";
+    }
+  });
+</script>
+  
+{% schema %}
+{
+  "name": "Contractor Detail",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Contractor Detail"
+    }
+  ]
+}
+{% endschema %}
