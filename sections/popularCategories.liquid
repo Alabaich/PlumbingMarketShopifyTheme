@@ -7,14 +7,20 @@
 <style>
   .popular-categories {
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0;
   }
 
-  .popular-categories__title {
-    font-size: 24px;
+  h2.popular-categories__title {
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #2c2d2c;
+  }
+  
+  .popular-categories__subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
   }
 
   .popular-categories__grid {
@@ -64,12 +70,13 @@
 </style>
 
 <div class="popular-categories">
-  <div class="popular-categories__title">Popular Categories:</div>
+  <h2 class="popular-categories__title">Popular Categories:</h2>
+  <p class="popular-categories__subtitle">Browse our most popular categories</p>
   <div class="popular-categories__grid">
     {%- for block in section.blocks -%}
       <div class="popular-category">
         <a href="{{ block.settings.link }}">
-          <img src="{{ block.settings.image | img_url: '300x300' }}" alt="Link to {{ block.settings.title }} collection">
+          <img src="{{ block.settings.image | img_url: '300x300' }}" alt="Link to {{ block.settings.title }} collection" height="150px" width="150px">
           <div class="popular-category__title">{{ block.settings.title }}</div>
         </a>
       </div>
