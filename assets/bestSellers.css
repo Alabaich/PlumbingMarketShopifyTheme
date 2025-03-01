@@ -34,7 +34,7 @@
 .bestSellers h1 {
     color: var(--White, #FFF);
     text-align: center;
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     font-size: 48px;
     font-weight: 700;
 }
@@ -42,21 +42,21 @@
 .bestSellers h6 {
     color: var(--White, #FFF);
     text-align: center;
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
 }
 
 .bestSellers h2 {
     color: #FFF;
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     font-size: 32px;
     font-weight: 700;
 }
 
 .bestSellers .bodyMedium {
     color: #FFF;
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
 }

@@ -43,7 +43,7 @@
         "spacing_mobile": 30
       }
     },
-    "contractor_detail_qTxLW8": {
+    "contractor_detail_NWCkAM": {
       "type": "contractor-detail",
       "settings": {}
     }
@@ -51,6 +51,6 @@
   "order": [
     "breadcrumbs",
     "main-page",
-    "contractor_detail_qTxLW8"
+    "contractor_detail_NWCkAM"
   ]
 }

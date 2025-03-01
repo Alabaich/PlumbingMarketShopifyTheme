@@ -16,46 +16,6 @@
         "hide_mobile": false
       }
     },
-    "section_gallery_Lw6EpJ": {
-      "type": "section-gallery",
-      "blocks": {
-        "image_ceXYJX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/banner_for_contractors.webp",
-            "overlay_opacity": 0,
-            "color_palette": "white",
-            "button_color_palette": "accent",
-            "text_position": "text-center",
-            "title_size": "h1",
-            "title": "",
-            "text": "",
-            "link_text": "Button",
-            "link_url": "",
-            "show_link": false,
-            "title_size_mobile": "mobile-size-18"
-          }
-        }
-      },
-      "block_order": [
-        "image_ceXYJX"
-      ],
-      "settings": {
-        "items_layout": "playful-grid",
-        "items_width": 2,
-        "height": "size-s",
-        "width": "boxed",
-        "space_between": 16,
-        "image_zoom": true,
-        "image_move": false,
-        "show_content_on_hover": false,
-        "content_on_hover_color_palette": "dark",
-        "layout_mobile": "rows",
-        "mobile_height": "size-s",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30
-      }
-    },
     "main-page": {
       "type": "main-page",
       "blocks": {
@@ -83,15 +43,14 @@
         "spacing_mobile": 30
       }
     },
-    "contractors_list_ptHKkc": {
+    "contractors_list_9MWwhJ": {
       "type": "contractorsList",
       "settings": {}
     }
   },
   "order": [
     "breadcrumbs",
-    "section_gallery_Lw6EpJ",
     "main-page",
-    "contractors_list_ptHKkc"
+    "contractors_list_9MWwhJ"
   ]
 }
