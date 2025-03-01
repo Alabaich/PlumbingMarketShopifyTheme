@@ -448,162 +448,185 @@ font-weight: 400;
     </a>
   </div>
 </div>
-  <header id="section-{{ section.id }}" role="banner" class="headerWebsiteNew">
-
-
-    <!-- Logo -->
-    <div class="logo">
-      <a href="{{ routes.root_url }}">
-        {%- if section.settings.logo != blank -%}
-          {% assign logo_size = section.settings.logo_max_width | append: "x" %}
-          <img src="{{ section.settings.logo | img_url: logo_size }}"
-               alt="{{ section.settings.logo.alt | default: shop.name | escape }}" width="200px" height="60px"> 
-        {%- else -%}
-          <span>{{ shop.name }}</span>
-        {%- endif -%}
-      </a>
-    </div>
-
-    <!-- Normal Navigation (hidden when search is active) -->
-    <nav class="main-nav" aria-label="Main Navigation">
-      <ul>
-        {%- for link in main_menu.links -%}
-          <li class="menu-item{% if link.links != blank %} has-dropdown{% endif %}">
-            {%- if link.links != blank -%}
-              <span class="catalog">
-                {{ link.title }}
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
-                  <path d="M11.5193 0.699754L12.5 1.6814L7.15505 7.0282C7.06941 7.11439 6.96756 7.18279 6.85538 7.22947C6.7432 7.27614 6.62289 7.30017 6.50139 7.30017C6.37988 7.30017 6.25958 7.27614 6.1474 7.22947C6.03521 7.18279 5.93337 7.11439 5.84773 7.0282L0.5 1.6814L1.48072 0.700679L6.5 5.71903L11.5193 0.699754Z" fill="white"/>
-                </svg>
-              </span>
-              <ul class="dropdown {% if link.links.size > 12 %} full-width{% endif %}" >
-                {%- for child in link.links -%}
-                  <li class="parentChildLi menu-item-high">
-                    <a href="{{ child.url }}" class="parentChild">{{ child.title }}</a>
-                    {%- if child.links != blank -%}
-                      <ul class="dropdown-sub menu-item-low{% if child.links.size > 5 %} more-than-five{% endif %}">
-                        {%- for subchild in child.links -%}
-                          <li>
-                            <a href="{{ subchild.url }}">{{ subchild.title }}</a>
-                          </li>
-                        {%- endfor -%}
-                      </ul>
-                    {%- endif -%}
-                  </li>
-                {%- endfor -%}
-              </ul>
-            {%- else -%}
-              <a href="{{ link.url }}">{{ link.title }}</a>
-            {%- endif -%}
-          </li>
-        {%- endfor -%}
+<div id="header-outer">
+  <div id="header">
+    <div id="header-inner" class="text-center-mobile
+      {% if section.settings.sticky == 'sticky-menu' and section.settings.enable_sticky_header %}sticky-nav{% elsif section.settings.enable_sticky_header == false %}no-sticky{% endif %}">
+      
+      <!-- New Header Container with new design, but inside expected structure -->
+      <div class="header-container" id="header-container">
         
-      </ul>
-    </nav>
-
-    <!-- Search Container (hidden by default) -->
-    <div class="search-container">
-      <form action="{{ routes.search_url }}" method="get" id="search" class="search-form" style="max-width: 100%;">
-        <fieldset style="width: 100%;">
-          <legend>{{ 'search.title' | t }}</legend>
-          <p style="width: 100%;">
-            <label for="search_main">{{ 'search.title' | t }}</label>
-            <input type="search" id="search_main" name="q" placeholder="{{ 'search.search_form.placeholder' | t }}" autocomplete="off" required style="width: 100%;">
-            <button type="submit" class="override">{{ 'search.search_form.submit' | t }}</button>
-          </p>
-          <div id="livesearch">
-            <div class="cols">
-              <p>{{ 'search.results' | t }}</p>
-            </div>
+        <!-- Announcement Bar (if you want to keep it) -->
+        <div class="announcement-bar-container">
+          <div class="announcement-bar-wrapper">
+            <a href="tel:289-236-2378" class="announcement-bar">
+              Phones Are Live 10am - 6pm. Text or Call Us at 289-236-2378. CALL US TO UNLOCK MAJOR DEALS!
+            </a>
+            <a href="tel:289-236-2378" class="announcement-bar">
+              Phones Are Live 10am - 6pm. Text or Call Us at 289-236-2378. CALL US TO UNLOCK MAJOR DEALS!
+            </a>
           </div>
-        </fieldset>
-      </form>
-    </div>
-
-    <!-- Icons -->
-    <div class="icons">
-      <!-- Search Icon (click to toggle search) -->
-      <a href="javascript:void(0)" id="toggle-search" aria-label="Search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
-          <path d="M10.3641 3.5C9.38991 3.48866 8.42313 3.67074 7.51979 4.03569C6.61646 4.40065 5.79452 4.94124 5.1016 5.62613C4.40868 6.31102 3.85856 7.1266 3.4831 8.02562C3.10764 8.92465 2.91431 9.88924 2.91431 10.8635C2.91431 11.8378 3.10764 12.8024 3.4831 13.7014C3.85856 14.6004 4.40868 15.416 5.1016 16.1009C5.79452 16.7858 6.61646 17.3264 7.51979 17.6913C8.42313 18.0563 9.38991 18.2384 10.3641 18.227C12.3022 18.2044 14.1532 17.4187 15.5157 16.0402C16.8782 14.6617 17.6423 12.8017 17.6423 10.8635C17.6423 8.92532 16.8782 7.06528 15.5157 5.68681C14.1532 4.30834 12.3022 3.5226 10.3641 3.5Z"
-                stroke="#2C2D2C" stroke-opacity="0.86" stroke-miterlimit="10"/>
-          <path d="M15.8569 16.358L20.9999 21.501" stroke="#2C2D2C" stroke-opacity="0.86" stroke-miterlimit="10" stroke-linecap="round"/>
-        </svg>
-      </a>
-      <!-- Account Icon -->
-      <a href="{% if customer %}/account{% else %}/account/login{% endif %}" aria-label="Account" class="accountIconHeader">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
-          <path d="M16.125 9.25C15.941 11.728 14.062 13.75 12 13.75C9.93798 13.75 8.05598 11.729 7.87498 9.25C7.68798 6.672 9.51498 4.75 12 4.75C14.484 4.75 16.313 6.719 16.125 9.25Z"
-                stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M3.01709 21.247C3.78309 17 7.92209 14.75 12.0001 14.75C16.0781 14.75 20.2171 17 20.9841 21.247"
-                stroke="#2C2D2C" stroke-miterlimit="10"/>
-        </svg>
-      </a>
-      <!-- Cart Icon -->
-      <a href="/cart" aria-label="Cart" class="cartIconHeader">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
-          <path d="M16 7.5C16 6.43913 15.5786 5.42172 14.8284 4.67157C14.0783 3.92143 13.0609 3.5 12 3.5C10.9391 3.5 9.92172 3.92143 9.17157 4.67157C8.42143 5.42172 8 6.43913 8 7.5M2 10.5H22L18 21.5H6L2 10.5Z"
-                stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        {%- if cart.item_count > 0 -%}
-          <span class="Header__CartCount">{{ cart.item_count }}</span>
-        {%- endif -%}
-      </a>
-
-      <span class="burger-menu" role="button" tabindex="0" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-    </div>
-  </header>
-
-  <nav class="mobile-menu" aria-label="Mobile Navigation">
-    {%- assign main_menu = linklists[section.settings.navigation_menu] -%}
-    <ul>
-      {%- for link in main_menu.links -%}
-        <li class="mobile-menu__item">
-          <div class="mobile-menu__link-wrapper">
-            <a href="{{ link.url }}" class="mobile-menu__link">{{ link.title }}</a>
-            {%- if link.links != blank -%}
-              <span class="mobile-menu__toggle" role="button" tabindex="0" aria-label="Toggle submenu">
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                  <path d="M1 1L5 5L9 1" stroke="#2C2D2C" stroke-linecap="round"/>
-                </svg>
-              </span>
-            {%- endif -%}
+        </div>
+        
+        <!-- Header (Fixed) -->
+        <header id="section-{{ section.id }}" role="banner" class="headerWebsiteNew">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="{{ routes.root_url }}">
+              {%- if section.settings.logo != blank -%}
+                {% assign logo_size = section.settings.logo_max_width | append: "x" %}
+                <img src="{{ section.settings.logo | img_url: logo_size }}"
+                     alt="{{ section.settings.logo.alt | default: shop.name | escape }}" width="200px" height="60px"> 
+              {%- else -%}
+                <span>{{ shop.name }}</span>
+              {%- endif -%}
+            </a>
           </div>
-          {%- if link.links != blank -%}
-            <ul class="mobile-submenu">
-              {%- for child_link in link.links -%}
-                <li class="mobile-menu__item">
-                  <div class="mobile-menu__link-wrapper">
-                    <a href="{{ child_link.url }}" class="mobile-menu__link">{{ child_link.title }}</a>
-                    {%- if child_link.links != blank -%}
-                      <span class="mobile-menu__toggle" role="button" tabindex="0" aria-label="Toggle submenu">
-                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                          <path d="M1 1L5 5L9 1" stroke="#2C2D2C" stroke-linecap="round"/>
-                        </svg>
-                      </span>
-                    {%- endif -%}
-                  </div>
-                  {%- if child_link.links != blank -%}
-                    <ul class="mobile-submenu">
-                      {%- for grandchild_link in child_link.links -%}
-                        <li class="mobile-menu__item">
-                          <a href="{{ grandchild_link.url }}" class="mobile-menu__link">{{ grandchild_link.title }}</a>
+          
+          <!-- Navigation -->
+          <nav class="main-nav" aria-label="Main Navigation">
+            <ul>
+              {%- for link in main_menu.links -%}
+                <li class="menu-item{% if link.links != blank %} has-dropdown{% endif %}">
+                  {%- if link.links != blank -%}
+                    <span class="catalog">
+                      {{ link.title }}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                        <path d="M11.5193 0.699754L12.5 1.6814L7.15505 7.0282C7.06941 7.11439 6.96756 7.18279 6.85538 7.22947C6.7432 7.27614 6.62289 7.30017 6.50139 7.30017C6.37988 7.30017 6.25958 7.27614 6.1474 7.22947C6.03521 7.18279 5.93337 7.11439 5.84773 7.0282L0.5 1.6814L1.48072 0.700679L6.5 5.71903L11.5193 0.699754Z" fill="white"/>
+                      </svg>
+                    </span>
+                    <ul class="dropdown {% if link.links.size > 12 %} full-width{% endif %}">
+                      {%- for child in link.links -%}
+                        <li class="parentChildLi menu-item-high">
+                          <a href="{{ child.url }}" class="parentChild">{{ child.title }}</a>
+                          {%- if child.links != blank -%}
+                            <ul class="dropdown-sub menu-item-low{% if child.links.size > 5 %} more-than-five{% endif %}">
+                              {%- for subchild in child.links -%}
+                                <li>
+                                  <a href="{{ subchild.url }}">{{ subchild.title }}</a>
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                          {%- endif -%}
                         </li>
                       {%- endfor -%}
                     </ul>
+                  {%- else -%}
+                    <a href="{{ link.url }}">{{ link.title }}</a>
                   {%- endif -%}
                 </li>
               {%- endfor -%}
             </ul>
-          {%- endif -%}
-        </li>
-      {%- endfor -%}
-    </ul>
-  </nav>
+          </nav>
+          
+          <!-- Search Container -->
+          <div class="search-container">
+            <form action="{{ routes.search_url }}" method="get" id="search" class="search-form" style="max-width: 100%;">
+              <fieldset style="width: 100%;">
+                <legend>{{ 'search.title' | t }}</legend>
+                <p style="width: 100%;">
+                  <label for="search_main">{{ 'search.title' | t }}</label>
+                  <input type="search" id="search_main" name="q" placeholder="{{ 'search.search_form.placeholder' | t }}" autocomplete="off" required style="width: 100%;">
+                  <button type="submit" class="override">{{ 'search.search_form.submit' | t }}</button>
+                </p>
+                <div id="livesearch">
+                  <div class="cols">
+                    <p>{{ 'search.results' | t }}</p>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          
+          <!-- Icons (Search, Account, Cart, Burger Menu) -->
+          <div class="icons">
+            <!-- Search Icon -->
+            <a href="javascript:void(0)" id="toggle-search" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+                <path d="M10.3641 3.5C9.38991 3.48866 8.42313 3.67074 7.51979 4.03569C6.61646 4.40065 5.79452 4.94124 5.1016 5.62613C4.40868 6.31102 3.85856 7.1266 3.4831 8.02562C3.10764 8.92465 2.91431 9.88924 2.91431 10.8635C2.91431 11.8378 3.10764 12.8024 3.4831 13.7014C3.85856 14.6004 4.40868 15.416 5.1016 16.1009C5.79452 16.7858 6.61646 17.3264 7.51979 17.6913C8.42313 18.0563 9.38991 18.2384 10.3641 18.227C12.3022 18.2044 14.1532 17.4187 15.5157 16.0402C16.8782 14.6617 17.6423 12.8017 17.6423 10.8635C17.6423 8.92532 16.8782 7.06528 15.5157 5.68681C14.1532 4.30834 12.3022 3.5226 10.3641 3.5Z"
+                    stroke="#2C2D2C" stroke-opacity="0.86" stroke-miterlimit="10"/>
+                <path d="M15.8569 16.358L20.9999 21.501" stroke="#2C2D2C" stroke-opacity="0.86" stroke-miterlimit="10" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <!-- Account Icon -->
+            <a href="{% if customer %}/account{% else %}/account/login{% endif %}" aria-label="Account" class="accountIconHeader">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+                <path d="M16.125 9.25C15.941 11.728 14.062 13.75 12 13.75C9.93798 13.75 8.05598 11.729 7.87498 9.25C7.68798 6.672 9.51498 4.75 12 4.75C14.484 4.75 16.313 6.719 16.125 9.25Z"
+                      stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.01709 21.247C3.78309 17 7.92209 14.75 12.0001 14.75C16.0781 14.75 20.2171 17 20.9841 21.247"
+                      stroke="#2C2D2C" stroke-miterlimit="10"/>
+              </svg>
+            </a>
+            <!-- Cart Icon (with data-panel attribute for modal trigger) -->
+            <a href="/cart" aria-label="Cart" class="cartIconHeader" data-panel="cart">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+                <path d="M16 7.5C16 6.43913 15.5786 5.42172 14.8284 4.67157C14.0783 3.92143 13.0609 3.5 12 3.5C10.9391 3.5 9.92172 3.92143 9.17157 4.67157C8.42143 5.42172 8 6.43913 8 7.5M2 10.5H22L18 21.5H6L2 10.5Z"
+                      stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {%- if cart.item_count > 0 -%}
+                <span class="Header__CartCount" id="cart-count">{{ cart.item_count }}</span>
+              {%- endif -%}
+            </a>
+            <!-- Burger Menu (for mobile) -->
+            <span class="burger-menu" role="button" tabindex="0" aria-label="Toggle menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+        </header>
+        
+        <!-- Mobile Navigation -->
+        <nav class="mobile-menu" aria-label="Mobile Navigation">
+          {%- assign main_menu = linklists[section.settings.navigation_menu] -%}
+          <ul>
+            {%- for link in main_menu.links -%}
+              <li class="mobile-menu__item">
+                <div class="mobile-menu__link-wrapper">
+                  <a href="{{ link.url }}" class="mobile-menu__link">{{ link.title }}</a>
+                  {%- if link.links != blank -%}
+                    <span class="mobile-menu__toggle" role="button" tabindex="0" aria-label="Toggle submenu">
+                      <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path d="M1 1L5 5L9 1" stroke="#2C2D2C" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                  {%- endif -%}
+                </div>
+                {%- if link.links != blank -%}
+                  <ul class="mobile-submenu">
+                    {%- for child_link in link.links -%}
+                      <li class="mobile-menu__item">
+                        <div class="mobile-menu__link-wrapper">
+                          <a href="{{ child_link.url }}" class="mobile-menu__link">{{ child_link.title }}</a>
+                          {%- if child_link.links != blank -%}
+                            <span class="mobile-menu__toggle" role="button" tabindex="0" aria-label="Toggle submenu">
+                              <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                <path d="M1 1L5 5L9 1" stroke="#2C2D2C" stroke-linecap="round"/>
+                              </svg>
+                            </span>
+                          {%- endif -%}
+                        </div>
+                        {%- if child_link.links != blank -%}
+                          <ul class="mobile-submenu">
+                            {%- for grandchild_link in child_link.links -%}
+                              <li class="mobile-menu__item">
+                                <a href="{{ grandchild_link.url }}" class="mobile-menu__link">{{ grandchild_link.title }}</a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+      </div><!-- End .header-container -->
+    </div><!-- End #header-inner -->
+  </div><!-- End #header -->
+</div><!-- End #header-outer -->
   
 </div>
 
@@ -720,6 +743,28 @@ font-weight: 400;
   });
 });
 
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Function to update the cart count
+    function updateCartCount() {
+      fetch('/cart.js')
+        .then(response => response.json())
+        .then(cart => {
+          const cartCount = document.getElementById('cart-count');
+          if (cartCount) {
+            cartCount.textContent = cart.item_count;
+          }
+        });
+    }
+  
+    // Listen for cart updates (e.g., when an item is added)
+    document.addEventListener('cart:updated', updateCartCount);
+  
+    // Initial cart count update
+    updateCartCount();
+  });
 </script>
 
 

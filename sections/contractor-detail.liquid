@@ -1,72 +1,122 @@
 {%- comment -%}
   Contractor Detail Extended Section
   - Reads a contractor ID from the URL (e.g. ?cid=...)
-  - Fetches that contractor’s data from Firestore (including name, location, phone, ratings, image, description, recommended, comments)
+  - Fetches that contractor’s data from Firestore (including name, location, phone, image, description, recommended, and comments)
   - Displays contractor details along with a recommended badge (if applicable)
-  - Displays comments and provides a form to submit a new comment.
+  - Calculates overall rating from the ratings inside comments.
+  - If no comment has a rating, the overall rating block is not shown.
+  - Displays comments and provides a form to submit a new comment with an interactive star rating widget (1-5)
 {%- endcomment -%}
 
 <style>
-    /* Basic styling for the contractor detail page */
-    #contractor-detail {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    #contractor-detail h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-    #contractor-info, #contractor-description, #contractor-rating, #contractor-recommended {
-      margin-bottom: 20px;
-    }
-    #contractor-image {
-      max-width: 200px;
-      margin: 10px auto;
-      display: block;
-    }
-    #contractor-recommended {
-      background: #f39c12;
-      color: #fff;
-      padding: 5px 10px;
-      display: inline-block;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-    /* Comments section styling */
-    #contractor-comments {
-      text-align: left;
-      margin-bottom: 30px;
-    }
-    .comment-item {
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-    }
-    .comment-item p {
-      margin: 5px 0;
-    }
-    /* Comment form styling */
-    #comment-form {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: left;
-    }
-    #comment-form input, #comment-form textarea {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
-    #comment-form button {
-      padding: 10px 20px;
-      font-size: 14px;
-      cursor: pointer;
-    }
-    #comment-error {
-      color: red;
-      margin-top: 10px;
-    }
+  /* Basic styling for the contractor detail page */
+  #contractor-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  #contractor-detail h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  #contractor-info, 
+  #contractor-description, 
+  #contractor-rating, 
+  #contractor-recommended {
+    margin-bottom: 20px;
+  }
+  #contractor-image {
+    max-width: 200px;
+    margin: 10px auto;
+    display: block;
+  }
+  #contractor-recommended {
+    background: #f39c12;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  /* Comments section styling */
+  #contractor-comments {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .comment-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  .comment-item p {
+    margin: 5px 0;
+  }
+  /* New Comment Header styling */
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .comment-user {
+    text-align: left;
+    font-size: 14px;
+  }
+  .comment-rating {
+    text-align: right;
+  }
+  .comment-body {
+    text-align: left;
+    font-size: 14px;
+  }
+  /* Comment form styling */
+  #comment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  #comment-form input,
+  #comment-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  #comment-form button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  #comment-error {
+    color: red;
+    margin-top: 10px;
+  }
+  /* Interactive star rating widget styling */
+  #comment-rating-widget {
+    display: inline-block;
+    cursor: pointer;
+  }
+  #comment-rating-widget svg {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 2px;
+    fill: none;
+    stroke: #f39c12;
+    stroke-width: 2;
+  }
+  #comment-rating-widget svg.filled {
+    fill: #f39c12;
+    stroke: #f39c12;
+  }
+  
+  .star-rating {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    height: 16px;
+  }
 </style>
 
 <div id="contractor-detail">
@@ -85,6 +135,10 @@
   <form id="comment-form">
     <input type="text" id="comment-name" placeholder="Your name" required>
     <textarea id="comment-text" placeholder="Your comment" required></textarea>
+    <!-- Interactive Star Rating Widget -->
+    <div id="comment-rating-widget"></div>
+    <!-- Hidden input to store the rating value -->
+    <input type="hidden" id="comment-rating" value="" required>
     <button type="submit">Submit Comment</button>
   </form>
   <div id="comment-error"></div>
@@ -129,13 +183,17 @@
   const commentForm = document.getElementById('comment-form');
   const commentNameInput = document.getElementById('comment-name');
   const commentTextInput = document.getElementById('comment-text');
+  const commentRatingInput = document.getElementById('comment-rating'); // hidden field
   const commentErrorEl = document.getElementById('comment-error');
+  const ratingWidgetEl = document.getElementById('comment-rating-widget');
   
-  // Calculate average rating
-  function computeAverageRating(ratings) {
-    if (!ratings || ratings.length === 0) return "No ratings";
-    const sum = ratings.reduce((acc, val) => acc + val, 0);
-    return (sum / ratings.length).toFixed(1);
+  // Helper: Compute average rating from comments that have a valid rating
+  function computeAverageCommentRating(comments) {
+    if (!comments || comments.length === 0) return null;
+    const validRatings = comments.filter(c => c.rating && !isNaN(c.rating));
+    if (validRatings.length === 0) return null;
+    const total = validRatings.reduce((sum, c) => sum + c.rating, 0);
+    return (total / validRatings.length).toFixed(1);
   }
   
   async function loadContractor() {
@@ -154,42 +212,60 @@
           <p>Location: ${data.location || "N/A"}</p>
           <p>Phone: ${data.phone || "N/A"}</p>
         `;
-        // Show image if available
+        // Show image if available, else show placeholder
         if (data.image) {
           imageEl.src = data.image;
-          imageEl.style.display = "block";
+        } else {
+          imageEl.src = "https://cdn.shopify.com/s/files/1/0654/5827/4526/files/Profile_avatar_placeholder_large_525940b5-25d4-4055-a0c7-4d640072c46b.png?v=1740782793";
         }
+        imageEl.style.display = "block";
+  
         // Show description if available
         if (data.description) {
           descriptionEl.innerHTML = `<p>${data.description}</p>`;
         }
+  
         // Show recommended badge if true
-        if (data.recommended === true) {
-          recommendedEl.style.display = "inline-block";
+        recommendedEl.style.display = data.recommended === true ? "inline-block" : "none";
+  
+        // Calculate overall rating from comments instead of a separate ratings array
+        const avgCommentRating = computeAverageCommentRating(data.comments);
+        if (avgCommentRating !== null) {
+          ratingEl.innerHTML = `Rating: ${generateStars(avgCommentRating)} (${avgCommentRating})`;
         } else {
-          recommendedEl.style.display = "none";
+          ratingEl.innerHTML = "";  // Hide if no rating available
         }
-        // Display rating
-        const avgRating = computeAverageRating(data.ratings);
-        ratingEl.textContent = `Rating: ${avgRating}`;
   
         // Display comments if any
         if (data.comments && data.comments.length > 0) {
           commentsEl.innerHTML = "";
           // Sort comments by timestamp (newest first)
-          const sortedComments = data.comments.sort((a, b) => {
-            return (b.timestamp || 0) - (a.timestamp || 0);
-          });
+          const sortedComments = data.comments.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
           sortedComments.forEach(comment => {
+            // Only display comment block if rating exists for that comment
+            if (!comment.rating) return;
             const commentDate = comment.timestamp ? new Date(comment.timestamp).toLocaleString() : "";
             const commentDiv = document.createElement("div");
             commentDiv.className = "comment-item";
             commentDiv.innerHTML = `
-              <p><strong>${comment.customerName}</strong> <em>${commentDate}</em></p>
-              <p>${comment.text}</p>
+              <div class="comment-header">
+                <div class="comment-user">
+                  <strong>${comment.customerName}</strong>
+                  <em>${commentDate}</em>
+                </div>
+                <div class="comment-rating">
+                  ${generateStars(comment.rating)}
+                </div>
+              </div>
+              <div class="comment-body">
+                <p>${comment.text}</p>
+              </div>
             `;
             commentsEl.appendChild(commentDiv);
           });
+          if (commentsEl.innerHTML.trim() === "") {
+            commentsEl.innerHTML = "<p>No comments with ratings yet.</p>";
+          }
         } else {
           commentsEl.innerHTML = "<p>No comments yet.</p>";
         }
@@ -204,37 +280,103 @@
   
   loadContractor();
   
-  // Handle comment submission
+  // Initialize interactive star rating widget for the comment form
+  function initRatingWidget() {
+    const totalStars = 5;
+    let currentRating = 0;
+    // Clear widget
+    ratingWidgetEl.innerHTML = "";
+    // Create stars
+    for (let i = 1; i <= totalStars; i++) {
+      const star = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      star.setAttribute("viewBox", "0 0 24 24");
+      star.classList.add("rating-star");
+      star.dataset.value = i;
+      star.innerHTML = `<path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.182L12 18.897l-7.336 3.863 1.402-8.182L.132 9.211l8.2-1.193z"/>`;
+      star.addEventListener("click", function() {
+        currentRating = parseInt(this.dataset.value);
+        updateRatingDisplay(currentRating);
+      });
+      star.addEventListener("mouseover", function() {
+        updateRatingDisplay(parseInt(this.dataset.value));
+      });
+      star.addEventListener("mouseout", function() {
+        updateRatingDisplay(currentRating);
+      });
+      ratingWidgetEl.appendChild(star);
+    }
+    // Set initial value in hidden input
+    commentRatingInput.value = currentRating;
+  }
+  
+  function updateRatingDisplay(rating) {
+    const stars = ratingWidgetEl.querySelectorAll(".rating-star");
+    stars.forEach(star => {
+      if (parseInt(star.dataset.value) <= rating) {
+        star.classList.add("filled");
+      } else {
+        star.classList.remove("filled");
+      }
+    });
+    // Update hidden input
+    commentRatingInput.value = rating;
+  }
+  
+  // Initialize widget on load
+  initRatingWidget();
+  
+  // Handle comment submission (with rating)
   commentForm.addEventListener("submit", async function(e) {
     e.preventDefault();
     const customerName = commentNameInput.value.trim();
     const commentText = commentTextInput.value.trim();
-    if (!customerName || !commentText) {
-      commentErrorEl.textContent = "Please fill in both fields.";
+    const ratingValue = parseFloat(commentRatingInput.value);
+  
+    if (!customerName || !commentText || isNaN(ratingValue) || ratingValue < 1 || ratingValue > 5) {
+      commentErrorEl.textContent = "Please fill in all fields and provide a valid rating (1-5).";
       return;
     }
-    // Prepare new comment object using client-side timestamp
+  
     const newComment = {
       customerName: customerName,
       text: commentText,
-      timestamp: new Date().getTime()  // Using client timestamp
+      rating: ratingValue,
+      timestamp: new Date().getTime() // Client-side timestamp
     };
+  
     try {
       const docRef = doc(db, "contractors", contractorId);
-      // Use updateDoc with arrayUnion to add the new comment
       await updateDoc(docRef, {
         comments: arrayUnion(newComment)
       });
-      // Clear form and error message
       commentForm.reset();
       commentErrorEl.textContent = "";
-      // Reload contractor data to display the new comment
+      initRatingWidget(); // Reset the rating widget
       loadContractor();
     } catch (error) {
       console.error("Error adding comment:", error);
       commentErrorEl.textContent = "Error submitting comment. Please try again later.";
     }
   });
+  
+  // Helper: Generate star rating SVG for display (for comments and overall rating)
+  function generateStars(avgRating) {
+    const rounded = Math.round(avgRating);
+    let starsHTML = `<div class="star-rating">`;
+    for (let i = 1; i <= 5; i++) {
+      if (i <= rounded) {
+        starsHTML += `<svg xmlns="http://www.w3.org/2000/svg" fill="#f39c12" viewBox="0 0 24 24">
+            <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.182L12 18.897l-7.336 3.863 1.402-8.182L.132 9.211l8.2-1.193z"/>
+          </svg>`;
+      } else {
+        starsHTML += `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f39c12" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.182L12 18.897l-7.336 3.863 1.402-8.182L.132 9.211l8.2-1.193z"/>
+          </svg>`;
+      }
+    }
+    starsHTML += `</div>`;
+    return starsHTML;
+  }
 </script>
   
 {% schema %}

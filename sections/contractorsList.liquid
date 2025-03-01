@@ -1,172 +1,332 @@
 {%- comment -%}
   Contractors List Section
-  - Loads contractors from Firestore, up to a limit (e.g. 500).
+  - Loads contractors from Firestore (up to 500).
   - Performs a client-side, case-insensitive substring search on "name" and "location".
-  - Calculates average rating from a "ratings" array.
-  - Displays filtered results.
+  - Calculates overall rating from the "rating" property of comments.
+  - Displays each contractor with:
+      • A small cover image at the top (from contractor.coverImageUrl)
+      • A circular main image (from contractor.image or a placeholder)
+      • Phone and location icons
+      • A star-based rating display with badges ("Recommended by PM" and "Emergency") if applicable
+      • A link to the contractor details page.
+  All content below the cover image is wrapped in a common div: "contractor-item-content".
 {%- endcomment -%}
 
 <style>
-    /* Controls styling */
-    #contractors-controls {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    #contractors-controls input {
-      padding: 8px;
-      margin: 0 5px;
-      font-size: 14px;
-    }
-    /* Contractors list styling */
-    #contractors-list {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .contractor-item {
-      border: 1px solid #ddd;
-      padding: 15px;
-      margin-bottom: 15px;
-      text-align: left;
-    }
-    .contractor-item h3 {
-      margin: 0 0 10px;
-    }
-    .contractor-item p {
-      margin: 5px 0;
-    }
-    .contractor-item a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    .contractor-item a:hover {
-      text-decoration: underline;
-    }
-  </style>
-  
-  <div id="contractors-controls">
-    <input type="text" id="contractor-search" placeholder="Search by name or location...">
-    <button id="search-button">Search</button>
-  </div>
-  
-  <div id="contractors-list">
-    <p>Loading contractors...</p>
-  </div>
-  
-  <!-- Include Firebase SDK (modular v9) as ES module -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-    import { getFirestore, collection, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
-  
-    // Firebase configuration
-    const firebaseConfig = { 
-      apiKey: "AIzaSyCa4NKlrWF5bcDvFoBTgte3fapVfVh4GMQ",
-      authDomain: "plumbingmarket-68e8b.firebaseapp.com",
-      projectId: "plumbingmarket-68e8b",
-      storageBucket: "plumbingmarket-68e8b.firebasestorage.app",
-      messagingSenderId: "99062718040",
-      appId: "1:99062718040:web:3630736e55023aa1b4f42d",
-      measurementId: "G-9C5CVV662G"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-  
-    // DOM elements
-    const searchInput = document.getElementById("contractor-search");
-    const searchButton = document.getElementById("search-button");
-    const contractorsListDiv = document.getElementById("contractors-list");
-  
-    let allContractors = []; // We'll store all fetched contractors here
-  
-    // Compute average rating from an array of numbers
-    function computeAverageRating(ratingsArray) {
-      if (!ratingsArray || ratingsArray.length === 0) return "No ratings";
-      const total = ratingsArray.reduce((sum, rating) => sum + rating, 0);
-      return (total / ratingsArray.length).toFixed(1);
-    }
-  
-    // Display the (filtered) list of contractors
-    function displayContractors(contractors) {
-      if (contractors.length === 0) {
-        contractorsListDiv.innerHTML = "<p>No contractors found.</p>";
-        return;
-      }
-      contractorsListDiv.innerHTML = "";
-      contractors.forEach((contractor) => {
-        const avgRating = computeAverageRating(contractor.ratings);
-        const itemDiv = document.createElement("div");
-        itemDiv.className = "contractor-item";
-        itemDiv.innerHTML = `
-          <h3>${contractor.name}</h3>
-          <p>Location: ${contractor.location || "N/A"}</p>
-          <p>Phone: ${contractor.phone || "N/A"}</p>
-          <p>Rating: ${avgRating}</p>
-          <!-- If docId is stored, you can link to the detail page. We'll store it as contractor.docId below -->
-          <a href="/pages/contractor-details?cid=${contractor.docId}">View Details</a>
-        `;
-        contractorsListDiv.appendChild(itemDiv);
-      });
-    }
-  
-    // Fetch contractors once, store in allContractors
-    async function fetchAllContractors() {
-      try {
-        contractorsListDiv.innerHTML = "Loading contractors...";
-        const contractorsRef = collection(db, "contractors");
-        // For example, fetch up to 500 contractors (adjust as needed)
-        const q = query(contractorsRef, orderBy("name"), limit(500));
-        const snapshot = await getDocs(q);
-  
-        allContractors = [];
-        snapshot.forEach(doc => {
-          const data = doc.data();
-          data.docId = doc.id; // Keep track of the Firestore doc ID
-          allContractors.push(data);
-        });
-        displayContractors(allContractors);
-      } catch (error) {
-        console.error("Error fetching contractors: ", error);
-        contractorsListDiv.innerHTML = "<p>Error loading contractors.</p>";
-      }
-    }
-  
-    // Filter function: partial substring search on name or location
-    function filterContractors() {
-      const term = searchInput.value.trim().toLowerCase();
-      if (!term) {
-        // If no search term, show all
-        displayContractors(allContractors);
-        return;
-      }
-      // Filter by partial match in name or location
-      const filtered = allContractors.filter((contractor) => {
-        const nameLower = (contractor.name || "").toLowerCase();
-        const locationLower = (contractor.location || "").toLowerCase();
-        return nameLower.includes(term) || locationLower.includes(term);
-      });
-      displayContractors(filtered);
-    }
-  
-    // Initial fetch
-    fetchAllContractors();
-  
-    // Search button event
-    searchButton.addEventListener("click", filterContractors);
-  
-    // Optional: filter as user types (uncomment if desired)
-    // searchInput.addEventListener("input", filterContractors);
-  </script>
-  
-  {% schema %}
-  {
-    "name": "Contractors List Section",
-    "settings": [],
-    "presets": [
-      {
-        "name": "Contractors List"
-      }
-    ]
+  /* Controls styling */
+  #contractors-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
   }
-  {% endschema %}
-  
+  #contractors-controls input {
+    padding: 8px;
+    font-size: 16px;
+  }
+  #contractors-controls button {
+    margin: 0 !important;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  /* Contractors list styling */
+  #contractors-list {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+  }
+  .contractor-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+    align-items: start;
+  }
+  /* Cover image at top */
+  .contractor-item img.cover-image {
+    width: 100%;
+    height: 50px !important;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  /* Wrapper for all content under the cover */
+  .contractor-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px;
+  }
+  /* Contractor header: main image and details container */
+  .contractor-header {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .contractor-item .contractor-item-content img.contractor-image {
+    width: 50px;
+    height: 50px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+  .contractor-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .contractor-details h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .contractor-details .star-rating-container {
+    margin-top: 4px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 12px;
+    margin-left: 5px;
+  }
+  .badge.recommended {
+    background-color: #eff6ff;
+    color: #1e40af;
+  }
+  .badge.emergency {
+    background-color: #fef2f2;
+    color: #991b1b;
+  }
+  .contractor-item p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .contractor-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .contractor-item a:hover {
+    text-decoration: underline;
+  }
+  /* Icon styling for phone and location */
+  .icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  /* Star rating styling */
+  .star-rating {
+    display: inline-block;
+  }
+  .star-rating svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+</style>
+
+<div id="contractors-controls">
+  <input type="text" id="contractor-search" placeholder="Search by name or location...">
+  <button id="search-button">Search</button>
+</div>
+
+<div id="contractors-list">
+  <p>Loading contractors...</p>
+</div>
+
+<!-- Include Firebase SDK (modular v9) as ES module -->
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js';
+  import {
+    getFirestore,
+    collection,
+    query,
+    orderBy,
+    limit,
+    getDocs,
+  } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js';
+
+  // Firebase configuration
+  const firebaseConfig = {
+    apiKey: 'AIzaSyCa4NKlrWF5bcDvFoBTgte3fapVfVh4GMQ',
+    authDomain: 'plumbingmarket-68e8b.firebaseapp.com',
+    projectId: 'plumbingmarket-68e8b',
+    storageBucket: 'plumbingmarket-68e8b.firebasestorage.app',
+    messagingSenderId: '99062718040',
+    appId: '1:99062718040:web:3630736e55023aa1b4f42d',
+    measurementId: 'G-9C5CVV662G',
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // DOM elements
+  const searchInput = document.getElementById('contractor-search');
+  const searchButton = document.getElementById('search-button');
+  const contractorsListDiv = document.getElementById('contractors-list');
+
+  let allContractors = []; // Store all fetched contractors
+
+  // Helper: Compute overall rating from a contractor's comments
+  function computeOverallRatingFromComments(comments) {
+    if (!comments || comments.length === 0) return null;
+    const validRatings = comments.filter((c) => c.rating && !isNaN(c.rating));
+    if (validRatings.length === 0) return null;
+    const total = validRatings.reduce((sum, c) => sum + c.rating, 0);
+    return (total / validRatings.length).toFixed(1);
+  }
+
+  // Helper: Generate star rating HTML based on a rating value
+  function generateStars(rating) {
+    const rounded = Math.round(rating);
+    let starsHTML = `<div class="star-rating">`;
+    for (let i = 1; i <= 5; i++) {
+      if (i <= rounded) {
+        // Filled star
+        starsHTML += `<svg xmlns="http://www.w3.org/2000/svg" fill="#f39c12" viewBox="0 0 24 24">
+            <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.182L12 18.897l-7.336 3.863 1.402-8.182L.132 9.211l8.2-1.193z"/>
+          </svg>`;
+      } else {
+        // Empty star
+        starsHTML += `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f39c12" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.787 1.402 8.182L12 18.897l-7.336 3.863 1.402-8.182L.132 9.211l8.2-1.193z"/>
+          </svg>`;
+      }
+    }
+    starsHTML += `</div>`;
+    return starsHTML;
+  }
+
+  // Display the (filtered) list of contractors
+  function displayContractors(contractors) {
+    if (contractors.length === 0) {
+      contractorsListDiv.innerHTML = '<p>No contractors found.</p>';
+      return;
+    }
+    contractorsListDiv.innerHTML = '';
+    contractors.forEach((contractor) => {
+      // Compute overall rating from comments
+      const overallRating = computeOverallRatingFromComments(contractor.comments);
+      const starsHTML = overallRating ? generateStars(overallRating) : '';
+      const itemDiv = document.createElement('div');
+      itemDiv.className = 'contractor-item';
+
+      // Build HTML for contractor item
+      let itemHTML = '';
+      // Cover image at top
+      if (contractor.coverImageUrl) {
+        itemHTML += `<img class="cover-image" src="${contractor.coverImageUrl}" alt="${contractor.name} Cover">`;
+      }
+      // Wrap all remaining content in a common container
+      itemHTML += `<div class="contractor-item-content">`;
+      // Contractor header: main image on left and details on right
+      itemHTML += `<div class="contractor-header">`;
+      if (contractor.image) {
+        itemHTML += `<img class="contractor-image" src="${contractor.image}" alt="${contractor.name}">`;
+      } else {
+        itemHTML += `<img class="contractor-image" src="https://cdn.shopify.com/s/files/1/0654/5827/4526/files/Profile_avatar_placeholder_large_525940b5-25d4-4055-a0c7-4d640072c46b.png?v=1740782793" alt="Placeholder Image">`;
+      }
+      itemHTML += `<div class="contractor-details">`;
+      itemHTML += `<h3>${contractor.name}</h3>`;
+// New container for rating and badges:
+itemHTML += `<div class="rating-and-badges">`;
+if (overallRating) {
+  itemHTML += `<span class="star-rating-container">${starsHTML}</span>`;
+}
+if (contractor.recommendedByPM) {
+  itemHTML += `<span class="badge recommended">Recommended by PM</span>`;
+}
+if (contractor.emergencyServices) {
+  itemHTML += `<span class="badge emergency">Emergency</span>`;
+}
+itemHTML += `</div>`;
+
+      itemHTML += `</div></div>`;
+      // Location and phone with icons
+      itemHTML += `<p><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 112.5-2.5 2.5 2.5 0 01-2.5 2.5z"/>
+        </svg> ${contractor.location || 'N/A'}</p>`;
+        itemHTML += `<p>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011-.27 11.72 11.72 0 003.66.58 1 1 0 011 1v3.68a1 1 0 01-1 1A16 16 0 014 4a1 1 0 011-1h3.68a1 1 0 011 1 11.72 11.72 0 00.58 3.66 1 1 0 01-.27 1z"/>
+          </svg> 
+          ${contractor.phone ? `<a href="tel:${contractor.phone}">${contractor.phone}</a>` : 'N/A'}
+        </p>`;
+        
+      itemHTML += `<a href="/pages/contractor-details?cid=${contractor.docId}">View Details</a>`;
+      // Close common container
+      itemHTML += `</div>`;
+
+      itemDiv.innerHTML = itemHTML;
+      contractorsListDiv.appendChild(itemDiv);
+    });
+  }
+
+  // Fetch contractors once, store in allContractors
+  async function fetchAllContractors() {
+    try {
+      contractorsListDiv.innerHTML = 'Loading contractors...';
+      const contractorsRef = collection(db, 'contractors');
+      const q = query(contractorsRef, orderBy('name'), limit(500));
+      const snapshot = await getDocs(q);
+
+      allContractors = [];
+      snapshot.forEach((doc) => {
+        const data = doc.data();
+        data.docId = doc.id; // Store Firestore doc ID for linking
+        allContractors.push(data);
+      });
+      displayContractors(allContractors);
+    } catch (error) {
+      console.error('Error fetching contractors: ', error);
+      contractorsListDiv.innerHTML = '<p>Error loading contractors.</p>';
+    }
+  }
+
+  // Filter function: partial substring search on name or location
+  function filterContractors() {
+    const term = searchInput.value.trim().toLowerCase();
+    if (!term) {
+      displayContractors(allContractors);
+      return;
+    }
+    const filtered = allContractors.filter((contractor) => {
+      const nameLower = (contractor.name || '').toLowerCase();
+      const locationLower = (contractor.location || '').toLowerCase();
+      return nameLower.includes(term) || locationLower.includes(term);
+    });
+    displayContractors(filtered);
+  }
+
+  // Initial fetch
+  fetchAllContractors();
+
+  // Search button event
+  searchButton.addEventListener('click', filterContractors);
+  // Optionally, live filtering on input:
+  // searchInput.addEventListener("input", filterContractors);
+</script>
+
+{% schema %}
+{
+  "name": "Contractors List",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Contractors List"
+    }
+  ]
+}
+{% endschema %}
