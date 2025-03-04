@@ -9,11 +9,82 @@
  */
 {
   "sections": {
+    "section_gallery_HRFYqt": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_A3xJhz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/banner_for_contractors.webp",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "",
+            "text": "",
+            "link_text": "Button",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "image_A3xJhz"
+      ],
+      "settings": {
+        "items_layout": "playful-grid",
+        "items_width": 2,
+        "height": "size-s",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "content_on_hover_color_palette": "dark",
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
     "breadcrumbs": {
       "type": "breadcrumbs",
       "disabled": true,
       "settings": {
         "hide_mobile": false
+      }
+    },
+    "section_rich_text_KGfeFq": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_d6hX9z": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title": "Find Plumbers and Contractors In You Area"
+          }
+        },
+        "content_Jc69dV": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Explore our list of trusted plumbers for all your bathroom renovation and plumbing installation needs, including 24/7 emergency services(red budge). Look for the blue badge to find our top-recommended experts in your area!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_d6hX9z",
+        "content_Jc69dV"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
       }
     },
     "main-page": {
@@ -49,7 +120,9 @@
     }
   },
   "order": [
+    "section_gallery_HRFYqt",
     "breadcrumbs",
+    "section_rich_text_KGfeFq",
     "main-page",
     "contractors_list_9MWwhJ"
   ]

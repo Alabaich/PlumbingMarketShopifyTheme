@@ -243,7 +243,7 @@
       ],
       "settings": {}
     },
-        "top_brands_m7MGFx": {
+    "top_brands_m7MGFx": {
       "type": "topBrands",
       "blocks": {
         "brand_8nixbh": {
@@ -362,6 +362,18 @@
         "subtitle": "Browse our most popular brands"
       }
     },
+    "best_sellers_KtTex7": {
+      "type": "bestSellers",
+      "settings": {
+        "tileOne": "Best Sellers",
+        "textOne": "Uncover the Plumbing Market Superstars: Get to Know the Top 10 Customer Favorites Revealed!",
+        "titleSmall": "Best Selling Products",
+        "textTwo": "Check out our best selling products and enjoy up to 50% off.",
+        "textOnButton": "Go To Best Sellers",
+        "linkOnButton": "shopify://collections/best-sellers",
+        "bestCollection": "best-sellers"
+      }
+    },
     "tranding_search_tXgmRB": {
       "type": "trandingSearch",
       "blocks": {
@@ -478,18 +490,6 @@
       ],
       "settings": {}
     },
-    "best_sellers_KtTex7": {
-      "type": "bestSellers",
-      "settings": {
-        "tileOne": "Best Sellers",
-        "textOne": "Uncover the Plumbing Market Superstars: Get to Know the Top 10 Customer Favorites Revealed!",
-        "titleSmall": "Best Selling Products",
-        "textTwo": "Check out our best selling products and enjoy up to 50% off.",
-        "textOnButton": "Go To Best Sellers",
-        "linkOnButton": "shopify://collections/best-sellers",
-        "bestCollection": "best-sellers"
-      }
-    },
     "latest_blogs_new_wUNGWJ": {
       "type": "latestBlogsNew",
       "settings": {
@@ -504,8 +504,8 @@
     "category_banners_rounded_EBx6mV",
     "popular_categories_JbMyXK",
     "top_brands_m7MGFx",
-    "tranding_search_tXgmRB",
     "best_sellers_KtTex7",
+    "tranding_search_tXgmRB",
     "latest_blogs_new_wUNGWJ"
   ]
 }

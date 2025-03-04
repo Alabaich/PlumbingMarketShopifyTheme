@@ -1,17 +1,21 @@
 {%- comment -%}
   Contractor Detail Extended Section
   - Reads a contractor ID from the URL (e.g. ?cid=...)
-  - Fetches that contractor’s data from Firestore (including name, location, phone, image, description, recommended, and comments)
-  - Displays contractor details along with a recommended badge (if applicable)
-  - Calculates overall rating from the ratings inside comments.
-  - If no comment has a rating, the overall rating block is not shown.
-  - Displays comments and provides a form to submit a new comment with an interactive star rating widget (1-5)
+  - Fetches that contractor’s data from Firestore (including name, location, phone, image, coverImageUrl, description, recommended, emergencyServices, and comments)
+  - Displays contractor details with:
+      • Cover image (if available)
+      • Main image (or placeholder)
+      • Name, location and phone
+      • Overall rating (computed from comment ratings) with total comments count
+      • Badges for “Recommended by Plumbing Market” and “Emergency Services” (if applicable)
+      • Contractor description
+      • Comments list and a form to submit new comments
 {%- endcomment -%}
 
 <style>
   /* Basic styling for the contractor detail page */
   #contractor-detail {
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
@@ -20,24 +24,49 @@
     font-size: 28px;
     margin-bottom: 10px;
   }
-  #contractor-info, 
-  #contractor-description, 
-  #contractor-rating, 
-  #contractor-recommended {
+  #contractor-cover {
+    width: 100%;
+    height: auto;
+    display: none;
     margin-bottom: 20px;
+    border-radius: 5px;
+    object-fit: cover;
   }
-  #contractor-image {
-    max-width: 200px;
-    margin: 10px auto;
-    display: block;
+
+  .headerBlockForContractor{
+    display: flex;
+    justify content: start;
+    align-items: center;
+    gap:15px;
   }
-  #contractor-recommended {
-    background: #f39c12;
-    color: #fff;
-    padding: 5px 10px;
+
+  .headerBlockForContractor *{
+  margin: 0 !important;
+  }
+
+  #contractor-detail  .headerBlockForContractor img#contractor-image{
+  width: 100px;
+  height: 100px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  }
+
+  /* Badge styling */
+  .badge {
     display: inline-block;
-    border-radius: 4px;
-    font-weight: bold;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 12px;
+    margin: 0 5px;
+  }
+  .badge.recommended {
+    background-color: #eff6ff;
+    color: #1e40af;
+  }
+  .badge.emergency {
+    background-color: #fef2f2;
+    color: #991b1b;
   }
   /* Comments section styling */
   #contractor-comments {
@@ -113,19 +142,88 @@
   
   .star-rating {
     display: flex;
+    justify-content: end;
     flex-direction: row;
     gap: 2px;
     height: 16px;
   }
+
+  #contractor-detail img#contractor-cover{
+  width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+#contractor-badges{
+display: flex !important;
+justify-content: start;
+align-items: start;
+gap: 15px;}
+.titleAndBadges{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+  align-items: start;
+}
+.headerOutter{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 15px;
+margin-bottom: 25px;
+}
+#contractor-info{
+display: flex;
+justify-content: start;
+align-items: start;
+gap: 25px;
+margin-bottom: 25px;}
+#contractor-info *{
+margin-bottom: 0 !important;}
+
+#contractor-description p{
+text-align: left;}
+
+
+  @media screen and (max-width: 600px){
+    .headerOutter, .headerBlockForContractor{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  .star-rating{
+    justify-content: center;
+  }
+    
+  }
 </style>
 
-<div id="contractor-detail">
-  <h1 id="contractor-name">Loading contractor...</h1>
-  <img id="contractor-image" src="" alt="Contractor Image" style="display:none;" width="100px" height="100px">
+<div id=  "contractor-detail">
+  <!-- Cover image (new element) -->
+  <img id="contractor-cover" src="" alt="Contractor Cover Image" width="100%" height="auto">
+  <div class="headerOutter">
+    <div class="headerBlockForContractor">
+      <img id="contractor-image" src="" alt="Contractor Image" style="display:none;" width="100px" height="100px">
+      <div class="titleAndBadges">
+        <h1 id="contractor-name">Loading contractor...</h1>
+        <div id="contractor-badges" style="display:none;"></div>
+        <!-- Rating: stars plus overall rating and total comments -->
+      </div>
+  
+    </div>
+    
+    <div id="contractor-rating"></div>
+  </div>
+
+
   <div id="contractor-info"></div>
+  <!-- Description -->
   <div id="contractor-description"></div>
-  <div id="contractor-recommended" style="display:none;">Recommended by Plumbing Market</div>
-  <div id="contractor-rating"></div>
+  <!-- Badges container -->
+
+
   <hr>
   <h2>Comments</h2>
   <div id="contractor-comments">
@@ -133,10 +231,11 @@
   </div>
   <h3>Leave a Comment</h3>
   <form id="comment-form">
+    <div id="comment-rating-widget"></div>
     <input type="text" id="comment-name" placeholder="Your name" required>
     <textarea id="comment-text" placeholder="Your comment" required></textarea>
     <!-- Interactive Star Rating Widget -->
-    <div id="comment-rating-widget"></div>
+
     <!-- Hidden input to store the rating value -->
     <input type="hidden" id="comment-rating" value="" required>
     <button type="submit">Submit Comment</button>
@@ -176,8 +275,9 @@
   const nameEl = document.getElementById('contractor-name');
   const infoEl = document.getElementById('contractor-info');
   const descriptionEl = document.getElementById('contractor-description');
-  const recommendedEl = document.getElementById('contractor-recommended');
+  const badgesEl = document.getElementById('contractor-badges');
   const imageEl = document.getElementById('contractor-image');
+  const coverEl = document.getElementById('contractor-cover');
   const ratingEl = document.getElementById('contractor-rating');
   const commentsEl = document.getElementById('contractor-comments');
   const commentForm = document.getElementById('comment-form');
@@ -206,13 +306,24 @@
       const snapshot = await getDoc(docRef);
       if (snapshot.exists()) {
         const data = snapshot.data();
-        // Display basic info
+        // Display contractor name
         nameEl.textContent = data.name || "Unnamed Contractor";
+        
+        // Display cover image if available
+        if (data.coverImageUrl) {
+          coverEl.src = data.coverImageUrl;
+          coverEl.style.display = "block";
+        } else {
+          coverEl.style.display = "none";
+        }
+  
+        // Display basic info (location and phone)
         infoEl.innerHTML = `
-          <p>Location: ${data.location || "N/A"}</p>
-          <p>Phone: ${data.phone || "N/A"}</p>
+          <p><strong>Location:</strong> ${data.location || "N/A"}</p>
+          <p><strong>Phone:</strong> ${data.phone ? `<a href="tel:${data.phone}">${data.phone}</a>` : "N/A"}</p>
         `;
-        // Show image if available, else show placeholder
+  
+        // Show contractor main image (or placeholder)
         if (data.image) {
           imageEl.src = data.image;
         } else {
@@ -220,29 +331,44 @@
         }
         imageEl.style.display = "block";
   
-        // Show description if available
+        // Show full description if available
         if (data.description) {
           descriptionEl.innerHTML = `<p>${data.description}</p>`;
-        }
-  
-        // Show recommended badge if true
-        recommendedEl.style.display = data.recommended === true ? "inline-block" : "none";
-  
-        // Calculate overall rating from comments instead of a separate ratings array
-        const avgCommentRating = computeAverageCommentRating(data.comments);
-        if (avgCommentRating !== null) {
-          ratingEl.innerHTML = `Rating: ${generateStars(avgCommentRating)} (${avgCommentRating})`;
         } else {
-          ratingEl.innerHTML = "";  // Hide if no rating available
+          descriptionEl.innerHTML = "";
         }
   
-        // Display comments if any
+        // Combine badges for recommended and emergency services
+        let badgesHTML = "";
+        // Check for either recommended or recommendedByPM property
+        if (data.recommended === true || data.recommendedByPM === true) {
+          badgesHTML += `<span class="badge recommended">Recommended by Plumbing Market</span>`;
+        }
+        if (data.emergencyServices === true) {
+          badgesHTML += `<span class="badge emergency">Emergency Services</span>`;
+        }
+        if (badgesHTML) {
+          badgesEl.innerHTML = badgesHTML;
+          badgesEl.style.display = "block";
+        } else {
+          badgesEl.style.display = "none";
+        }
+  
+        // Calculate overall rating from comments and total comment count
+        const avgCommentRating = computeAverageCommentRating(data.comments);
+        const totalComments = data.comments ? data.comments.length : 0;
+        if (avgCommentRating !== null) {
+          ratingEl.innerHTML = `${generateStars(avgCommentRating)} <span>(${avgCommentRating} out of 5 based on ${totalComments} comments)</span>`;
+        } else {
+          ratingEl.innerHTML = "";
+        }
+  
+        // Display comments if any (sorted newest first)
         if (data.comments && data.comments.length > 0) {
           commentsEl.innerHTML = "";
-          // Sort comments by timestamp (newest first)
           const sortedComments = data.comments.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
           sortedComments.forEach(comment => {
-            // Only display comment block if rating exists for that comment
+            // Only display comments that have a rating (optional)
             if (!comment.rating) return;
             const commentDate = comment.timestamp ? new Date(comment.timestamp).toLocaleString() : "";
             const commentDiv = document.createElement("div");
@@ -250,7 +376,7 @@
             commentDiv.innerHTML = `
               <div class="comment-header">
                 <div class="comment-user">
-                  <strong>${comment.customerName}</strong>
+                  <strong>${comment.customerName}</strong><br>
                   <em>${commentDate}</em>
                 </div>
                 <div class="comment-rating">
@@ -284,9 +410,7 @@
   function initRatingWidget() {
     const totalStars = 5;
     let currentRating = 0;
-    // Clear widget
     ratingWidgetEl.innerHTML = "";
-    // Create stars
     for (let i = 1; i <= totalStars; i++) {
       const star = document.createElementNS("http://www.w3.org/2000/svg", "svg");
       star.setAttribute("viewBox", "0 0 24 24");
@@ -305,7 +429,6 @@
       });
       ratingWidgetEl.appendChild(star);
     }
-    // Set initial value in hidden input
     commentRatingInput.value = currentRating;
   }
   
@@ -318,14 +441,12 @@
         star.classList.remove("filled");
       }
     });
-    // Update hidden input
     commentRatingInput.value = rating;
   }
   
-  // Initialize widget on load
   initRatingWidget();
   
-  // Handle comment submission (with rating)
+  // Handle comment submission
   commentForm.addEventListener("submit", async function(e) {
     e.preventDefault();
     const customerName = commentNameInput.value.trim();
@@ -341,7 +462,7 @@
       customerName: customerName,
       text: commentText,
       rating: ratingValue,
-      timestamp: new Date().getTime() // Client-side timestamp
+      timestamp: new Date().getTime()
     };
   
     try {
@@ -351,15 +472,15 @@
       });
       commentForm.reset();
       commentErrorEl.textContent = "";
-      initRatingWidget(); // Reset the rating widget
-      loadContractor();
+      initRatingWidget(); // Reset rating widget
+      loadContractor();   // Reload contractor details to show new comment
     } catch (error) {
       console.error("Error adding comment:", error);
       commentErrorEl.textContent = "Error submitting comment. Please try again later.";
     }
   });
   
-  // Helper: Generate star rating SVG for display (for comments and overall rating)
+  // Helper: Generate star rating SVG for display
   function generateStars(avgRating) {
     const rounded = Math.round(avgRating);
     let starsHTML = `<div class="star-rating">`;

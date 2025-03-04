@@ -134,6 +134,12 @@
     vertical-align: middle;
     margin-right: 2px;
   }
+
+  @media screen and (max-width: 600px){
+    #contractors-list {
+    grid-template-columns: repeat(1, 1fr);
+}
+  }
 </style>
 
 <div id="contractors-controls">
@@ -220,6 +226,7 @@
       // Compute overall rating from comments
       const overallRating = computeOverallRatingFromComments(contractor.comments);
       const starsHTML = overallRating ? generateStars(overallRating) : '';
+      const commentsCount = contractor.comments && contractor.comments.length ? contractor.comments.length : 0;
       const itemDiv = document.createElement('div');
       itemDiv.className = 'contractor-item';
 
@@ -243,7 +250,10 @@
 // New container for rating and badges:
 itemHTML += `<div class="rating-and-badges">`;
 if (overallRating) {
-  itemHTML += `<span class="star-rating-container">${starsHTML}</span>`;
+  itemHTML += `<span class="star-rating-container">
+                  ${starsHTML}
+                  <span class="comments-count">(${commentsCount} comments)</span>
+                </span>`;
 }
 if (contractor.recommendedByPM) {
   itemHTML += `<span class="badge recommended">Recommended by PM</span>`;
