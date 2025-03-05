@@ -1,0 +1,193 @@
+{%- comment -%}
+  Custom Contact Form Section
+  - Collects contractor details including name, email, phone, *link to logo*, 
+    company name, *link to work example*, working hours, emergency service availability, 
+    service area, location (with an "Other" option), captcha, and newsletter subscription.
+  - Uses Shopify Liquid form ( {% form 'contact' %} ) for handling submissions.
+  - Includes inline CSS styles and JavaScript for interactive elements.
+{%- endcomment -%}
+
+<style>
+  /* Basic styling for the custom contact form section */
+  #custom-contact-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    padding-bottom: 60px;
+    margin-bottom: 25px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: left;
+  }
+  #custom-contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #custom-contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  #custom-contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  #custom-contact-form input[type="text"],
+  #custom-contact-form input[type="email"],
+  #custom-contact-form input[type="tel"],
+  #custom-contact-form input[type="url"],
+  #custom-contact-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  #custom-contact-form .form-group small {
+    display: block;
+    color: #666;
+    margin-top: 5px;
+  }
+  #custom-contact-form button[type="submit"] {
+    padding: 10px 20px;
+    background: #1e73be;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #custom-contact-form button[type="submit"]:hover {
+    background: #155d93;
+  }
+  /* Toggle for "Other" location input */
+  #other-location {
+    display: none;
+    margin-top: 10px;
+  }
+</style>
+
+<div id="custom-contact-form">
+  <h2>Apply for publish your services on our website</h2>
+  {% form 'contact' %}
+    <div class="form-group">
+      <label for="contact-name">Name</label>
+      <input type="text" id="contact-name" name="contact[name]" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-email">Email</label>
+      <input type="email" id="contact-email" name="contact[email]" placeholder="Your Email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-phone">Phone</label>
+      <input type="tel" id="contact-phone" name="contact[phone]" placeholder="Your Phone" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-logo">Link to Logo</label>
+      <input type="url" id="contact-logo" name="contact[logo]" placeholder="https://example.com/your-logo.png" required>
+      <small>Please provide a direct link to your logo image.</small>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-company">Company Name</label>
+      <input type="text" id="contact-company" name="contact[company]" placeholder="Company Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-work-example">Link to Work Example</label>
+      <input type="url" id="contact-work-example" name="contact[work_example]" placeholder="https://example.com/work-example.png" required>
+      <small>Please provide a direct link to a work example image.</small>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-working-hours">Working Hours</label>
+      <input type="text" id="contact-working-hours" name="contact[working_hours]" placeholder="e.g. 9am - 5pm" required>
+    </div>
+
+    <div class="form-group">
+      <p>Do you provide emergency 24/7 services?</p>
+      <label>
+        <input type="radio" name="contact[emergency]" value="yes" required> Yes
+      </label>
+      <label>
+        <input type="radio" name="contact[emergency]" value="no"> No
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-service-area">Service Area</label>
+      <input type="text" id="contact-service-area" name="contact[service_area]" placeholder="Area where you provide services" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-location">Where are you located?</label>
+<select id="contact-location" name="contact[location]" required>
+  <option value="">Select City</option>
+  <option value="Toronto">Toronto</option>
+  <option value="Mississauga">Mississauga</option>
+  <option value="Brampton">Brampton</option>
+  <option value="Vaughan">Vaughan</option>
+  <option value="Markham">Markham</option>
+  <option value="Richmond Hill">Richmond Hill</option>
+  <option value="Oakville">Oakville</option>
+  <option value="Burlington">Burlington</option>
+  <option value="Pickering">Pickering</option>
+  <option value="Ajax">Ajax</option>
+  <option value="Whitby">Whitby</option>
+  <option value="Oshawa">Oshawa</option>
+  <option value="Milton">Milton</option>
+  <option value="Aurora">Aurora</option>
+  <option value="Newmarket">Newmarket</option>
+  <option value="Halton Hills">Halton Hills</option>
+  <option value="Other">Other</option>
+</select>
+
+      <div id="other-location">
+        <input type="text" name="contact[other_location]" placeholder="Enter your city">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-captcha">Captcha</label>
+      <!-- Insert your captcha integration code here, e.g., Google reCAPTCHA -->
+      <div id="contact-captcha">
+        <!-- Example: <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> -->
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>
+        <input type="checkbox" name="contact[subscribe]" value="yes">
+        Subscribe to our newsletter
+      </label>
+    </div>
+
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  {% endform %}
+</div>
+
+<script>
+  // Toggle display of the "Other" location input based on selection
+  document.getElementById('contact-location').addEventListener('change', function() {
+    var otherLocation = document.getElementById('other-location');
+    if (this.value === 'Other') {
+      otherLocation.style.display = 'block';
+    } else {
+      otherLocation.style.display = 'none';
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Custom Contact Form",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Custom Contact Form"
+    }
+  ]
+}
+{% endschema %}

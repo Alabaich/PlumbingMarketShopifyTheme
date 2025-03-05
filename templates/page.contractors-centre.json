@@ -117,6 +117,10 @@
     "contractors_list_9MWwhJ": {
       "type": "contractorsList",
       "settings": {}
+    },
+    "contract_form_Uki3q3": {
+      "type": "contract-form",
+      "settings": {}
     }
   },
   "order": [
@@ -124,6 +128,7 @@
     "breadcrumbs",
     "section_rich_text_KGfeFq",
     "main-page",
-    "contractors_list_9MWwhJ"
+    "contractors_list_9MWwhJ",
+    "contract_form_Uki3q3"
   ]
 }

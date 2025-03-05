@@ -371,6 +371,36 @@
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "suitable-space",
+      "namespace": "shopify",
+      "name": "Suitable space",
+      "description": "Defines the ideal location for product use, e.g. indoors, above ground",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "style",
+      "namespace": "shopify",
+      "name": "Style",
+      "description": "Describes the style of a product, typically for window treatments; e.g. vertical blind, pleated shades",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "suitable-location",
+      "namespace": "shopify",
+      "name": "Suitable location",
+      "description": "Indicates the ideal placement for the product in the home, e.g. bedroom, patio ",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
     }
   ],
   "variant": [

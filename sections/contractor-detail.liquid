@@ -12,6 +12,8 @@
       • Comments list and a form to submit new comments
 {%- endcomment -%}
 
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
 <style>
   /* Basic styling for the contractor detail page */
   #contractor-detail {
@@ -238,6 +240,7 @@ text-align: left;}
 
     <!-- Hidden input to store the rating value -->
     <input type="hidden" id="comment-rating" value="" required>
+    <div class="g-recaptcha" data-sitekey="6Lf5duoqAAAAAGipc0CE4YA_TEGDUb2_1joOsa2F"></div>
     <button type="submit">Submit Comment</button>
   </form>
   <div id="comment-error"></div>
@@ -245,6 +248,18 @@ text-align: left;}
 
 <!-- Include Firebase SDK (modular v9) -->
 <script type="module">
+
+if (document.hasStorageAccess) {
+  document.requestStorageAccess()
+    .then(() => {
+      console.log("Storage access granted.");
+      // Now Firestore writes should work
+    })
+    .catch(() => {
+      console.warn("Storage access denied.");
+    });
+}
+
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
   import { getFirestore, doc, getDoc, updateDoc, arrayUnion } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
   
@@ -447,39 +462,62 @@ text-align: left;}
   initRatingWidget();
   
   // Handle comment submission
-  commentForm.addEventListener("submit", async function(e) {
+commentForm.addEventListener("submit", async function (e) {
     e.preventDefault();
     const customerName = commentNameInput.value.trim();
     const commentText = commentTextInput.value.trim();
     const ratingValue = parseFloat(commentRatingInput.value);
-  
+
     if (!customerName || !commentText || isNaN(ratingValue) || ratingValue < 1 || ratingValue > 5) {
-      commentErrorEl.textContent = "Please fill in all fields and provide a valid rating (1-5).";
-      return;
+        commentErrorEl.textContent = "Please fill in all fields and provide a valid rating (1-5).";
+        return;
     }
-  
+
+      const recaptchaResponse = grecaptcha.getResponse();
+    if (!recaptchaResponse) {
+        commentErrorEl.textContent = "Please complete the reCAPTCHA.";
+        return;
+    }
+
+
+    // Request Storage Access if needed (only in browsers that support it)
+    if (document.hasStorageAccess) {
+        try {
+            await document.requestStorageAccess();
+            console.log("Storage access granted. Proceeding with Firestore update.");
+        } catch (error) {
+            console.warn("Storage access denied.");
+            commentErrorEl.textContent = "We need third-party cookie access to post comments. Please enable cookies and try again.";
+            return; // Stop execution if access is denied
+        }
+    }
+
     const newComment = {
-      customerName: customerName,
-      text: commentText,
-      rating: ratingValue,
-      timestamp: new Date().getTime()
+        customerName: customerName,
+        text: commentText,
+        rating: ratingValue,
+        timestamp: new Date().getTime()
     };
-  
+
     try {
-      const docRef = doc(db, "contractors", contractorId);
-      await updateDoc(docRef, {
-        comments: arrayUnion(newComment)
-      });
-      commentForm.reset();
-      commentErrorEl.textContent = "";
-      initRatingWidget(); // Reset rating widget
-      loadContractor();   // Reload contractor details to show new comment
+        const docRef = doc(db, "contractors", contractorId);
+        await updateDoc(docRef, {
+            comments: arrayUnion(newComment)
+        });
+
+        // Success: Reset form and reload comments
+        commentForm.reset();
+        commentErrorEl.textContent = "";
+        initRatingWidget(); // Reset rating widget
+        loadContractor();   // Reload contractor details to show new comment
+grecaptcha.reset();
     } catch (error) {
-      console.error("Error adding comment:", error);
-      commentErrorEl.textContent = "Error submitting comment. Please try again later.";
+        console.error("Error adding comment:", error);
+      grecaptcha.reset(); 
+        commentErrorEl.textContent = "Error submitting comment. Please try again later.";
     }
-  });
-  
+});
+
   // Helper: Generate star rating SVG for display
   function generateStars(avgRating) {
     const rounded = Math.round(avgRating);
