@@ -1,0 +1,207 @@
+<style>
+    /* FAQ Section CSS – Full Width & SEO Friendly */
+    .faqs-section {
+      width: 100%;
+      padding: 50px 20px;
+      background: transparent;
+      text-align: center;
+    }
+    .faqs-container {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      Justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .faqs-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2C2D2C;
+      margin-bottom: 20px;
+      max-width: 800px;
+    }
+    .faqs-description {
+      font-size: 1rem;
+      color: #2C2D2C;
+      margin-bottom: 25px;
+      max-width: 800px;
+    }
+    .faq-item {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
+      text-align: left;
+      padding: 15px;
+      border-radius: 10px;
+      width: 100%;
+    }
+    /* Highlight active FAQ item */
+    .faq-item.active {
+      background: #FBFAF8;
+    }
+    /* FAQ Question styled as a span acting as a button with an arrow */
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      padding: 10px 0;
+      border: none;
+    }
+    .faq-question:focus {
+      outline: none;
+    }
+    .faq-arrow {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+    .faq-question[aria-expanded="true"] .faq-arrow {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      padding: 0 10px;
+      display: none;
+    }
+    .faq-answer a {
+      color: #2C2D2C;
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      .faqs-title {
+        font-size: 1.5rem;
+      }
+      .faq-question {
+        font-size: 1rem;
+      }
+      .faq-answer {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  
+  <section class="faqs-section" aria-labelledby="faqs-title">
+    <div class="faqs-container">
+      <h2 id="faqs-title" class="faqs-title" title="{{ section.settings.title }}">
+        {{ section.settings.title }}
+      </h2>
+      <div class="faqs-description" aria-describedby="faqs-description">
+        {{ section.settings.description }}
+      </div>
+      {% for block in section.blocks %}
+        <div class="faq-item">
+          <span class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-{{ forloop.index }}">
+            {{ block.settings.question }}
+            <span class="faq-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16 10L12 14L8 10" stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </span>
+          <div id="faq-answer-{{ forloop.index }}" class="faq-answer" hidden>
+            {{ block.settings.answer }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for block in section.blocks %}
+        {
+          "@type": "Question",
+          "name": "{{ block.settings.question | strip_html | escape }}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ block.settings.answer | strip_html | escape }}"
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
+    </script>
+  </section>
+  
+  <script>
+    // Toggle FAQ Answer Display for spans acting as buttons with arrow rotation
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.faq-question').forEach(function(element) {
+        element.addEventListener('click', function() {
+          var expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', !expanded);
+          var answer = document.getElementById(this.getAttribute('aria-controls'));
+          var faqItem = this.closest('.faq-item');
+          if (answer.hasAttribute('hidden')) {
+            answer.removeAttribute('hidden');
+            answer.style.display = 'block';
+            faqItem.classList.add('active');
+          } else {
+            answer.setAttribute('hidden', true);
+            answer.style.display = 'none';
+            faqItem.classList.remove('active');
+          }
+        });
+        // Enable keyboard support for Enter and Space keys
+        element.addEventListener('keyup', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+          }
+        });
+      });
+    });
+  </script>
+  
+  {% schema %}
+  {
+    "name": "SEO FAQs",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "FAQs – Answering Google’s Most Searched Questions"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Section Description",
+        "default": "<p>Find answers to the most popular questions. Explore our internal links for more details on retailers, product categories, and services.</p>"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "faq",
+        "name": "FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "id": "question",
+            "label": "Question"
+          },
+          {
+            "type": "richtext",
+            "id": "answer",
+            "label": "Answer"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 5,
+    "presets": [
+      {
+        "name": "SEO FAQs",
+        "category": "SEO"
+      }
+    ]
+  }
+  {% endschema %}
+  

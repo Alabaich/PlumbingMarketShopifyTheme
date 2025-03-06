@@ -9,9 +9,12 @@
  */
 {
   "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
     "breadcrumbs": {
       "type": "breadcrumbs",
-      "disabled": true,
       "settings": {
         "hide_mobile": false
       }
@@ -116,15 +119,98 @@
       "settings": {
         "category_title": "Toronto’s Most Popular Kitchen Faucets",
         "category_description": "<p><strong>Best Models:</strong> Moen Arbor, Align, Motionsense™.<br/><strong>Key Features:</strong> Touchless activation, PowerBoost spray, high-arc spouts.</p>",
-        "collection": ""
+        "collection": "moen-kitchen-faucets"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "We installed the Moen Arbor MotionSense faucet in our Mississauga home, and it's amazing!",
+            "author": "Emily R., Mississauga",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Love our Moen U Smart Shower – best home upgrade ever!\"",
+            "author": "Daniel W., Vaughan",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YcbyBh",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "Canadian Reviews on MOEN Premium Faucets & Fixtures",
+        "description": "<p>Discover authentic customer experiences and quality insights on MOEN’s innovative kitchen and bath solutions from Canadian homeowners.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "Where Can I Buy Moen Faucets and Plumbing Fixtures in Canada?",
+            "answer": "<p>If you’re looking for <strong>authentic Moen faucets, showers, and plumbing accessories in Canada</strong>, you can shop directly at our store. As an <strong>authorized Moen reseller</strong>, we offer:</p><p>✅ <strong>Wide selection of Moen kitchen & bathroom fixtures</strong><br/><br/>✅ <strong>Fast shipping across Canada</strong><br/><br/>✅ <strong>Expert customer support & product guidance</strong><br/><br/>✅ <strong>Exclusive Moen promotions & deals</strong></p><p>Browse our <a href=\"/collections/moen\" title=\"Moen\"><strong>Moen collection online</strong></a> or visit us in-store to find the perfect Moen upgrade for your home.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "Does Moen Offer a Lifetime Warranty in Canada?",
+            "answer": "<p>Yes! Moen offers a <strong>Limited Lifetime Warranty</strong> on most faucets and plumbing products in Canada. This means:<br/><br/>✅ <strong>Drip-free guarantee</strong> for cartridge-based faucets<br/><br/>✅ <strong>Finish warranty</strong> to prevent tarnishing or peeling<br/><br/>✅ <strong>Replacement parts</strong> for defective products under normal use</p><p>If you need to claim your Moen warranty in Canada, contact <strong>Moen Canada’s customer service</strong> or visit an authorized dealer.<br/><br/><a href=\"https://www.moen.ca/customer-support/warranty\" target=\"_blank\" title=\"https://www.moen.ca/customer-support/warranty\"><strong>Warranty Page</strong></a></p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Moen Faucets Good for Hard Water in Canada?",
+            "answer": "<p>Yes! Moen faucets are designed to withstand <strong>Canada’s hard water conditions</strong>, especially in provinces like <strong>Ontario, Alberta, and Saskatchewan</strong> where mineral buildup is common.</p><p>🔹 <strong>Spot Resist™ Finish</strong> – Repels water spots and fingerprints.<br/><br/>🔹 <strong>Duralast® Cartridge</strong> – Ensures smooth operation even with mineral deposits.<br/><br/>🔹 <strong>Moen Flo Smart Water Monitor</strong> – Detects leaks and helps manage water usage.</p><p>For best results, pair your Moen faucet with a <strong>water softener</strong> or clean aerators regularly.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "Does Moen Offer Smart Home Faucets & Showers in Canada?",
+            "answer": "<p>Yes! Moen is a leader in <strong>smart water technology</strong>, offering:<br/><br/>🚰 <strong>Moen Smart Faucets</strong> – Touchless, voice-activated faucets compatible with <strong>Alexa & Google Assistant</strong>.<br/><br/>🚿 <strong>Moen U Smart Shower</strong> – Customizable digital shower with <strong>WiFi & app control</strong>.<br/><br/>📱 <strong>Moen Flo Smart Water Monitor</strong> – Detects leaks and prevents water damage.</p><p>Moen’s smart products are available in Canada and work with <strong>Google Home, Amazon Alexa, and Apple HomeKit</strong>.</p>"
+          }
+        },
+        "faq_TngRGt": {
+          "type": "faq",
+          "settings": {
+            "question": "How Do I Install a Moen Faucet or Shower in Canada?",
+            "answer": "<p>Most Moen faucets and showers in Canada are <strong>DIY-friendly</strong> and come with step-by-step instructions. Here’s how:<br/><br/>🔧 <strong>Step 1:</strong> Turn off the water supply.<br/><br/>🔧 <strong>Step 2:</strong> Remove the old faucet or showerhead.<br/><br/>🔧 <strong>Step 3:</strong> Install the new Moen fixture using the included mounting hardware.<br/><br/>🔧 <strong>Step 4:</strong> Connect water lines and test for leaks.</p><p>For complex installations (like wall-mounted or thermostatic showers), visit <a href=\"https://www.moen.com/customer-support/installation-help\" target=\"_blank\" title=\"https://www.moen.com/customer-support/installation-help\"><strong>installation page</strong></a> for Moen, <strong>hire a licensed plumber</strong>. Some Moen retailers in Canada offer <strong>installation services</strong>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_TngRGt"
+      ],
+      "settings": {
+        "title": "Moen FAQs – Everything Canadian Homeowners Need to Know About Moen Faucets & Fixtures",
+        "description": "<p>Get answers to<strong>Moen’s top questions</strong>—where to buy, installation, warranty, and smart features. Shop<strong>trusted Moen products</strong>with fast Canadian shipping & Free Shipping in GTA!</p>"
       }
     }
   },
   "order": [
+    "scripts_for_sliders_kxVkBj",
     "breadcrumbs",
     "main-page",
     "seo_hero_JMdgD4",
     "seo_introduction_blocks_93YWzf",
-    "seo_collection_t8jcyd"
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj"
   ]
 }

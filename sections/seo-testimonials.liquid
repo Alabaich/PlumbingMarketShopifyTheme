@@ -1,0 +1,187 @@
+<style>
+    /* Button Styles for Testimonials Section */
+    .testimonials-section button::before,
+    blockquote::before {
+      content: none !important;
+      display: none !important;
+    }
+    .testimonials-section button {
+      margin: 0;
+      width: auto !important;
+      min-width: 40px;
+      width: 40px !important;
+      background: rgba(0, 0, 0, 0.5) !important;
+    }
+    .testimonials-section button svg {
+      fill: white;
+    }
+    .testimonials-section button:hover svg {
+      fill: white !important;
+    }
+  
+    /* Testimonials Section Layout */
+    .testimonials-section {
+      width: 100%;
+      padding: 50px 20px;
+      background: transparent;
+      text-align: center;
+    }
+    .testimonials-container {
+      margin: 0 auto;
+      width: 100%;
+    }
+    .testimonials-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2C2D2C;
+      margin-bottom: 20px;
+    }
+    .testimonials-description {
+      font-size: 1rem;
+      color: #2C2D2C;
+      margin-bottom: 40px;
+    }
+  
+    /* Splide Slider for Testimonials */
+    .testimonial-item {
+      text-align: left;
+      text-decoration: none !important;
+    }
+    .testimonial-item * {
+      text-decoration: none !important;
+    }
+    .testimonial-content {
+      font-size: 1rem;
+      font-style: italic;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .testimonial-footer {
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .testimonial-author {
+      font-weight: bold;
+    }
+    .splide__pagination {
+      display: none;
+    }
+    
+    @media (max-width: 768px) {
+      .testimonials-title {
+        font-size: 1.5rem;
+      }
+      .testimonial-content {
+        font-size: 0.9rem;
+      }
+    }
+
+    .testimonials-section .splide__slide{
+        display: flex;
+        Justify-content: center;
+        align-items: center;
+    }
+
+    .testimonials-section .splide__slide blockquote{
+    max-width: 800px;}
+  </style>
+
+<section class="testimonials-section" aria-labelledby="testimonials-title">
+    <div class="testimonials-container">
+      <h2 id="testimonials-title" class="testimonials-title" title="{{ section.settings.title }}">
+        {{ section.settings.title }}
+      </h2>
+      <div class="testimonials-description" aria-describedby="testimonials-description">
+        {{ section.settings.description }}
+      </div>
+  
+      <!-- Splide Slider for Testimonials -->
+      <section class="splide" id="{{ section.id }}" aria-label="Testimonials Slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for block in section.blocks %}
+              <li class="splide__slide testimonial-item" role="listitem">
+                <blockquote class="testimonial-quote">
+                  <p class="testimonial-content">{{ block.settings.content }}</p>
+                  <footer class="testimonial-footer">
+                    — <span class="testimonial-author">{{ block.settings.author }}</span>
+                    {% if block.settings.company != blank %}
+                      , <span class="testimonial-company">{{ block.settings.company }}</span>
+                    {% endif %}
+                  </footer>
+                </blockquote>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+
+  
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#{{ section.id }}', {
+        perPage: 1,
+        gap: 30,
+        rewind: true,
+        pagination: false,
+        breakpoints: {
+          1024: { perPage: 2 },
+          768: { perPage: 1 }
+        }
+      }).mount();
+    });
+  </script>
+  
+  {% schema %}
+  {
+    "name": "SEO Testimonials",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Section Description"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "testimonial",
+        "name": "Testimonial",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "content",
+            "label": "Testimonial Content"
+          },
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Author Name"
+          },
+          {
+            "type": "text",
+            "id": "company",
+            "label": "Company (optional)"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 6,
+    "presets": [
+      {
+        "name": "SEO Testimonials",
+        "category": "SEO"
+      }
+    ]
+  }
+  {% endschema %}
+  
