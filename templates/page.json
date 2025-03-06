@@ -42,10 +42,51 @@
         "spacing_desktop": 50,
         "spacing_mobile": 30
       }
+    },
+    "section_gallery_d44rT3": {
+      "type": "section-gallery",
+      "blocks": {
+        "image_LHRy8X": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/7622bg-style-Jumbotron-L.webp",
+            "overlay_opacity": 0,
+            "color_palette": "white",
+            "button_color_palette": "accent",
+            "text_position": "text-center",
+            "title_size": "h1",
+            "title": "",
+            "text": "",
+            "link_text": "Button",
+            "link_url": "",
+            "show_link": false,
+            "title_size_mobile": "mobile-size-18"
+          }
+        }
+      },
+      "block_order": [
+        "image_LHRy8X"
+      ],
+      "settings": {
+        "items_layout": "playful-grid",
+        "items_width": 2,
+        "height": "size-s",
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "image_move": false,
+        "show_content_on_hover": false,
+        "content_on_hover_color_palette": "dark",
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
     }
   },
   "order": [
     "breadcrumbs",
-    "main-page"
+    "main-page",
+    "section_gallery_d44rT3"
   ]
 }

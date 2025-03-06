@@ -558,15 +558,14 @@ font-weight: 400;
               </svg>
             </a>
             <!-- Cart Icon (with data-panel attribute for modal trigger) -->
-            <a href="/cart" aria-label="Cart" class="cartIconHeader" data-panel="cart">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
-                <path d="M16 7.5C16 6.43913 15.5786 5.42172 14.8284 4.67157C14.0783 3.92143 13.0609 3.5 12 3.5C10.9391 3.5 9.92172 3.92143 9.17157 4.67157C8.42143 5.42172 8 6.43913 8 7.5M2 10.5H22L18 21.5H6L2 10.5Z"
-                      stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              {%- if cart.item_count > 0 -%}
-                <span class="Header__CartCount" id="cart-count">{{ cart.item_count }}</span>
-              {%- endif -%}
-            </a>
+<a href="/cart" aria-label="Winkelwagen" class="cartIconHeader" data-panel="cart">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25" fill="none">
+    <path d="M16 7.5C16 6.43913 15.5786 5.42172 14.8284 4.67157C14.0783 3.92143 13.0609 3.5 12 3.5C10.9391 3.5 9.92172 3.92143 9.17157 4.67157C8.42143 5.42172 8 6.43913 8 7.5M2 10.5H22L18 21.5H6L2 10.5Z"
+          stroke="#2C2D2C" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <span class="Header__CartCount" id="cart-count">{{ cart.item_count }}</span>
+</a>
+
             <!-- Burger Menu (for mobile) -->
             <span class="burger-menu" role="button" tabindex="0" aria-label="Toggle menu">
               <span></span>

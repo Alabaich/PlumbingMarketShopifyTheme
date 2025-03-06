@@ -16,12 +16,20 @@
     "full_width_slider_KhqC9j": {
       "type": "fullWidthSlider",
       "blocks": {
+        "page_8LMbyn": {
+          "type": "page",
+          "settings": {
+            "button_link": "shopify://collections/spring-sale-2025",
+            "image": "shopify://shop_images/spring_sale_banner_85a390ad-5685-40ec-a28b-a68a087eb888.webp",
+            "first": true
+          }
+        },
         "page_rAAgqq": {
           "type": "page",
           "settings": {
             "button_link": "shopify://pages/cleo-faucets",
             "image": "shopify://shop_images/image1.webp",
-            "first": true
+            "first": false
           }
         },
         "page_Lxd9jg": {
@@ -42,6 +50,7 @@
         }
       },
       "block_order": [
+        "page_8LMbyn",
         "page_rAAgqq",
         "page_Lxd9jg",
         "page_U6DET3"
@@ -370,8 +379,8 @@
         "titleSmall": "Best Selling Products",
         "textTwo": "Check out our best selling products and enjoy up to 50% off.",
         "textOnButton": "Go To Best Sellers",
-        "linkOnButton": "shopify://collections/best-sellers",
-        "bestCollection": "best-sellers"
+        "linkOnButton": "shopify://collections/spring-sale-2025",
+        "bestCollection": "spring-sale-2025"
       }
     },
     "tranding_search_tXgmRB": {

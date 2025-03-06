@@ -43,183 +43,168 @@
         "spacing_mobile": 30
       }
     },
+    "section_rich_text_fz8DR7": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_kWjwp8": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "title": "Curated Brands for Quality & Trust"
+          }
+        },
+        "content_wLwm6K": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Our goal is to handpick the best brands for you, ensuring that when you visit our site, you don’t just find beautiful products—you discover top-quality items from the most reputable brands, backed by the best warranties.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_kWjwp8",
+        "content_wLwm6K"
+      ],
+      "settings": {
+        "color_palette": "white",
+        "text_alignment": "center",
+        "height": "size-s",
+        "width": "wide",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
     "all_brands_egak4K": {
       "type": "all-brands",
       "blocks": {
         "brand_wgnXiP": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/7622bg-style-Jumbotron-L.webp",
+            "brand_title": "Moen",
+            "brand_excerpt": "Moen is dedicated to designing and delivering beautiful products that last a lifetime - all over the world. Learn about our Moen philosophy, people who work at Moen, and even learn how you can join the team.",
+            "brand_logo": "shopify://shop_images/MOEN.png",
+            "brand_link": "shopify://pages/moen"
           }
         },
         "brand_cF3j9i": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/march-feature-of-the-month.webp",
+            "brand_title": "MSI Surfaces buy Canada, free delivery",
+            "brand_excerpt": "MSI is the leading nationwide distributor of flooring, countertop, wall tile, and hardscaping products in North America.",
+            "brand_logo": "shopify://shop_images/MSI.png",
+            "brand_link": "shopify://collections/msi-surfaces"
           }
         },
         "brand_LU76yA": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/MS901CUMFX_GAL_03_600_600.webp",
+            "brand_title": "Toto free delivery Toronto, Mississauga, GTA, buy too in Ccanada",
+            "brand_excerpt": "TOTO is one of the world's largest plumbing products manufacturer. We offer a complete line of residential and commercial plumbing fixtures and fittings",
+            "brand_logo": "shopify://shop_images/TOTO_ee001e3e-42fc-49a2-b7ed-19650b03507e.png",
+            "brand_link": "shopify://collections/toto-toilets-and-faucets"
           }
         },
         "brand_MU79Ve": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/DeltaHP3_Tetra_a6bf2a3c-1297-42bc-b48c-864af238bdd9.webp",
+            "brand_title": "Delta Faucets Free Delivery Vaughan, buy Delta Faucet in GTA",
+            "brand_excerpt": "The Delta Faucet Company Peerless brand offers consumers and trade professionals a quality, affordable range of faucets and bath products with beautiful design inspiration.",
+            "brand_logo": "shopify://shop_images/DELTA.png",
+            "brand_link": "shopify://collections/delta-faucet"
           }
         },
         "brand_MaQJWp": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/maax-bathtubs-sonoma-header.webp",
+            "brand_title": "MAAX Buy for best price, free delivery MAAX in Toronto",
+            "brand_excerpt": "MAAX is a leading manufacturer of bathware products for the residential housing markets in Canada and the United States",
+            "brand_logo": "shopify://shop_images/MAAX.png",
+            "brand_link": "shopify://collections/maax-canada"
           }
         },
         "brand_LnXXVB": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/bathroom-grohe-001.webp",
+            "brand_title": "Grohe Buy in Toronto, Free delivery on Grohe in GTA",
+            "brand_excerpt": "GROHE is a leading global brand for complete bathroom solutions and kitchen fittings and a global brand, dedicated to providing innovative water products.",
+            "brand_logo": "shopify://shop_images/GROHE.png",
+            "brand_link": "shopify://collections/grohe"
           }
         },
         "brand_Xe9ji6": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/B-Studio_S_Bath_Collection.webp",
+            "brand_title": "American Standard buy Markham, Toronto, Mississauga, Best Price Free Delivery",
+            "brand_excerpt": "American Standard is a leading North American plumbing and building products brand that includes high performing fixtures, stylish faucets and sinks, plus whirlpool tubs and other.",
+            "brand_logo": "shopify://shop_images/American_Standard.png",
+            "brand_link": "shopify://collections/american-standard"
           }
         },
         "brand_pNN4iY": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/Inspired-Banner-with-Image-version-3-and-4-aaf00654_rgb_KOHLER-Inspired-Banner-With-Image-variation-3-and-4-L-Desktop.webp",
+            "brand_title": "Kohler buy Canada | Free Delivery in GTA | Best Prices on Kohler",
+            "brand_excerpt": "Kohler is best known for its plumbing products, but the company also manufactures furniture, cabinetry, tile, engines, and generators.",
+            "brand_logo": "shopify://shop_images/KOHLER.png",
+            "brand_link": "shopify://collections/kohler"
           }
         },
         "brand_DH7Kwm": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/Home_solutions_franke_home_heroAM001_Mythos_Segment_SS-BlackpearlFinish-Worktop_Udine_1325x832_e7662f5b-b215-4594-b1bf-a78463b89b0d.webp",
+            "brand_title": "Franke Sinks Free Delivery in GTA",
+            "brand_excerpt": "Leading global supplier of products and services for domestic kitchens, foodservice systems and the convenience store sector as well as for professional coffee making.",
+            "brand_logo": "shopify://shop_images/FRANKE_06f71495-6603-4d79-8f07-4912e6fd3732.png",
+            "brand_link": "shopify://collections/franke"
           }
         },
         "brand_6tDtVM": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/unnamed.webp",
+            "brand_title": "Kubebath vanities buy Toronto | Free Delivery",
+            "brand_excerpt": "​Kubebath is a manufacturer, wholesaler, and distributor of bathroom equipment, offering a wide range of products including vanities, storage solutions, shower equipment, mirrors, faucets, drains, and bathtubs.",
+            "brand_logo": "shopify://shop_images/KUBEBATH_5d534201-f04b-43b1-8b41-3e17fb872364.png",
+            "brand_link": "shopify://collections/kube-bath"
           }
         },
         "brand_Htnyni": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/Ambiance_accueil_cuisine.webp",
+            "brand_title": "Rubi buy canada | Free Delivery | Best prices in GTA",
+            "brand_excerpt": "​Rubi by Soligo is a Canadian brand specializing in high-end kitchen and bathroom fixtures, including faucets, sinks, shower sets, sanitary wares, and accessories.",
+            "brand_logo": "shopify://shop_images/RUBI.png",
+            "brand_link": "shopify://collections/rubi"
           }
         },
         "brand_XBjEFd": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/parabola_solstice_1500wx831h.webp",
+            "brand_title": "Riobel",
+            "brand_excerpt": "​Riobel, founded in 2002 in Quebec, Canada, specializes in designing and manufacturing high-quality bathroom and kitchen faucets and shower systems.",
+            "brand_logo": "shopify://shop_images/RIOBEL.png",
+            "brand_link": "shopify://collections/riobel"
           }
         },
         "brand_PX9wP8": {
           "type": "brand",
           "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
-          }
-        },
-        "brand_kjJ7gJ": {
-          "type": "brand",
-          "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
-          }
-        },
-        "brand_YaW4PT": {
-          "type": "brand",
-          "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
-          }
-        },
-        "brand_LnD3fe": {
-          "type": "brand",
-          "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
-          }
-        },
-        "brand_QQAnPQ": {
-          "type": "brand",
-          "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
-          }
-        },
-        "brand_7ekthc": {
-          "type": "brand",
-          "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
-          }
-        },
-        "brand_YieqU6": {
-          "type": "brand",
-          "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
-          }
-        },
-        "brand_dFJnQ7": {
-          "type": "brand",
-          "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
-          }
-        },
-        "brand_W8myQK": {
-          "type": "brand",
-          "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
-          }
-        },
-        "brand_6HdmHU": {
-          "type": "brand",
-          "settings": {
-            "brand_title": "",
-            "brand_excerpt": "",
-            "brand_link": ""
+            "brand_image": "shopify://shop_images/image1_da63a625-cfec-438a-af53-237a7304fc9f.webp",
+            "brand_title": "CLEO FAUETS but Toronto | Best Prices | Free delivery",
+            "brand_excerpt": "Cleo Faucets offers a wide range of high-quality plumbing products, including durable fixtures and modern designs suitable for various styles. Their product line encompasses faucets, sinks, bathtubs, and more, catering to both residential and commercial projects.",
+            "brand_logo": "shopify://shop_images/cleofaucets.webp",
+            "brand_link": "shopify://collections/cleo"
           }
         }
       },
@@ -236,58 +221,9 @@
         "brand_6tDtVM",
         "brand_Htnyni",
         "brand_XBjEFd",
-        "brand_PX9wP8",
-        "brand_kjJ7gJ",
-        "brand_YaW4PT",
-        "brand_LnD3fe",
-        "brand_QQAnPQ",
-        "brand_7ekthc",
-        "brand_YieqU6",
-        "brand_dFJnQ7",
-        "brand_W8myQK",
-        "brand_6HdmHU"
+        "brand_PX9wP8"
       ],
       "settings": {}
-    },
-    "section_rich_text_fz8DR7": {
-      "type": "section-rich-text",
-      "blocks": {
-        "title_kWjwp8": {
-          "type": "title",
-          "settings": {
-            "title_size": "h1",
-            "title": "Tell something about your brand"
-          }
-        },
-        "content_wLwm6K": {
-          "type": "content",
-          "settings": {
-            "page": "",
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_A8eA3b": {
-          "type": "button",
-          "settings": {
-            "link_text": "Button",
-            "link_url": "/",
-            "button_color_palette": "accent"
-          }
-        }
-      },
-      "block_order": [
-        "title_kWjwp8",
-        "content_wLwm6K",
-        "button_A8eA3b"
-      ],
-      "settings": {
-        "color_palette": "white",
-        "text_alignment": "center",
-        "height": "size-s",
-        "width": "wide",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30
-      }
     }
   },
   "order": [

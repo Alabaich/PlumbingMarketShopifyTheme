@@ -1,5 +1,5 @@
 {% comment %}
-  Shopify Section: List of Brands with Pagination
+  Shopify Section: List of Brands with JavaScript Pagination
 {% endcomment %}
 
 {% schema %}
@@ -27,9 +27,14 @@
           "label": "Brand Excerpt"
         },
         {
+          "type": "image_picker",
+          "id": "brand_logo",
+          "label": "Brand Logo"
+        },
+        {
           "type": "url",
           "id": "brand_link",
-          "label": "Brand Logo Link"
+          "label": "Brand Page Link"
         }
       ]
     }
@@ -38,50 +43,157 @@
   "presets": [
     {
       "name": "Brands List",
-      "category": "Custom"
     }
   ]
 }
 {% endschema %}
 
 {% style %}
-  .brands-container { display: flex; flex-wrap: wrap; gap: 20px; }
-  .brand-item { width: 30%; padding: 15px; border: 1px solid #ddd; text-align: center; }
-  .brand-item img { max-width: 100%; height: auto; }
-  .pagination { text-align: center; margin-top: 20px; }
-  .pagination a { margin: 0 5px; padding: 5px 10px; border: 1px solid #ddd; }
+  .brands-container { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%;
+  margin-bottom: 25px;}
+  .brand-item { 
+    padding: 0; 
+    border: 1px solid #ddd; 
+    text-align: center; 
+    position: relative; 
+    background-size: 100%; 
+    background-position: center; 
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+  }
+
+  @media screen and (max-width : 600px){
+      .brands-container { 
+
+    grid-template-columns: repeat(1, 1fr); 
+
+      }
+  }
+  .brand-item.active {
+    display: block;
+  }
+  .brand-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease-in-out;
+  }
+  .brand-item:hover::before {
+    transform: scale(1.1);
+  }
+  .brand-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(93deg, #EDEBEC 8.08%, rgba(237, 235, 236, 0.70) 73.99%, rgba(237, 235, 236, 0.00) 97.72%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    padding: 20px;
+    color: #2c2d2c;
+    text-align: left;
+  }
+  .brand-logo {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  .brand-excerpt {
+    font-size: 0.9em;
+    color: #2c2d2c;
+    max-width: 75%;
+    margin: 0 !important;
+  }
+  .pagination { 
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 25px;
+  }
+  .pagination a { 
+    margin: 0 5px; 
+    padding: 5px 10px; 
+    border: 1px solid #ddd; 
+    cursor: pointer;
+    color: #2c2d2c;
+    text-decoration: none;
+  }
+  .pagination a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 {% endstyle %}
 
 <div class="brands-container">
-  {% assign items_per_page = 10 %}
-  {% assign page = 1 %}
-  {% if request.query.page %}
-    {% assign page = request.query.page | plus: 0 %}
-  {% endif %}
-
-  {% assign start_index = items_per_page | times: page | minus: items_per_page %}
-  {% assign end_index = start_index | plus: items_per_page %}
-  {% assign total_blocks = section.blocks.size %}
-
-  {% for block in section.blocks offset: start_index limit: items_per_page %}
-    <div class="brand-item">
-      {% if block.settings.brand_image %}
-        <img src="{{ block.settings.brand_image | img_url: 'medium' }}" alt="{{ block.settings.brand_title }}">
-      {% endif %}
-      <h3>{{ block.settings.brand_title }}</h3>
-      <p>{{ block.settings.brand_excerpt }}</p>
-      {% if block.settings.brand_link %}
-        <a href="{{ block.settings.brand_link }}" target="_blank">Visit Brand</a>
-      {% endif %}
-    </div>
+  {% for block in section.blocks %}
+    <a href="{{ block.settings.brand_link }}" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       title="Visit {{ block.settings.brand_title }}" 
+       class="brand-item" 
+       style="background-image: url('{{ block.settings.brand_image | img_url: 'large' }}');">
+      <div class="brand-content">
+        {% if block.settings.brand_logo %}
+          <img class="brand-logo" src="{{ block.settings.brand_logo | img_url: 'small' }}" alt="{{ block.settings.brand_title }} Logo">
+        {% endif %}
+        <p class="brand-excerpt">{{ block.settings.brand_excerpt }}</p>
+      </div>
+    </a>
   {% endfor %}
 </div>
 
-{% if total_blocks > items_per_page %}
-  <div class="pagination">
-    {% assign total_pages = total_blocks | divided_by: items_per_page | ceil %}
-    {% for i in (1..total_pages) %}
-      <a href="?page={{ i }}" class="{% if i == page %}active{% endif %}">{{ i }}</a>
-    {% endfor %}
-  </div>
-{% endif %}
+<div class="pagination"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const itemsPerPage = 9;
+    const brandItems = document.querySelectorAll(".brand-item");
+    const paginationContainer = document.querySelector(".pagination");
+    let currentPage = 1;
+    const totalPages = Math.ceil(brandItems.length / itemsPerPage);
+    
+    function showPage(page) {
+      brandItems.forEach((item, index) => {
+        item.classList.remove("active");
+        if (index >= (page - 1) * itemsPerPage && index < page * itemsPerPage) {
+          item.classList.add("active");
+        }
+      });
+    }
+    
+    function createPagination() {
+      paginationContainer.innerHTML = "";
+      for (let i = 1; i <= totalPages; i++) {
+        const pageLink = document.createElement("a");
+        pageLink.textContent = i;
+        pageLink.dataset.page = i;
+        pageLink.addEventListener("click", function () {
+          currentPage = parseInt(this.dataset.page);
+          showPage(currentPage);
+          document.querySelectorAll(".pagination a").forEach(a => a.classList.remove("active"));
+          this.classList.add("active");
+        });
+        paginationContainer.appendChild(pageLink);
+      }
+      paginationContainer.querySelector("a").classList.add("active");
+    }
+    
+    showPage(currentPage);
+    createPagination();
+  });
+</script>
