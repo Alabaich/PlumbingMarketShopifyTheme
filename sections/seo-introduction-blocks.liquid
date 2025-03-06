@@ -1,0 +1,214 @@
+{% comment %}
+  SEO-Optimized Introduction Section for Shopify (Flex-Based)
+{% endcomment %}
+
+<style>
+    .intro-section {
+      width: 100%;
+      padding: 30px 0;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      margin: 50px 0;
+    }
+  
+    .intro-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .intro-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2C2D2C;
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .intro-description {
+      font-size: 1rem;
+      color: #2C2D2C;
+      margin-bottom: 40px;
+      width: 100%;
+      text-align: center;
+      max-width: 800px;
+    }
+  
+    .intro-benefits {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 25px;
+    }
+  
+    .benefit-block {
+      display: flex;
+      align-items: start;
+      gap: 15px;
+      text-align: left;
+      width: 325px;
+    }
+  
+    .benefit-icon img {
+      height: 40px !important;
+      max-width: 60px !important;
+      object-fit: contain;
+    }
+  
+    .benefit-content {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .benefit-title {
+      font-weight: bold;
+      font-size: 16px;
+      color: #2C2D2C;
+      margin-bottom: 0;
+      text-align: left;
+      max-width: 250px;
+    }
+  
+    .benefit-description {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 0;
+      text-align: left;
+      max-width: 250px;
+      line-height: 20px;
+    }
+  
+    .intro-benefits .divider {
+      height: 40px;
+      width: 1px;
+      background: #ccc;
+    }
+  
+    /* 📌 Mobile Responsive */
+    @media (max-width: 768px) {
+      .intro-benefits {
+        padding: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        text-align: center;
+        align-items: center;
+      }
+
+      .intro-description{
+        margin-bottom: 10px;
+    }
+  
+      .benefit-block {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+      }
+  
+      .benefit-title {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+      }
+  
+      .benefit-description {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+      }
+  
+      .benefit-icon img {
+        height: 20px !important;
+        max-width: 30px !important;
+      }
+  
+      .intro-benefits .divider {
+        display: none;
+      }
+    }
+  </style>
+  
+  <section class="intro-section" aria-labelledby="intro-title">
+    <div class="intro-container">
+      <h2 id="intro-title" class="intro-title">{{ section.settings.intro_title }}</h2>
+      <p class="intro-description" aria-describedby="intro-description">{{ section.settings.intro_description }}</p>
+  
+      <div class="intro-benefits">
+        {% for block in section.blocks %}
+          <div class="benefit-block">
+            {% if block.settings.benefit_icon != blank %}
+              <div class="benefit-icon">
+                <img src="{{ block.settings.benefit_icon | img_url: '40x40' }}" alt="{{ block.settings.benefit_title }} Icon" width="40" height="40" height="40"> 
+              </div>
+            {% endif %}
+            <div class="benefit-content">
+              <h3 class="benefit-title" title="{{ block.settings.benefit_title }}">{{ block.settings.benefit_title }}</h3>
+              <p class="benefit-description">{{ block.settings.benefit_description }}</p>
+            </div>
+          </div>
+          {% unless forloop.last %}
+            {% if forloop.index != 4 %} <!-- Add this condition to skip the divider after the 4th item -->
+              <div class="divider"></div>
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+  {% schema %}
+  {
+    "name": "Introduction Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "intro_title",
+        "label": "Section Title"
+      },
+      {
+        "type": "textarea",
+        "id": "intro_description",
+        "label": "Section Description"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "benefit",
+        "name": "Benefit Block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "benefit_icon",
+            "label": "Benefit Icon"
+          },
+          {
+            "type": "text",
+            "id": "benefit_title",
+            "label": "Benefit Title"
+          },
+          {
+            "type": "textarea",
+            "id": "benefit_description",
+            "label": "Benefit Description"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 10,
+    "presets": [
+      {
+        "name": "Introduction Section"
+      }
+    ]
+  }
+  {% endschema %}

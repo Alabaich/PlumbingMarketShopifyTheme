@@ -1,0 +1,253 @@
+{{ 'bestSellers.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .category-section {
+    width: 100%;
+    padding: 50px 20px;
+    background: transparent;
+    text-align: center;
+  }
+
+  .category-section button::before {
+    content: none !important;
+    display: none !important;
+  }
+  
+  .category-section button {
+    margin: 0;
+    width: auto !important;
+    min-width: 40px;
+    width: 40px !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+
+  }
+
+  .category-section button svg {
+    fill: white;
+  }
+
+  .category-section button:hover svg {
+    fill: white !important;
+  }
+  
+
+  .category-container {
+    margin: 0 auto;
+  }
+
+  .category-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2C2D2C;
+    margin-bottom: 20px;
+  }
+
+  .category-description {
+    font-size: 1rem;
+    color: #2C2D2C;
+    margin-bottom: 40px;
+  }
+
+  /* Splide slider styles and overrides */
+  .product-item {
+    text-align: left;
+    text-decoration: none !important;
+    max-width: 300px;
+  }
+
+  .product-item *{
+    text-decoration: none !important;
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .product-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2C2D2C;
+    margin: 10px 0 5px;
+  }
+
+  .product-vendor {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .product-price {
+    font-size: 1rem;
+    color: #2C2D2C;
+    margin-bottom: 10px;
+  }
+
+  .product-price--sale {
+    color: #FF0000;
+  }
+
+  .product-price--compare {
+    text-decoration: line-through;
+    color: #666;
+    margin-left: 10px;
+  }
+
+  /* Square footage pricing styling */
+  .product-square-footage {
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  .collection-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #2C2D2C;
+    text-decoration: underline\;
+  }
+
+  .splide__pagination {
+    display: none;
+  }
+
+  .collection-link{
+margin-top: 25px;
+}
+
+  @media (max-width: 768px) {
+    .product-title {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<section class="category-section" aria-labelledby="category-title">
+  <div class="category-container">
+    <h2 id="category-title" class="category-title" title="{{ section.settings.category_title }}">
+      {{ section.settings.category_title }}
+    </h2>
+    <div class="category-description" aria-describedby="category-description">
+      {{ section.settings.category_description }}
+    </div>
+
+    <!-- Splide Slider Structure -->
+    <section class="splide" id="{{ section.id }}" aria-label="Product Slider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {%- assign collection = collections[section.settings.collection] -%}
+          {%- for product in collection.products limit: 10 -%}
+            <li class="splide__slide product-item {% if product.variants.first.metafields.custom.sq_ft_for_flooring %}cardsqft{% endif %}" role="listitem">
+              <a href="{{ product.url }}" aria-label="View {{ product.title }}">
+                <img 
+                  class="product-image" 
+                  src="{{ product.featured_image | img_url: '400x400' }}" 
+                  alt="{{ product.title }}" 
+                  loading="lazy"
+                  aria-label="{{ product.title }}"
+                  width="300"
+                    height="300"
+                >
+                <h3 class="product-title" title="{{ product.title }}">{{ product.title }}</h3>
+                <p class="product-vendor">{{ product.vendor }}</p>
+                {% if product.compare_at_price > product.price and product.available %}
+                  <div class="product-price">
+                    <span class="product-price--sale">{{ product.price | money }}</span>
+                    <span class="product-price--compare">{{ product.compare_at_price | money }}</span>
+                  </div>
+                {% else %}
+                  <div class="product-price">
+                    <span>{{ product.price | money }}</span>
+                  </div>
+                {% endif %}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </section>
+
+    <a 
+      href="{{ collection.url }}" 
+      class="collection-link" 
+      aria-label="View all {{ collection.title }}"
+    >
+      View All {{ collection.title }}
+    </a>
+  </div>
+</section>
+
+<script>
+  function newPricePer() {
+    let listOfCards = document.querySelectorAll('.cardsqft');
+    listOfCards.forEach(function (arrayItem) {
+      let sqftCusElem = arrayItem.querySelector('.sqftcus');
+      // Parse the current square footage value (assumed numeric)
+      let sqFtCurrent = parseFloat(sqftCusElem ? sqftCusElem.innerHTML : 0);
+      let priceElem = arrayItem.querySelector('.priceNumberHiddenCard');
+      let pricePreviousElem = arrayItem.querySelector('.pricePreviousHidden');
+      
+      if (priceElem && sqFtCurrent) {
+        let price = parseFloat(priceElem.innerHTML) / 100;
+        let pricePerSqFt = (price / sqFtCurrent).toFixed(2);
+        sqftCusElem.innerHTML = '$' + pricePerSqFt;
+      }
+      if (pricePreviousElem && sqFtCurrent) {
+        let priceOld = parseFloat(pricePreviousElem.innerHTML) / 100;
+        let pricePerSqFtOld = (priceOld / sqFtCurrent).toFixed(2);
+        let sqFtOldElem = arrayItem.querySelector('.sqFtPrevious');
+        if (sqFtOldElem) {
+          sqFtOldElem.innerHTML = '$' + pricePerSqFtOld;
+        }
+      }
+    });
+  }
+  newPricePer();
+  document.addEventListener('DOMContentLoaded', function () {
+    newPricePer();
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#{{ section.id }}', {
+      autoWidth: true,
+      focus: 0,
+      omitEnd: true,
+      gap: 30,
+    }).mount();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "SEO Collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "category_title",
+      "label": "Category Title",
+      "default": "Category Title"
+    },
+    {
+      "type": "richtext",
+      "id": "category_description",
+      "label": "Category Description",
+      "default": "<p>Add a description for this category.</p>"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SEO Collection",
+      "settings": {
+        "category_title": "Category Title",
+        "category_description": "<p>Add a description for this category.</p>"
+      }
+    }
+  ]
+}
+{% endschema %}

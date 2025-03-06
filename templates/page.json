@@ -43,50 +43,88 @@
         "spacing_mobile": 30
       }
     },
-    "section_gallery_d44rT3": {
-      "type": "section-gallery",
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Moen Faucets & Plumbing – Smart, Stylish, & Reliable Upgrades",
+        "hero_description": "Upgrade your GTA home with Moen’s premium faucets, showers & plumbing. Get personalized style recommendations, unbeatable prices & expert support in Toronto, Mississauga, Vaughan & beyond.",
+        "hero_image": "shopify://shop_images/7622bg-style-Jumbotron-L.webp",
+        "collection_button_label": "Buy Moen Products",
+        "collection_link": "shopify://collections/moen",
+        "brand_button_label": "Visit Moen Website",
+        "brand_website_link": "https://moen.ca"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
       "blocks": {
-        "image_LHRy8X": {
-          "type": "image",
+        "benefit_mT6MzG": {
+          "type": "benefit",
           "settings": {
-            "image": "shopify://shop_images/7622bg-style-Jumbotron-L.webp",
-            "overlay_opacity": 0,
-            "color_palette": "white",
-            "button_color_palette": "accent",
-            "text_position": "text-center",
-            "title_size": "h1",
-            "title": "",
-            "text": "",
-            "link_text": "Button",
-            "link_url": "",
-            "show_link": false,
-            "title_size_mobile": "mobile-size-18"
+            "benefit_icon": "shopify://shop_images/touchless.png",
+            "benefit_title": "Touchless & Smart Faucets",
+            "benefit_description": "MotionSense™ for hands-free convenience"
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/warrantyIcon.webp",
+            "benefit_title": "Lifetime Warranty",
+            "benefit_description": "Built to last, backed by Moen’s industry-leading guarantee."
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/eco-friendly.png",
+            "benefit_title": "Eco-Friendly Water Savings",
+            "benefit_description": "Lower your bills with Moen’s water-saving technology"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Luxury Finishes",
+            "benefit_description": "Matte Black, Brushed Nickel, Chrome & more"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/localStores.png",
+            "benefit_title": "Available at Local GTA",
+            "benefit_description": "Fast delivery & expert support from trusted stores"
           }
         }
       },
       "block_order": [
-        "image_LHRy8X"
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be"
       ],
       "settings": {
-        "items_layout": "playful-grid",
-        "items_width": 2,
-        "height": "size-s",
-        "width": "boxed",
-        "space_between": 16,
-        "image_zoom": true,
-        "image_move": false,
-        "show_content_on_hover": false,
-        "content_on_hover_color_palette": "dark",
-        "layout_mobile": "rows",
-        "mobile_height": "size-s",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30
+        "intro_title": "",
+        "intro_description": ""
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Toronto’s Most Popular Kitchen Faucets",
+        "category_description": "<p><strong>Best Models:</strong> Moen Arbor, Align, Motionsense™.<br/><strong>Key Features:</strong> Touchless activation, PowerBoost spray, high-arc spouts.</p>",
+        "collection": ""
       }
     }
   },
   "order": [
     "breadcrumbs",
     "main-page",
-    "section_gallery_d44rT3"
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd"
   ]
 }
