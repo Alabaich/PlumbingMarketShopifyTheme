@@ -37,6 +37,7 @@
         "title",
         "content"
       ],
+      "disabled": true,
       "settings": {
         "max_width": 980,
         "content_alignment": "start",
@@ -47,7 +48,6 @@
     },
     "seo_hero_JMdgD4": {
       "type": "seo-hero",
-      "disabled": true,
       "settings": {
         "hero_title": "Moen Faucets & Plumbing – Smart, Stylish, & Reliable Upgrades",
         "hero_description": "Upgrade your GTA home with Moen’s premium faucets, showers & plumbing. Get personalized style recommendations, unbeatable prices & expert support in Toronto, Mississauga, Vaughan & beyond.",
@@ -109,7 +109,6 @@
         "benefit_yizrqt",
         "benefit_FYT3Be"
       ],
-      "disabled": true,
       "settings": {
         "intro_title": "",
         "intro_description": ""
@@ -117,7 +116,6 @@
     },
     "seo_collection_t8jcyd": {
       "type": "seo-collection",
-      "disabled": true,
       "settings": {
         "category_title": "Toronto’s Most Popular Kitchen Faucets",
         "category_description": "<p><strong>Best Models:</strong> Moen Arbor, Align, Motionsense™.<br/><strong>Key Features:</strong> Touchless activation, PowerBoost spray, high-arc spouts.</p>",
@@ -148,7 +146,6 @@
         "testimonial_YcbyBh",
         "testimonial_fQADPr"
       ],
-      "disabled": true,
       "settings": {
         "title": "Canadian Reviews on MOEN Premium Faucets & Fixtures",
         "description": "<p>Discover authentic customer experiences and quality insights on MOEN’s innovative kitchen and bath solutions from Canadian homeowners.</p>"
@@ -200,7 +197,6 @@
         "faq_tmdibC",
         "faq_TngRGt"
       ],
-      "disabled": true,
       "settings": {
         "title": "Moen FAQs – Everything Canadian Homeowners Need to Know About Moen Faucets & Fixtures",
         "description": "<p>Get answers to<strong>Moen’s top questions</strong>—where to buy, installation, warranty, and smart features. Shop<strong>trusted Moen products</strong>with fast Canadian shipping & Free Shipping in GTA!</p>"
@@ -208,7 +204,6 @@
     },
     "seo_cta_QaQBAr": {
       "type": "seo-cta",
-      "disabled": true,
       "settings": {
         "title": "Shop Moen Faucets & Plumbing Fixtures in GTA",
         "description": "<p>Get fast shipping, expert support, and the best Moen deals in Toronto & the GTA!</p>",

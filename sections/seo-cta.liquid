@@ -1,0 +1,122 @@
+<style>
+    /* CTA Section CSS */
+    .cta-section {
+      width: 100%;
+      padding: 50px 20px;
+      background: #FBFAF8;
+      text-align: center;
+      margin-bottom: 25px;
+      border-radius: 15px;
+    }
+    .cta-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .cta-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2C2D2C;
+      margin-bottom: 10px;
+    }
+    .cta-description {
+      font-size: 1.1rem;
+      color: #2C2D2C;
+      margin-bottom: 20px;
+    }
+    .cta-message {
+      font-size: 1rem;
+      color: #2C2D2C;
+      margin-bottom: 30px;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #2C2D2C;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #555;
+    }
+    @media (max-width: 768px) {
+      .cta-title {
+        font-size: 1.5rem;
+      }
+      .cta-description, .cta-message {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="cta-container">
+      <h2 id="cta-title" class="cta-title" title="{{ section.settings.title }}">
+        {{ section.settings.title }}
+      </h2>
+      <div class="cta-description">
+        {{ section.settings.description }}
+      </div>
+      <div class="cta-message">
+        {{ section.settings.message }}
+      </div>
+      <div class="cta-buttons">
+        <a href="{{ section.settings.shop_online_url }}" class="cta-button" title="Shop Online">
+          Shop Online
+        </a>
+        <a href="{{ section.settings.talk_to_expert_url }}" class="cta-button" title="Talk to our expert about Moen">
+          Talk to our expert about Moen
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  {% schema %}
+  {
+    "name": "CTA Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "CTA Section Title",
+
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "CTA Section Description",
+
+      },
+      {
+        "type": "richtext",
+        "id": "message",
+        "label": "CTA Section Message",
+      },
+      {
+        "type": "url",
+        "id": "shop_online_url",
+        "label": "Shop Online URL"
+      },
+      {
+        "type": "url",
+        "id": "talk_to_expert_url",
+        "label": "Talk to Our Expert URL"
+      }
+    ],
+    "presets": [
+      {
+        "name": "CTA Section",
+        "category": "Call-to-Action"
+      }
+    ]
+  }
+  {% endschema %}
+  
