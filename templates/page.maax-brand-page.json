@@ -1,0 +1,236 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Experience MAAX: Elevate Your Bathroom & Beyond for Every GTA Home",
+        "hero_description": "Transform your space with MAAX’s innovative designs, superior quality, and water-efficient solutions—perfect for modern Toronto, Mississauga, Vaughan, and the entire GTA",
+        "hero_image": "shopify://shop_images/maax-bathtubs-sonoma-header.webp",
+        "collection_button_label": "Shop MAAX Products",
+        "collection_link": "shopify://collections/maax-canada",
+        "brand_button_label": "Visit MAAX Website",
+        "brand_website_link": "https://maax.ca/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Innovative Design",
+            "benefit_description": "Sleek, modern lines combined with timeless elegance."
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/warrantyIcon.webp",
+            "benefit_title": "Superior Durability",
+            "benefit_description": "Engineered with high-quality materials"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Water Efficiency",
+            "benefit_description": "Many MAAX products are designed to conserve water"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/ergonomicIcon.png",
+            "benefit_title": "Ergonomic Comfort",
+            "benefit_description": "Designed bathtubs and toilets ensure maximum comfort"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "Low-Maintenance",
+            "benefit_description": "Easy-to-clean surfaces and finishes that resist stains"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be"
+      ],
+      "settings": {
+        "intro_title": "Innovative Technologies That Define MAAX for GTA Homeowners",
+        "intro_description": "MAAX is synonymous with exceptional quality and cutting-edge design. Discover the features that make MAAX the top choice for modern GTA bathrooms:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "MAAX Bathtubs: Experience the Ultimate in Luxury Bathing",
+        "category_description": "<p>Transform your bathroom into a personal spa with MAAX bathtubs that blend elegant design and exceptional comfort. Engineered for deep soaking and crafted with premium materials, these bathtubs provide a sophisticated retreat for modern GTA homes. </p>",
+        "collection": "maax-canada"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“The MAAX Modern bathtub completely transformed our bathroom. Its design is sleek, and the comfort is unparalleled. Free delivery was the icing on the cake!”",
+            "author": "Amanda R., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_HTPk3z": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Our new MAAX toilet exceeded expectations. It’s efficient, stylish, and built to last—perfect for our busy Vaughan home.”",
+            "author": "Michelle K., Vaughan",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Upgrading our shower with a MAAX enclosure was a game changer. The installation was straightforward, and the quality is outstanding. Highly recommend Plumbing Market for their expert service.”",
+            "author": "David L., Mississauga",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YcbyBh",
+        "testimonial_HTPk3z",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "Real Feedback from GTA Homeowners on MAAX",
+        "description": "<p>Discover authentic customer experiences and quality insights on MAAX bath solutions from Canadian homeowners.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I buy MAAX plumbing fixtures in the GTA?",
+            "answer": "<p><strong>Authorized Dealer:</strong> Plumbing Market is your official source for MAAX products.</p><p><strong>Showroom Locations:</strong> Visit our showroom in <strong>Vaughan</strong> or shop online to explore our complete range.</p><p><strong>Free Delivery:</strong> Enjoy <a href=\"#\"><strong>free delivery</strong></a> on all orders within the GTA from Plumbing Market</p><p><strong>Learn More:</strong> Check out our <a href=\"#\">MAAX Product Page</a> for additional details.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "Are MAAX products easy to install?",
+            "answer": "<p><strong>User-Friendly Design:</strong></p><p><strong>Clear Instructions:</strong> Each MAAX fixture comes with step-by-step installation guides.</p><p><strong>Quick-Connect Systems:</strong> Designed to simplify the installation process.<br/><br/><strong>Professional Support:</strong></p><p>For complex installations, our team can recommend <strong>trusted local GTA professionals</strong>.<br/><br/><strong>Additional Resources:</strong></p><p>Read our <a href=\"https://maax.com/utile/utile-installation\" title=\"https://maax.com/utile/utile-installation\">Installation Tips</a> for further guidance.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "What warranty do MAAX products come with?",
+            "answer": "<p><strong>Limited Lifetime Warranty:</strong></p><p>Most MAAX fixtures include a limited lifetime warranty for the original purchaser.<br/><br/><strong>Product-Specific Details:</strong></p><p>Always review the warranty information on your specific product page.<br/><br/><strong>Expert Advice:</strong></p><p>Contact our team at <a href=\"#\">Plumbing Market</a> if you have any warranty-related questions.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "How do MAAX products help reduce water consumption?",
+            "answer": "<p><strong>Water Efficiency:</strong></p><p>Many MAAX models incorporate <strong>advanced water-saving technologies</strong>.</p><p>Some products are <strong>WaterSense® certified</strong>, ensuring high efficiency.<br/><br/><strong>Benefits:</strong></p><p><strong>Lower Water Bills:</strong> Save money on utility bills.</p><p><strong>Eco-Friendly:</strong> Contribute to environmental sustainability.</p>"
+          }
+        },
+        "faq_TngRGt": {
+          "type": "faq",
+          "settings": {
+            "question": "What maintenance do MAAX fixtures require?",
+            "answer": "<p><strong>Simple Care Routine:</strong></p><p><strong>Cleaning:</strong> Use a <strong>soft, damp cloth</strong> and <strong>mild cleaning agents</strong>.</p><p><strong>Low-Maintenance Finishes:</strong> Special coatings help resist stains, water spots, and fingerprints.<br/><br/><strong>Tips:</strong></p><p>Follow the care instructions provided with each product for optimal performance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_TngRGt"
+      ],
+      "settings": {
+        "title": "MAAX Plumbing FAQs: Your Ultimate Guide for GTA Homeowners",
+        "description": "<p>Find answers to the most popular questions about MAAX plumbing fixtures, including bathtubs, faucets, toilets, and shower enclosures. Our expert team at Plumbing Market has compiled these FAQs to help GTA homeowners understand installation, maintenance, warranty details, water efficiency, and more—all while enjoying the benefit of free delivery across the GTA.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop MAAX Plumbing at Plumbing Market – GTA’s Ultimate Choice",
+        "description": "<p>Plumbing Market proudly serves the Greater Toronto Area with an extensive range of MAAX plumbing fixtures. Whether you shop online or visit our Vaughan showroom, you can expect:</p><p><strong>Competitive Prices:</strong> Unbeatable deals on every MAAX product.</p><p><strong>In-Stock Selection:</strong> A wide variety available for immediate purchase or fast GTA delivery.</p><p><strong>Expert Assistance:</strong> Our knowledgeable team is here to help you choose the ideal fixture for your project.</p><p><strong>Local Trust:</strong> With a strong presence across Toronto, Mississauga, and Vaughan, we’re the GTA’s trusted source for MAAX.</p>",
+        "message": "<p>Visit Our GTA Showroom | Shop MAAX Online Now →</p>",
+        "shop_online_url": "shopify://collections/maax-canada",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

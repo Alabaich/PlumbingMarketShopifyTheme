@@ -1,0 +1,236 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Experience Grohe: Innovation & Elegance for Every GTA Home",
+        "hero_description": "Upgrade your kitchen and bathroom with Grohe’s cutting‑edge designs and superior performance—designed to meet the demands of modern GTA living.",
+        "hero_image": "shopify://shop_images/bathroom-grohe-001.webp",
+        "collection_button_label": "Shop Grohe Now",
+        "collection_link": "shopify://collections/grohe",
+        "brand_button_label": "Visit Grohe Website",
+        "brand_website_link": "https://www.grohe.ca/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Innovative Design",
+            "benefit_description": "Sleek lines and refined finishes that elevate your décor"
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Water Efficiency",
+            "benefit_description": "Advanced Water‑Saving Technologies"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/touchless.png",
+            "benefit_title": "Touch‑Free Technology",
+            "benefit_description": "nhance hygiene and convenience with hands‑free"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Premium Materials",
+            "benefit_description": "Engineered to withstand the unique climate challenges of the GTA"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "Easy Maintenance",
+            "benefit_description": "Anti‑fingerprint and streamlined surfaces ensure effortless cleaning"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be"
+      ],
+      "settings": {
+        "intro_title": "Discover the Advanced Technologies That Set Grohe Apart",
+        "intro_description": "Grohe is synonymous with innovation. Our products incorporate breakthrough features designed to deliver exceptional performance and lasting durability in every GTA home."
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Grohe Kitchen Faucets: Modern Precision & Style for GTA Kitchens",
+        "category_description": "<p>Upgrade your culinary space with our premium selection of <strong>Grohe Kitchen Faucets</strong> at Plumbing Market. Designed for the modern GTA kitchen, these faucets deliver advanced water‑saving technology, precision water control, and sleek, contemporary finishes.</p>",
+        "collection": "grohe-kitchen-faucet"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_P6pNiH": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Grohe’s kitchen faucet completely transformed our space—its modern design and flawless performance are outstanding. The free delivery made the experience even sweeter!”",
+            "author": "Alex D., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Upgrading our shower with Grohe was a game‑changer. The water‑saving technology is impressive, and the installation was effortless. Highly recommend Plumbing Market!”",
+            "author": "Monica S., Mississauga",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“The quality and durability of Grohe fixtures are unmatched. We love the sleek design and efficient performance, and the free delivery was a fantastic bonus.”",
+            "author": "Ryan K., Vaughan",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_P6pNiH",
+        "testimonial_YcbyBh",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "Real Feedback from GTA Homeowners on Grohe",
+        "description": "<p>Discover authentic testimonials from GTA homeowners who have transformed their spaces with <strong>Grohe</strong> fixtures. Whether it’s a state‑of‑the‑art kitchen faucet that redefines your culinary experience or an innovative shower upgrade that brings a spa‑like touch to your bathroom, our customers share their real‑world experiences.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I buy Grohe plumbing fixtures in the GTA?",
+            "answer": "<p><strong>Authorized Dealer:</strong> Plumbing Market is your official source for Grohe products.</p><p><strong>Local Showrooms:</strong> Visit our showrooms in <strong>Vaughan</strong>, <strong>Toronto</strong>, and other GTA locations.</p><p><strong>Free Delivery:</strong> Enjoy <strong>free delivery</strong> on all orders within the GTA.</p><p></p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Grohe products easy to install?",
+            "answer": "<p><strong>User-Friendly Design:</strong></p><p><strong>Clear Instructions:</strong> Each fixture comes with detailed, step‑by‑step installation guides.</p><p><strong>Quick‑Connect Systems:</strong> Engineered for hassle‑free setup.<br/><br/><br/><strong>Expert Support:</strong></p><p>For complex installations, our team can recommend <strong>trusted local GTA professionals</strong>.<br/><br/><strong>Additional Resources:</strong></p><p>Read our <a href=\"https://www.grohe.ca/parts-and-services/installation-guides\" target=\"_blank\" title=\"https://www.grohe.ca/parts-and-services/installation-guides\"><strong>Installation Tips</strong></a> for more guidance.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "What warranty do Grohe products offer?",
+            "answer": "<p><strong>Limited Lifetime Warranty:</strong></p><p>Most Grohe fixtures include a limited lifetime warranty for the original purchaser.<br/><br/><strong>Product‑Specific Details:</strong></p><p>Always check the warranty information on the product page.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "How do Grohe products help reduce water consumption?",
+            "answer": "<p><strong>Advanced Water‑Saving Technologies:</strong></p><p>Many models feature technologies designed to minimize water usage.<br/><br/><strong>Efficiency Benefits:</strong></p><p><strong>Lower Water Bills:</strong> Significant savings on utility costs.</p><p><strong>Eco‑Friendly:</strong> Contribute to environmental sustainability.<br/><br/></p>"
+          }
+        },
+        "faq_gXcniF": {
+          "type": "faq",
+          "settings": {
+            "question": "What maintenance do Grohe fixtures require?",
+            "answer": "<p><strong>Simple Cleaning Routine:</strong></p><p><strong>Wipe Down:</strong> Use a <strong>soft, damp cloth</strong> and <strong>mild cleaning agents</strong>.</p><p><strong>Low‑Maintenance Finishes:</strong> Anti‑fingerprint coatings and streamlined surfaces help reduce cleaning time.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_gXcniF"
+      ],
+      "settings": {
+        "title": "Our Ultimate Guide for GTA Homeowners",
+        "description": "<p>Explore our comprehensive FAQ section to get answers to the most common questions about <strong>Grohe plumbing fixtures</strong></p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop Grohe Plumbing at Plumbing Market – The GTA’s Ultimate Choice",
+        "description": "<p>Plumbing Market proudly offers an extensive range of Grohe plumbing fixtures to homeowners across the Greater Toronto Area. Whether you shop online or visit our showroom in Vaughan, you can expect:</p>",
+        "message": "<p><strong>Competitive Prices:</strong> Unbeatable deals on every Grohe product.</p><p><strong>In‑Stock Selection:</strong> A wide variety available for immediate purchase or fast GTA delivery.</p><p><strong>Expert Assistance:</strong> Our knowledgeable team is ready to help you choose the ideal fixture for your project.</p><p><strong>Local Trust:</strong> With a strong presence in Toronto, Mississauga, and Vaughan, we’re the GTA’s trusted source for Grohe.</p><p><strong>Free Delivery:</strong> Enjoy <strong>free delivery</strong> on all orders across the GTA.</p>",
+        "shop_online_url": "shopify://collections/grohe",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

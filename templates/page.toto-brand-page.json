@@ -1,0 +1,236 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Shop TOTO Bathroom Fixtures at Plumbing Market – GTA's Best Prices & Selection!",
+        "hero_description": "our GTA TOTO Destination! Discover revolutionary TOTO toilets, WASHLETs, faucets & more at Plumbing Market. Exclusive collections, unbeatable prices, expert advice & fast GTA delivery. Shop now!",
+        "hero_image": "shopify://shop_images/MS901CUMFX_GAL_03_600_600.webp",
+        "collection_button_label": "Buy Toto Products",
+        "collection_link": "shopify://collections/toto-sale",
+        "brand_button_label": "Visit Toto Website",
+        "brand_website_link": "https://www.totousa.com/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/hygiene.png",
+            "benefit_title": "TOTO: Tech & Hygiene",
+            "benefit_description": "Experience innovations for the ultimate in bathroom cleanliness"
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/warrantyIcon.webp",
+            "benefit_title": "Design & Quality.",
+            "benefit_description": "Invest in Japanese elegance and superior quality"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/cleanToilet_7c488042-5765-4511-a48f-0ca9487a5923.png",
+            "benefit_title": "Clean Bathroom. TOTO Hygiene",
+            "benefit_description": "Enjoy a consistently fresh and healthier bathroom environment"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Save Water. Eco TOTO",
+            "benefit_description": "Choose sustainable luxury and reduce your bills"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/spaIcon.png",
+            "benefit_title": "Spa Comfort. TOTO Elevates.",
+            "benefit_description": "Transform your daily routine into a spa experience right at home"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be"
+      ],
+      "settings": {
+        "intro_title": "Why Choose TOTO from Plumbing Market",
+        "intro_description": "Why GTA Homeowners Choose TOTO & Shop at Plumbing Market:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Toronto's Best-Selling TOTO Toilets at Plumbing Market",
+        "category_description": "<p>✔️ <strong>Tornado Flush™ Technology:</strong>  Industry-leading flush for maximum cleaning power, minimal water use.✔️ <strong>CEFIONTECT™ Glaze:</strong>  Super-smooth, stain-resistant surface for lasting hygiene and easy cleaning.✔️ <strong>Exclusive Bundles at Plumbing Market:</strong>  Save more on top TOTO toilet models with our special GTA offers.<br/>Upgrade your bathroom with a high-performance, water-efficient TOTO toilet from Plumbing Market and experience the difference in quality and innovation.<br/><br/></p>",
+        "collection": "toto-toilets"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_P6pNiH": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"We recently renovated our master bathroom in our Vaughan home, and splurging on a TOTO Neorest smart toilet was the best decision!  The automatic features and integrated WASHLET are truly luxurious.  It's so hygienic and comfortable, especially during cold Toronto winters.  We purchased it from Plumbing Market in Vaughan, and their team was incredibly helpful in choosing the right model and explaining all the features.  Worth every penny!\"",
+            "author": "Sarah M., Vaughan Homeowner",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"As a busy mom in Mississauga, the TOTO WASHLET® bidet seat has been a game-changer for our family bathroom.  It's so much cleaner and more hygienic for everyone, especially the kids.  We feel much better about bathroom cleanliness now.  Installation was straightforward, and Plumbing Market's customer service was excellent when we had a question.  Highly recommend for any GTA family!\"",
+            "author": "David L., Mississauga Parent",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"We replaced our old, inefficient toilets with TOTO Drake toilets from Plumbing Market, and we're thrilled with the performance.  The Tornado Flush is incredibly powerful, and we've already noticed a difference in our water bill!  Living in Toronto, water conservation is important to us.  Plumbing Market had a great selection and the best prices we found in the GTA.\"",
+            "author": "-  Jessica K., Toronto Homeowner",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_P6pNiH",
+        "testimonial_YcbyBh",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "TOTO Bathroom Reviews: See What GTA Customers Say - Plumbing Market",
+        "description": "<p>Considering TOTO luxury for your bathroom?  Explore customer reviews and ratings on TOTO toilets, WASHLET bidet seats, and faucets.  See why GTA homeowners rave about TOTO's performance, hygiene, and elegant designs.  Read TOTO reviews at Plumbing Market!</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes TOTO toilets stand out as a premium choice for bathrooms?",
+            "answer": "<p><strong>TOTO toilets are considered a premium bathroom choice due to a combination of factors:</strong><br/><br/> TOTO consistently leads the industry with groundbreaking technologies like  and <br/> Features like  and rimless bowl designs ensure exceptional cleanliness and reduce bacteria.<br/> TOTO toilets are engineered for powerful, clog-free flushing and reliable operation.Water Efficiency:WaterSense certifications.<br/>  TOTO's commitment to quality and meticulous manufacturing is evident in every product.<br/><br/></p><p><br/></p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "How does a TOTO WASHLET® bidet seat improve bathroom hygiene and comfort?",
+            "answer": "<p><strong>A TOTO WASHLET® bidet seat elevates bathroom hygiene and comfort in numerous ways:</strong></p><p><strong>Superior Cleansing:</strong> Gentle, <strong>warm-water washing</strong> provides a more thorough and hygienic clean than toilet paper alone.</p><p><strong>Personalized Comfort:</strong>  Features like <strong>adjustable water temperature and pressure, heated seats, and warm air dryers</strong> offer customized comfort.</p><p><strong>Enhanced Hygiene:</strong>  Reduces the need for toilet paper, minimizing skin irritation and promoting better personal hygiene.</p><p><strong>Luxury Experience:</strong>  Transforms your daily bathroom routine into a spa-like indulgence.</p><p><strong>Self-Cleaning Features:</strong> Many WASHLET models include <strong>self-cleaning wands and deodorizers</strong> for added hygiene and convenience.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "Explain TOTO's Tornado Flush™ technology and its advantages",
+            "answer": "<p><strong>TOTO's revolutionary Tornado Flush™ system offers significant advantages:</strong></p><p><strong>Powerful Cyclonic Cleaning:</strong>  Utilizes two or three powerful nozzles to create a dynamic, centrifugal rinsing action.</p><p><strong>Complete Bowl Wash:</strong>  Effectively cleans the entire bowl, reaching every corner and surface for maximum hygiene.</p><p><strong>Water Efficiency:</strong> Achieves a more thorough flush using less water compared to traditional gravity-flush systems.</p><p><strong>Reduced Clogging:</strong>  The powerful flush action minimizes the risk of clogs and backups.</p><p><strong>Whisper-Quiet Operation:</strong>  Despite its power, Tornado Flush is designed to be remarkably quiet.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "What are the benefits of TOTO's CEFIONTECT® glaze for toilet maintenance?",
+            "answer": "<p><strong>TOTO's CEFIONTECT® glaze provides exceptional benefits for toilet maintenance:</strong><br/><br/>  The microscopically smooth ceramic glaze prevents waste from adhering to the bowl.Stain Resistance:<br/>  Requires less effort and fewer harsh chemicals to clean, saving you time and money.Lasting Hygiene:  Reduces bacteria buildup, promoting a more hygienic bathroom environment.<br/>  The glaze is incredibly durable and scratch-resistant, maintaining its beauty for years.<br/><br/></p><p><br/></p>"
+          }
+        },
+        "faq_TngRGt": {
+          "type": "faq",
+          "settings": {
+            "question": "Are TOTO toilets and WASHLETs water-efficient and environmentally friendly?",
+            "answer": "<p><strong>Yes, TOTO is a leader in water-efficient and environmentally conscious bathroom solutions:</strong></p><p><strong>WaterSense Certified:</strong> Many TOTO toilets and faucets meet or exceed EPA WaterSense standards for water conservation.</p><p><strong>Dual Flush Options:</strong>  Some TOTO toilets offer dual-flush options, allowing users to choose between a full or partial flush to save water.</p><p><strong>Low-Flow Designs:</strong>  TOTO continuously innovates to reduce water consumption across their product lines.</p><p><strong>Eco-Conscious Manufacturing:</strong> TOTO is committed to sustainable manufacturing practices.</p><p><strong>Save Water & Money:</strong>  Choosing TOTO helps homeowners reduce their water footprint and lower water bills.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_TngRGt"
+      ],
+      "settings": {
+        "title": "TOTO Bathroom FAQs: Your Top Questions Answered - Shop Plumbing Market",
+        "description": "<p>Considering TOTO for your bathroom?  Plumbing Market's comprehensive <strong>TOTO FAQ section</strong> answers the most common questions <strong>Toronto and GTA homeowners</strong> have about <strong>TOTO toilets, WASHLETs, bathtubs, and faucets</strong>.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop TOTO Luxury Bathroom Supplies in GTA",
+        "description": "<p>Experience unparalleled bathroom innovation and luxury with TOTO at Plumbing Market. Get fast GTA-wide shipping, expert TOTO support, and the best deals on TOTO toilets, WASHLETs, and more in Toronto & the GTA!</p>",
+        "message": "<p>Find Your Perfect TOTO Product Now →</p>",
+        "shop_online_url": "shopify://collections/toto-sale",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

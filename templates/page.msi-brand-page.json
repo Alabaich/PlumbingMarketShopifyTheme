@@ -1,0 +1,236 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Shop MSI Surfaces at Plumbing Market – GTA’s Best Prices & Selection",
+        "hero_description": "Discover premium MSI countertops, quartz surfaces, and luxury stone slabs for your kitchen, bathroom, or commercial space. With unbeatable prices and the largest selection in the GTA, Plumbing Market is your trusted source for MSI Surfaces.",
+        "hero_image": "shopify://shop_images/march-feature-of-the-month.webp",
+        "collection_button_label": "Buy MSI Flooring & Tiles",
+        "collection_link": "shopify://collections/msi-surfaces",
+        "brand_button_label": "Visit MSI Surfaces Website",
+        "brand_website_link": "https://www.msisurfaces.com/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/variety.png",
+            "benefit_title": "Endless Variety",
+            "benefit_description": "Hundreds of colors, patterns, and finishes to match any design style."
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/warrantyIcon.webp",
+            "benefit_title": "Unmatched Quality",
+            "benefit_description": "Durable, scratch-resistant, and built to last."
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Affordable Luxury",
+            "benefit_description": "High-end surfaces at competitive prices."
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/trustedIcon.png",
+            "benefit_title": "Trusted Brand",
+            "benefit_description": "MSI is a global leader in premium surfaces, trusted by professionals"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/eco-friendly.png",
+            "benefit_title": "Eco-Friendly Options",
+            "benefit_description": "Choose from sustainable materials that support a greener future"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be"
+      ],
+      "settings": {
+        "intro_title": "Why Choose MSI Surfaces?",
+        "intro_description": "MSI Surfaces are the perfect choice for homeowners and designers in the GTA. Here’s why:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "MSI Porcelain & Ceramic Tiles",
+        "category_description": "<p>Transform your floors, walls, and backsplashes with MSI porcelain and ceramic tiles. Available in a wide range of sizes, colors, and finishes. Popular selections include:</p>",
+        "collection": "msi-surfaces"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_P6pNiH": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“I absolutely love my new MSI luxury vinyl planks! They look just like real hardwood but are so much easier to maintain. Plumbing Market helped me choose the perfect color, and the installation was seamless. Highly recommend!”",
+            "author": "– Sarah T., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“The MSI porcelain tiles I bought for my bathroom are stunning. The quality is top-notch, and they were delivered right on time. Plumbing Market has the best prices and service in the GTA!”",
+            "author": "– James L., Mississauga",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“I was looking for eco-friendly flooring options, and MSI’s laminate flooring was the perfect choice. It’s beautiful, durable, and affordable. Thanks, Plumbing Market, for the great advice!”",
+            "author": "– Emily R., Brampton",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_P6pNiH",
+        "testimonial_YcbyBh",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "What Our Customers Are Saying – MSI Reviews",
+        "description": "<p>Don’t just take our word for it! Here’s what our customers in the GTA are saying about their experience with MSI Flooring & Surfaces:</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "What types of products does MSI Surfaces offer?",
+            "answer": "<p>MSI Surfaces offers a wide range of products, including:</p><ol><li><strong>Luxury Vinyl Planks (LVP)</strong>: Waterproof, scratch-resistant, and perfect for high-traffic areas.</li><li><strong>Porcelain & Ceramic Tiles</strong>: Durable and stylish options for floors, walls, and backsplashes.</li><li><strong>Laminate Flooring</strong>: Affordable, easy-to-install flooring that mimics hardwood.</li><li><strong>Decorative Surfaces</strong>: Mosaics, feature walls, and accent pieces for a unique touch.</li><li><strong>Outdoor Surfaces</strong>: Porcelain slabs and tiles designed for patios, decks, and outdoor kitchens.</li></ol>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "Are MSI Surfaces eco-friendly?",
+            "answer": "<p>Yes! MSI Surfaces is committed to sustainability. Their eco-friendly features include:</p><ul><li><strong>Recycled Materials</strong>: Many products are made with recycled content.</li><li><strong>Low-VOC Options</strong>: Safe for indoor air quality.</li><li><strong>Sustainable Practices</strong>: MSI follows environmentally responsible manufacturing processes.</li><li><strong>Eco Collections</strong>: Look for their eco-friendly lines, such as <strong>EcoTech</strong> and <strong>Green Series</strong>.</li></ul>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I clean and maintain MSI Surfaces products?",
+            "answer": "<p>MSI Surfaces are designed for easy maintenance. Here’s how to care for them:</p><ul><li><strong>Luxury Vinyl Planks</strong>: Sweep regularly and mop with a mild cleaner. Avoid abrasive tools.</li><li><strong>Porcelain Tiles</strong>: Use a pH-neutral cleaner and a soft mop. Avoid harsh chemicals.</li><li><strong>Laminate Flooring</strong>: Clean with a damp mop and avoid excessive water.</li><li><strong>Decorative Surfaces</strong>: Wipe with a soft cloth and mild detergent.</li></ul>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "Where are MSI Surfaces products made?",
+            "answer": "<p>MSI Surfaces products are manufactured in state-of-the-art facilities worldwide, including:</p><ul><li><strong>North America</strong>: Cutting-edge factories in the U.S. and Canada.</li><li><strong>Global Locations</strong>: Production sites in Europe and Asia to meet international demand.</li></ul><p>All products meet strict quality standards, ensuring consistency and reliability.</p>"
+          }
+        },
+        "faq_TngRGt": {
+          "type": "faq",
+          "settings": {
+            "question": "Can MSI Surfaces products be used outdoors?",
+            "answer": "<p>Yes! MSI offers a range of outdoor-friendly products, including:</p><ul><li><strong>Porcelain Slabs</strong>: Perfect for patios, decks, and outdoor kitchens.</li><li><strong>Outdoor Tiles</strong>: Durable and weather-resistant for any climate.</li><li><strong>Decorative Surfaces</strong>: Add style to outdoor feature walls and fireplaces.</li></ul><p>These products are designed to withstand the elements while maintaining their beauty.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_TngRGt"
+      ],
+      "settings": {
+        "title": "MSI Surfaces FAQ | Answers to Your Top Questions | Plumbing Market",
+        "description": "<p>Get answers to the most popular questions about MSI Surfaces, including product details, maintenance tips, and eco-friendly options. Shop with confidence!</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Contact Us for MSI Surfaces | Expert Advice & Fast Delivery | Plumbing Market",
+        "description": "<p>Need help choosing MSI Surfaces? Contact Plumbing Market for expert advice, fast delivery, and the best prices in the GTA. Transform your space today!</p>",
+        "message": "<p>Find Your Perfect MSI Surfaces Product Now →</p>",
+        "shop_online_url": "shopify://collections/msi-surfaces",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

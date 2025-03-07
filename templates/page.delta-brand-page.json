@@ -1,0 +1,231 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Experience Delta Plumbing: Innovation & Style for Every GTA Home",
+        "hero_description": "Upgrade your kitchen and bathroom with cutting-edge Delta fixtures—designed for durability, water efficiency, and modern aesthetics across Toronto, Mississauga, Vaughan, and the Greater Toronto Area.",
+        "hero_image": "shopify://shop_images/DeltaHP3_Tetra_a6bf2a3c-1297-42bc-b48c-864af238bdd9.webp",
+        "collection_button_label": "Shop Delta Now",
+        "collection_link": "shopify://collections/delta-faucet",
+        "brand_button_label": "Visit Delta Website",
+        "brand_website_link": "https://www.deltafaucet.ca/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_title": "Touch2O® Technology",
+            "benefit_description": "Operate faucets with a gentle touch—ideal for busy kitchens and hygienic use."
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_title": "MagnaTite® Docking",
+            "benefit_description": "Keeps pull-down spray wands securely in place, maintaining a neat and efficient sink area."
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_title": "Diamond™ Seal Technology",
+            "benefit_description": "Provides leak-free performance and long-lasting durability to stand up to the rigors of GTA life."
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_title": "H2Okinetic® Shower Technology",
+            "benefit_description": "Sculpted water flow creates a luxurious, spa-like shower while conserving water."
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_title": "WaterSense® Certified",
+            "benefit_description": "Ensures high water efficiency and reduced utility bills without sacrificing performance."
+          }
+        },
+        "benefit_EqxmD9": {
+          "type": "benefit",
+          "settings": {
+            "benefit_title": "SpotShield® Finish",
+            "benefit_description": "Minimizes water spots and fingerprints, keeping your fixtures pristine with less effort."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be",
+        "benefit_EqxmD9"
+      ],
+      "settings": {
+        "intro_title": "Innovative Technologies That Define Delta for GTA Homeowners",
+        "intro_description": "Delta Plumbing sets the benchmark in innovation. Discover the advanced features that deliver exceptional performance and style:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Discover Delta’s Signature Kitchen Faucets Collection",
+        "category_description": "<p><em>Popular Models:</em> Delta Trinsic, Delta Lahara, Delta Cassidy, Delta Essa</p><p><em>Features:</em> Touch2O® technology, MagnaTite® docking, and SpotShield® finishes for a sleek, modern look.</p>",
+        "collection": "delta-faucet"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_P6pNiH": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Delta’s Touch2O faucet transformed our kitchen. It’s stylish, functional, and exactly what we needed for our Toronto home.”",
+            "author": "Sarah M., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Upgrading to a Delta shower system from Plumbing Market was a game changer. The H2Okinetic® technology gives us a spa-like experience every day.”",
+            "author": "John P., Vaughan",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Our Delta toilet has exceeded all expectations. Efficient, durable, and a perfect fit for our Markham home—highly recommended!”",
+            "author": "Jessica L., Markham",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_P6pNiH",
+        "testimonial_YcbyBh",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "Real Feedback from GTA Homeowners",
+        "description": ""
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I buy Delta Plumbing fixtures in the GTA?",
+            "answer": "<p><strong>Authorized Dealer:</strong> Plumbing Market is your official source for Delta Plumbing fixtures.</p><p><strong>Multiple Locations:</strong> Visit our conveniently located showrooms in Vaughan, Toronto, and other GTA areas.</p><p><strong>Free Delivery:</strong> Enjoy free delivery across the GTA for all your Delta purchases in Plumbing Market </p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Delta faucets and shower systems easy to install?",
+            "answer": "<p><strong>User-Friendly Design:</strong><br/><br/> Designed for simple, hassle-free installation.Detailed Instructions: Step-by-step guides provided for a smooth setup.</p><p><strong>Expert Recommendations:</strong><br/>For complex installations, our team can recommend trusted, local GTA plumbers.</p><p><strong>DIY or Professional:</strong> Whether you’re a DIY enthusiast or prefer professional help, Delta products accommodate both.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "What warranty do Delta products offer?",
+            "answer": "<p><strong>Limited Lifetime Warranty:</strong></p><p>Most Delta fixtures include a limited lifetime warranty for the original purchaser.<br/><br/><strong>Product-Specific Details:</strong></p><p>Always review the specific warranty details on your product page.<br/><br/><strong>Expert Support:</strong></p><p>Consult our knowledgeable team at Plumbing Market for any warranty questions.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "How do Delta products help reduce water consumption?",
+            "answer": "<p><strong>WaterSense® Certification:</strong></p><p>Many Delta models are certified to meet strict water efficiency standards.</p><p></p><p><strong>Efficiency Benefits:</strong></p><p><strong>Lower Water Bills:</strong> Enjoy significant savings on your utility bills.</p><p><strong>Eco-Friendly:</strong> Conserve water without compromising on performance.</p><p></p><p><strong>Innovative Technology:</strong></p><p>Advanced features optimize water flow and reduce waste.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC"
+      ],
+      "settings": {
+        "title": "Your Delta Plumbing Questions Answered – Serving the GTA",
+        "description": "<p>Our expert team at Plumbing Market has compiled clear, detailed answers to help you make informed decisions and enjoy a seamless home upgrade experience. Whether you're a DIY enthusiast or looking for professional guidance, you'll find everything you need to know about Delta Plumbing right here</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop Delta Faucets at Plumbing Market – GTA’s Ultimate Choice",
+        "description": "<p>Plumbing Market proudly serves the Greater Toronto Area with a comprehensive selection of Delta Plumbing fixtures. Whether you shop online or visit our Vaughan showroom, expect:</p>",
+        "message": "<p>Find Your Perfect Delta Product Now →</p>",
+        "shop_online_url": "shopify://collections/delta-faucet",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

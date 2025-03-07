@@ -321,6 +321,7 @@
         "logo_BcUGHb",
         "logo_x8XamP"
       ],
+      "disabled": true,
       "settings": {
         "number_of_items": 8,
         "text_alignment": "start",
