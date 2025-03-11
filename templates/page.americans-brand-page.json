@@ -1,0 +1,245 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Experience American Standard: Trusted Quality & Innovation for GTA Homes",
+        "hero_description": "Upgrade your bathroom and kitchen with American Standard’s state‑of‑the‑art designs and exceptional performance—perfectly engineered for the modern GTA lifestyle.",
+        "hero_image": "shopify://shop_images/B-Studio_S_Bath_Collection.webp",
+        "collection_button_label": "Buy American Standard Products",
+        "collection_link": "shopify://collections/american-standard",
+        "brand_button_label": "Visit American Standard Website",
+        "brand_website_link": "https://www.americanstandard.ca/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Advanced Water‑Saving",
+            "benefit_description": "Reduces water usage and lowers utility bills"
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/warrantyIcon.webp",
+            "benefit_title": "High‑Performance Flushing",
+            "benefit_description": "Ensures powerful, efficient performance with every use"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Modern, Sleek Designs",
+            "benefit_description": "Contemporary aesthetics that complement any home décor."
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Durable Construction",
+            "benefit_description": "Engineered with premium materials to withstand heavy use"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "User‑Friendly Operation",
+            "benefit_description": "Easy installation and low‑maintenance designs"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be"
+      ],
+      "settings": {
+        "intro_title": "Innovative Technologies That Set American Standard Apart",
+        "intro_description": "American Standard is renowned for combining quality craftsmanship with cutting‑edge technology. Discover the key features that make these fixtures the top choice for GTA homeowners:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "American Standard Toilets: Reliable Performance & Water Efficiency for GTA Bathrooms",
+        "category_description": "<p>Enhance your bathroom with <strong>American Standard toilets</strong> that combine powerful flushing systems with water‑saving technology. Designed for durability and ease of use, these toilets offer a sleek, modern look while helping to reduce utility bills. Perfect for busy GTA households, they deliver long‑lasting performance and exceptional comfort.</p>",
+        "collection": "american-standard-toilets"
+      }
+    },
+    "seo_collection_tqMYxf": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "American Standard Faucets: Modern Design & Precision for GTA Kitchens & Bathrooms",
+        "category_description": "<p>Upgrade your space with our range of <strong>American Standard faucets</strong>. These fixtures feature precision water control, contemporary finishes, and innovative technology to ensure both style and functionality. Whether you’re renovating your kitchen or bathroom, experience effortless operation and water‑efficient performance that meets the demands of modern GTA living.</p>",
+        "collection": "american-standard-faucets"
+      }
+    },
+    "seo_collection_gFRepm": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "American Standard Sinks: Luxurious & Efficient Sinks Solutions for GTA Homes",
+        "category_description": "<p>Transform your daily routine with <strong>American Standard sink</strong> systems. </p>",
+        "collection": "american-standard-sinks"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“American Standard’s toilet transformed our bathroom. The performance and water‑saving features are outstanding, and free delivery made it even better!”",
+            "author": "Jordan P., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Our new American Standard faucet is both stylish and efficient. The installation was a breeze, and the design fits perfectly in our modern kitchen.”",
+            "author": "Ashley R., Mississauga",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YcbyBh",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "Real Feedback from GTA Homeowners on American Standard",
+        "description": "<p>Discover authentic testimonials from GTA homeowners who have upgraded their spaces with <strong>American Standard</strong> fixtures. Hear firsthand how these products deliver on quality, performance, and style—backed by the convenience of free delivery and expert service from Plumbing Market.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I buy American Standard plumbing fixtures in the GTA?",
+            "answer": "<p><strong>Authorized Dealer:</strong> Plumbing Market is your official source for American Standard products.</p><p><strong>Local Availability:</strong> Visit our showrooms in <strong>Vaughan</strong>, <strong>Toronto</strong>, and other GTA areas.</p><p><strong>Free Delivery:</strong> Enjoy <strong>free delivery</strong> on all orders within the GTA</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "Are American Standard products easy to install?",
+            "answer": "<p><strong>User-Friendly Design:</strong></p><p><strong>Clear Instructions:</strong> Each fixture comes with detailed, step‑by‑step guides.</p><p><strong>Quick‑Connect Features:</strong> Engineered for hassle‑free installation.<br/><br/><strong>Expert Support:</strong></p><p>For complex installations, our team can recommend <a href=\"https://www.plumbingmarket.ca/pages/contractors-centre\" target=\"_blank\" title=\"https://www.plumbingmarket.ca/pages/contractors-centre\"><strong>trusted local GTA professionals</strong></a>.<br/><br/><strong>Additional Resources:</strong></p><p>Read our <a href=\"https://www.americanstandard.ca/learn/how-to/how-to-install-a-toilet\" target=\"_blank\" title=\"https://www.americanstandard.ca/learn/how-to/how-to-install-a-toilet\"><strong>Installation Tips</strong></a> for further guidance.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "What warranty do American Standard products offer?",
+            "answer": "<p><strong>Quality Assurance:</strong></p><p>Most American Standard fixtures include a limited lifetime warranty for the original purchaser.<br/><br/><strong>Product-Specific Details:</strong></p><p>Always check the warranty information on your product page.<br/><br/></p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "How do American Standard products help reduce water consumption?",
+            "answer": "<p><strong>Water‑Saving Technologies:</strong></p><p>Many models incorporate advanced water‑conservation features and may be WaterSense® certified.<br/><br/><strong>Benefits:</strong></p><p><strong>Lower Water Bills:</strong> Significant savings on your utility costs.</p><p><strong>Eco‑Friendly:</strong> Contribute to a greener environment.<br/><br/></p>"
+          }
+        },
+        "faq_TngRGt": {
+          "type": "faq",
+          "settings": {
+            "question": "What maintenance do American Standard fixtures require?",
+            "answer": "<p><strong>Simple Care Routine:</strong></p><p><strong>Easy Cleaning:</strong> Use a <strong>soft, damp cloth</strong> and <strong>mild cleaning agents</strong>.</p><p><strong>Low‑Maintenance Finishes:</strong> Special coatings help resist stains and fingerprints.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_TngRGt"
+      ],
+      "settings": {
+        "title": "American Standard Plumbing FAQs: Your Ultimate Guide for GTA Homeowners",
+        "description": "<p>Find answers to the most popular questions about <strong>American Standard plumbing fixtures</strong>. Our comprehensive FAQ covers installation, warranty details, water efficiency, maintenance, and more. </p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop American Standard Plumbing at Plumbing Market – GTA’s Ultimate Choice",
+        "description": "<p>Plumbing Market is proud to serve the Greater Toronto Area with an extensive range of <strong>American Standard</strong> plumbing fixtures. Whether you shop online or visit our Vaughan showroom, you can expect:</p><p><strong>Competitive Prices:</strong> Unbeatable deals on every American Standard product.</p><p><strong>In‑Stock Selection:</strong> A wide variety available for immediate purchase or fast GTA delivery.</p><p><strong>Expert Assistance:</strong> Our knowledgeable team is here to help you choose the ideal fixture for your project.</p><p><strong>Local Trust:</strong> With a strong presence in Toronto, Mississauga, and Vaughan, we’re the GTA’s trusted source for American Standard.</p><p><strong>Free Delivery:</strong> Enjoy <strong>free delivery</strong> on all orders across the GTA.</p>",
+        "message": "<p>Find Your Perfect American Standard Product Now →</p>",
+        "shop_online_url": "shopify://collections/american-standard",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_collection_tqMYxf",
+    "seo_collection_gFRepm",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

@@ -1,0 +1,215 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Redefine Your Kitchen with FRANKE Swiss Innovation",
+        "hero_description": "Bring Swiss precision and cutting‑edge design to your home with FRANKE. Our kitchen fixtures are engineered to offer superior performance, lasting durability, and elegant aesthetics tailored for the GTA market.",
+        "hero_image": "shopify://shop_images/Home_solutions_franke_home_heroAM001_Mythos_Segment_SS-BlackpearlFinish-Worktop_Udine_1325x832_e7662f5b-b215-4594-b1bf-a78463b89b0d.webp",
+        "collection_button_label": "Explore Franke Now",
+        "collection_link": "shopify://collections/franke",
+        "brand_button_label": "Visit Franke Website",
+        "brand_website_link": "https://www.franke.com/ca/en/home.html"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_title": "Swiss Engineering",
+            "benefit_description": "Crafted with exacting standards and attention to detail."
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_title": "Durability & Reliability",
+            "benefit_description": "Built to withstand heavy daily use while maintaining peak performance"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_title": "Sustainable Innovation",
+            "benefit_description": "Designed with water‑saving technologies to lower utility bills"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_title": "User‑Centric Design",
+            "benefit_description": "Every product is ergonomically designed for both beauty and ease of use"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt"
+      ],
+      "settings": {
+        "intro_title": "Unleashing Swiss Engineering: The FRANKE Advantage",
+        "intro_description": "FRANKE represents the pinnacle of Swiss engineering in kitchen design. Learn why homeowners across the GTA choose FRANKE for its innovative solutions and lasting quality."
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "FRANKE Kitchen Sinks: The Pinnacle of Swiss Craftsmanship",
+        "category_description": "<p>Discover how FRANKE sinks merge form and function to elevate your culinary space. Engineered with premium materials and built to endure the challenges of a busy kitchen, these sinks are a testament to Swiss innovation and design excellence.</p>",
+        "collection": "franke"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_P6pNiH": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“The FRANKE sink has redefined our kitchen workflow. Its robust build and elegant design exceeded our expectations, and the free delivery was a delightful bonus!”",
+            "author": "Jamie L., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Our new FRANKE faucet is a perfect blend of style and functionality. Installation was straightforward, and every detail speaks of Swiss precision.”",
+            "author": "Taylor M., Mississauga",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“FRANKE’s quality is unmistakable. Our kitchen fixtures not only look stunning but also perform flawlessly day after day.”",
+            "author": "Jordan S., Vaughan",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_P6pNiH",
+        "testimonial_YcbyBh",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "GTA Homeowners Speak: FRANKE in the Real World",
+        "description": "<p>Read genuine feedback from homeowners across the GTA who have upgraded their kitchens with <strong>FRANKE</strong> fixtures. These testimonials highlight the transformative power of Swiss‑engineered design, exceptional quality, and the convenience of free delivery from Plumbing Market.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I purchase FRANKE kitchen fixtures in the GTA?",
+            "answer": "<p><strong>Authorized Dealer:</strong> Plumbing Market is your trusted source for FRANKE products.</p><p><strong>Local Availability:</strong> Find our showroom in <strong>Vaughan</strong> or shop online for the complete FRANKE range.<br/><br/><strong>Free Delivery:</strong> Enjoy <a href=\"https://www.plumbingmarket.ca/policies/shipping-policy\" target=\"_blank\" title=\"https://www.plumbingmarket.ca/policies/shipping-policy\"><strong>free delivery</strong></a> on all orders within the GTA.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "What materials are used in FRANKE sinks?",
+            "answer": "<p><strong>High‑Grade Construction:</strong></p><p>FRANKE sinks are typically crafted from <strong>stainless steel</strong> or advanced <strong>granite composite</strong> for superior durability.<br/><br/><strong>Benefits:</strong></p><p>These materials ensure a sleek finish, ease of cleaning, and longevity in busy kitchens.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "What warranty is offered on FRANKE products?",
+            "answer": "<p><strong>Comprehensive Warranty:</strong></p><p>Most FRANKE fixtures come with a warranty covering manufacturing defects.<br/><br/><strong>Product-Specific Details:</strong></p><p>Please refer to the product page for detailed warranty information.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "Are FRANKE fixtures easy to install?",
+            "answer": "<p><strong>Installation Made Simple:</strong></p><p>Designed with clear instructions and <strong>quick‑connect systems</strong> for hassle‑free setup.<br/><br/><strong>Professional Assistance:</strong></p><p>For more complex installations, our team can recommend <strong>trusted local GTA professionals</strong>.<br/><br/><strong>Additional Help:</strong></p><p>Check out our <a href=\"https://www.franke.com/ca/en/home-solutions/support/resources/installation-guides.html\" target=\"_blank\" title=\"https://www.franke.com/ca/en/home-solutions/support/resources/installation-guides.html\"><strong>Installation Tips</strong></a> for further guidance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC"
+      ],
+      "settings": {
+        "title": "FRANKE FAQs: Essential Insights for GTA Homeowners",
+        "description": "<p>Get answers to the most common questions about <strong>FRANKE kitchen fixtures</strong>. Our FAQ covers everything from product materials to warranty details and installation tips—all designed to help you make an informed decision.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop FRANKE at Plumbing Market – Your Ultimate GTA Kitchen Upgrade",
+        "description": "<p>Plumbing Market is the leading provider of <strong>FRANKE kitchen fixtures</strong> in the Greater Toronto Area. With competitive pricing, an expertly curated selection, and <strong>free delivery</strong> on all orders, we make it easy for GTA homeowners to achieve a modern, efficient kitchen upgrade.</p><p><strong>Competitive Prices:</strong> Enjoy premium quality without compromise.</p><p><strong>Expert Guidance:</strong> Our knowledgeable team is ready to help you choose the perfect fixtures.</p><p><strong>Local Trust:</strong> Serving Toronto, Mississauga, Vaughan, and beyond.</p><p><strong>Free Delivery:</strong> Experience hassle‑free delivery across the GTA.</p>",
+        "message": "<p>Shop Franke Now →</p>",
+        "shop_online_url": "shopify://collections/franke",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

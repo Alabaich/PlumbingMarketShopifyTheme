@@ -1,0 +1,247 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Experience Kohler: Innovation & Style for Modern GTA Homes",
+        "hero_description": "Transform your home with Kohler’s industry‑leading designs and superior engineering. Enjoy state‑of‑the‑art technology, water‑saving features, and elegant finishes that elevate every space.",
+        "hero_image": "shopify://shop_images/Inspired-Banner-with-Image-version-3-and-4-aaf00654_rgb_KOHLER-Inspired-Banner-With-Image-variation-3-and-4-L-Desktop.webp",
+        "collection_button_label": "Shop Kohler Now",
+        "collection_link": "shopify://collections/kohler",
+        "brand_button_label": "Visit Kohler Website",
+        "brand_website_link": "https://www.kohler.ca/en"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Advanced Water‑Saving",
+            "benefit_description": "Reduces water usage and lowers utility bills"
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/eco-friendly.png",
+            "benefit_title": "Eco‑Friendly Design",
+            "benefit_description": "Promotes sustainability without compromising quality"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Precision Engineering",
+            "benefit_description": "Delivers consistent, reliable performance"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Elegant Finishes",
+            "benefit_description": "Enhances your space with modern, sleek aesthetics"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "User‑Friendly Operation",
+            "benefit_description": "Easy installation and low‑maintenance designs"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be"
+      ],
+      "settings": {
+        "intro_title": "Innovative Technologies Behind Kohler’s Superior Plumbing Fixtures",
+        "intro_description": "Kohler leads the industry with breakthrough features that redefine everyday convenience and style. Explore the innovations that set Kohler apart:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Kohler Kitchen Faucets: Precision & Modern Elegance for the Gourmet Kitchen",
+        "category_description": "<p>Upgrade your culinary space with <strong>Kohler kitchen faucets</strong> that feature advanced pull‑down technology, precise water control, and sleek contemporary designs.</p>",
+        "collection": "kohler-toilets"
+      }
+    },
+    "seo_collection_tqMYxf": {
+      "type": "seo-collection",
+      "disabled": true,
+      "settings": {
+        "category_title": "American Standard Faucets: Modern Design & Precision for GTA Kitchens & Bathrooms",
+        "category_description": "<p>Upgrade your space with our range of <strong>American Standard faucets</strong>. These fixtures feature precision water control, contemporary finishes, and innovative technology to ensure both style and functionality. Whether you’re renovating your kitchen or bathroom, experience effortless operation and water‑efficient performance that meets the demands of modern GTA living.</p>",
+        "collection": "american-standard-faucets"
+      }
+    },
+    "seo_collection_gFRepm": {
+      "type": "seo-collection",
+      "disabled": true,
+      "settings": {
+        "category_title": "American Standard Sinks: Luxurious & Efficient Sinks Solutions for GTA Homes",
+        "category_description": "<p>Transform your daily routine with <strong>American Standard sink</strong> systems. </p>",
+        "collection": "american-standard-sinks"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Kohler’s kitchen faucet completely transformed our space. The modern design and precision performance are truly impressive—and the free delivery was a fantastic bonus!”",
+            "author": "Alex M., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Upgrading our shower with Kohler was a game‑changer. The water‑saving technology and customizable settings create a spa‑like experience every day.”",
+            "author": "Monica S., Mississauga",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YcbyBh",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "Real Feedback from GTA Homeowners on Kohler",
+        "description": "<p>Read authentic testimonials from GTA homeowners who have upgraded their spaces with <strong>Kohler</strong> fixtures from Plumbing Market. Discover why our customers trust Kohler for quality, performance, and stylish design—with the added bonus of <strong>free delivery</strong> across the GTA.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I buy Kohler plumbing fixtures in the GTA?",
+            "answer": "<p><strong>Authorized Dealer:</strong> Plumbing Market is your official source for Kohler products.</p><p><strong>Local Showrooms:</strong> Visit our showrooms in <strong>Vaughan</strong>, <strong>Toronto</strong>, and other GTA areas.</p><p><strong>Free Delivery:</strong> Enjoy <a href=\"https://www.plumbingmarket.ca/pages/toronto-free-delivery\" target=\"_blank\" title=\"https://www.plumbingmarket.ca/pages/toronto-free-delivery\"><strong>free delivery</strong></a> on all orders within the GTA.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Kohler products easy to install?",
+            "answer": "<p><strong>User‑Friendly Design:</strong></p><p><strong>Clear Instructions:</strong> Each fixture includes detailed, step‑by‑step guides.</p><p><strong>Quick‑Connect Features:</strong> Engineered for hassle‑free setup.<br/><br/><strong>Professional Support:</strong></p><p>For complex installations, our team can recommend <strong>trusted local GTA professionals</strong>.<br/><br/><strong>Additional Resources:</strong></p><p>Read our <a href=\"https://www.kohler.com/en/services/installation-services\" target=\"_blank\" title=\"https://www.kohler.com/en/services/installation-services\"><strong>Installation Tips</strong></a> for further guidance.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "What warranty do Kohler products offer?",
+            "answer": "<p><strong>Warranty Coverage:</strong></p><p>Most Kohler fixtures come with a limited lifetime warranty for the original purchaser.<br/><br/><strong>Product-Specific Details:</strong></p><p>Always review the warranty information on your product page.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "How do Kohler products help reduce water consumption?",
+            "answer": "<p><strong>Water‑Saving Features:</strong></p><p>Many Kohler models incorporate advanced water‑saving technology and are often WaterSense® certified.<br/><br/><strong>Benefits:</strong></p><p><strong>Lower Utility Bills:</strong> Significant savings on water costs.</p><p><strong>Eco‑Friendly:</strong> Help protect the environment</p>"
+          }
+        },
+        "faq_TngRGt": {
+          "type": "faq",
+          "settings": {
+            "question": "What maintenance do Kohler fixtures require?",
+            "answer": "<p><strong>Simple Care Routine:</strong></p><p><strong>Cleaning:</strong> Use a <strong>soft, damp cloth</strong> and <strong>mild cleaning agents</strong>.</p><p><strong>Low‑Maintenance Finishes:</strong> Designed to resist stains, water spots, and fingerprints.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_TngRGt"
+      ],
+      "settings": {
+        "title": "Kohler Plumbing FAQs: Your Essential Guide for GTA Homeowners",
+        "description": "<p>Find answers to the most popular questions about <strong>Kohler plumbing fixtures</strong>. Our comprehensive FAQ section covers everything from installation and warranty details to water‑saving features and maintenance tips. </p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop Kohler Plumbing at Plumbing Market – GTA’s Premier Choice",
+        "description": "<p>Plumbing Market proudly serves the Greater Toronto Area with an extensive range of <strong>Kohler plumbing fixtures</strong>. Whether you shop online or visit our showroom in Vaughan, you can expect:</p><p><strong>Competitive Prices:</strong> Unbeatable deals on every Kohler product.</p><p><strong>In‑Stock Selection:</strong> A wide variety available for immediate purchase or fast GTA delivery.</p><p><strong>Expert Assistance:</strong> Our knowledgeable team is here to help you choose the perfect fixture for your project.</p><p><strong>Local Trust:</strong> With a strong presence in Toronto, Mississauga, and Vaughan, we are the GTA’s trusted source for Kohler.</p><p><strong>Free Delivery:</strong> Enjoy <strong>free delivery</strong> on all orders across the GTA.</p>",
+        "message": "<p>Find Your Perfect Kohler Product Now →</p>",
+        "shop_online_url": "shopify://collections/kohler",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_collection_tqMYxf",
+    "seo_collection_gFRepm",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

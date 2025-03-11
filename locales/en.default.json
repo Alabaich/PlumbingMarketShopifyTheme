@@ -454,8 +454,8 @@
     "including_tax": "After Tax",
     "one_time_purchase": "One-time purchase",
     "pickup_availability": {
-      "free_pickup": "Pick up at",
-      "our_stores": "our warehouse(s)",
+      "free_pickup": "Order Now",
+      "our_stores": "For Pick Up Or Delivery",
       "pick_up_available": "Order Now",
       "pick_up_unavailable": "Out of stock",
       "subtitle": "Search for a location near you!",
