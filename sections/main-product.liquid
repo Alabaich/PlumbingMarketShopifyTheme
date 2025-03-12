@@ -1256,6 +1256,12 @@
                     }
                   </style>
                   <div class="storeSpecials">
+                                        {% if product.metafields.custom.canadian %}
+                      <span>
+                        {%-  render 'icon.canada' -%}
+                        <p>Proudly Canadian Brand. </br> Choose quality – choose Canada.</p>
+                      </span>
+                    {% endif %}
 
                     {% if block.settings.show_best_price == true %}
                       <span>

@@ -1,0 +1,245 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Elevate Your Bathroom with Kalia's Modern Elegance",
+        "hero_description": "Transform your bathroom into a modern sanctuary with Kalia's premium fixtures and faucets. Experience the perfect blend of sophisticated style, exceptional quality, and innovative design. Explore our curated Kalia collection and discover the difference.",
+        "hero_image": "shopify://shop_images/ban_premia_Moroka_4_7192798b-80c6-40df-a9a4-de1c0fc32779.webp",
+        "collection_button_label": "Buy Kalia Products",
+        "collection_link": "shopify://collections/kalia",
+        "brand_button_label": "Visit Kalia Website",
+        "brand_website_link": "https://www.kaliastyle.com/en/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/variety.png",
+            "benefit_title": "Versatile Style Options",
+            "benefit_description": "Kalia offers a range of designs to suit different preferences"
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/warrantyIcon.webp",
+            "benefit_title": "Quality and Durability",
+            "benefit_description": "Kalia is committed to using high-quality materials"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Functional Design",
+            "benefit_description": "Contemporary aesthetics that complement any home décor."
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Durable Construction",
+            "benefit_description": "Engineered with premium materials to withstand heavy use"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "User‑Friendly Operation",
+            "benefit_description": "Easy installation and low‑maintenance designs"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be"
+      ],
+      "settings": {
+        "intro_title": "Kalia: Where Modern Design Meets Timeless Elegance",
+        "intro_description": "Kalia is committed to creating exceptional bathroom products that stand the test of time. Explore the core elements of Kalia's design philosophy:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Kalia Modern Bathroom Faucets | Shop GTA",
+        "category_description": "<p>Discover stylish and functional <strong>Kalia bathroom faucets</strong> for your sinks and vanities. Explore <strong>contemporary designs</strong>, <strong>durable finishes</strong>, and smooth operation. Shop our selection of <strong>Kalia bathroom faucets in the GTA</strong> today!</p>",
+        "collection": "kalia"
+      }
+    },
+    "seo_collection_tqMYxf": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Kalia Contemporary Shower Faucets | Buy Online",
+        "category_description": "<p>Upgrade your shower with <strong>Kalia's modern shower faucets</strong>. Find <strong>sleek designs</strong>, <strong>reliable performance</strong>, and innovative features. Browse our collection of <strong>Kalia shower faucets online</strong> now.</p>",
+        "collection": "kalia-shower-faucets"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_Gy73mW": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"We renovated our Oakville bathroom with Kalia faucets and fixtures. The modern elegance is stunning, and the quality is superb. Plumbing Market had a great selection.\"",
+            "author": "Sarah O., Oakville, ON",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"The Kalia shower system we purchased for our Richmond Hill home is fantastic! It looks beautiful and works perfectly. Great service at Plumbing Market.\"",
+            "author": "David R., Richmond Hill, ON",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"I love the sophisticated design of the Kalia faucet we installed in our Markham kitchen. It's stylish and durable. Highly recommend Kalia and Plumbing Market.\"",
+            "author": "Emily M., Markham, ON",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_Gy73mW",
+        "testimonial_YcbyBh",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "Kalia Bathroom Fixtures & Faucets: GTA Customer Reviews",
+        "description": "<p>See why <strong>GTA homeowners</strong> choose Kalia for their bathroom renovations. Read <strong>real reviews</strong> on Kalia's style, quality, and performance. Find Kalia plumbing supplies at <strong>Plumbing Market</strong>.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "What is Kalia's design style?",
+            "answer": "<p>Kalia's design style is renowned for being <strong>modern and elegant</strong>.  They expertly blend <strong>contemporary aesthetics</strong> with a <strong>timeless appeal</strong>, resulting in bathroom products that are both <strong>sophisticated</strong> and <strong>refined</strong>.  Explore Kalia's design philosophy further on their <a href=\"https://www.kaliastyle.com/en/\" target=\"_blank\" title=\"https://www.kaliastyle.com/en/\">official website</a>.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "What types of products does Kalia offer?",
+            "answer": "<p>Kalia provides a comprehensive range of bathroom products to suit various needs, including:</p><p><strong>Faucets</strong></p><p><strong>Shower Systems<br/><br/>Fixtures & Accessories</strong></p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I find Kalia bathroom products in the GTA?",
+            "answer": "<p><strong>lumbing Market</strong> is your premier destination for Kalia bathroom products in the <strong>GTA</strong>. We proudly serve the entire Greater Toronto Area.  You can experience the Kalia collection at our <a href=\"/pages/contact-us-1\" target=\"_blank\" title=\"Contact Us\">GTA Showroom</a> or conveniently browse our extensive online catalog for <a href=\"/collections/kalia\" target=\"_blank\" title=\"Kalia\">Kalia Products</a></p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Kalia products known for their quality?",
+            "answer": "<p>Absolutely! <strong>Kalia is synonymous with quality</strong>. They are dedicated to using <strong>premium materials</strong> and upholding <strong>excellent craftsmanship</strong> standards.  Kalia products are engineered to be <strong>durable</strong>, <strong>long-lasting</strong>, and to maintain their <strong>beautiful aesthetic</strong> for years to come.</p>"
+          }
+        },
+        "faq_TngRGt": {
+          "type": "faq",
+          "settings": {
+            "question": "Does Plumbing Market deliver Kalia products in the GTA?",
+            "answer": "<p>Yes, <strong>Plumbing Market provides free  delivery services across the GTA</strong>.  For detailed delivery information, including service areas and pricing, please <a href=\"/pages/contact-us-1\" target=\"_blank\" title=\"Contact Us\">contact our team</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_TngRGt"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions about Kalia Modern Bathroom Fixtures in the GTA",
+        "description": "<p>Find answers to common questions about <strong>Kalia bathroom fixtures</strong> and faucets at <strong>Plumbing Market</strong> in the <strong>GTA</strong>. Learn about Kalia's design style, product range, quality, and where to purchase them in the Greater Toronto Area.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Discover Kalia's Modern Elegance Today!",
+        "description": "<p>Ready to <strong>transform your bathroom with Kalia's sophisticated style</strong>? Explore our collection and find the perfect fixtures for your modern bathroom. <strong>Contact us</strong> for expert advice and assistance.</p>",
+        "message": "<p>Find Your Perfect Kalia Product Now →</p>",
+        "shop_online_url": "shopify://collections/kalia",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_collection_tqMYxf",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

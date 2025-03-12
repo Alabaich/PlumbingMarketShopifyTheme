@@ -123,6 +123,11 @@
       </div>
     {%- endfor -%}
   </div>
+    {% if section.settings.link_text != blank and section.settings.link_url != blank %}
+    <div class="top-brands__link" style="padding:25px; color:#2c2d2c; ">
+      <a href="{{ section.settings.link_url }}" style="padding:25px; color:#2c2d2c; ">{{ section.settings.link_text }}</a>
+    </div>
+  {% endif %}
 </div>
 
 {% schema %}
@@ -140,6 +145,17 @@
       "id": "subtitle",
       "label": "Section Subtitle",
       "default": "Browse our most popular brands"
+    },
+        {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link Text",
+      "default": "View All Brands"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL"
     }
   ],
   "blocks": [

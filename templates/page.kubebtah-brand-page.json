@@ -1,0 +1,237 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "KubeBath Bathroom Vanities – Canadian Crafted Elegance",
+        "hero_description": "Elevate your home with a modern touch that only true Canadian craftsmanship can deliver. Experience the perfect blend of style and functionality with KubeBath.",
+        "hero_image": "shopify://shop_images/1_22.webp",
+        "collection_button_label": "Buy Kube Bath Products",
+        "collection_link": "shopify://collections/kube-bath",
+        "brand_button_label": "Visit kube bath Website",
+        "brand_website_link": "https://kubebath.com/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/canada-icon.png",
+            "benefit_title": "Canadian Craftsmanship",
+            "benefit_description": "Meticulously designed and manufactured in Canada"
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Moisture-Resistant Finishes",
+            "benefit_description": "Durable coatings that stand up to daily wear and humidity"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Space-Saving Designs",
+            "benefit_description": "Sleek profiles and smart layouts maximize your bathroom’s footprint"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "Easy Installation",
+            "benefit_description": "Thoughtful engineering and high-quality components"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt"
+      ],
+      "settings": {
+        "intro_title": "Innovative Features That Set KubeBath Apart",
+        "intro_description": "KubeBath is celebrated for merging contemporary design with top-tier Canadian craftsmanship. Discover the key highlights that make these bathroom vanities a leading choice for discerning homeowners in the GTA:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "KubeBath Vanities: Modern Elegance & Canadian Craftsmanship for GTA Bathrooms",
+        "category_description": "<p>Enhance your bathroom with KubeBath vanities that seamlessly merge contemporary design with enduring Canadian quality. Crafted from premium materials, these vanities feature sleek lines, ample storage, and timeless finishes, creating the perfect statement piece for your renovation.</p>",
+        "collection": "kube-bath-bathroom-vanities"
+      }
+    },
+    "seo_collection_tqMYxf": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "KubeBath Faucets: Sleek Canadian Craftsmanship for Your Bathroom",
+        "category_description": "<p>Elevate your space with the modern sophistication of KubeBath faucets. Proudly made in Canada, each faucet is meticulously crafted using <em>premium materials</em> for exceptional durability and performance.</p>",
+        "collection": "kube-bath-bathroom-faucets"
+      }
+    },
+    "seo_collection_gFRepm": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "KubeBath Bathtubs: Modern Luxury Crafted in Canada",
+        "category_description": "<p>Enjoy sleek design and unmatched comfort with KubeBath bathtubs. Proudly crafted in Canada, each tub combines elegant curves with user-friendly features for a truly relaxing bathroom oasis.</p>",
+        "collection": "kube-bath-bathtubs"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"KubeBath's vanity completely transformed our bathroom. The contemporary design and easy maintenance are a game-changer!\"",
+            "author": "Sarah M., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"We love our new KubeBath faucets. The sleek, modern look and flawless performance exceeded our expectations.\"",
+            "author": "David L., Mississauga",
+            "company": ""
+          }
+        },
+        "testimonial_qiJrd9": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"From the free delivery to the helpful support, our KubeBath experience was top-notch. Highly recommended!\"",
+            "author": "Jasmine T., Brampton",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YcbyBh",
+        "testimonial_fQADPr",
+        "testimonial_qiJrd9"
+      ],
+      "settings": {
+        "title": "Real Feedback from GTA Homeowners on KubeBath",
+        "description": "<p>Discover authentic testimonials from GTA homeowners who have upgraded their bathrooms with KubeBath vanities, faucets, and bathtubs. Hear firsthand how these products deliver on style, performance, and durability—backed by free delivery and expert service from Plumbing Market.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I maintain my KubeBath vanity to keep it looking new?",
+            "answer": "<p>Routine cleaning with mild, non-abrasive products is typically all you need. Avoid harsh chemicals and excessive moisture to preserve the finish and prolong the life of your vanity.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "What warranty does KubeBath provide for their vanities?",
+            "answer": "<p>KubeBath stands behind the quality of their products with a robust warranty. Coverage may vary by model, so be sure to review the product details or contact our support team for specific information.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "Are KubeBath vanities easy to install?",
+            "answer": "<p>Yes. KubeBath vanities are designed with user-friendly features and clear instructions. For the best results, you can consult a professional installer or take advantage of our expert advice to ensure a smooth setup.</p><p><br/></p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I buy KubeBath vanities in the GTA?",
+            "answer": "<p>You can purchase KubeBath vanities directly from Plumbing Market, which offers free delivery across the Greater Toronto Area. This makes getting your new vanity both convenient and cost-effective.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC"
+      ],
+      "settings": {
+        "title": "KubeBath Vanities FAQs: Your Ultimate Guide for GTA Homeowners",
+        "description": "<p>Find answers to the most popular questions about KubeBath bathroom vanities in the Greater Toronto Area. Our comprehensive FAQ covers everything from installation and warranty details to design options and maintenance—ensuring you choose the perfect vanity for your space.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop KubeBath at Plumbing Market – GTA’s Top Choice",
+        "description": "<p>Plumbing Market is proud to serve the Greater Toronto Area with a comprehensive selection of KubeBath bathroom vanities, faucets, and bathtubs. Whether you shop online or visit our Vaughan showroom, you can expect:</p><p><strong>Competitive Prices:</strong> Unbeatable deals on every KubeBath product.</p><p><strong>In-Stock Selection:</strong> A wide variety of KubeBath items available for immediate pickup or fast GTA delivery.</p><p><strong>Expert Assistance:</strong> Our knowledgeable team is here to help you find the perfect KubeBath solution for your style and budget.</p><p><strong>Local Trust:</strong> With a strong presence in Toronto, Mississauga, and Vaughan, we’re the GTA’s go-to source for KubeBath products.</p><p><strong>Free Delivery:</strong> Enjoy complimentary delivery on all orders across the GTA.</p>",
+        "message": "<p>Find Your Perfect KubeBath Product Now</p>",
+        "shop_online_url": "shopify://collections/kube-bath",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_collection_tqMYxf",
+    "seo_collection_gFRepm",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

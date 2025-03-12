@@ -1,0 +1,228 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Discover Modern & Functional Fixtures with Stylish",
+        "hero_description": "Elevate your kitchen and bathroom with Stylish innovative collection of fixtures. Experience the perfect combination of modern design, smart functionality, and lasting durability. Explore our range of Canadian-designed sinks, faucets, and accessories to transform your home.",
+        "hero_image": "shopify://shop_images/zitta-accueil3.webp",
+        "collection_button_label": "Shop Stylish Now",
+        "collection_link": "shopify://collections/stylish",
+        "brand_button_label": "Visit Stylish Website",
+        "brand_website_link": "https://zitta.ca/en"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Smart Functionality",
+            "benefit_description": "Highly practical and efficient for everyday us"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Premium-Grade Materials",
+            "benefit_description": "High-quality metals, ceramics, and finishes resist daily wear"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/ergonomicIcon.png",
+            "benefit_title": "Space-Saving Designs",
+            "benefit_description": "Innovative configurations optimize bathroom layouts"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/canada-icon.png",
+            "benefit_title": "Canadian Engineering",
+            "benefit_description": "Proudly designed and engineered in Canada"
+          }
+        },
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/variety.png",
+            "benefit_title": "Variety of Styles & Finishes",
+            "benefit_description": "Offering a wide selection of styles and on-trend finishes"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_4tb8da",
+        "benefit_yizrqt",
+        "benefit_J4d3tG",
+        "benefit_FYT3Be",
+        "benefit_mT6MzG"
+      ],
+      "settings": {
+        "intro_title": "Stylish: Canadian Design, Built for Modern Living",
+        "intro_description": "Stylish is dedicated to creating high-quality kitchen and bathroom fixtures that enhance modern homes.  Explore the core principles behind the Stylish design philosophy:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Stylish Kitchen Sinks | Modern Sinks for Every Kitchen",
+        "category_description": "<p>Upgrade your kitchen with <strong>Stylish'</strong> range of <strong>modern kitchen sinks</strong>.  Find <strong>stainless steel, granite, and workstation sinks</strong> in various styles like <strong>undermount, drop-in, and farmhouse</strong>.  Explore durable, functional, and stylish sinks for your dream kitchen.</p>",
+        "collection": "stylish"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_tzHiqf": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"We renovated our kitchen with a Stylish workstation sink, and it's been a game-changer! The quality is fantastic, and the accessories are so useful.\"",
+            "author": "",
+            "company": ""
+          }
+        },
+        "testimonial_P6pNiH": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"Love the modern look of our Stylish bathroom faucets. The matte black finish is stunning and very durable. Highly recommend!\"",
+            "author": "",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"We chose Stylish vanities for our new bathrooms, and we are thrilled with the storage space and contemporary style. Great value for the price.\"",
+            "author": "Emily R., Etobicoke, ON",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_tzHiqf",
+        "testimonial_P6pNiH",
+        "testimonial_YcbyBh"
+      ],
+      "settings": {
+        "title": "Stylish Customer Reviews |  Experience the Stylish Difference",
+        "description": "<p>Discover why homeowners and professionals choose <strong>Stylish</strong> for their kitchen and bathroom projects. Read what customers are saying about <strong>Stylish' design, quality, and functionality.</strong></p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes Stylish products stand out?",
+            "answer": "<p><strong>Stylish</strong> stands out due to its commitment to <strong>modern design</strong>, <strong>functional innovation</strong>, and <strong>Canadian engineering</strong>. Their fixtures are crafted with <strong>high-quality materials</strong> for lasting durability and feature <strong>on-trend styles and finishes</strong> to elevate any home.  Learn more about their brand story on the <a href=\"https://www.stylishkb.com/our-team\" target=\"_blank\" title=\"https://www.stylishkb.com/our-team\">Stylish \"Our Team\" page</a>.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "What types of fixtures does Stylish offer?",
+            "answer": "<p><strong>Stylish</strong> offers a wide range of fixtures for both <strong>kitchens and bathrooms</strong>, including:</p><p><strong>Kitchen Sinks</strong> </p><p><strong>Bathroom Faucets</strong></p><p><strong>Bathroom Vanities</strong></p><p><strong>Other Fixtures</strong></p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "Where are Stylish products designed and manufactured?",
+            "answer": "<p><strong>Stylish products are designed and engineered in Canada</strong>.  They emphasize Canadian innovation and quality in their product development. While manufacturing location details aren't explicitly stated, they highlight their Canadian roots and engineering focus on their <a href=\"https://www.stylishkb.com/\" target=\"_blank\">official website</a>.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "What are popular finishes offered by Stylish?",
+            "answer": "<p><strong>Stylish</strong> offers a variety of <strong>on-trend finishes</strong> to match modern bathroom and kitchen designs. Popular finishes include:</p><p><strong>Matte Black:</strong>  For a bold and contemporary look.</p><p><strong>Brushed Nickel:</strong>  For a warm and versatile style.</p><p><strong>Brushed Gold:</strong>  For a touch of luxury and elegance.</p><p><strong>Polished Chrome:</strong> For a classic and timeless appeal.</p><p><strong>Stainless Steel:</strong>  For a sleek and modern, easy-to-clean finish, especially popular for kitchen sinks.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions about Stylish Fixtures",
+        "description": "<p>Get answers to common questions about <strong>Stylish kitchen and bathroom fixtures</strong>. Learn about their product quality, design inspiration, warranty, and where to purchase <strong>Stylish</strong> products.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Upgrade Your Home with Stylish Today!",
+        "description": "<p>Ready to experience the <strong>modern elegance and functionality of Stylish</strong>?  Explore our extensive collection and find the perfect fixtures to transform your kitchen and bathroom.  </p>",
+        "message": "<p>Buy Stylish, Plumbing Market</p>",
+        "shop_online_url": "shopify://collections/stylish",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

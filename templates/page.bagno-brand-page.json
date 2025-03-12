@@ -1,0 +1,227 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Bagno Italia: Modern Italian Design & Timeless Quality",
+        "hero_description": "Transform your space with Bagno Italia, a brand synonymous with contemporary Italian style, impeccable craftsmanship, and enduring performance. From sleek bathroom vanities to innovative faucets and luxurious bathtubs, Bagno Italia delivers a sophisticated touch to any renovation—backed by free delivery across the Greater Toronto Area.",
+        "hero_image": "shopify://shop_images/MAESTRO_-_PINK_3.jpg",
+        "collection_button_label": "Shop Bagno Italia Now",
+        "collection_link": "shopify://collections/bagno-italia",
+        "brand_button_label": "Visit Bagno Italia Website",
+        "brand_website_link": "https://www.bagnoitalia.ca/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Italian Craftsmanship",
+            "benefit_description": "Each piece showcases Italy’s renowned design heritage"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Premium-Grade Materials",
+            "benefit_description": "High-quality metals, ceramics, and finishes resist daily wear"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/ergonomicIcon.png",
+            "benefit_title": "Space-Saving Designs",
+            "benefit_description": "Innovative configurations optimize bathroom layouts"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Water-Saving Technology",
+            "benefit_description": "Engineered for efficient water usage without compromising"
+          }
+        },
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "Easy Maintenance",
+            "benefit_description": "Smooth surfaces reduce cleaning time"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_4tb8da",
+        "benefit_yizrqt",
+        "benefit_J4d3tG",
+        "benefit_FYT3Be",
+        "benefit_mT6MzG"
+      ],
+      "settings": {
+        "intro_title": "Discover the Advanced Features That Set Bagno Italia Apart",
+        "intro_description": "Bagno Italia stands out for its meticulous attention to detail and commitment to quality. Explore five key features that make these fixtures a top choice among GTA homeowners:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Bagno Italia Vanities: Contemporary Elegance & Practical Storage",
+        "category_description": "<p>Upgrade your bathroom with <strong>Bagno Italia vanities</strong>, designed to marry sleek Italian aesthetics with functional storage solutions. Ideal for busy households in Toronto, Mississauga, Vaughan, and beyond, these vanities are crafted for both <strong>visual appeal</strong> and <strong>everyday convenience</strong>.</p><p><strong>Durable Finishes</strong> that resist moisture and scratches</p><p><strong>Spacious Cabinets & Drawers</strong> for organized storage</p><p><strong>Versatile Styles</strong> from minimalist to statement-making</p>",
+        "collection": "bagno-italia"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_P6pNiH": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Our Bagno Italia vanity is both stylish and practical. The Italian craftsmanship really shows, and the free delivery made our renovation stress-free!”",
+            "author": "Daniel K., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“We love our new Bagno Italia faucet. The water flow is perfect, and it’s so easy to keep clean. Highly recommended!”",
+            "author": "Laura M., Mississauga",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_P6pNiH",
+        "testimonial_YcbyBh"
+      ],
+      "settings": {
+        "title": "Real Feedback from GTA Homeowners on Bagno Italia",
+        "description": "<p>Hear how Bagno Italia has impressed homeowners throughout the Greater Toronto Area:</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I buy Bagno Italia fixtures in the GTA?",
+            "answer": "<p><strong>Plumbing Market</strong> is your go-to source for authentic Bagno Italia vanities, faucets, and bathtubs.</p><p>Enjoy <a href=\"/pages/free-local-delivery\" target=\"_blank\" title=\"Free Delivery on Plumbing Supplies in GTA\"><strong>free delivery throughout the GTA</strong></a> and a wide selection of in-stock items.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Bagno Italia products truly made with Italian design principles?",
+            "answer": "<p>Yes, <strong>Bagno Italia</strong> integrates <strong>Italian aesthetics</strong> and design standards into every product.</p><p>Premium materials ensure each fixture embodies Italy’s heritage of style and craftsmanship.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I install my Bagno Italia vanity or faucet?",
+            "answer": "<p><strong>Follow the Included Instructions</strong> for straightforward assembly.</p><p><strong>Consult a Professional</strong> if you need help with plumbing connections or advanced setups.</p><p><strong>Check Product Compatibility</strong> to ensure your existing plumbing aligns with the fixture specifications.</p><p>Contact our <a href=\"/pages/contact-us-1\" target=\"_blank\" title=\"Contact Us\"><strong>expert team</strong></a> at Plumbing Market for guidance.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "What warranty coverage does Bagno Italia offer?",
+            "answer": "<p>Bagno Italia typically provides warranties against material or manufacturing defects.</p><p><strong>Coverage Varies by Product</strong> (vanities, faucets, or bathtubs).</p><p><strong>Contact Plumbing Market</strong> or visit the <a href=\"https://www.bagnoitalia.com\"><strong>official Bagno Italia site</strong></a> for specific warranty terms and claim procedures.</p>"
+          }
+        },
+        "faq_gXcniF": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I maintain my Bagno Italia fixtures for lasting beauty?",
+            "answer": "<p><strong>Regular Cleaning</strong><br/>: Steer clear of bleach or acidic agents that may damage finishes.<strong>Wipe Down Surfaces</strong>: Check for leaks or loose fittings, addressing issues promptly to extend product life.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_gXcniF"
+      ],
+      "settings": {
+        "title": "Bagno Italia FAQs: Your Essential Guide to Italian-Inspired Fixtures",
+        "description": "<p>Find answers to the most common queries about <strong>Bagno Italia</strong> products—covering everything from authenticity and installation to maintenance and warranty coverage.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop Bagno Italia at Plumbing Market – The GTA’s Ultimate Choice",
+        "description": "<p>Plumbing Market proudly offers an extensive selection of <strong>Bagno Italia</strong> fixtures, ensuring GTA homeowners have access to premium Italian-inspired designs at <strong>competitive prices</strong>. Whether you shop online or visit our Vaughan showroom, you can expect:</p><p><strong>Competitive Pricing</strong>: Unbeatable deals on every Bagno Italia product</p><p><strong>In-Stock Selection</strong>: A variety of fixtures available for immediate pickup or quick GTA delivery</p><p><strong>Expert Guidance</strong>: Our knowledgeable team will help you find the perfect solution for your renovation</p><p><strong>Local Trust</strong>: We’re a go-to source in Toronto, Mississauga, Vaughan, and beyond</p><p><strong>Free Delivery</strong>: Enjoy complimentary shipping on all orders across the GTA</p>",
+        "message": "<p>Ready to Elevate Your Bathroom with Bagno Italia?</p>",
+        "shop_online_url": "shopify://collections/bagno-italia",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

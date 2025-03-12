@@ -1,0 +1,228 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Elevate Your Bathroom with Zitta's Distinctive Designs",
+        "hero_description": "Transform your bathroom into a statement of modern elegance with Zitta's premium fixtures and vanities. Experience the fusion of form and function, where innovative design meets exceptional quality. Explore our Zitta collection and discover the art of bathroom living.",
+        "hero_image": "shopify://shop_images/zitta-accueil3.webp",
+        "collection_button_label": "Shop Zitta Now",
+        "collection_link": "shopify://collections/zitta",
+        "brand_button_label": "Visit Zitta Website",
+        "brand_website_link": "https://zitta.ca/en"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "European-Inspired",
+            "benefit_description": "Zitta's core: modern design, exceptional quality"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Premium-Grade Materials",
+            "benefit_description": "High-quality metals, ceramics, and finishes resist daily wear"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/ergonomicIcon.png",
+            "benefit_title": "Space-Saving Designs",
+            "benefit_description": "Innovative configurations optimize bathroom layouts"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Water-Saving Technology",
+            "benefit_description": "Engineered for efficient water usage without compromising"
+          }
+        },
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "Easy Maintenance",
+            "benefit_description": "Smooth surfaces reduce cleaning time"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_4tb8da",
+        "benefit_yizrqt",
+        "benefit_J4d3tG",
+        "benefit_FYT3Be",
+        "benefit_mT6MzG"
+      ],
+      "settings": {
+        "intro_title": "Where Design Innovation Meets European Elegance",
+        "intro_description": "Zitta isn't just about fixtures; it's about a design philosophy. Explore the core elements that define Zitta's unique approach:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Explore Zitta's Signature Bathroom Collections",
+        "category_description": "<p>Browse our selection of Zitta's most sought-after bathroom products. From sleek faucets and elegant vanities to luxurious shower systems, find the perfect pieces to complete your dream bathroom.</p>",
+        "collection": "zitta-shower-doors"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_tzHiqf": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"We renovated our North York master bathroom with Zitta vanities and faucets from Plumbing Market. The modern design and high quality are outstanding. Installation was smooth, and we love the water-saving features! Best plumbing choice we've made.\"",
+            "author": "Sarah M., North York, ON",
+            "company": ""
+          }
+        },
+        "testimonial_P6pNiH": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"The Zitta rainfall shower system we purchased for our Vaughan home is fantastic! It's like having a spa day every day. Plumbing Market had the best selection and service. Highly recommend Zitta for any GTA bathroom upgrade.\"",
+            "author": "David L., Vaughan, ON",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"I was impressed with the Zitta selection at Plumbing Market. We bought a Zitta sink and faucet for our Etobicoke kitchen. The sleek design and durability are great. Plumbing Market's team was helpful. Great experience!\"",
+            "author": "Emily R., Etobicoke, ON",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_tzHiqf",
+        "testimonial_P6pNiH",
+        "testimonial_YcbyBh"
+      ],
+      "settings": {
+        "title": "Zitta Bathroom Fixtures & Vanities: GTA Customer Reviews",
+        "description": "<p>See why GTA homeowners choose Zitta for their bathroom renovations. Read real reviews on Zitta's quality, design, and performance. Find Zitta plumbing supplies at Plumbing Market.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "What sets Zitta products apart from other bathroom fixtures?",
+            "answer": "<p>Zitta is renowned for its <strong>innovative designs</strong>, meticulous craftsmanship, and the use of premium materials. Our products are engineered to deliver both <strong>exceptional durability</strong> and modern aesthetics. For a deeper insight, visit our <a href=\"/collections/zitta\" target=\"_blank\" title=\"Zitta\">Zitta Product Overview</a>.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I purchase authentic Zitta products?",
+            "answer": "<p>Authentic <strong>Zitta</strong> fixtures are available exclusively at <a href=\"/collections/zitta\" target=\"_blank\" title=\"Zitta\">Plumbing Market</a>. We guarantee genuine products that comply with strict quality standards, ensuring you receive the best in luxury bathroom solutions</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I maintain my Zitta fixtures for long-lasting performance?",
+            "answer": "<p>To preserve the beauty and functionality of your <strong>Zitta</strong> fixtures, we recommend following our detailed care guidelines. Regular cleaning with manufacturer‑approved products and proper maintenance will ensure your fixtures remain in pristine condition. Find our care tips on the <a href=\"https://zitta.ca/en/site/support-documentation\" target=\"_blank\" title=\"https://zitta.ca/en/site/support-documentation\">Zitta Maintenance Guide</a>.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "Do Zitta products come with a warranty?",
+            "answer": "<p>Yes, every Zitta product is backed by a comprehensive <strong>warranty</strong> covering manufacturing defects and ensuring peace of mind. For full details on our warranty policy, please check our <a href=\"https://zitta.ca/en/site/support-documentation\" target=\"_blank\" title=\"https://zitta.ca/en/site/support-documentation\">Warranty Information</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC"
+      ],
+      "settings": {
+        "title": "Zitta Bathroom Fixtures & Vanities: GTA FAQs",
+        "description": "<p>Get answers to your questions about Zitta bathroom fixtures in the GTA. Find information on design, quality, availability, and installation.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Discover the Elegance of Zitta Today!",
+        "description": "<p>Ready to transform your bathroom with Zitta's distinctive designs? Explore our collection and find the perfect fixtures to express your personal style. Contact us for expert advice and assistance.</p>",
+        "message": "<p>Buy Zitta, Plumbing Market</p>",
+        "shop_online_url": "shopify://collections/zitta",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

@@ -174,7 +174,7 @@
             "brand_title": "Kubebath vanities buy Toronto | Free Delivery",
             "brand_excerpt": "​Kubebath is a manufacturer, wholesaler, and distributor of bathroom equipment, offering a wide range of products including vanities, storage solutions, shower equipment, mirrors, faucets, drains, and bathtubs.",
             "brand_logo": "shopify://shop_images/KUBEBATH_5d534201-f04b-43b1-8b41-3e17fb872364.png",
-            "brand_link": "shopify://collections/kube-bath"
+            "brand_link": "shopify://pages/kubebath-bathroom-vanities-made-in-canada-free-gta-delivery"
           }
         },
         "brand_Htnyni": {
@@ -184,7 +184,7 @@
             "brand_title": "Rubi buy canada | Free Delivery | Best prices in GTA",
             "brand_excerpt": "​Rubi by Soligo is a Canadian brand specializing in high-end kitchen and bathroom fixtures, including faucets, sinks, shower sets, sanitary wares, and accessories.",
             "brand_logo": "shopify://shop_images/RUBI.png",
-            "brand_link": "shopify://collections/rubi"
+            "brand_link": "shopify://pages/rubi-plumbing-fixtures-for-gta-vanities-faucets-bathtubs-at-plumbing-market"
           }
         },
         "brand_XBjEFd": {
@@ -194,7 +194,7 @@
             "brand_title": "Riobel",
             "brand_excerpt": "​Riobel, founded in 2002 in Quebec, Canada, specializes in designing and manufacturing high-quality bathroom and kitchen faucets and shower systems.",
             "brand_logo": "shopify://shop_images/RIOBEL.png",
-            "brand_link": "shopify://collections/riobel"
+            "brand_link": "shopify://pages/riobel-plumbing-fixtures-modern-faucets-showers-for-the-gta"
           }
         },
         "brand_PX9wP8": {
@@ -204,7 +204,57 @@
             "brand_title": "CLEO FAUETS but Toronto | Best Prices | Free delivery",
             "brand_excerpt": "Cleo Faucets offers a wide range of high-quality plumbing products, including durable fixtures and modern designs suitable for various styles. Their product line encompasses faucets, sinks, bathtubs, and more, catering to both residential and commercial projects.",
             "brand_logo": "shopify://shop_images/cleofaucets.webp",
-            "brand_link": "shopify://collections/cleo"
+            "brand_link": "shopify://pages/cleo-faucets"
+          }
+        },
+        "brand_bMzM46": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify://shop_images/VERS-150_2.jpg",
+            "brand_title": "Bagno Italia",
+            "brand_excerpt": "Discover Bagno Italia’s modern vanities, faucets, and bathtubs at Plumbing Market. Enjoy authentic Italian design, free GTA delivery, and expert service for your bathroom upgrade.",
+            "brand_logo": "shopify://shop_images/bagnoItaliaLogo.webp",
+            "brand_link": "shopify://pages/bagno-italia-italian-bathroom-fixtures-plumbing-market-gta"
+          }
+        },
+        "brand_4fdpw9": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify://shop_images/zitta-accueil1_05ca67bd-33bd-487d-afa5-b63c04eb6379.webp",
+            "brand_title": "Zitta",
+            "brand_excerpt": "Transform your bathroom into a statement of modern elegance with Zitta's premium fixtures and vanities. Experience the fusion of form and function, where innovative design meets exceptional quality.",
+            "brand_logo": "shopify://shop_images/ZittaLogo.png",
+            "brand_link": "shopify://pages/zitta-bathroom-fixtures-vanities-modern-plumbing-supplies"
+          }
+        },
+        "brand_qbnyAV": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify://shop_images/image.webp",
+            "brand_title": "Tenzo",
+            "brand_excerpt": "Transform your bathroom into a modern retreat with Tenzo's premium fixtures and vanities. Experience the perfect blend of style, quality, and functionality.",
+            "brand_logo": "shopify://shop_images/tenzoLogo.png",
+            "brand_link": "shopify://pages/tenzo-bathroom-fixtures-vanities-modern-design"
+          }
+        },
+        "brand_VDQgPD": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify://shop_images/ban_premia_Moroka_4.webp",
+            "brand_title": "Kalia",
+            "brand_excerpt": "Transform your bathroom into a modern sanctuary with Kalia's premium fixtures and faucets. Experience the perfect blend of sophisticated style, exceptional quality",
+            "brand_logo": "shopify://shop_images/logo_511903e4-a886-4c99-84fa-57594a21353b.svg",
+            "brand_link": "shopify://pages/kalia-bathroom-fixtures-faucets-modern-elegance"
+          }
+        },
+        "brand_Yp7PFt": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify://shop_images/3754ca_bc16a5f773db49e082cd54d68a624168_mv2.webp",
+            "brand_title": "Stylish",
+            "brand_excerpt": "Elevate your kitchen and bathroom with Stylish KB's innovative collection of fixtures. Experience the perfect combination of modern design, smart functionality, and lasting durability.",
+            "brand_logo": "shopify://shop_images/StylishLogo.png",
+            "brand_link": "shopify://pages/stylish-bathroom-kitchen-fixtures-modern-functional-designs"
           }
         }
       },
@@ -221,7 +271,12 @@
         "brand_6tDtVM",
         "brand_Htnyni",
         "brand_XBjEFd",
-        "brand_PX9wP8"
+        "brand_PX9wP8",
+        "brand_bMzM46",
+        "brand_4fdpw9",
+        "brand_qbnyAV",
+        "brand_VDQgPD",
+        "brand_Yp7PFt"
       ],
       "settings": {}
     }

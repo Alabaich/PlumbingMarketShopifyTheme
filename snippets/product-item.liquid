@@ -188,6 +188,38 @@
       {% comment %} {% if product.tags contains "_black_friday_2024"  %}
         <img src="https://cdn.shopify.com/s/files/1/0654/5827/4526/files/cyberMondayBadge_1.webp?v=1732824751" alt="" class="blackFridayBadge" style="position: absolute; z-index: 10; right:-5px; top: -5px; height:65px !important; width: 100px !important; object-fit: contain; left: auto; bottom:auto;">
       {% endif %} {% endcomment %}
+      {%  if product.metafields.custom.canadian %}
+        <style>
+          .blackFridayBadge{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 10000;
+            height: 30px;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center !important;
+            padding: 0 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.50);
+
+backdrop-filter: blur(2px);
+            gap: 5px;
+          }
+          .l4cl figure .blackFridayBadge svg{
+            position: relative !important;
+          width: 25px !important;
+        height: 25px !important;}
+        </style>
+        <span class="blackFridayBadge">
+          <span>Canadian</span>
+          
+          {%-  render 'icon.canada' -%}
+        </span>
+      
+      {% endif %}
       {% if show_labels %}{%- render 'product-labels', product: product, origin: 'productitem' -%}{% endif %}
       {% unless layout == 'list-compact' %}<a href="{{ product.url }}" aria-label="{{ title | escape }}">{% endunless %}
         {%- liquid

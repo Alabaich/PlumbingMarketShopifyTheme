@@ -1,0 +1,254 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Elevate Your Bathroom with Tenzo's Contemporary Style",
+        "hero_description": "Transform your bathroom into a modern retreat with Tenzo's premium fixtures and vanities. Experience the perfect blend of style, quality, and functionality. Explore our curated Tenzo collection and discover the difference.",
+        "hero_image": "shopify://shop_images/image_a223d7f1-f675-4360-9f1d-3133227b40ab.webp",
+        "collection_button_label": "Shop Tenzo Products",
+        "collection_link": "shopify://collections/tenzo-bathroom-faucets",
+        "brand_button_label": "Visit Tenzo Website",
+        "brand_website_link": "https://maax.ca/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Contemporary Aesthetics",
+            "benefit_description": "Sleek, modern lines combined with timeless elegance."
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/warrantyIcon.webp",
+            "benefit_title": "Superior Durability",
+            "benefit_description": "Engineered with high-quality materials"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Clean, Minimalist",
+            "benefit_description": "Uncluttered forms, focus on simplicity."
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/ergonomicIcon.png",
+            "benefit_title": "Functional Innovation",
+            "benefit_description": "Designed bathtubs and toilets ensure maximum comfort"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "Low-Maintenance",
+            "benefit_description": "Easy-to-clean surfaces and finishes that resist stains"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be"
+      ],
+      "settings": {
+        "intro_title": "Tenzo: Modern Design & Functional Innovation",
+        "intro_description": "Tenzo is committed to creating exceptional bathroom products. Explore the core elements of Tenzo's design philosophy:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Tenzo Modern Bathroom Faucets | Shop GTA",
+        "category_description": "<p>Discover stylish and functional Tenzo bathroom faucets for your sinks and vanities. Explore contemporary designs, durable finishes, and smooth operation. Shop our selection of Tenzo bathroom faucets in the GTA.</p>",
+        "collection": "tenzo-bathroom-faucets"
+      }
+    },
+    "seo_collection_x7JnU8": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Tenzo Contemporary Shower Faucets | Buy Online",
+        "category_description": "<p>Upgrade your shower with Tenzo's modern shower faucets. Find sleek designs, reliable performance, and innovative features. Browse our collection of Tenzo shower faucets online.</p>",
+        "collection": "tenzo-shower-faucets"
+      }
+    },
+    "seo_collection_6FRc8M": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Tenzo Modern Shower Columns | GTA Showroom",
+        "category_description": "<p>Experience luxury with Tenzo shower columns. Explore complete shower systems with enhanced features, stylish designs, and exceptional quality. Visit our GTA showroom to view Tenzo shower columns.</p>",
+        "collection": "tenzo-shower-columns"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"We updated our Etobicoke bathroom with a Tenzo vanity. The modern look is perfect, and it's so functional. Plumbing Market had a great selection.\"",
+            "author": "Sarah P., Etobicoke, ON",
+            "company": ""
+          }
+        },
+        "testimonial_HTPk3z": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"The Tenzo storage cabinets we bought for our Mississauga bathroom are excellent. They look great and provide so much space. Great service at Plumbing Market.\"",
+            "author": "Mark T., Mississauga, ON",
+            "company": ""
+          }
+        },
+        "testimonial_fQADPr": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"I love the clean lines of the Tenzo faucet we installed in our Toronto condo. It's stylish and works perfectly. Highly recommend Tenzo and Plumbing Market.\"",
+            "author": "Lisa K., Toronto, ON",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_YcbyBh",
+        "testimonial_HTPk3z",
+        "testimonial_fQADPr"
+      ],
+      "settings": {
+        "title": "Tenzo Bathroom Fixtures & Vanities: GTA Customer Reviews",
+        "description": "<p>See why GTA homeowners choose Tenzo for their bathroom renovations. Read real reviews on Tenzo's style, functionality, and quality. Find Tenzo plumbing supplies at Plumbing Market.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "What is Tenzo's design style?",
+            "answer": "<p>Tenzo's design style is primarily <strong>contemporary</strong> and <strong>modern</strong>. They focus on clean lines, minimalist forms, and functional innovation. Tenzo products are designed to complement modern bathrooms.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "What types of products does Tenzo offer?",
+            "answer": "<p><strong>Answer:</strong> Tenzo offers a range of bathroom products, including:<br/></p><p><strong>Vanities:</strong> In various sizes and styles.</p><p><strong>Faucets:</strong> For sinks and showers.</p><p><strong>Storage solutions:</strong> Cabinets, shelves, and more.</p><p><strong>Mirrors:</strong> To complete the look.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I find Tenzo bathroom products in the GTA?",
+            "answer": "<p>You can find a wide selection of Tenzo bathroom products at <strong>Plumbing Market</strong>. We serve the entire GTA. Visit our <a href=\"/pages/contact-us-1\" target=\"_blank\" title=\"Contact Us\"><strong>showroom</strong></a><strong> </strong> or browse our <a href=\"/collections/tenzo-fine-plomberie\" target=\"_blank\" title=\"Tenzo Fine Plomberie\"><strong>online catalog</strong></a><strong> </strong>.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Tenzo products known for their quality?",
+            "answer": "<p>Yes, Tenzo is committed to using <strong>quality materials</strong> and ensuring <strong>good craftsmanship</strong>. Their products are designed to be durable and long-lasting.</p>"
+          }
+        },
+        "faq_TngRGt": {
+          "type": "faq",
+          "settings": {
+            "question": "oes Plumbing Market deliver Tenzo products in the GTA?",
+            "answer": "<p>Yes, Plumbing Market offers <strong>delivery services throughout the GTA</strong>. Please <strong>contact us</strong> for delivery details and pricing.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_TngRGt"
+      ],
+      "settings": {
+        "title": "MAAX Plumbing FAQs: Your Ultimate Guide for GTA Homeowners",
+        "description": "<p>Find answers to the most popular questions about MAAX plumbing fixtures, including bathtubs, faucets, toilets, and shower enclosures. Our expert team at Plumbing Market has compiled these FAQs to help GTA homeowners understand installation, maintenance, warranty details, water efficiency, and more—all while enjoying the benefit of free delivery across the GTA.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Discover Tenzo's Modern Bathroom Solutions Today!",
+        "description": "<p>Ready to transform your bathroom with Tenzo's contemporary style? Explore our collection and find the perfect fixtures for your modern bathroom. Contact us for expert advice and assistance.</p>",
+        "message": "<p>Visit Our GTA Showroom | Shop Tenzo Online Now →</p>",
+        "shop_online_url": "shopify://collections/tenzo-fine-plomberie",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_collection_x7JnU8",
+    "seo_collection_6FRc8M",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

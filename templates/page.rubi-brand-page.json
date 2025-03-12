@@ -1,0 +1,227 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Rubi Plumbing Fixtures: Modern Design & Reliable Performance",
+        "hero_description": "Transform your bathroom into a refined oasis with Rubi’s stylish, durable fixtures. From space-saving vanities to innovative faucets and relaxing bathtubs, Rubi delivers the perfect blend of form and function—backed by free delivery across the Greater Toronto Area.",
+        "hero_image": "shopify://shop_images/slider-lexa-or.webp",
+        "collection_button_label": "Shop Rubi Now",
+        "collection_link": "shopify://collections/rubi",
+        "brand_button_label": "Visit Rubi Website",
+        "brand_website_link": "https://rubi.ca/en-US/home"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Innovative Design",
+            "benefit_description": "Sleek lines and refined finishes that elevate your décor"
+          }
+        },
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Water Efficiency",
+            "benefit_description": "Advanced Water‑Saving Technologies"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/ergonomicIcon.png",
+            "benefit_title": "Durable Construction",
+            "benefit_description": "Built for long-lasting reliability, providing years of consistent use"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Premium Materials",
+            "benefit_description": "Engineered to withstand the unique climate challenges of the GTA"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "Easy Maintenance",
+            "benefit_description": "Anti‑fingerprint and streamlined surfaces ensure effortless cleaning"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_mT6MzG",
+        "benefit_4tb8da",
+        "benefit_J4d3tG",
+        "benefit_yizrqt",
+        "benefit_FYT3Be"
+      ],
+      "settings": {
+        "intro_title": "Discover the Advanced Technologies That Set Rubi Apart",
+        "intro_description": "Rubi is renowned for blending modern design with innovative engineering to deliver reliable performance, exceptional durability, and water-saving benefits. Explore the five key features that make Rubi fixtures a top choice for discerning GTA homeowners:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Rubi Plumbing Supplies: Modern Precision & Style for GTA Kitchens",
+        "category_description": "<p><strong>Rubi faucets</strong> combine <strong>sleek design</strong>, <strong>water-saving technology</strong>, and <strong>durable craftsmanship</strong> to enhance any bathroom or kitchen. Perfect for <strong>GTA homeowners</strong>, these fixtures deliver consistent, efficient performance and withstand daily use.</p>",
+        "collection": "rubi-sale"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_P6pNiH": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"Our Rubi faucet and vanity transformed our bathroom. The sleek design and top-notch quality truly stand out, and the free GTA delivery made the process effortless!\"",
+            "author": "Jason L., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "\"I’m extremely pleased with my new Rubi products. The innovative features, reliable performance, and expert support from Plumbing Market exceeded all my expectations.\"",
+            "author": "Melissa D., Mississauga",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_P6pNiH",
+        "testimonial_YcbyBh"
+      ],
+      "settings": {
+        "title": "Rubi Customer Testimonials: Real Stories from Satisfied GTA Homeowners",
+        "description": "<p>Discover firsthand experiences from GTA homeowners who upgraded their bathrooms with <strong>Rubi fixtures</strong>. Our customers appreciate the blend of modern design, durable quality, and exceptional service—making every installation a success.</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I purchase Rubi bathroom fixtures in the GTA?",
+            "answer": "<p>You can purchase <strong>Rubi</strong> vanities, faucets, and bathtubs exclusively at Plumbing Market, with <strong>free GTA delivery</strong> for a convenient and cost-effective experience.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Rubi products designed and manufactured to meet Canadian standards?",
+            "answer": "<p>Yes, <strong>Rubi</strong> fixtures are engineered with premium materials and rigorously tested to meet the high-quality demands of the Canadian market, ensuring reliable performance and durability.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I install my Rubi vanity or faucet?",
+            "answer": "<p><strong>Rubi</strong> products are designed for hassle-free installation. Here’s how to ensure a smooth setup:</p><p><strong>Follow Detailed Instructions:</strong> Use the step-by-step installation guides provided with each product.</p><p><strong>Utilize Professional Support:</strong> Contact Plumbing Market for expert advice or professional installation services.</p><p><strong>Prepare Your Workspace:</strong> Ensure all necessary tools are ready and your bathroom area is prepped for a seamless installation.</p><p><strong>Check Compatibility:</strong> Verify that all components and fittings are compatible with your existing plumbing.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "What warranty does Rubi offer on its products?",
+            "answer": "<p><strong>Rubi</strong> offers competitive warranties that protect your investment. Key warranty features include:</p><p><strong>Coverage of Material Defects:</strong> Warranty protects against faulty materials and workmanship.</p><p><strong>Varying Terms by Product:</strong> Different products may have specific warranty durations and conditions.</p><p><strong>Easy Claim Process:</strong> Access clear instructions and support for warranty claims through Plumbing Market.</p><p><strong>Peace of Mind:</strong> Enjoy the assurance of high-quality, reliable fixtures backed by a solid warranty.</p>"
+          }
+        },
+        "faq_gXcniF": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I maintain my Rubi fixtures for long-lasting performance?",
+            "answer": "<p>To keep your <strong>Rubi</strong> fixtures looking new and functioning optimally, follow these maintenance tips:</p><p><strong>Regular Cleaning:</strong> Use mild, non-abrasive cleaners to remove dirt and buildup.</p><p><strong>Avoid Harsh Chemicals:</strong> Prevent damage by steering clear of harsh cleaning agents.</p><p><strong>Routine Inspections:</strong> Check for signs of wear or leaks periodically.</p><p><strong>Follow Care Guidelines:</strong> Adhere to the manufacturer's maintenance recommendations provided with your product.</p><p><strong>Schedule Professional Service:</strong> Consider periodic professional maintenance to ensure peak performance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_gXcniF"
+      ],
+      "settings": {
+        "title": "Rubi FAQ: Your Essential Guide to Rubi Bathroom Fixtures",
+        "description": "<p>Find answers to the most frequently searched questions about <strong>Rubi</strong> products, including vanities, faucets, and bathtubs. Our FAQ covers everything from purchasing and installation to maintenance and warranties—ensuring you have all the details needed to upgrade your GTA bathroom with confidence.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop Rubi Plumbing at Plumbing Market – The GTA’s Ultimate Choice",
+        "description": "<p><strong>Shop Rubi Plumbing at Plumbing Market – The GTA’s Ultimate Choice</strong><br/><br/>Plumbing Market proudly offers an extensive range of <strong>Rubi plumbing fixtures</strong> to homeowners across the Greater Toronto Area. Whether you shop online or visit our Vaughan showroom, you can expect:</p><p><strong>Competitive Prices</strong>: Unbeatable deals on every Rubi product.</p><p><strong>In-Stock Selection</strong>: A wide variety of Rubi fixtures available for fast GTA delivery.</p><p><strong>Expert Assistance</strong>: Our knowledgeable team is here to guide you in finding the perfect solution.</p><p><strong>Local Trust</strong>: With a strong presence in Toronto, Mississauga, and Vaughan, we’re the GTA’s trusted source for Rubi.</p><p><strong>Free Delivery</strong>: Enjoy complimentary shipping on all orders throughout the GTA.</p>",
+        "message": "<p>Ready to Upgrade Your Bathroom with Rubi?</p>",
+        "shop_online_url": "shopify://collections/rubi",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

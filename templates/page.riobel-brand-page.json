@@ -1,0 +1,227 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "scripts_for_sliders_kxVkBj": {
+      "type": "scriptsForSliders",
+      "settings": {}
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "seo_hero_JMdgD4": {
+      "type": "seo-hero",
+      "settings": {
+        "hero_title": "Riobel Plumbing Fixtures: Innovation & Refined Design",
+        "hero_description": "Upgrade your bathroom with Riobel—renowned for merging cutting-edge engineering with sophisticated aesthetics. From sleek faucets to luxurious shower systems, Riobel delivers unmatched quality and performance, backed by free delivery throughout the Greater Toronto Area.",
+        "hero_image": "shopify://shop_images/parabola_solstice_1500wx831h.webp",
+        "collection_button_label": "Shop Riobel Now",
+        "collection_link": "shopify://collections/riobel",
+        "brand_button_label": "Visit Riobel Website",
+        "brand_website_link": "https://riobel.design/en/"
+      }
+    },
+    "seo_introduction_blocks_93YWzf": {
+      "type": "seo-introduction-blocks",
+      "blocks": {
+        "benefit_4tb8da": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/waterSaving.png",
+            "benefit_title": "Innovative Water Flow",
+            "benefit_description": "Advanced Water‑Saving Technologies"
+          }
+        },
+        "benefit_yizrqt": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/luxury.png",
+            "benefit_title": "Premium Materials",
+            "benefit_description": "Built with corrosion-resistant finishes and top components"
+          }
+        },
+        "benefit_FYT3Be": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/easyCleanIcon.png",
+            "benefit_title": "Easy Maintenance",
+            "benefit_description": "Thoughtful designs simplify setup"
+          }
+        },
+        "benefit_mT6MzG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/designIcon.png",
+            "benefit_title": "Stylish Designs",
+            "benefit_description": "Sleek lines and refined finishes that elevate your décor"
+          }
+        },
+        "benefit_J4d3tG": {
+          "type": "benefit",
+          "settings": {
+            "benefit_icon": "shopify://shop_images/ergonomicIcon.png",
+            "benefit_title": "Durable Construction",
+            "benefit_description": "Built for long-lasting reliability, providing years of consistent use"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_4tb8da",
+        "benefit_yizrqt",
+        "benefit_FYT3Be",
+        "benefit_mT6MzG",
+        "benefit_J4d3tG"
+      ],
+      "settings": {
+        "intro_title": "Discover the Advanced Technologies That Set Riobel Apart",
+        "intro_description": "Riobel is celebrated for fusing state-of-the-art engineering with refined design. Explore five key features that make these fixtures a go-to choice for homeowners across the GTA:"
+      }
+    },
+    "seo_collection_t8jcyd": {
+      "type": "seo-collection",
+      "settings": {
+        "category_title": "Riobel Faucets: Contemporary Elegance & Reliable Performance",
+        "category_description": "<p>Elevate your sink area with <strong>Riobel faucets</strong>, renowned for their <strong>modern design</strong>, <strong>effortless flow control</strong>, and <strong>water-saving features</strong>. Perfect for busy GTA households, these faucets withstand daily wear while maintaining a stylish, minimalist aesthetic.</p>",
+        "collection": "riobel-bathroom-faucets"
+      }
+    },
+    "seo_testimonials_WqYtBG": {
+      "type": "seo-testimonials",
+      "blocks": {
+        "testimonial_P6pNiH": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“My Riobel faucet not only looks stunning but also operates flawlessly. The free delivery made it a no-brainer!”",
+            "author": "Carmen R., Toronto",
+            "company": ""
+          }
+        },
+        "testimonial_YcbyBh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "“Upgrading to a Riobel shower system was the best decision we made. The water pressure is amazing, and it’s so easy to clean!”",
+            "author": "Victor L., Mississauga",
+            "company": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_P6pNiH",
+        "testimonial_YcbyBh"
+      ],
+      "settings": {
+        "title": "Real Feedback from GTA Homeowners on Riobel",
+        "description": "<p>Hear what satisfied customers across the Greater Toronto Area have to say about their Riobel upgrades:</p>"
+      }
+    },
+    "seo_faq_EKyycj": {
+      "type": "seo-faq",
+      "blocks": {
+        "faq_V6zU6N": {
+          "type": "faq",
+          "settings": {
+            "question": "Where can I buy authentic Riobel fixtures in the GTA?",
+            "answer": "<p>You can purchase <strong>Riobel faucets, showers, and accessories</strong> at Plumbing Market, which offers<br/><br/><a href=\"/pages/free-local-delivery\" target=\"_blank\" title=\"Free Delivery on Plumbing Supplies in GTA\"><strong>free delivery throughout the GTA</strong></a> and a<br/><br/><a href=\"/collections/riobel\" title=\"Riobel\"><strong>wide product selection</strong></a> for immediate shipment.</p>"
+          }
+        },
+        "faq_QYELKW": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I install my new Riobel faucet or shower system?",
+            "answer": "<p><strong>Review the Product Manual</strong>: Each Riobel product comes with clear instructions.</p><p><strong>Use the Right Tools</strong>: Gather necessary plumbing tools and materials beforehand.</p><p><strong>Seek Expert Help</strong>: For best results, consult a professional or reach out to<br/><br/><a href=\"/pages/contact-us-1\" target=\"_blank\" title=\"Contact Us\"><strong>Plumbing Market’s expert team</strong></a> for guidance.</p><p><strong>Check Compatibility</strong>: Ensure your existing plumbing setup matches the fixture requirements.</p>"
+          }
+        },
+        "faq_mPCbiD": {
+          "type": "faq",
+          "settings": {
+            "question": "Are Riobel products designed to meet Canadian standards?",
+            "answer": "<p>Yes. <strong>Riobel</strong> fixtures are crafted to adhere to Canadian regulations and quality benchmarks,<br/><br/>ensuring durability, performance, and safety.</p>"
+          }
+        },
+        "faq_tmdibC": {
+          "type": "faq",
+          "settings": {
+            "question": "What warranty coverage does Riobel offer?",
+            "answer": "<p><strong>Comprehensive Protection</strong>: Riobel provides warranties covering defects in materials and<br/><br/>workmanship.</p><p><strong>Varied Terms</strong>: Coverage may differ by product type (faucets, shower systems, etc.).</p><p><strong>Easy Claim Process</strong>: Visit the <a href=\"https://www.riobel.ca\"><strong>official Riobel website</strong></a> or<br/><br/>contact Plumbing Market for assistance with any warranty claims.</p>"
+          }
+        },
+        "faq_gXcniF": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I maintain my Riobel fixtures for long-lasting performance?",
+            "answer": "<p><strong>Regular Cleaning</strong>: Use mild, non-abrasive cleaners to remove dirt and mineral deposits.</p><p><strong>Avoid Harsh Chemicals</strong>: Steer clear of bleach or acidic solutions that may damage finishes.</p><p><strong>Rinse & Wipe</strong>: After each use, gently wipe fixtures to minimize water spots.</p><p><strong>Periodic Inspection</strong>: Check for leaks or drips, and address any issues promptly.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_V6zU6N",
+        "faq_QYELKW",
+        "faq_mPCbiD",
+        "faq_tmdibC",
+        "faq_gXcniF"
+      ],
+      "settings": {
+        "title": "Riobel FAQs: Your Essential Guide to Riobel Fixtures",
+        "description": "<p>Find answers to the most frequently searched questions about <strong>Riobel</strong> products, covering everything from purchasing and installation to warranties and maintenance.</p>"
+      }
+    },
+    "seo_cta_QaQBAr": {
+      "type": "seo-cta",
+      "settings": {
+        "title": "Shop Riobel at Plumbing Market – The GTA’s Top Choice",
+        "description": "<p>Plumbing Market proudly serves the Greater Toronto Area with a wide selection of <strong>Riobel plumbing fixtures</strong>. Whether you shop online or visit our Vaughan showroom, you can expect:</p><p><strong>Competitive Prices</strong>: Unbeatable deals on every Riobel product.</p><p><strong>In-Stock Selection</strong>: A diverse range of Riobel fixtures ready for fast GTA delivery.</p><p><strong>Expert Assistance</strong>: Our knowledgeable staff is here to help you choose the perfect solution.</p><p><strong>Local Trust</strong>: We’re a trusted source in Toronto, Mississauga, Vaughan, and beyond.</p><p><strong>Free Delivery</strong>: Enjoy complimentary shipping on all orders across the GTA.</p>",
+        "message": "<p>Ready to Upgrade Your Bathroom with Riobel?</p>",
+        "shop_online_url": "shopify://collections/riobel",
+        "talk_to_expert_url": "tel:289-236-2378"
+      }
+    }
+  },
+  "order": [
+    "scripts_for_sliders_kxVkBj",
+    "breadcrumbs",
+    "main-page",
+    "seo_hero_JMdgD4",
+    "seo_introduction_blocks_93YWzf",
+    "seo_collection_t8jcyd",
+    "seo_testimonials_WqYtBG",
+    "seo_faq_EKyycj",
+    "seo_cta_QaQBAr"
+  ]
+}

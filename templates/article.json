@@ -121,30 +121,12 @@
         "spacing_desktop": 50,
         "spacing_mobile": 30
       }
-    },
-    "section_newsletter_3Y3Pz7": {
-      "type": "section-newsletter",
-      "settings": {
-        "overlay_opacity": 0,
-        "color_palette": "dark",
-        "button_color_palette": "accent",
-        "width": "boxed",
-        "title_size": "h2",
-        "title": "Subscribe to SAVE more",
-        "text": "<p>Never miss any news and be the first to know about sale and offers</p>",
-        "link_text": "Subscribe",
-        "enable_newsletter_terms_checkbox": false,
-        "newsletter_terms_text": "",
-        "spacing_desktop": 50,
-        "spacing_mobile": 30
-      }
     }
   },
   "order": [
     "breadcrumbs",
     "main-article",
     "blogs_row",
-    "section_recently_viewed_products_NNzUYj",
-    "section_newsletter_3Y3Pz7"
+    "section_recently_viewed_products_NNzUYj"
   ]
 }

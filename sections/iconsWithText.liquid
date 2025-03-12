@@ -1,7 +1,7 @@
 {%- comment -%}
   Feature Blocks Section
   - Displays up to 4 blocks
-  - Each block contains an icon, title, and subtitle
+  - Each block contains an icon, title, subtitle, and link
 {%- endcomment -%}
 
 <style>
@@ -10,7 +10,6 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
     width: 100%;
     padding: 30px 0;
   }
@@ -22,9 +21,15 @@
     text-align: left;
   }
 
+  .feature-blocks a.feature-block-link {
+    text-decoration: none;
+  }
+  .feature-blocks a.feature-block-link:hover {
+    text-decoration: underline;
+    color: #2c2d2c;
+  }
+
   .feature-blocks .feature-block .feature-block__icon img {
-
-
     height: 40px !important;
     max-width: 60px !important;
     object-fit: contain;
@@ -56,40 +61,39 @@
 
   @media (max-width: 768px) {
     .feature-blocks {
-        padding: 15px 0;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+      padding: 15px 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 15px;
       text-align: center;
-
     }
     .feature-block__title {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  
-  .feature-block__subtitle {
-    font-size: 12px;
-    line-height: 16px;
-  }
+      font-size: 14px;
+      line-height: 18px;
+    }
+    
+    .feature-block__subtitle {
+      font-size: 12px;
+      line-height: 16px;
+    }
 
     .feature-blocks .divider {
       display: none;
     }
 
     .feature-blocks .feature-block .feature-block__icon img {
-
-
-height: 20px !important;
-max-width: 30px !important;
-object-fit: contain;
-}
-
+      height: 20px !important;
+      max-width: 30px !important;
+      object-fit: contain;
+    }
   }
 </style>
 
 <div class="feature-blocks">
   {%- for block in section.blocks -%}
+    {% if block.settings.url != blank %}
+      <a href="{{ block.settings.url }}" class="feature-block-link">
+    {% endif %}
     <div class="feature-block">
       <div class="feature-block__icon">
         {%- if block.settings.icon != blank -%}
@@ -101,6 +105,9 @@ object-fit: contain;
         <div class="feature-block__subtitle">{{ block.settings.subtitle }}</div>
       </div>
     </div>
+    {% if block.settings.url != blank %}
+      </a>
+    {% endif %}
     {%- unless forloop.last -%}
       <div class="divider"></div>
     {%- endunless -%}
@@ -133,6 +140,11 @@ object-fit: contain;
           "id": "subtitle",
           "label": "Subtitle",
           "default": "Feature subtitle"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link URL"
         }
       ]
     }
@@ -145,34 +157,36 @@ object-fit: contain;
           "type": "feature",
           "settings": {
             "title": "Free Delivery",
-            "subtitle": "Across GTA"
+            "subtitle": "Across GTA",
+            "url": ""
           }
         },
         {
           "type": "feature",
           "settings": {
             "title": "Easy Returns",
-            "subtitle": "30 Days Conditional"
+            "subtitle": "30 Days Conditional",
+            "url": ""
           }
         },
         {
           "type": "feature",
           "settings": {
             "title": "Friendly Support",
-            "subtitle": "Ready To Help"
+            "subtitle": "Ready To Help",
+            "url": ""
           }
         },
         {
           "type": "feature",
           "settings": {
             "title": "Sign Up for 5% Off",
-            "subtitle": "On Your First Order"
+            "subtitle": "On Your First Order",
+            "url": ""
           }
         }
       ]
     }
-    
   ]
-  
 }
 {% endschema %}

@@ -65,7 +65,8 @@
           "settings": {
             "icon": "shopify://shop_images/DeliveryIcon_c44cb446-4e49-4314-99e0-0c5612a869d4.png",
             "title": "Free Delivery",
-            "subtitle": "Across GTA"
+            "subtitle": "Across GTA",
+            "url": "shopify://pages/free-local-delivery"
           }
         },
         "feature_yhhH6w": {
@@ -73,7 +74,8 @@
           "settings": {
             "icon": "shopify://shop_images/ReturnsIcon.png",
             "title": "Easy Returns",
-            "subtitle": "30 Days Conditional"
+            "subtitle": "30 Days Conditional",
+            "url": "shopify://policies/refund-policy"
           }
         },
         "feature_3tcNaq": {
@@ -81,7 +83,8 @@
           "settings": {
             "icon": "shopify://shop_images/SupportIcon.png",
             "title": "Friendly Support",
-            "subtitle": "Ready To Help"
+            "subtitle": "Ready To Help",
+            "url": "shopify://pages/contact-us-1"
           }
         },
         "feature_e6WHqE": {
@@ -89,7 +92,8 @@
           "settings": {
             "icon": "shopify://shop_images/DiscountIcon.png",
             "title": "Sign Up for 5% Off",
-            "subtitle": "On Your First Order"
+            "subtitle": "On Your First Order",
+            "url": "#shopify-section-footer-two"
           }
         }
       },
@@ -368,7 +372,9 @@
       ],
       "settings": {
         "title": "Our Top Brands",
-        "subtitle": "Browse our most popular brands"
+        "subtitle": "Browse our most popular brands",
+        "link_text": "View All Brands",
+        "link_url": "shopify://pages/all-brands"
       }
     },
     "best_sellers_KtTex7": {

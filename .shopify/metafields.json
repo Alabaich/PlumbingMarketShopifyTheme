@@ -401,6 +401,16 @@
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
       }
+    },
+    {
+      "key": "canadian",
+      "namespace": "custom",
+      "name": "canadian",
+      "description": "Is the product Vendor is Canadian, does the Manufactory based in Canada?",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
     }
   ],
   "variant": [
